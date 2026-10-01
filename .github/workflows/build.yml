@@ -33,6 +33,11 @@ on:
     tags: ['*']
   workflow_dispatch:
 
+# Least privilege: the build jobs only read the repo. The "release" job
+# overrides this with `contents: write` because it creates the Release.
+permissions:
+  contents: read
+
 jobs:
   build-android:
     runs-on: ubuntu-latest
