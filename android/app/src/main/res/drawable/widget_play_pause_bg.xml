@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Filled circle behind the play/pause icon, matching the in-app play
+     button's Material circle (see _PlaybackControls in home_screen.dart)
+     — by explicit request, so this button reads as this app's primary
+     action, not a plain icon among icons. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="@color/widget_accent" />
+</shape>

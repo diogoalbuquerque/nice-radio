@@ -1,0 +1,84 @@
+// Covers sortStationsByFrequency in isolation — pure logic over a
+// List<RadioStation>, so no ProviderContainer or network call is needed.
+// The rest of stations_provider.dart (the providers themselves) is not
+// covered here — they are thin Riverpod wiring around RadioBrowserService
+// and this function, with no independent logic of their own to test.
+import 'package:flutter_test/flutter_test.dart';
+import 'package:nice_radio/models/radio_station.dart';
+import 'package:nice_radio/providers/stations_provider.dart';
+
+RadioStation _station({required String id, required String name, String? url}) => RadioStation(
+      id: id,
+      name: name,
+      streamUrl: url ?? 'https://example.com/$id',
+      faviconUrl: null,
+      genre: 'Rádio',
+      state: '',
+      bitrateKbps: 0,
+    );
+
+void main() {
+  group('dedupeStationsByStream', () {
+    test('merges the same stream, ignoring query string, scheme and trailing slash', () {
+      final result = dedupeStationsByStream([
+        _station(id: '1', name: 'Rede 3.16', url: 'https://srv.example.com:7976/live'),
+        _station(id: '2', name: 'Rede 3.16', url: 'https://srv.example.com:7976/live?1661877997950'),
+        _station(id: '3', name: 'Rede 3.16', url: 'http://SRV.example.com:7976/live/'),
+      ]);
+
+      expect(result.map((s) => s.id), ['1']);
+    });
+
+    test('keeps channels that share a host but differ by path or port', () {
+      final result = dedupeStationsByStream([
+        _station(id: '1', name: 'Cidade', url: 'http://stw.example.com/CIDADE.aac'),
+        _station(id: '2', name: 'Cidade - drop80', url: 'http://stw.example.com/DROP80.aac'),
+        _station(id: '3', name: 'Outra', url: 'http://stw.example.com:8000/CIDADE.aac'),
+      ]);
+
+      expect(result.map((s) => s.id), ['1', '2', '3']);
+    });
+
+    test('keeps the first entry and preserves order', () {
+      final result = dedupeStationsByStream([
+        _station(id: 'b', name: 'B', url: 'https://x.example.com/b'),
+        _station(id: 'a', name: 'A', url: 'https://x.example.com/a'),
+        _station(id: 'b2', name: 'B again', url: 'https://x.example.com/b?x=1'),
+      ]);
+
+      expect(result.map((s) => s.id), ['b', 'a']);
+    });
+  });
+
+  group('sortStationsByFrequency', () {
+    test('orders ascending by frequency regardless of input order', () {
+      final highest = _station(id: '1', name: 'Rádio C FM 107.5');
+      final lowest = _station(id: '2', name: 'Rádio A FM 87.9');
+      final middle = _station(id: '3', name: 'Rádio B FM 96.1');
+
+      final sorted = sortStationsByFrequency([highest, lowest, middle]);
+
+      expect(sorted.map((s) => s.id), ['2', '3', '1']);
+    });
+
+    test('pushes stations with no detectable frequency to the end, sorted by name', () {
+      final noFrequencyZ = _station(id: '1', name: 'Zeta Comunitária');
+      final noFrequencyA = _station(id: '2', name: 'Alfa Comunitária');
+      final withFrequency = _station(id: '3', name: 'Rádio FM 90.0');
+
+      final sorted = sortStationsByFrequency([noFrequencyZ, withFrequency, noFrequencyA]);
+
+      expect(sorted.map((s) => s.id), ['3', '2', '1']);
+    });
+
+    test('does not mutate the original list', () {
+      final a = _station(id: '1', name: 'Rádio A FM 100.0');
+      final b = _station(id: '2', name: 'Rádio B FM 90.0');
+      final original = [a, b];
+
+      sortStationsByFrequency(original);
+
+      expect(original, [a, b]);
+    });
+  });
+}

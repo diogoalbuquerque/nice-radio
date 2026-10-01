@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "177950399278",
+    "project_id": "nice-radio-9f418",
+    "storage_bucket": "nice-radio-9f418.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177950399278:android:c8be262ba4bc17a2ffb8bf",
+        "android_client_info": {
+          "package_name": "com.nice.radio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgpWXuj8QJTcXTvJyPnSdicHJ5oZjP4pc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

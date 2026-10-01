@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Nice Radio</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>nice_radio</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(FLUTTER_BUILD_NAME)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<!-- Shown once, when the app asks for location. We only use this to
+	     figure out the user's state (see LocationService) — never stored
+	     or sent anywhere beyond that one lookup. -->
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Usamos sua localização para mostrar as rádios do seu estado.</string>
+	<!-- Required by iOS the moment an AVAudioSession is set to the
+	     playAndRecord category — which "Viva-voz" now does on iOS, to
+	     force audio to the speaker even with a Bluetooth/wired device
+	     connected (AVAudioSession.overrideOutputAudioPort only works
+	     under that category — see PlayerNotifier._configureAudioSession
+	     in player_provider.dart). This app never actually records
+	     anything; the category switch is purely to unlock that one
+	     output-routing API, and the string below says exactly that, since
+	     iOS shows it verbatim if it ever does prompt. Omitting this key
+	     entirely would crash the app the instant that category is set,
+	     regardless of whether recording ever happens. -->
+	<key>NSMicrophoneUsageDescription</key>
+	<string>O microfone não é usado para gravar nada — essa permissão só é exigida pelo sistema para permitir que o som saia no alto-falante.</string>
+	<!-- Lets audio keep playing when the app is backgrounded or the
+	     screen locks — expected behavior for a radio app, and without
+	     this iOS suspends playback the moment Nice Radio leaves the
+	     foreground. -->
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+	</array>
+	<!-- Many Brazilian internet radio streams are plain `http://`, not
+	     `https://` (confirmed by hand — e.g. Antena 1 Rio de Janeiro's
+	     stream, `http://a1rj.streams.com.br:7801/stream`, does not speak
+	     TLS on that port at all). Without this, iOS's App Transport
+	     Security silently blocks every one of those connections.
+	     This app deliberately plays a station's stream URL exactly as
+	     Radio Browser reports it, http or https, with no upfront check —
+	     probing every station for an https alternative before showing
+	     the list added a real, noticeable delay before the person could
+	     start listening, and excluded working stations that simply have
+	     no HTTPS option. Radio audio is public broadcast content (no
+	     login, no personal data), so the trade-off — a station's audio
+	     traffic can be plain-text on the network for a minority of
+	     stations — was judged acceptable in exchange for a fast list and
+	     not silently losing stations.
+	     WHY `NSAllowsArbitraryLoads` (the blanket exception) and not the
+	     narrower `NSAllowsArbitraryLoadsInMedia`: that narrower key is
+	     documented to scope the exception to AVFoundation's media
+	     loading only, which is exactly what this app needs — but tested
+	     by hand on a real iOS Simulator, it did **not** actually let
+	     `just_audio`'s AVPlayer load a plain-http:// stream (still
+	     failed with NSURLErrorDomain -1022, ATS). This is a known,
+	     widely-reported inconsistency in `NSAllowsArbitraryLoadsInMedia`
+	     across iOS versions, not a mistake in this app's config. The
+	     broader key does work, at the cost of also covering this app's
+	     ordinary HTTPS calls (Radio Browser, favicon images) — which
+	     stay HTTPS regardless, so the practical difference is small. -->
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneClassName</key>
+					<string>UIWindowScene</string>
+					<key>UISceneConfigurationName</key>
+					<string>flutter</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+</dict>
+</plist>

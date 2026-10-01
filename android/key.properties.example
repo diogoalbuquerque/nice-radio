@@ -1,0 +1,18 @@
+# Copy this file to `android/key.properties` (that exact name — already
+# git-ignored, see android/.gitignore) and fill it in with a real release
+# keystore before publishing this app anywhere outside this machine.
+#
+# Generate one (only once — losing this file/password means you can never
+# publish an *update* to an app already on the Play Store under the same
+# signature):
+#
+#   keytool -genkey -v -keystore ~/nice-radio-release.jks \
+#     -keyalg RSA -keysize 2048 -validity 10000 -alias nice_radio
+#
+# Then fill in the four values below to match what you just created.
+# Never commit the real key.properties or the .jks/.keystore file itself —
+# both are already covered by android/.gitignore.
+storePassword=CHANGE_ME
+keyPassword=CHANGE_ME
+keyAlias=nice_radio
+storeFile=/absolute/path/to/nice-radio-release.jks

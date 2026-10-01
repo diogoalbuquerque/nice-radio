@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Shown in the system's "add a widget" picker, under the widget's
+         preview thumbnail. -->
+    <string name="widget_description">Rádio atual, com play/pause e trocar de estação</string>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Colors for the home-screen widget (NiceRadioWidgetProvider), matching
+     lib/theme/app_theme.dart's light-mode AppColors palette by hand —
+     Dart color constants are not reachable from Android resources, so
+     these are kept in sync manually. If the in-app palette changes,
+     update these (and values-night/widget_colors.xml) to match. -->
+<resources>
+    <color name="widget_background">#FFFFFFFF</color>
+    <color name="widget_text_primary">#FF211F1C</color>
+    <color name="widget_text_secondary">#FF6B6459</color>
+    <color name="widget_accent">#FF1E5C8C</color>
+    <!-- The app icon's salmon "n" mark — a deliberate, requested exception to
+         the rule that this salmon is icon-only and never used in the UI:
+         the widget sits right next to
+         the app icon on the home screen, so echoing the icon's own accent
+         here (on the prev/next buttons) reads as a matching pair rather
+         than two unrelated colors. Same value in both light and dark —
+         a brand color, not a light/dark-adaptive UI color. -->
+    <color name="widget_salmon">#FFE8795C</color>
+    <color name="widget_on_accent">#FFFFFFFF</color>
+</resources>

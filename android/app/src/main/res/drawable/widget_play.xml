@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Same Material Icons glyph family used throughout the app via
+     Icons.play_arrow, so the widget reads as part of the same app. White
+     fill: this icon now sits on the filled blue circle
+     (widget_play_pause_bg), matching the in-app play button's white icon
+     on a blue background. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:fillColor="@color/widget_on_accent"
+        android:pathData="M8,5v14l11,-7z" />
+</vector>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Describes the widget to the OS: default/min size (roughly 4x2 cells
+     — enough for the station name, song title, and the three buttons
+     without cramping), that it's resizable, and its initial layout
+     before any real data has ever been pushed to it (see
+     NiceRadioWidgetProvider.updateNowPlaying). No android:updatePeriodMillis:
+     this widget is refreshed on demand, from PlayerNotifier's own state
+     changes via the "com.nice.radio/home_widget" channel — a periodic
+     poll would either show stale data between updates or drain battery
+     polling far more often than playback actually changes. -->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/nice_radio_widget"
+    android:previewLayout="@layout/nice_radio_widget_preview"
+    android:minWidth="180dp"
+    android:minHeight="90dp"
+    android:targetCellWidth="4"
+    android:targetCellHeight="2"
+    android:resizeMode="horizontal|vertical"
+    android:widgetCategory="home_screen"
+    android:description="@string/widget_description">
+</appwidget-provider>

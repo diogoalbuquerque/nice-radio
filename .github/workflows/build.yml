@@ -1,0 +1,114 @@
+name: Build
+
+# Only runs when a version tag is pushed (e.g. `1.0.0`, `1.0.1`) — not on
+# every push to main. The tag name itself becomes both the GitHub
+# Release's tag and the downloadable file names
+# (nice-radio-<tag>.apk, nice-radio-<tag>-ios-unsigned.zip), so pushing
+# tag `1.0.1` always produces files named after 1.0.1 — this workflow
+# never reads pubspec.yaml's own version field, so it's on you to keep
+# the tag and pubspec.yaml's `version:` in sync when you cut a release.
+#
+# To release a new version: bump pubspec.yaml's version, commit and push
+# to main as usual, then:
+#   git tag 1.0.1
+#   git push origin 1.0.1
+#
+# Neither build is signed for real distribution:
+#   - Android falls back to Flutter's shared debug keystore because this
+#     repo has no android/key.properties (see android/key.properties.example
+#     for how to add a real one privately —
+#     that file is git-ignored on purpose and must never be committed).
+#   - iOS is built with --no-codesign, since a real IPA needs an Apple
+#     Developer certificate/provisioning profile that only exists on a
+#     developer's own machine, not in this public repo. This step only
+#     proves the iOS build still compiles; the .app it produces cannot be
+#     installed on a real device as-is.
+#
+# Both builds get published to a GitHub Release tagged with the pushed
+# tag (see the "release" job) — that's the page to link people to for
+# downloading a build; re-pushing the same tag's files (rare, since tags
+# are meant to be immutable) just updates that release's assets in place.
+on:
+  push:
+    tags: ['*']
+  workflow_dispatch:
+
+jobs:
+  build-android:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - run: flutter pub get
+
+      - run: flutter build apk --release
+
+      - name: Rename APK
+        run: |
+          mkdir -p dist
+          cp build/app/outputs/flutter-apk/app-release.apk \
+             "dist/nice-radio-$GITHUB_REF_NAME.apk"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nice-radio-${{ github.ref_name }}-android
+          path: dist/nice-radio-${{ github.ref_name }}.apk
+
+  build-ios:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - run: flutter pub get
+
+      - run: flutter build ios --release --no-codesign
+
+      - name: Zip the unsigned .app
+        run: |
+          mkdir -p dist
+          cd build/ios/iphoneos
+          zip -r "../../../dist/nice-radio-$GITHUB_REF_NAME-ios-unsigned.zip" Runner.app
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nice-radio-${{ github.ref_name }}-ios
+          path: dist/nice-radio-${{ github.ref_name }}-ios-unsigned.zip
+
+  release:
+    needs: [build-android, build-ios]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: nice-radio-${{ github.ref_name }}-*
+          path: dist
+          merge-multiple: true
+
+      - name: Publish or update GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="$GITHUB_REF_NAME"
+          repo="$GITHUB_REPOSITORY"
+          if gh release view "$tag" --repo "$repo" >/dev/null 2>&1; then
+            gh release upload "$tag" dist/* --repo "$repo" --clobber
+          else
+            gh release create "$tag" dist/* \
+              --repo "$repo" \
+              --title "Nice Radio $tag" \
+              --notes "Build automático gerado pelo GitHub Actions a partir da tag $tag."
+          fi

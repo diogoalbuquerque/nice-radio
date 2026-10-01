@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The home-screen widget's layout — a station logo box, station name, a
+     static (never scrolling) song title line,
+     and prev/play-pause/next. Built with plain RemoteViews (not Jetpack
+     Glance/Compose), matching this project's habit of reaching for the
+     simplest API that does the job rather than adding a new dependency
+     category. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/widget_background"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- Station's favicon when it has one, otherwise the same
+             initials-on-color box StationAvatar shows in-app — generated
+             on the Dart side (StationArtworkService) and pushed over as
+             raw PNG bytes, since RemoteViews needs an actual Bitmap here,
+             not a URL. Left plain-square (not clipped to rounded corners):
+             the initials image already bakes its own rounded corners into
+             its pixels, and a real favicon is conventionally square
+             everywhere else this app shows one too (see StationAvatar). -->
+        <ImageView
+            android:id="@+id/widget_station_logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Logo da estação" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/widget_station_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nice Radio"
+                android:textColor="@color/widget_text_primary"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+            <TextView
+                android:id="@+id/widget_song_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/widget_text_secondary"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- WHY layout_weight on each button (rather than plain widths with a
+         flexible spacer `<View>` between them, the usual way to do this):
+         RemoteViews only inflates a small allow-list of widget classes
+         across the process boundary into the launcher — a generic
+         `<View>` is not one of them ("Class not allowed to be inflated
+         android.view.View"), confirmed by hand when the widget first
+         landed on a real launcher and failed with "Can't load widget"
+         (caught by actually placing it, not by the Gradle build, which
+         has no way to know RemoteViews' runtime allow-list). Giving each
+         button equal `layout_weight` makes them share the row evenly on
+         their own, with no spacer element needed at all. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/widget_previous"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="Estação anterior"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/widget_previous" />
+
+        <!-- Filled with the app's primary blue, matching the in-app play
+             button (_PlaybackControls' Material circle in home_screen.dart)
+             — by explicit request, so the widget reads as unmistakably
+             "this app" rather than a generic set of transport controls.
+
+             WHY this button sits inside its own weight="1" cell instead of
+             being the weighted view directly (as it originally was, and as
+             widget_previous/widget_next still are): reported directly, with
+             a screenshot — giving the ImageButton itself layout_width="0dp"
+             + layout_weight="1" made its actual width equal to a third of
+             the row (far wider than its fixed 52dp height), stretching the
+             oval background drawable into a visibly non-circular ellipse.
+             Fixed by keeping the button's own size fixed at 52dp x 52dp (a
+             true circle) and instead giving a wrapping, gravity="center"
+             LinearLayout the flexible weight="1" cell — the button centers
+             inside that cell at its real, equal-sided size. -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/widget_play_pause"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:background="@drawable/widget_play_pause_bg"
+                android:contentDescription="Tocar ou pausar"
+                android:padding="13dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/widget_play" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/widget_next"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="Próxima estação"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/widget_next" />
+    </LinearLayout>
+</LinearLayout>

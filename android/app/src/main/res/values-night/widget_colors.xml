@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dark-launcher variant — see values/widget_colors.xml's own comment.
+     Matches AppColors' dark-mode values, same manual-sync caveat. -->
+<resources>
+    <color name="widget_background">#FF1C222A</color>
+    <color name="widget_text_primary">#FFF2F0EA</color>
+    <color name="widget_text_secondary">#FFAEA99F</color>
+    <color name="widget_accent">#FF6AA9DE</color>
+    <!-- Same brand salmon as the light variant — see values/widget_colors.xml. -->
+    <color name="widget_salmon">#FFE8795C</color>
+    <color name="widget_on_accent">#FFFFFFFF</color>
+</resources>

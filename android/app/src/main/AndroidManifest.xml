@@ -1,0 +1,129 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Needed to reach the Radio Browser API and stream audio. -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- Coarse (not fine) location is enough — we only need to know the
+         user's state, never their exact address. Requesting the more
+         precise permission would be asking for more than the app
+         actually needs, which is both a worse user prompt and a real
+         privacy consideration. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <!-- Required by audio_service for background playback: WAKE_LOCK
+         keeps the CPU from sleeping mid-stream while the screen is off,
+         and the two FOREGROUND_SERVICE permissions let the radio run as
+         an Android foreground service (with its own notification) so
+         the OS does not kill it the moment the app is backgrounded. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+
+    <!-- Lets PlayerNotifier._configureAudioSession force routing to the
+         speaker via AndroidAudioManager.setSpeakerphoneOn when "Viva-voz"
+         is on — see that method's WHY comment in player_provider.dart.
+         Normal protection level: Android grants it automatically at
+         install time, no runtime prompt. -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <!-- Android blocks plain http:// connections by default since API 28
+         (cleartext traffic), the same way iOS's ATS does — see
+         ios/Runner/Info.plist's NSAllowsArbitraryLoads for the same
+         reasoning (this app deliberately
+         plays stations over whatever scheme Radio Browser reports, http
+         included, because it's public broadcast audio with nothing an
+         eavesdropper gains from seeing). Without this flag, an http://
+         station fails to connect on Android with no useful on-screen
+         reason, mirroring the original iOS ATS bug. -->
+    <application
+        android:label="Nice Radio"
+        android:name="${applicationName}"
+        android:icon="@mipmap/ic_launcher"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:taskAffinity=""
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+            <!-- Specifies an Android theme to apply to this Activity as soon as
+                 the Android process has started. This theme is visible to the user
+                 while the Flutter UI initializes. After that, this theme continues
+                 to determine the Window background behind the Flutter UI. -->
+            <meta-data
+              android:name="io.flutter.embedding.android.NormalTheme"
+              android:resource="@style/NormalTheme"
+              />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!-- Don't delete the meta-data below.
+             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+
+        <!-- audio_service's own foreground service, which is what keeps
+             just_audio's stream connected and playing while Nice Radio is
+             backgrounded, and shows/drives the media notification (the
+             play/pause/stop controls that also appear on the lock
+             screen). See MainActivity.kt (extends AudioServiceActivity)
+             and lib/services/audio_player_handler.dart. -->
+        <service android:name="com.ryanheise.audioservice.AudioService"
+            android:foregroundServiceType="mediaPlayback"
+            android:exported="true" tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService" />
+            </intent-filter>
+        </service>
+
+        <!-- Lets headset/Bluetooth media buttons (play/pause/next) reach
+             the radio even while the app has no visible screen. -->
+        <receiver android:name="com.ryanheise.audioservice.MediaButtonReceiver"
+            android:exported="true" tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+        <!-- The home-screen widget (station name/song + play-pause/skip)
+             — see NiceRadioWidgetProvider.kt and
+             res/xml/nice_radio_widget_info.xml. -->
+        <receiver android:name=".NiceRadioWidgetProvider"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/nice_radio_widget_info" />
+        </receiver>
+
+        <!-- Declares this app as an Android Auto media app — without this,
+             Android Auto refuses to list Nice Radio at all, even though
+             the MediaBrowserService above is otherwise fully functional.
+             res/xml/automotive_app_desc.xml is the file this points to;
+             see RadioAudioHandler.getChildren/playFromMediaId in
+             lib/services/audio_player_handler.dart for the actual station
+             browse list Android Auto reads through this same service. -->
+        <meta-data
+            android:name="com.google.android.gms.car.application"
+            android:resource="@xml/automotive_app_desc" />
+    </application>
+    <!-- Required to query activities that can process text, see:
+         https://developer.android.com/training/package-visibility and
+         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+
+         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin. -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.PROCESS_TEXT"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+    </queries>
+</manifest>

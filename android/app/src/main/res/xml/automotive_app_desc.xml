@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Tells Android Auto this app is a media app, not something else it
+     should ignore. Referenced by AndroidManifest.xml's
+     com.google.android.gms.car.application meta-data. "media" is the
+     only supported value here — there is no station-specific
+     configuration in this file, that all lives in
+     RadioAudioHandler (lib/services/audio_player_handler.dart). -->
+<automotiveApp>
+    <uses name="media"/>
+</automotiveApp>
