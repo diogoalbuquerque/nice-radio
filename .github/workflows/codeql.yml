@@ -1,0 +1,78 @@
+name: CodeQL
+
+# Replaces GitHub's "default setup" for code scanning (turn that off first in
+# Settings → Code security → Code scanning, or the two will conflict).
+# Dart is not supported by CodeQL, so only the native/CI parts are scanned:
+#   - actions:     the workflows themselves (no build needed)
+#   - java-kotlin: android/ (MainActivity, widget provider); needs a real build
+#   - swift:       ios/ (AppDelegate, widget extension); needs a real build
+# Swift and Kotlin use `manual` build mode because the default autobuild cannot
+# run Flutter's `pub get` / code generation and fails.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 6 * * 1'   # Mondays, 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  analyze:
+    name: Analyze (${{ matrix.language }})
+    runs-on: ${{ matrix.os }}
+    permissions:
+      security-events: write   # upload results to Code scanning
+      contents: read
+      actions: read
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - language: actions
+            os: ubuntu-latest
+            build-mode: none
+          - language: java-kotlin
+            os: ubuntu-latest
+            build-mode: manual
+          - language: swift
+            os: macos-latest
+            build-mode: manual
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: github/codeql-action/init@v3
+        with:
+          languages: ${{ matrix.language }}
+          build-mode: ${{ matrix.build-mode }}
+
+      - if: matrix.language == 'java-kotlin'
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'   # Gradle here needs JDK 17 (see CLAUDE.md)
+
+      - if: matrix.build-mode == 'manual'
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          cache: true
+
+      - if: matrix.language == 'java-kotlin'
+        name: Build Android (debug)
+        run: |
+          flutter pub get
+          flutter build apk --debug
+
+      - if: matrix.language == 'swift'
+        name: Build iOS (no codesign)
+        run: |
+          flutter pub get
+          flutter build ios --debug --no-codesign
+
+      - uses: github/codeql-action/analyze@v3
+        with:
+          category: /language:${{ matrix.language }}
