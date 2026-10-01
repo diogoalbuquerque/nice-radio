@@ -67,11 +67,21 @@ jobs:
           flutter pub get
           flutter build apk --debug
 
+      # `flutter build ios` launches xcodebuild itself, out of reach of CodeQL's
+      # tracer ("didn't build any of it"). So Flutter only generates the config
+      # and runs `pod install`; xcodebuild is called directly from this step.
       - if: matrix.language == 'swift'
-        name: Build iOS (no codesign)
+        name: Build iOS (xcodebuild, no codesign)
         run: |
           flutter pub get
-          flutter build ios --debug --no-codesign
+          flutter build ios --config-only --debug --simulator --no-codesign
+          xcodebuild build \
+            -workspace ios/Runner.xcworkspace \
+            -scheme Runner \
+            -configuration Debug \
+            -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO
 
       - uses: github/codeql-action/analyze@v3
         with:
