@@ -29,6 +29,7 @@ import 'services/quick_actions_service.dart';
 import 'services/station_artwork_service.dart';
 import 'services/voice_command_service.dart';
 import 'theme/app_theme.dart';
+import 'utils/brazilian_states.dart';
 
 /// Shared instance of [QuickActionsService]. WHY a provider for a plain
 /// class with no state of its own: same reasoning as every other
@@ -339,7 +340,9 @@ class _QuickActionsSyncState extends ConsumerState<_QuickActionsSync> {
     ref.listen<AsyncValue<List<RadioStation>>>(stationsProvider, (previous, next) {
       final stations = next.value;
       if (stations != null && stations.isNotEmpty) {
-        ref.read(voiceCommandServiceProvider).cacheStations(stations);
+        final stateName = ref.read(settingsProvider).value?.selectedState;
+        final abbreviation = BrazilianStates.all.where((uf) => uf.name == stateName).firstOrNull?.abbreviation;
+        ref.read(voiceCommandServiceProvider).cacheStations(stations, stateAbbreviation: abbreviation);
       }
     });
 

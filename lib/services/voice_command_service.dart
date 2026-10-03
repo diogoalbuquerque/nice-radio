@@ -40,14 +40,15 @@ class VoiceCommandService {
     }
   }
 
-  /// iOS only: gives Siri/Shortcuts the current state's station names, so
-  /// "Tocar a Rádio X" can be matched and offered as a choice. Android
-  /// answers "not implemented", which is swallowed.
-  Future<void> cacheStations(List<RadioStation> stations) async {
+  /// iOS only: gives Siri/Shortcuts the current state's stations, labeled
+  /// like "RJ - 98,1 FM - O Dia" (see [RadioStation.listLabel]) so a long
+  /// list is easy to scan, in the order given (dial order). Android answers
+  /// "not implemented", which is swallowed.
+  Future<void> cacheStations(List<RadioStation> stations, {String? stateAbbreviation}) async {
     if (kIsWeb) return;
     try {
       await _channel.invokeMethod('cacheStations', [
-        for (final s in stations) {'id': s.id, 'name': s.displayName},
+        for (final s in stations) {'id': s.id, 'name': s.listLabel(stateAbbreviation)},
       ]);
     } catch (_) {
       // Not supported here.

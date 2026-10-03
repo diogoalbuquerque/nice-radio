@@ -14,12 +14,6 @@ void main() {
       expect(VoiceCommand.fromUri('niceradio://previous')!.action, VoiceAction.previous);
     });
 
-    test('resolves the state name to its canonical spelling', () {
-      final command = VoiceCommand.fromUri('niceradio://playstate?name=sao%20paulo')!;
-      expect(command.action, VoiceAction.playState);
-      expect(command.state, 'São Paulo');
-    });
-
     test('parses a station query', () {
       final command = VoiceCommand.fromUri('niceradio://station?name=Antena%201')!;
       expect(command.action, VoiceAction.playStation);
@@ -30,10 +24,10 @@ void main() {
       expect(VoiceCommand.fromUri('niceradio://feature?featureName=pause')!.action, VoiceAction.pause);
     });
 
-    test('ignores other schemes, unknown actions, unknown states and empty queries', () {
+    test('ignores other schemes, removed/unknown actions and empty queries', () {
       expect(VoiceCommand.fromUri('https://example.com/play'), isNull);
       expect(VoiceCommand.fromUri('niceradio://explode'), isNull);
-      expect(VoiceCommand.fromUri('niceradio://state?name=Atlantida'), isNull);
+      expect(VoiceCommand.fromUri('niceradio://playstate?name=Bahia'), isNull);
       expect(VoiceCommand.fromUri('niceradio://station?name=%20'), isNull);
     });
   });
@@ -44,12 +38,13 @@ void main() {
     });
 
     test('reads the iOS action form', () {
-      final command = VoiceCommand.fromMap({'action': 'chooseState', 'state': 'Bahia'})!;
-      expect(command.action, VoiceAction.chooseState);
-      expect(command.state, 'Bahia');
+      final command = VoiceCommand.fromMap({'action': 'playStation', 'stationId': 'abc-1'})!;
+      expect(command.action, VoiceAction.playStation);
+      expect(command.stationId, 'abc-1');
 
-      final station = VoiceCommand.fromMap({'action': 'playStation', 'station': '94,7 FM Rádio X'})!;
-      expect(station.station, '94,7 FM Rádio X');
+      final byName = VoiceCommand.fromMap({'action': 'playStation', 'station': '94,7 FM Rádio X'})!;
+      expect(byName.station, '94,7 FM Rádio X');
+      expect(byName.stationId, isNull);
     });
 
     test('returns null for an empty or unknown map', () {

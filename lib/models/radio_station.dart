@@ -239,4 +239,13 @@ class RadioStation {
         .replaceAll(RegExp(r'^[\s,\-–]+|[\s,\-–]+$'), '');
     return rest.isEmpty ? freq.label : '${freq.label} — $rest';
   }
+
+  /// One-line label for pickers that show many stations at once (Siri /
+  /// Shortcuts): "RJ - 98,1 FM - O Dia", i.e. state abbreviation, then
+  /// frequency, then the name. Without a detectable frequency it is
+  /// "RJ - O Dia"; without [stateAbbreviation] the prefix is left out.
+  String listLabel(String? stateAbbreviation) {
+    final prefix = stateAbbreviation == null ? '' : '$stateAbbreviation - ';
+    return '$prefix${displayName.replaceFirst(' — ', ' - ')}';
+  }
 }

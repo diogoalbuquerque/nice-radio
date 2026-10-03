@@ -25,7 +25,7 @@ void main() {
         return [
           {'uri': 'niceradio://pause'},
           {'action': 'bogus'},
-          {'action': 'playState', 'state': 'Bahia'},
+          {'action': 'playStation', 'stationId': 'x1'},
         ];
       }
       return null;
@@ -34,11 +34,11 @@ void main() {
     final received = <VoiceCommand>[];
     await VoiceCommandService().initialize((c) async => received.add(c));
 
-    expect(received.map((c) => c.action), [VoiceAction.pause, VoiceAction.playState]);
-    expect(received.last.state, 'Bahia');
+    expect(received.map((c) => c.action), [VoiceAction.pause, VoiceAction.playStation]);
+    expect(received.last.stationId, 'x1');
   });
 
-  test('cacheStations sends id and display name', () async {
+  test('cacheStations sends id and a "UF - frequency - name" label', () async {
     Object? sent;
     TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger.setMockMethodCallHandler(channel, (call) async {
       if (call.method == 'cacheStations') sent = call.arguments;
@@ -47,10 +47,10 @@ void main() {
 
     await VoiceCommandService().cacheStations([
       const RadioStation(id: 'x', name: 'FM 94,7 Pampa', streamUrl: 'https://e.com/x', faviconUrl: null, genre: 'Rádio', state: '', bitrateKbps: 0),
-    ]);
+    ], stateAbbreviation: 'RS');
 
     expect(sent, [
-      {'id': 'x', 'name': 'FM 94,7 — Pampa'},
+      {'id': 'x', 'name': 'RS - FM 94,7 - Pampa'},
     ]);
   });
 }

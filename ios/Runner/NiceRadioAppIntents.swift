@@ -13,8 +13,8 @@
 // launching it from the background is exactly what this flag does. Pausing
 // and skipping don't need to open the app.
 //
-// The 27-state enum below mirrors lib/utils/brazilian_states.dart (raw
-// values are the canonical names Dart expects) — keep them in sync.
+// Choosing a state by voice was deliberately dropped (not needed); the
+// state still comes from the app's own settings.
 // Phrases are Portuguese because Info.plist's development region is pt-BR.
 import AppIntents
 import Foundation
@@ -43,8 +43,9 @@ final class NiceRadioCommandBridge {
   }
 }
 
-/// Station names the Dart side caches (current state only), so Siri can
-/// offer and match them. See `VoiceCommandService.cacheStations`.
+/// Stations the Dart side caches (current state only, already in dial
+/// order, each name like "RJ - 98,1 FM - O Dia"), so Siri can offer and
+/// match them. See `VoiceCommandService.cacheStations`.
 let niceRadioStationsDefaultsKey = "nice_radio_station_list"
 
 @available(iOS 16.0, *)
@@ -93,44 +94,6 @@ struct PreviousStationIntent: AppIntent {
 }
 
 @available(iOS 16.0, *)
-struct ChooseStateIntent: AppIntent {
-  static var title: LocalizedStringResource = "Escolher estado"
-  static var description = IntentDescription("Escolhe o estado cujas rádios aparecem no aplicativo.")
-  static var openAppWhenRun: Bool = true
-
-  @Parameter(title: "Estado", requestValueDialog: "Qual estado?")
-  var state: BrazilianStateOption
-
-  static var parameterSummary: some ParameterSummary {
-    Summary("Escolher o estado \(\.$state)")
-  }
-
-  func perform() async throws -> some IntentResult & ProvidesDialog {
-    NiceRadioCommandBridge.shared.enqueue(["action": "chooseState", "state": state.rawValue])
-    return .result(dialog: "Estado escolhido: \(state.rawValue)")
-  }
-}
-
-@available(iOS 16.0, *)
-struct PlayStateRadioIntent: AppIntent {
-  static var title: LocalizedStringResource = "Tocar rádio de um estado"
-  static var description = IntentDescription("Troca para o estado escolhido e já começa a tocar uma rádio dele.")
-  static var openAppWhenRun: Bool = true
-
-  @Parameter(title: "Estado", requestValueDialog: "De qual estado?")
-  var state: BrazilianStateOption
-
-  static var parameterSummary: some ParameterSummary {
-    Summary("Tocar uma rádio de \(\.$state)")
-  }
-
-  func perform() async throws -> some IntentResult & ProvidesDialog {
-    NiceRadioCommandBridge.shared.enqueue(["action": "playState", "state": state.rawValue])
-    return .result(dialog: "Tocando uma rádio de \(state.rawValue)")
-  }
-}
-
-@available(iOS 16.0, *)
 struct PlayStationIntent: AppIntent {
   static var title: LocalizedStringResource = "Tocar uma estação"
   static var description = IntentDescription("Toca uma estação do seu estado, pelo nome.")
@@ -144,7 +107,7 @@ struct PlayStationIntent: AppIntent {
   }
 
   func perform() async throws -> some IntentResult & ProvidesDialog {
-    NiceRadioCommandBridge.shared.enqueue(["action": "playStation", "station": station.name])
+    NiceRadioCommandBridge.shared.enqueue(["action": "playStation", "stationId": station.id])
     return .result(dialog: "Tocando \(station.name)")
   }
 }
@@ -187,68 +150,6 @@ struct StationQuery: EntityStringQuery {
 }
 
 @available(iOS 16.0, *)
-enum BrazilianStateOption: String, AppEnum {
-  case acre = "Acre"
-  case alagoas = "Alagoas"
-  case amapa = "Amapá"
-  case amazonas = "Amazonas"
-  case bahia = "Bahia"
-  case ceara = "Ceará"
-  case distritoFederal = "Distrito Federal"
-  case espiritoSanto = "Espírito Santo"
-  case goias = "Goiás"
-  case maranhao = "Maranhão"
-  case matoGrosso = "Mato Grosso"
-  case matoGrossoDoSul = "Mato Grosso do Sul"
-  case minasGerais = "Minas Gerais"
-  case para = "Pará"
-  case paraiba = "Paraíba"
-  case parana = "Paraná"
-  case pernambuco = "Pernambuco"
-  case piaui = "Piauí"
-  case rioDeJaneiro = "Rio de Janeiro"
-  case rioGrandeDoNorte = "Rio Grande do Norte"
-  case rioGrandeDoSul = "Rio Grande do Sul"
-  case rondonia = "Rondônia"
-  case roraima = "Roraima"
-  case santaCatarina = "Santa Catarina"
-  case saoPaulo = "São Paulo"
-  case sergipe = "Sergipe"
-  case tocantins = "Tocantins"
-
-  static var typeDisplayRepresentation: TypeDisplayRepresentation = "Estado"
-  static var caseDisplayRepresentations: [BrazilianStateOption: DisplayRepresentation] = [
-    .acre: "Acre",
-    .alagoas: "Alagoas",
-    .amapa: "Amapá",
-    .amazonas: "Amazonas",
-    .bahia: "Bahia",
-    .ceara: "Ceará",
-    .distritoFederal: "Distrito Federal",
-    .espiritoSanto: "Espírito Santo",
-    .goias: "Goiás",
-    .maranhao: "Maranhão",
-    .matoGrosso: "Mato Grosso",
-    .matoGrossoDoSul: "Mato Grosso do Sul",
-    .minasGerais: "Minas Gerais",
-    .para: "Pará",
-    .paraiba: "Paraíba",
-    .parana: "Paraná",
-    .pernambuco: "Pernambuco",
-    .piaui: "Piauí",
-    .rioDeJaneiro: "Rio de Janeiro",
-    .rioGrandeDoNorte: "Rio Grande do Norte",
-    .rioGrandeDoSul: "Rio Grande do Sul",
-    .rondonia: "Rondônia",
-    .roraima: "Roraima",
-    .santaCatarina: "Santa Catarina",
-    .saoPaulo: "São Paulo",
-    .sergipe: "Sergipe",
-    .tocantins: "Tocantins",
-  ]
-}
-
-@available(iOS 16.0, *)
 struct NiceRadioShortcuts: AppShortcutsProvider {
   static var appShortcuts: [AppShortcut] {
     AppShortcut(
@@ -286,24 +187,6 @@ struct NiceRadioShortcuts: AppShortcutsProvider {
       phrases: ["Estação anterior no \(.applicationName)"],
       shortTitle: "Estação anterior",
       systemImageName: "backward.circle.fill"
-    )
-    AppShortcut(
-      intent: PlayStateRadioIntent(),
-      phrases: [
-        "Tocar rádio de \(\.$state) no \(.applicationName)",
-        "Tocar uma rádio de \(\.$state) no \(.applicationName)",
-      ],
-      shortTitle: "Tocar rádio de um estado",
-      systemImageName: "mappin.circle.fill"
-    )
-    AppShortcut(
-      intent: ChooseStateIntent(),
-      phrases: [
-        "Escolher o estado \(\.$state) no \(.applicationName)",
-        "Mudar para \(\.$state) no \(.applicationName)",
-      ],
-      shortTitle: "Escolher estado",
-      systemImageName: "map.fill"
     )
     AppShortcut(
       intent: PlayStationIntent(),

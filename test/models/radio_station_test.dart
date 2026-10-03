@@ -257,4 +257,28 @@ void main() {
       expect(station.frequencySortKey, double.infinity);
     });
   });
+
+  group('RadioStation.listLabel', () {
+    RadioStation named(String name) => RadioStation(
+          id: '1',
+          name: name,
+          streamUrl: 'https://example.com',
+          faviconUrl: null,
+          genre: 'Rádio',
+          state: '',
+          bitrateKbps: 0,
+        );
+
+    test('puts state, then frequency, then the name', () {
+      expect(named('Rádio O Dia 98,1 FM').listLabel('RJ'), 'RJ - 98,1 FM - Rádio O Dia');
+    });
+
+    test('has no frequency part when none is found', () {
+      expect(named('Rádio Comunitária').listLabel('RJ'), 'RJ - Rádio Comunitária');
+    });
+
+    test('leaves the state prefix out when unknown', () {
+      expect(named('Rádio O Dia 98,1 FM').listLabel(null), '98,1 FM - Rádio O Dia');
+    });
+  });
 }
