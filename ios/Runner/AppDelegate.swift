@@ -22,6 +22,7 @@ import WidgetKit
 @main
 @objc class AppDelegate: FlutterAppDelegate, FlutterImplicitEngineDelegate {
   private var homeWidgetChannel: FlutterMethodChannel?
+  private var commandsChannel: FlutterMethodChannel?
 
   override func application(
     _ application: UIApplication,
@@ -42,7 +43,37 @@ import WidgetKit
     }
     homeWidgetChannel = channel
 
+    registerCommandsChannel(messenger: messenger)
     registerWidgetActionObservers()
+  }
+
+  // "com.nice.radio/commands": Siri / Shortcuts requests (see
+  // NiceRadioAppIntents.swift). Intents only queue a command on
+  // NiceRadioCommandBridge; Dart pulls the queue (`takePendingCommands`) at
+  // startup and whenever pinged with `commandAvailable` — pull, not push,
+  // because a cold start runs the intent before Dart is listening.
+  // `cacheStations` stores the current state's station names for Siri to
+  // offer and match (StationQuery reads them back).
+  private func registerCommandsChannel(messenger: FlutterBinaryMessenger) {
+    let channel = FlutterMethodChannel(name: "com.nice.radio/commands", binaryMessenger: messenger)
+    channel.setMethodCallHandler { call, result in
+      switch call.method {
+      case "takePendingCommands":
+        result(NiceRadioCommandBridge.shared.takePending())
+      case "cacheStations":
+        UserDefaults.standard.set(call.arguments, forKey: niceRadioStationsDefaultsKey)
+        if #available(iOS 16.0, *) {
+          NiceRadioShortcuts.updateAppShortcutParameters()
+        }
+        result(nil)
+      default:
+        result(FlutterMethodNotImplemented)
+      }
+    }
+    NiceRadioCommandBridge.shared.notify = { [weak channel] in
+      channel?.invokeMethod("commandAvailable", arguments: nil)
+    }
+    commandsChannel = channel
   }
 
   private func handleHomeWidgetCall(_ call: FlutterMethodCall, result: @escaping FlutterResult) {

@@ -18,12 +18,16 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'firebase_options.dart';
 import 'providers/player_provider.dart';
+import 'models/radio_station.dart';
 import 'providers/settings_provider.dart';
+import 'providers/stations_provider.dart';
+import 'providers/voice_commands_provider.dart';
 import 'screens/home_screen.dart';
 import 'screens/onboarding_screen.dart';
 import 'services/home_widget_service.dart';
 import 'services/quick_actions_service.dart';
 import 'services/station_artwork_service.dart';
+import 'services/voice_command_service.dart';
 import 'theme/app_theme.dart';
 
 /// Shared instance of [QuickActionsService]. WHY a provider for a plain
@@ -32,6 +36,10 @@ import 'theme/app_theme.dart';
 /// touching the real platform APIs.
 final quickActionsServiceProvider = Provider<QuickActionsService>((ref) {
   return QuickActionsService();
+});
+
+final voiceCommandServiceProvider = Provider<VoiceCommandService>((ref) {
+  return VoiceCommandService();
 });
 
 /// Shared instance of [HomeWidgetService] — same reasoning as
@@ -313,6 +321,11 @@ class _QuickActionsSyncState extends ConsumerState<_QuickActionsSync> {
     ref.read(quickActionsServiceProvider).initialize(
           () => ref.read(playerProvider.notifier).playFromQuickAction(),
         );
+    // Same idea for Siri/Shortcuts (iOS) and launcher shortcuts / Google
+    // Assistant (Android). Also delivers the command that launched the app.
+    ref.read(voiceCommandServiceProvider).initialize(
+          (command) => ref.read(voiceCommandHandlerProvider).handle(command),
+        );
   }
 
   @override
@@ -321,6 +334,15 @@ class _QuickActionsSyncState extends ConsumerState<_QuickActionsSync> {
     // override `==`) so the shortcut is only re-registered with the
     // platform when the station actually changes, not on every unrelated
     // player-state update (volume, play/pause, ...).
+    // Keeps Siri/Shortcuts' list of station names in step with the state's
+    // stations (iOS only; a no-op elsewhere).
+    ref.listen<AsyncValue<List<RadioStation>>>(stationsProvider, (previous, next) {
+      final stations = next.value;
+      if (stations != null && stations.isNotEmpty) {
+        ref.read(voiceCommandServiceProvider).cacheStations(stations);
+      }
+    });
+
     ref.listen<PlayerState>(playerProvider, (previous, next) {
       final stationId = next.currentStation?.id;
       if (stationId == _lastShortcutStationId) return;

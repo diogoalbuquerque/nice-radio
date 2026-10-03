@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Static launcher shortcuts (long-press the app icon, and the Assistant /
+     Voice Access shortcut lists), plus Google Assistant App Actions.
+     Every intent opens MainActivity with a niceradio:// URI that
+     MainActivity.kt queues and lib/models/voice_command.dart parses.
+     "Tocar rádio atual" (which names the station) is a *dynamic* shortcut
+     registered from Dart by QuickActionsService, so it is not repeated here.
+     Choosing a state / station by voice is iOS-only for now: Android's
+     built-in intents need an inventory of entities uploaded through Google
+     Play, which is outside this repo. -->
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <capability android:name="actions.intent.OPEN_APP_FEATURE">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.nice.radio"
+            android:targetClass="com.nice.radio.MainActivity">
+            <url-template android:value="niceradio://feature{?featureName}" />
+            <parameter
+                android:name="feature"
+                android:key="featureName" />
+        </intent>
+    </capability>
+
+    <shortcut
+        android:shortcutId="pause"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_pause"
+        android:shortcutShortLabel="@string/shortcut_pause_short"
+        android:shortcutLongLabel="@string/shortcut_pause_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.nice.radio"
+            android:targetClass="com.nice.radio.MainActivity"
+            android:data="niceradio://pause" />
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding
+                android:key="feature"
+                android:value="@array/feature_pause" />
+        </capability-binding>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="next"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_next"
+        android:shortcutShortLabel="@string/shortcut_next_short"
+        android:shortcutLongLabel="@string/shortcut_next_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.nice.radio"
+            android:targetClass="com.nice.radio.MainActivity"
+            android:data="niceradio://next" />
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding
+                android:key="feature"
+                android:value="@array/feature_next" />
+        </capability-binding>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="play"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_play"
+        android:shortcutShortLabel="@string/shortcut_play_short"
+        android:shortcutLongLabel="@string/shortcut_play_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.nice.radio"
+            android:targetClass="com.nice.radio.MainActivity"
+            android:data="niceradio://play" />
+        <capability-binding android:key="actions.intent.OPEN_APP_FEATURE">
+            <parameter-binding
+                android:key="feature"
+                android:value="@array/feature_play" />
+        </capability-binding>
+    </shortcut>
+</shortcuts>

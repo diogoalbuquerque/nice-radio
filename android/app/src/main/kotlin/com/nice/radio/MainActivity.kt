@@ -1,5 +1,7 @@
 package com.nice.radio
 
+import android.content.Intent
+import android.os.Bundle
 import com.ryanheise.audioservice.AudioServiceActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugin.common.MethodChannel
@@ -17,9 +19,49 @@ import io.flutter.plugin.common.MethodChannel
 // the home-screen widget's own storage and redraws it. See
 // NiceRadioWidgetProvider.kt for the rest of this and why the widget's own
 // buttons never need to come back through here at all.
+//
+// And the "com.nice.radio/commands" channel (lib/services/
+// voice_command_service.dart): launcher shortcuts and Google Assistant App
+// Actions open this activity with a niceradio:// URI. Commands are queued
+// here and Dart *pulls* them (takePendingCommands) — a cold start delivers
+// the intent before Dart is listening, so pushing the payload would lose it.
 class MainActivity : AudioServiceActivity() {
+    private var commandChannel: MethodChannel? = null
+    private val pendingCommands = mutableListOf<Map<String, String>>()
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        // Not on a recreation (savedInstanceState != null): Android hands
+        // back the original launch intent, which would replay an old
+        // "pause" or "next".
+        if (savedInstanceState == null) enqueueCommand(intent)
+    }
+
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
+        enqueueCommand(intent)
+        commandChannel?.invokeMethod("commandAvailable", null)
+    }
+
+    private fun enqueueCommand(intent: Intent?) {
+        if (intent == null || (intent.flags and Intent.FLAG_ACTIVITY_LAUNCHED_FROM_HISTORY) != 0) return
+        val uri = intent.data ?: return
+        if (uri.scheme != "niceradio") return
+        pendingCommands.add(mapOf("uri" to uri.toString()))
+    }
+
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
+        commandChannel = MethodChannel(flutterEngine.dartExecutor.binaryMessenger, "com.nice.radio/commands").also { channel ->
+            channel.setMethodCallHandler { call, result ->
+                if (call.method == "takePendingCommands") {
+                    result.success(pendingCommands.toList())
+                    pendingCommands.clear()
+                } else {
+                    result.notImplemented()
+                }
+            }
+        }
         MethodChannel(flutterEngine.dartExecutor.binaryMessenger, "com.nice.radio/home_widget")
             .setMethodCallHandler { call, result ->
                 if (call.method == "updateNowPlaying") {

@@ -771,13 +771,27 @@ class PlayerNotifier extends Notifier<PlayerState> {
   /// state's list — that would be surprising. Before that point, though,
   /// there is nothing playing to protect, so keeping the preview in sync
   /// with the visible list is the more correct behavior.
-  void setInitialStation(RadioStation station) {
-    final current = state.currentStation;
-    final alreadyLoaded = current != null && _loadedStationId == current.id;
-    if (alreadyLoaded) return;
-    state = state.copyWith(currentStation: station);
-    _persistLastStation(station);
+  Future<void> setInitialStation(List<RadioStation> visibleStations) async {
+    if (state.currentStation != null || _resolvingInitialStation) return;
+    _resolvingInitialStation = true;
+    try {
+      final saved = await ref.read(storageServiceProvider).getLastStation();
+      // Looked up in the full list, not just the visible (Favoritas/Todas)
+      // one: the remembered station must come back even if the person
+      // closed the app on "Todas" and reopened it on a tab that hides it.
+      final pool = ref.read(stationsProvider).value ?? visibleStations;
+      final station = pickInitialStation(pool, saved) ?? pickInitialStation(visibleStations, saved);
+      // Re-checked after the await: a playStation call (quick action,
+      // widget) may have set a station while the disk read was pending.
+      if (station == null || state.currentStation != null) return;
+      state = state.copyWith(currentStation: station);
+      _persistLastStation(station);
+    } finally {
+      _resolvingInitialStation = false;
+    }
   }
+
+  bool _resolvingInitialStation = false;
 
   Future<void> playStation(RadioStation station) async {
     final token = ++_loadToken;

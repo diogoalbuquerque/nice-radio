@@ -3,4 +3,35 @@
     <!-- Shown in the system's "add a widget" picker, under the widget's
          preview thumbnail. -->
     <string name="widget_description">Rádio atual, com play/pause e trocar de estação</string>
+
+    <!-- Launcher shortcuts (xml/shortcuts.xml). -->
+    <string name="shortcut_play_short">Tocar rádio</string>
+    <string name="shortcut_play_long">Tocar a rádio</string>
+    <string name="shortcut_pause_short">Pausar rádio</string>
+    <string name="shortcut_pause_long">Pausar a rádio</string>
+    <string name="shortcut_next_short">Próxima estação</string>
+    <string name="shortcut_next_long">Ir para a próxima estação</string>
+
+    <!-- What a person can say to Google Assistant after "no Nice Radio"
+         (App Actions "open app feature" synonyms, xml/shortcuts.xml). -->
+    <string-array name="feature_play">
+        <item>tocar</item>
+        <item>tocar rádio</item>
+        <item>ligar</item>
+        <item>ligar rádio</item>
+        <item>play</item>
+    </string-array>
+    <string-array name="feature_pause">
+        <item>pausar</item>
+        <item>pausar rádio</item>
+        <item>parar</item>
+        <item>desligar</item>
+        <item>pause</item>
+    </string-array>
+    <string-array name="feature_next">
+        <item>próxima</item>
+        <item>próxima estação</item>
+        <item>trocar de estação</item>
+        <item>próxima rádio</item>
+    </string-array>
 </resources>

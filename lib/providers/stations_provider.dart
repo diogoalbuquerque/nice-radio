@@ -111,6 +111,55 @@ List<RadioStation> sortStationsByFrequency(List<RadioStation> stations) {
   return sorted;
 }
 
+/// Which station the home screen should pre-select on a cold start: the one
+/// the person was on when they last closed the app ([saved]) if it is still
+/// in [stations] (matched by id, and returning the *list's* copy so a
+/// changed stream URL or logo is picked up), otherwise the first entry.
+/// Pulled out as a top-level function, like [sortStationsByFrequency], so
+/// it can be unit tested with no `ProviderContainer`. Returns null only for
+/// an empty list.
+RadioStation? pickInitialStation(List<RadioStation> stations, RadioStation? saved) {
+  if (stations.isEmpty) return null;
+  if (saved != null) {
+    for (final station in stations) {
+      if (station.id == saved.id) return station;
+    }
+  }
+  return stations.first;
+}
+
+/// Finds the station a person asked for by voice or Shortcuts text, e.g.
+/// "Antena 1", "rock" or "94,7". Case, accents and punctuation are ignored;
+/// every word of [query] must appear in the station's display name or name.
+/// Among several matches the shortest name wins (the most specific:
+/// "Antena 1" over "Antena 1 Rock"), ties keeping list order.
+RadioStation? findStationByQuery(List<RadioStation> stations, String query) {
+  final words = _searchWords(query);
+  if (words.isEmpty) return null;
+  RadioStation? best;
+  var bestLength = 1 << 30;
+  for (final station in stations) {
+    final haystack = _searchWords('${station.displayName} ${station.name}').toSet();
+    if (words.every(haystack.contains) && station.name.length < bestLength) {
+      best = station;
+      bestLength = station.name.length;
+    }
+  }
+  return best;
+}
+
+List<String> _searchWords(String text) {
+  const from = 'àáâãäçèéêëìíîïñòóôõöùúûü';
+  const to = 'aaaaaceeeeiiiinooooouuuu';
+  final buffer = StringBuffer();
+  for (final rune in text.toLowerCase().runes) {
+    final char = String.fromCharCode(rune);
+    final index = from.indexOf(char);
+    buffer.write(index >= 0 ? to[index] : char);
+  }
+  return buffer.toString().split(RegExp(r'[^a-z0-9]+')).where((w) => w.isNotEmpty).toList();
+}
+
 /// Radio Browser is crowdsourced, so one real stream is often registered
 /// several times under different `stationuuid`s (and sometimes a cache-
 /// busting `?timestamp` on the URL). Two entries are the same stream when

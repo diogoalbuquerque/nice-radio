@@ -2,6 +2,8 @@
 <!--
   Also keeps ic_shortcut_play, the long-press shortcut's icon, which
   quick_actions looks up by string name (getIdentifier) — same problem.
+  ic_shortcut_pause/next are referenced from xml/shortcuts.xml; kept too
+  because shortcut icons are read by the launcher, not by the app.
 
   Stops Android's release-build resource shrinker from deleting the
   audio_service package's notification icons (audio_service_play_arrow,
@@ -15,4 +17,4 @@
   this was invisible until then.
 -->
 <resources xmlns:tools="http://schemas.android.com/tools"
-    tools:keep="@drawable/audio_service_*,@drawable/ic_shortcut_play" />
+    tools:keep="@drawable/audio_service_*,@drawable/ic_shortcut_play,@drawable/ic_shortcut_pause,@drawable/ic_shortcut_next" />

@@ -88,7 +88,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     ref.listen<AsyncValue<List<RadioStation>>>(visibleStationsProvider, (previous, next) {
       final stations = next.value;
       if (stations != null && stations.isNotEmpty) {
-        ref.read(playerProvider.notifier).setInitialStation(stations.first);
+        ref.read(playerProvider.notifier).setInitialStation(stations);
       }
     });
 

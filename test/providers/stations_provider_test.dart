@@ -18,6 +18,56 @@ RadioStation _station({required String id, required String name, String? url}) =
     );
 
 void main() {
+  group('pickInitialStation', () {
+    final stations = [
+      _station(id: 'a', name: 'Rádio A'),
+      _station(id: 'b', name: 'Rádio B'),
+    ];
+
+    test('returns the remembered station when it still exists', () {
+      expect(pickInitialStation(stations, _station(id: 'b', name: 'old name'))!.name, 'Rádio B');
+    });
+
+    test('falls back to the first station when the remembered one is gone', () {
+      expect(pickInitialStation(stations, _station(id: 'gone', name: 'X'))!.id, 'a');
+    });
+
+    test('falls back to the first station when nothing was remembered', () {
+      expect(pickInitialStation(stations, null)!.id, 'a');
+    });
+
+    test('returns null for an empty list', () {
+      expect(pickInitialStation(const [], _station(id: 'a', name: 'A')), isNull);
+    });
+  });
+
+  group('findStationByQuery', () {
+    final stations = [
+      _station(id: '1', name: 'Antena 1 Rock'),
+      _station(id: '2', name: 'Antena 1'),
+      _station(id: '3', name: '94,7 MHz FM Rádio Pampa'),
+      _station(id: '4', name: 'Jovem Pan São Paulo'),
+    ];
+
+    test('ignores case, accents and punctuation', () {
+      expect(findStationByQuery(stations, 'jovem pan sao paulo')!.id, '4');
+      expect(findStationByQuery(stations, 'RADIO PAMPA')!.id, '3');
+    });
+
+    test('matches a frequency', () {
+      expect(findStationByQuery(stations, '94,7')!.id, '3');
+    });
+
+    test('prefers the shortest (most specific) name among matches', () {
+      expect(findStationByQuery(stations, 'antena 1')!.id, '2');
+    });
+
+    test('returns null when a word is missing or the query is blank', () {
+      expect(findStationByQuery(stations, 'antena 2'), isNull);
+      expect(findStationByQuery(stations, '   '), isNull);
+    });
+  });
+
   group('dedupeStationsByStream', () {
     test('merges the same stream, ignoring query string, scheme and trailing slash', () {
       final result = dedupeStationsByStream([

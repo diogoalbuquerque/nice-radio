@@ -75,7 +75,9 @@ class PlaybackControls extends StatelessWidget {
                         isRefreshMode ? Icons.refresh : (isPlaying ? Icons.pause : Icons.play_arrow),
                         color: Colors.white,
                         size: 40,
-                        semanticLabel: isRefreshMode ? 'Tentar novamente' : 'Tocar ou pausar',
+                        // Names the action the tap will do *now*, so a person using Voice
+                        // Control / Voice Access can say "Pausar" or "Tocar".
+                        semanticLabel: isRefreshMode ? 'Tentar novamente' : (isPlaying ? 'Pausar' : 'Tocar'),
                       ),
               ),
             ),

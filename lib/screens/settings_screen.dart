@@ -9,6 +9,7 @@ import '../providers/player_provider.dart';
 import '../providers/settings_provider.dart';
 import '../theme/app_theme.dart';
 import '../utils/brazilian_states.dart';
+import '../widgets/about_sheet.dart';
 import '../widgets/choice_pill.dart';
 import '../widgets/section_card.dart';
 
@@ -208,18 +209,33 @@ class _AboutCard extends StatelessWidget {
     return _SettingsCard(
       label: 'Sobre',
       children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            const Text('Versão do aplicativo', style: TextStyle(fontSize: 16)),
-            FutureBuilder<PackageInfo>(
-              future: PackageInfo.fromPlatform(),
-              builder: (context, snapshot) {
-                final version = snapshot.data?.version ?? '1.0.0';
-                return Text(version, style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: AppColors.textSecondary));
-              },
+        // The whole row is the tap target (big, easy to hit) and opens the
+        // About sheet; the chevron signals that it is tappable.
+        Semantics(
+          button: true,
+          label: 'Sobre o Nice Radio. Abrir detalhes do aplicativo',
+          excludeSemantics: true,
+          child: InkWell(
+            borderRadius: BorderRadius.circular(12),
+            onTap: () => showAboutSheet(context),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10),
+              child: Row(
+                children: [
+                  const Expanded(child: Text('Versão do aplicativo', style: TextStyle(fontSize: 16))),
+                  FutureBuilder<PackageInfo>(
+                    future: PackageInfo.fromPlatform(),
+                    builder: (context, snapshot) {
+                      final version = snapshot.data?.version ?? '1.0.0';
+                      return Text(version, style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: AppColors.textSecondary));
+                    },
+                  ),
+                  const SizedBox(width: 6),
+                  Icon(Icons.chevron_right, color: AppColors.textSecondary),
+                ],
+              ),
             ),
-          ],
+          ),
         ),
       ],
     );
