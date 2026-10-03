@@ -37,13 +37,11 @@ class _AboutContent extends StatelessWidget {
   const _AboutContent({required this.controller});
 
   static const _features = [
-    (Icons.my_location, 'Estações do seu estado, encontradas automaticamente'),
-    (Icons.play_circle_fill, 'Um botão grande para tocar e pausar'),
-    (Icons.volume_up, 'Volume em passos de 10%, direto no volume do celular'),
-    (Icons.star, 'Estrelinha para guardar as estações favoritas'),
-    (Icons.music_note, 'Mostra a música que está tocando, quando a rádio informa'),
+    (Icons.my_location, 'As principais estações do seu estado'),
+    (Icons.play_circle_fill, 'Funcionalidades pensadas para facilitar'),
+    (Icons.star, 'Escolha suas estações favoritas'),
     (Icons.bedtime, 'Temporizador para dormir ouvindo rádio'),
-    (Icons.lightbulb, 'Modo noturno, ligado só quando você quiser'),
+    (Icons.lightbulb, 'Modo noturno'),
     (Icons.mic, 'Atalhos e comandos de voz para tocar sem mexer na tela'),
   ];
 
