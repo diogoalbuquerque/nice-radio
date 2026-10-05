@@ -7,6 +7,7 @@ import 'package:package_info_plus/package_info_plus.dart';
 
 import '../providers/player_provider.dart';
 import '../providers/settings_provider.dart';
+import '../services/analytics_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/brazilian_states.dart';
 import '../widgets/about_sheet.dart';
@@ -39,7 +40,10 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                   IconButton(
                     icon: const Icon(Icons.arrow_back),
                     tooltip: 'Voltar',
-                    onPressed: () => Navigator.of(context).pop(),
+                    onPressed: () {
+                      ref.read(analyticsServiceProvider).logButtonTap('settings_back');
+                      Navigator.of(context).pop();
+                    },
                   ),
                   const Text('Configurações', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
                 ],
@@ -61,7 +65,10 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                               style: const TextStyle(fontSize: 19, fontWeight: FontWeight.bold),
                             ),
                             TextButton(
-                              onPressed: () => setState(() => _statePickerOpen = !_statePickerOpen),
+                              onPressed: () {
+                                ref.read(analyticsServiceProvider).logButtonTap('state_picker_toggle');
+                                setState(() => _statePickerOpen = !_statePickerOpen);
+                              },
                               style: TextButton.styleFrom(
                                 backgroundColor: AppColors.subtleBackground,
                                 foregroundColor: AppColors.primary,
@@ -110,7 +117,10 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                     _DataUsageCard(
                       dataUsedBytes: settings.dataUsedBytes,
                       dataUsedSince: settings.dataUsedSince,
-                      onReset: notifier.resetDataUsage,
+                      onReset: () {
+                        ref.read(analyticsServiceProvider).logButtonTap('data_usage_reset');
+                        return notifier.resetDataUsage();
+                      },
                     ),
                     const SizedBox(height: 16),
                     const _AboutCard(),
@@ -217,7 +227,12 @@ class _AboutCard extends StatelessWidget {
           excludeSemantics: true,
           child: InkWell(
             borderRadius: BorderRadius.circular(12),
-            onTap: () => showAboutSheet(context),
+            onTap: () {
+              // A bottom sheet is not a PageRoute, so the navigator
+              // observer never reports it — log it by hand.
+              ProviderScope.containerOf(context).read(analyticsServiceProvider).logButtonTap('about_open');
+              showAboutSheet(context);
+            },
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 10),
               child: Row(

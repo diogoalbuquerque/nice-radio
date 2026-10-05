@@ -1,16 +1,12 @@
 // The "Sobre" bottom sheet: icon, name, version, what the app does and why
-// it exists, and who made it. Opened from the version row in Settings.
+// it exists. Opened from the version row in Settings.
 //
 // Lives in `widgets/` (not `screens/`) because it is a self-contained piece
-// that needs nothing from the rest of the app; the repository link is a
-// parameter-free constant here because it never changes per build.
+// that needs nothing from the rest of the app.
 import 'package:flutter/material.dart';
 import 'package:package_info_plus/package_info_plus.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../theme/app_theme.dart';
-
-const niceRadioRepositoryUrl = 'https://github.com/diogoalbuquerque/nice-radio';
 
 /// Slides up from the bottom and can be dragged to full height, because at
 /// large accessibility text sizes the content does not fit in half a screen.
@@ -44,16 +40,6 @@ class _AboutContent extends StatelessWidget {
     (Icons.lightbulb, 'Modo noturno'),
     (Icons.mic, 'Atalhos e comandos de voz para tocar sem mexer na tela'),
   ];
-
-  Future<void> _openRepository(BuildContext context) async {
-    final opened = await launchUrl(Uri.parse(niceRadioRepositoryUrl), mode: LaunchMode.externalApplication)
-        .catchError((_) => false);
-    if (!opened && context.mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Não foi possível abrir o link.')),
-      );
-    }
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -125,45 +111,8 @@ class _AboutContent extends StatelessWidget {
         const _Heading('Seguro e sem propagandas'),
         const Text(
           'Sem anúncios, sem cadastro e sem senha. Sua localização é usada uma única vez, só para '
-          'descobrir o seu estado, e não é guardada nem enviada. O código é aberto: qualquer pessoa '
-          'pode conferir.',
+          'descobrir o seu estado, e não é guardada nem enviada.',
           style: TextStyle(fontSize: 17, height: 1.4),
-        ),
-        const SizedBox(height: 26),
-        Container(
-          padding: const EdgeInsets.all(18),
-          decoration: BoxDecoration(
-            color: AppColors.card,
-            border: Border.all(color: AppColors.border, width: 1.5),
-            borderRadius: BorderRadius.circular(16),
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'DESENVOLVIDO POR',
-                style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold, color: AppColors.textSecondary, letterSpacing: 0.4),
-              ),
-              const SizedBox(height: 6),
-              const Text('Diogo Albuquerque', style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-              const SizedBox(height: 12),
-              Semantics(
-                button: true,
-                label: 'Abrir o repositório do aplicativo no GitHub',
-                excludeSemantics: true,
-                child: OutlinedButton.icon(
-                  onPressed: () => _openRepository(context),
-                  icon: const Icon(Icons.code),
-                  label: const Text('Ver código no GitHub', style: TextStyle(fontWeight: FontWeight.bold)),
-                  style: OutlinedButton.styleFrom(
-                    foregroundColor: AppColors.primary,
-                    side: BorderSide(color: AppColors.primary, width: 1.5),
-                    minimumSize: const Size.fromHeight(52),
-                  ),
-                ),
-              ),
-            ],
-          ),
         ),
       ],
     );

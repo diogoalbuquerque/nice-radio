@@ -157,8 +157,13 @@ class PlayerNotifier extends Notifier<PlayerState> {
   StreamSubscription<dynamic>? _playerStateSubscription;
   StreamSubscription<PlayerException>? _errorSubscription;
   StreamSubscription<AudioInterruptionEvent>? _duckInterruptionSubscription;
+  StreamSubscription<AVAudioSessionSilenceSecondaryAudioHintType>? _silenceHintSubscription;
   Timer? _sleepTimer;
   Timer? _dataUsageTimer;
+  // Seconds of the current uninterrupted listening stretch (5s resolution);
+  // sent as one `listening_session` event by `_flushListeningSession`.
+  RadioStation? _listenedStation;
+  int _listenedSeconds = 0;
   RadioAudioHandler? _audioHandler;
 
   /// Set by [_attachDuckInterruptionListener] right before it pauses for a
@@ -216,6 +221,7 @@ class PlayerNotifier extends Notifier<PlayerState> {
       _playerStateSubscription?.cancel();
       _errorSubscription?.cancel();
       _duckInterruptionSubscription?.cancel();
+      _silenceHintSubscription?.cancel();
       _sleepTimer?.cancel();
       _dataUsageTimer?.cancel();
       _volumeService.dispose();
@@ -439,6 +445,23 @@ class PlayerNotifier extends Notifier<PlayerState> {
           _player.play();
         }
       });
+      // iOS: apps like WhatsApp record in `playAndRecord` with mixing, which
+      // never interrupts us; the only signal is this "silence secondary
+      // audio" hint.
+      if (!kIsWeb && Platform.isIOS) {
+        _silenceHintSubscription =
+            AVAudioSession().silenceSecondaryAudioHintStream.listen((type) {
+          if (type == AVAudioSessionSilenceSecondaryAudioHintType.begin) {
+            if (_player.playing) {
+              _duckPaused = true;
+              _player.pause();
+            }
+          } else if (_duckPaused) {
+            _duckPaused = false;
+            _player.play();
+          }
+        });
+      }
     });
   }
 
@@ -559,6 +582,15 @@ class PlayerNotifier extends Notifier<PlayerState> {
     });
   }
 
+  void _flushListeningSession() {
+    final station = _listenedStation;
+    final seconds = _listenedSeconds;
+    _listenedStation = null;
+    _listenedSeconds = 0;
+    if (station == null || seconds <= 0) return;
+    ref.read(analyticsServiceProvider).logListeningSession(station, seconds);
+  }
+
   /// Estimates data usage as `bitrate × time played`, rather than counting
   /// real network bytes, because
   /// `just_audio` does not expose byte-level download stats through
@@ -571,6 +603,13 @@ class PlayerNotifier extends Notifier<PlayerState> {
     const tick = Duration(seconds: 5);
     _dataUsageTimer = Timer.periodic(tick, (_) {
       final station = state.currentStation;
+      // Same tick doubles as the listening-time counter for analytics.
+      if (state.isPlaying && station != null) {
+        _listenedStation = station;
+        _listenedSeconds += tick.inSeconds;
+      } else {
+        _flushListeningSession();
+      }
       if (!state.isPlaying || station == null || station.bitrateKbps <= 0) return;
 
       final bytesPerSecond = (station.bitrateKbps * 1000) / 8;
@@ -610,7 +649,11 @@ class PlayerNotifier extends Notifier<PlayerState> {
   Future<void> _configureAudioSession() async {
     final session = await AudioSession.instance;
     final forceSpeaker = state.speakerOn;
-    const musicConfig = AudioSessionConfiguration.music();
+    // `willPauseWhenDucked` stops Android from silently lowering our volume
+    // itself; we then receive the `duck` event and pause (see
+    // `_attachDuckInterruptionListener`).
+    final musicConfig = const AudioSessionConfiguration.music()
+        .copyWith(androidWillPauseWhenDucked: true);
 
     if (!kIsWeb && Platform.isIOS && forceSpeaker) {
       await session.configure(musicConfig.copyWith(
@@ -808,6 +851,7 @@ class PlayerNotifier extends Notifier<PlayerState> {
     // Android Auto, the quick action) — this is the single choke point
     // all of them already funnel through, so one call covers "which
     // station is most listened to" for every single one of them.
+    _flushListeningSession(); // close the previous station's stretch first
     ref.read(analyticsServiceProvider).logStationPlayed(station);
     await _updateSpeakerForConnectedDevices();
     await _connectWithRetry(station, token: token);

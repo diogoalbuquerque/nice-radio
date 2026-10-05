@@ -36,6 +36,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
   }
 
   Future<void> _requestLocationAndContinue() async {
+    ref.read(analyticsServiceProvider).logButtonTap('onboarding_allow_location');
     setState(() => _isResolvingLocation = true);
 
     final stateName = await LocationService().resolveBrazilianState();
@@ -46,7 +47,10 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
     await _finishOnboarding();
   }
 
-  Future<void> _skip() => _finishOnboarding();
+  Future<void> _skip() {
+    ref.read(analyticsServiceProvider).logButtonTap('onboarding_skip');
+    return _finishOnboarding();
+  }
 
   // WHY this doesn't navigate: see main.dart's `_StartupGate` doc — a
   // `Navigator` push here used to discard the wrapper widgets above it

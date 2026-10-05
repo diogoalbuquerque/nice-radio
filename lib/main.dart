@@ -104,8 +104,12 @@ class NiceRadioApp extends ConsumerWidget {
       debugShowCheckedModeBanner: false,
       theme: buildAppTheme(brightness),
       // Auto-logs a `screen_view` event on every `Navigator.push`/pop —
-      // covers StationListScreen and SettingsScreen for free, since both
-      // are reached that way. HomeScreen and OnboardingScreen are *not*
+      // covers StationListScreen and SettingsScreen, since both are reached
+      // that way. **Only for routes that carry a name**: the observer skips
+      // a route whose `RouteSettings.name` is null, so every
+      // `MaterialPageRoute` must be pushed with
+      // `settings: RouteSettings(name: ...)` (it was not, and those two
+      // screens were silently never reported). HomeScreen and OnboardingScreen are *not*
       // pushed routes (see `_StartupGate` below — they're a conditional
       // rebuild of `home:` itself), so those two log their own
       // `screen_view` by hand, in their `initState`.

@@ -61,10 +61,28 @@ class AnalyticsService {
   /// A named, non-navigational tap — the play/pause button, favorite
   /// star, night-mode lamp, a sleep-timer option, the refresh icon, and
   /// so on. [buttonName] should be a short, stable, snake_case identifier
-  /// — see call sites for the actual names in use.
-  Future<void> logButtonTap(String buttonName) async {
+  /// — see call sites for the actual names in use. [screen] says where the
+  /// tap happened, for buttons that exist on more than one screen (the
+  /// Favoritas/Todas toggle, the favorite star).
+  Future<void> logButtonTap(String buttonName, {String? screen}) async {
     try {
-      await _analytics.logEvent(name: 'button_tap', parameters: {'button_name': buttonName});
+      await _analytics.logEvent(
+        name: 'button_tap',
+        parameters: {'button_name': buttonName, 'screen': ?screen},
+      );
+    } catch (_) {}
+  }
+
+  /// One continuous stretch of listening to one station, fired when it ends
+  /// (pause, station switch). This is the only measure of time spent
+  /// *listening*: `screen_view` only counts the screen being open, and the
+  /// app is mostly used with the screen off.
+  Future<void> logListeningSession(RadioStation station, int seconds) async {
+    try {
+      await _analytics.logEvent(
+        name: 'listening_session',
+        parameters: {'station_id': station.id, 'station_name': station.name, 'seconds': seconds},
+      );
     } catch (_) {}
   }
 

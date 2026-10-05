@@ -10,6 +10,7 @@ import '../providers/favorites_provider.dart';
 import '../providers/player_provider.dart';
 import '../providers/settings_provider.dart';
 import '../providers/stations_provider.dart';
+import '../services/analytics_service.dart';
 import '../theme/app_theme.dart';
 import '../widgets/segmented_toggle.dart';
 import '../widgets/station_avatar.dart';
@@ -36,7 +37,10 @@ class StationListScreen extends ConsumerWidget {
                   IconButton(
                     icon: const Icon(Icons.arrow_back),
                     tooltip: 'Voltar',
-                    onPressed: () => Navigator.of(context).pop(),
+                    onPressed: () {
+                      ref.read(analyticsServiceProvider).logButtonTap('station_list_back');
+                      Navigator.of(context).pop();
+                    },
                   ),
                   const SizedBox(width: 6),
                   Column(
@@ -55,8 +59,14 @@ class StationListScreen extends ConsumerWidget {
                 leftLabel: 'Favoritas',
                 rightLabel: 'Todas',
                 isLeftSelected: viewMode == StationViewMode.favorites,
-                onSelectLeft: () => ref.read(viewModeProvider.notifier).showFavorites(),
-                onSelectRight: () => ref.read(viewModeProvider.notifier).showAll(),
+                onSelectLeft: () {
+                  ref.read(analyticsServiceProvider).logButtonTap('view_favorites', screen: 'station_list');
+                  ref.read(viewModeProvider.notifier).showFavorites();
+                },
+                onSelectRight: () {
+                  ref.read(analyticsServiceProvider).logButtonTap('view_all', screen: 'station_list');
+                  ref.read(viewModeProvider.notifier).showAll();
+                },
               ),
             ),
             Expanded(
@@ -85,10 +95,14 @@ class StationListScreen extends ConsumerWidget {
                         isSelected: station.id == currentStationId,
                         isFavorite: favoriteIds.contains(station.id),
                         onTap: () {
+                          ref.read(analyticsServiceProvider).logButtonTap('station_select');
                           ref.read(playerProvider.notifier).playStation(station);
                           Navigator.of(context).pop();
                         },
-                        onToggleFavorite: () => ref.read(favoritesProvider.notifier).toggle(station.id),
+                        onToggleFavorite: () {
+                          ref.read(analyticsServiceProvider).logButtonTap('favorite_toggle', screen: 'station_list');
+                          ref.read(favoritesProvider.notifier).toggle(station.id);
+                        },
                       );
                     },
                   );

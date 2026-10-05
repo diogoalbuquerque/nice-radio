@@ -116,9 +116,12 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
         child: selectedState == null
             ? NoStateSelected(
                 isLoading: settingsAsync.isLoading,
-                onChooseState: () => Navigator.of(context).push(
-                  MaterialPageRoute(builder: (_) => const SettingsScreen()),
-                ),
+                onChooseState: () {
+                  ref.read(analyticsServiceProvider).logButtonTap('choose_state_open');
+                  Navigator.of(context).push(
+                    MaterialPageRoute(settings: const RouteSettings(name: 'settings'), builder: (_) => const SettingsScreen()),
+                  );
+                },
               )
             : _HomeContent(
                 sleepPanelOpen: _sleepPanelOpen,
@@ -247,7 +250,7 @@ class _HomeContent extends ConsumerWidget {
                   padding: const EdgeInsets.all(12),
                   onTap: () {
                     ref.read(analyticsServiceProvider).logButtonTap('settings_open');
-                    Navigator.of(context).push(MaterialPageRoute(builder: (_) => const SettingsScreen()));
+                    Navigator.of(context).push(MaterialPageRoute(settings: const RouteSettings(name: 'settings'), builder: (_) => const SettingsScreen()));
                   },
                 ),
               ],
@@ -259,8 +262,14 @@ class _HomeContent extends ConsumerWidget {
           leftLabel: 'Favoritas',
           rightLabel: 'Todas',
           isLeftSelected: viewMode == StationViewMode.favorites,
-          onSelectLeft: () => ref.read(viewModeProvider.notifier).showFavorites(),
-          onSelectRight: () => ref.read(viewModeProvider.notifier).showAll(),
+          onSelectLeft: () {
+            ref.read(analyticsServiceProvider).logButtonTap('view_favorites', screen: 'home');
+            ref.read(viewModeProvider.notifier).showFavorites();
+          },
+          onSelectRight: () {
+            ref.read(analyticsServiceProvider).logButtonTap('view_all', screen: 'home');
+            ref.read(viewModeProvider.notifier).showAll();
+          },
         ),
         const SizedBox(height: 12),
         if (!showStationCard)
@@ -270,7 +279,10 @@ class _HomeContent extends ConsumerWidget {
             station: station,
             nowPlaying: player.nowPlayingTitle,
             justCopied: justCopied,
-            onCopy: () => onCopy(player.nowPlayingTitle ?? ''),
+            onCopy: () {
+              ref.read(analyticsServiceProvider).logButtonTap('copy_now_playing');
+              onCopy(player.nowPlayingTitle ?? '');
+            },
           ),
         const SizedBox(height: 12),
         PlaybackControls(
@@ -338,7 +350,7 @@ class _HomeContent extends ConsumerWidget {
         ChooseStationButton(
           onTap: () {
             ref.read(analyticsServiceProvider).logButtonTap('choose_station_open');
-            Navigator.of(context).push(MaterialPageRoute(builder: (_) => const StationListScreen()));
+            Navigator.of(context).push(MaterialPageRoute(settings: const RouteSettings(name: 'station_list'), builder: (_) => const StationListScreen()));
           },
         ),
         const SizedBox(height: 12),

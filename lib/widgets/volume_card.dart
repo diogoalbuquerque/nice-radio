@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../providers/player_provider.dart';
+import '../services/analytics_service.dart';
 import '../theme/app_theme.dart';
 import 'round_button.dart';
 import 'section_card.dart';
@@ -40,7 +41,12 @@ class VolumeCard extends StatelessWidget {
                     icon: Icons.remove,
                     tooltip: 'Diminuir volume',
                     size: 56,
-                    onTap: volumePercent <= 0 ? null : notifier.decreaseVolume,
+                    onTap: volumePercent <= 0
+                        ? null
+                        : () {
+                            ref.read(analyticsServiceProvider).logButtonTap('volume_down');
+                            notifier.decreaseVolume();
+                          },
                   ),
                   Expanded(
                     child: Text(
@@ -53,7 +59,12 @@ class VolumeCard extends StatelessWidget {
                     icon: Icons.add,
                     tooltip: 'Aumentar volume',
                     size: 56,
-                    onTap: volumePercent >= 100 ? null : notifier.increaseVolume,
+                    onTap: volumePercent >= 100
+                        ? null
+                        : () {
+                            ref.read(analyticsServiceProvider).logButtonTap('volume_up');
+                            notifier.increaseVolume();
+                          },
                   ),
                 ],
               ),
