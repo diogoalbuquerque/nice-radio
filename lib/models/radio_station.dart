@@ -216,7 +216,7 @@ class RadioStation {
   }
 
   /// Sort key for ordering stations like a real radio dial — see
-  /// `sortStationsByFrequency` in `stations_provider.dart`. Stations with
+  /// `sortStationsByFrequency` in `utils/station_lists.dart`. Stations with
   /// no detectable frequency sort after every station that has one.
   double get frequencySortKey => _frequency?.value ?? double.infinity;
 

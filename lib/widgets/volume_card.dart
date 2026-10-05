@@ -44,7 +44,7 @@ class VolumeCard extends StatelessWidget {
                     onTap: volumePercent <= 0
                         ? null
                         : () {
-                            ref.read(analyticsServiceProvider).logButtonTap('volume_down');
+                            ref.trackTap('volume_down');
                             notifier.decreaseVolume();
                           },
                   ),
@@ -62,7 +62,7 @@ class VolumeCard extends StatelessWidget {
                     onTap: volumePercent >= 100
                         ? null
                         : () {
-                            ref.read(analyticsServiceProvider).logButtonTap('volume_up');
+                            ref.trackTap('volume_up');
                             notifier.increaseVolume();
                           },
                   ),

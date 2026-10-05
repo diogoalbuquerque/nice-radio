@@ -1,11 +1,7 @@
-// Covers sortStationsByFrequency in isolation — pure logic over a
-// List<RadioStation>, so no ProviderContainer or network call is needed.
-// The rest of stations_provider.dart (the providers themselves) is not
-// covered here — they are thin Riverpod wiring around RadioBrowserService
-// and this function, with no independent logic of their own to test.
+// Pure list logic: dial sorting, de-duplication, cold-start pick, voice search.
 import 'package:flutter_test/flutter_test.dart';
 import 'package:nice_radio/models/radio_station.dart';
-import 'package:nice_radio/providers/stations_provider.dart';
+import 'package:nice_radio/utils/station_lists.dart';
 
 RadioStation _station({required String id, required String name, String? url}) => RadioStation(
       id: id,

@@ -22,9 +22,9 @@ class StationListScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final viewMode = ref.watch(viewModeProviderOrAll);
     final visibleStations = ref.watch(visibleStationsProvider);
-    final currentStationId = ref.watch(playerProvider).currentStation?.id;
+    final currentStationId = ref.watch(playerProvider.select((player) => player.currentStation?.id));
     final favoriteIds = ref.watch(favoritesProviderOrEmpty);
-    final stateName = ref.watch(settingsProvider).value?.selectedState ?? '';
+    final stateName = ref.watch(settingsProvider.select((async) => async.value?.selectedState)) ?? '';
 
     return Scaffold(
       body: SafeArea(
@@ -38,7 +38,7 @@ class StationListScreen extends ConsumerWidget {
                     icon: const Icon(Icons.arrow_back),
                     tooltip: 'Voltar',
                     onPressed: () {
-                      ref.read(analyticsServiceProvider).logButtonTap('station_list_back');
+                      ref.trackTap('station_list_back');
                       Navigator.of(context).pop();
                     },
                   ),
@@ -60,11 +60,11 @@ class StationListScreen extends ConsumerWidget {
                 rightLabel: 'Todas',
                 isLeftSelected: viewMode == StationViewMode.favorites,
                 onSelectLeft: () {
-                  ref.read(analyticsServiceProvider).logButtonTap('view_favorites', screen: 'station_list');
+                  ref.trackTap('view_favorites', screen: 'station_list');
                   ref.read(viewModeProvider.notifier).showFavorites();
                 },
                 onSelectRight: () {
-                  ref.read(analyticsServiceProvider).logButtonTap('view_all', screen: 'station_list');
+                  ref.trackTap('view_all', screen: 'station_list');
                   ref.read(viewModeProvider.notifier).showAll();
                 },
               ),
@@ -95,12 +95,12 @@ class StationListScreen extends ConsumerWidget {
                         isSelected: station.id == currentStationId,
                         isFavorite: favoriteIds.contains(station.id),
                         onTap: () {
-                          ref.read(analyticsServiceProvider).logButtonTap('station_select');
+                          ref.trackTap('station_select');
                           ref.read(playerProvider.notifier).playStation(station);
                           Navigator.of(context).pop();
                         },
                         onToggleFavorite: () {
-                          ref.read(analyticsServiceProvider).logButtonTap('favorite_toggle', screen: 'station_list');
+                          ref.trackTap('favorite_toggle', screen: 'station_list');
                           ref.read(favoritesProvider.notifier).toggle(station.id);
                         },
                       );

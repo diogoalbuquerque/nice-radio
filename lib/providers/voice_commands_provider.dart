@@ -12,6 +12,7 @@ import '../models/radio_station.dart';
 import '../models/voice_command.dart';
 import 'player_provider.dart';
 import 'settings_provider.dart';
+import '../utils/station_lists.dart';
 import 'stations_provider.dart';
 
 final voiceCommandHandlerProvider = Provider<VoiceCommandHandler>(VoiceCommandHandler.new);

@@ -112,3 +112,9 @@ class AnalyticsService {
     } catch (_) {}
   }
 }
+
+/// Shorthand for the most common call site: a tap handler logging its button.
+extension AnalyticsTap on WidgetRef {
+  void trackTap(String buttonName, {String? screen}) =>
+      read(analyticsServiceProvider).logButtonTap(buttonName, screen: screen);
+}

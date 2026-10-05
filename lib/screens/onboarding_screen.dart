@@ -36,7 +36,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
   }
 
   Future<void> _requestLocationAndContinue() async {
-    ref.read(analyticsServiceProvider).logButtonTap('onboarding_allow_location');
+    ref.trackTap('onboarding_allow_location');
     setState(() => _isResolvingLocation = true);
 
     final stateName = await LocationService().resolveBrazilianState();
@@ -48,7 +48,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
   }
 
   Future<void> _skip() {
-    ref.read(analyticsServiceProvider).logButtonTap('onboarding_skip');
+    ref.trackTap('onboarding_skip');
     return _finishOnboarding();
   }
 

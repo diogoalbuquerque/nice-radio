@@ -57,12 +57,20 @@ class SettingsNotifier extends AsyncNotifier<AppSettings> {
 
   @override
   Future<AppSettings> build() async {
+    // Independent reads, so they run concurrently on the startup path.
+    final (selectedState, dataUsedBytes, dataUsedSince, darkModeEnabled, suppressOfflineWarning) = await (
+      _storage.getSelectedState(),
+      _storage.getDataUsedBytes(),
+      _storage.getDataUsedSince(),
+      _storage.getDarkModeEnabled(),
+      _storage.getSuppressOfflineWarning(),
+    ).wait;
     return AppSettings(
-      selectedState: await _storage.getSelectedState(),
-      dataUsedBytes: await _storage.getDataUsedBytes(),
-      dataUsedSince: await _storage.getDataUsedSince(),
-      darkModeEnabled: await _storage.getDarkModeEnabled(),
-      suppressOfflineWarning: await _storage.getSuppressOfflineWarning(),
+      selectedState: selectedState,
+      dataUsedBytes: dataUsedBytes,
+      dataUsedSince: dataUsedSince,
+      darkModeEnabled: darkModeEnabled,
+      suppressOfflineWarning: suppressOfflineWarning,
     );
   }
 

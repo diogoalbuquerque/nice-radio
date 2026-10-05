@@ -50,8 +50,7 @@ Quando a pessoa abre o Nice Radio pela primeira vez:
    botão de viva-voz: o app decide sozinho, toda vez que a rádio começa
    a tocar, se deve forçar o som pelo alto-falante do aparelho — só
    quando não há nenhum fone/caixa Bluetooth ou com fio conectado
-   naquele momento (veja `PlayerNotifier._updateSpeakerForConnectedDevices`
-   em `lib/providers/player_provider.dart`).
+   naquele momento (veja `lib/services/audio_routing_service.dart`).
 4. Se a rádio estiver tocando uma música com nome disponível, aparece
    um botão para **copiar o nome da música**.
 5. A rádio continua tocando (e pode ser controlada pela tela de
@@ -574,7 +573,7 @@ pode ser necessário adicionar um padrão semelhante para o novo ícone.
 | **Localização aproximada** | Android: `ACCESS_COARSE_LOCATION` em `AndroidManifest.xml`. iOS: `NSLocationWhenInUseUsageDescription` em `Info.plist` | Descobrir **só o estado** do Brasil onde a pessoa está, uma única vez, para filtrar as rádios. Nunca é a localização exata, nunca fica salva, nunca é enviada para nenhum servidor além dessa consulta única — só usada no próprio celular. Se a pessoa negar, ela escolhe o estado manualmente nas Configurações (veja `lib/services/location_service.dart`). |
 | **Internet** | Android: `INTERNET` em `AndroidManifest.xml`. iOS não precisa de uma permissão explícita para isso | Buscar a lista de rádios e tocar o áudio de fato (o app é 100% sobre streams de internet). |
 | **Tocar em segundo plano** | iOS: `UIBackgroundModes: audio` em `Info.plist`. Android: `FOREGROUND_SERVICE` + `FOREGROUND_SERVICE_MEDIA_PLAYBACK` + `WAKE_LOCK` em `AndroidManifest.xml` | Deixar a rádio continuar tocando com a tela bloqueada ou com o app minimizado — do contrário o sistema operacional pausaria o som assim que a pessoa saísse do app. |
-| **Ajustar o áudio do sistema** | Android: `MODIFY_AUDIO_SETTINGS` em `AndroidManifest.xml` (concedida automaticamente na instalação, sem aviso na tela) | Permite que o app force a saída de som pelo alto-falante do aparelho quando decide, sozinho, que não há nenhum fone/caixa Bluetooth conectado no momento — veja `PlayerNotifier._setAndroidForcedSpeaker` em `lib/providers/player_provider.dart`. |
+| **Ajustar o áudio do sistema** | Android: `MODIFY_AUDIO_SETTINGS` em `AndroidManifest.xml` (concedida automaticamente na instalação, sem aviso na tela) | Permite que o app force a saída de som pelo alto-falante do aparelho quando decide, sozinho, que não há nenhum fone/caixa Bluetooth conectado no momento — veja `lib/services/audio_routing_service.dart`. |
 | **Microfone** *(nunca usado de verdade)* | iOS: `NSMicrophoneUsageDescription` em `Info.plist` | Existe **só porque o iOS exige essa string** no instante em que o app muda a categoria de áudio para `playAndRecord` — a categoria que a Apple exige para conseguir forçar o alto-falante automaticamente (`AVAudioSession.overrideOutputAudioPort` só funciona nessa categoria). O aplicativo **nunca grava nada** — a frase mostrada ao usuário (se o iOS chegar a exibi-la) diz isso explicitamente. Veja o comentário dessa chave em `Info.plist` para o detalhe completo. |
 | **Tráfego sem criptografia (`http://`)** | Android: `android:usesCleartextTraffic="true"` em `AndroidManifest.xml`. iOS: `NSAllowsArbitraryLoads` em `Info.plist` (`NSAppTransportSecurity`) | Várias rádios brasileiras de verdade transmitem por `http://` (sem "s"), não `https://`. Sem essa configuração, tanto o Android (a partir da versão 9) quanto o iOS bloqueiam essas conexões por padrão, e a estação simplesmente não toca — sem nenhuma mensagem de erro clara. Nenhum dado pessoal trafega nessas conexões, só o áudio público da rádio. |
 
@@ -616,10 +615,21 @@ mesmo jeito que se acessa o Gmail ou o Google Drive.
      usuário de verdade (o Simulador/emulador usado durante o
      desenvolvimento não conta os mesmos crashes que um celular real).
    - **Analytics → Eventos** → a lista de tudo que está sendo
-     registrado: `button_tap` (toque em botão, com o nome do botão),
-     `station_played` (rádio que começou a tocar), `state_selected`
-     (estado escolhido), `screen_view` (qual tela apareceu — é isso que
-     também alimenta o relatório de "tempo por tela").
+     registrado:
+     - `button_tap` — toque em botão, com `button_name` (qual botão) e,
+       quando o mesmo botão existe em mais de uma tela, `screen`. Todo
+       botão do app tem um nome (`play_pause`, `volume_up`,
+       `favorite_toggle`, `view_favorites`, `settings_open`, ...).
+     - `station_played` — rádio que começou a tocar (cobre lista, avançar/
+       voltar, tela de bloqueio, widget, Android Auto e voz).
+     - `listening_session` — **quanto tempo** a pessoa ouviu uma rádio
+       (`seconds`), uma vez a cada pausa ou troca de rádio. É a única
+       medida de tempo *ouvindo*; o app é usado quase sempre com a tela
+       apagada, então o tempo de tela não conta essa história.
+     - `state_selected` — estado escolhido.
+     - `screen_view` — qual tela apareceu (`home`, `onboarding`,
+       `settings`, `station_list`); alimenta o relatório de "tempo por
+       tela".
    - **Analytics → Engagement/Envolvimento** → tempo médio gasto em
      cada tela, calculado automaticamente a partir dos eventos acima.
    - **Analytics → DebugView** → mostra eventos chegando **ao vivo**,
@@ -635,7 +645,7 @@ números — de propósito: essa tela é para quem administra o projeto
 | Arquivo/pasta | O que é |
 |---|---|
 | [`lib/main.dart`](lib/main.dart) | Liga o Firebase quando o app abre (só no Android/iOS — a versão que roda no navegador não usa Firebase) e conecta os erros não tratados ao Crashlytics |
-| [`lib/services/analytics_service.dart`](lib/services/analytics_service.dart) | Toda a lista de "eventos" que o app envia — um método por evento, com nomes fáceis de achar (`logButtonTap`, `logStationPlayed`, etc.) |
+| [`lib/services/analytics_service.dart`](lib/services/analytics_service.dart) | Toda a lista de "eventos" que o app envia — um método por evento, com nomes fáceis de achar (`logButtonTap`, `logStationPlayed`, `logListeningSession`, etc.) |
 | `android/app/google-services.json`, `ios/Runner/GoogleService-Info.plist`, `lib/firebase_options.dart` | Identificam **qual** projeto Firebase o app usa — geradas automaticamente pela ferramenta oficial do Firebase (`flutterfire configure`), não são segredo e podem ficar no repositório normalmente (não autenticam nada sozinhas, só dizem "esse app pertence a este projeto") |
 | `android/settings.gradle.kts`, `android/app/build.gradle.kts` | Duas linhas a mais habilitando os plugins do Google/Firebase na build do Android |
 
@@ -667,13 +677,14 @@ implementa:
 | Mudar o nome do aplicativo | [`pubspec.yaml`](pubspec.yaml), [`android/app/src/main/AndroidManifest.xml`](android/app/src/main/AndroidManifest.xml) e [`ios/Runner/Info.plist`](ios/Runner/Info.plist) — o `applicationId`/bundle id também precisam mudar, em mais lugares (`grep -rniE "nice.?radio"` na raiz do projeto ajuda a achar todos os lugares) |
 | Trocar o ícone do aplicativo | Editar as 3 imagens em [`assets/icon/`](assets/icon) e rodar `dart run flutter_launcher_icons` (veja "Ícones e imagens do projeto" abaixo) |
 | Mudar o play/pause, volume, próxima/anterior estação | [`lib/providers/player_provider.dart`](lib/providers/player_provider.dart) — é o único lugar que fala com o player de áudio de verdade |
-| Mudar quando o app força o viva-voz automaticamente | `PlayerNotifier._updateSpeakerForConnectedDevices` (decide quando) e `_configureAudioSession`/`_setAndroidForcedSpeaker` (como aplica) em [`lib/providers/player_provider.dart`](lib/providers/player_provider.dart) |
+| Mudar quando o app força o viva-voz automaticamente | `PlayerNotifier._updateSpeakerForConnectedDevices` (decide quando) em [`lib/providers/player_provider.dart`](lib/providers/player_provider.dart) e [`lib/services/audio_routing_service.dart`](lib/services/audio_routing_service.dart) (como aplica, Android e iOS) |
+| Mudar o que acontece quando outro app usa o áudio (ex.: gravar áudio no WhatsApp) | [`lib/services/audio_interruption_pauser.dart`](lib/services/audio_interruption_pauser.dart) |
 | Mudar o timer de dormir | `PlayerNotifier.setSleepMinutes` em [`lib/providers/player_provider.dart`](lib/providers/player_provider.dart) |
 | Mudar a reconexão automática quando a internet cai tocando | `PlayerNotifier._attachErrorListener`/`_connectWithRetry` em [`lib/providers/player_provider.dart`](lib/providers/player_provider.dart) |
-| Mudar como a frequência é extraída do nome da rádio, ou a ordenação da lista | `RadioStation.displayName`/`frequencySortKey` em [`lib/models/radio_station.dart`](lib/models/radio_station.dart), e `sortStationsByFrequency` em [`lib/providers/stations_provider.dart`](lib/providers/stations_provider.dart) |
+| Mudar como a frequência é extraída do nome da rádio, ou a ordenação da lista | `RadioStation.displayName`/`frequencySortKey` em [`lib/models/radio_station.dart`](lib/models/radio_station.dart), e `sortStationsByFrequency` em [`lib/utils/station_lists.dart`](lib/utils/station_lists.dart) |
 | Mudar quando/como o aviso de "estações fora do ar" aparece | `PlayerNotifier._setPlaybackError` (quando dispara) em [`lib/providers/player_provider.dart`](lib/providers/player_provider.dart), e [`lib/widgets/stations_offline_dialog.dart`](lib/widgets/stations_offline_dialog.dart) (o que aparece) |
 | Mudar as favoritas | [`lib/providers/favorites_provider.dart`](lib/providers/favorites_provider.dart) |
-| Mudar o alternador Favoritas/Todas | [`lib/providers/stations_provider.dart`](lib/providers/stations_provider.dart) (a lógica) e [`lib/widgets/segmented_toggle.dart`](lib/widgets/segmented_toggle.dart) (o botão) |
+| Mudar o alternador Favoritas/Todas, ou como as rádios duplicadas são unidas | [`lib/providers/stations_provider.dart`](lib/providers/stations_provider.dart) e [`lib/utils/station_lists.dart`](lib/utils/station_lists.dart) (a lógica) e [`lib/widgets/segmented_toggle.dart`](lib/widgets/segmented_toggle.dart) (o botão) |
 | Mudar como/onde os dados ficam salvos no celular | [`lib/services/storage_service.dart`](lib/services/storage_service.dart) — é o único lugar que fala com o armazenamento do aparelho |
 | Mudar a fonte das rádios (hoje é a Radio Browser API) | [`lib/services/radio_browser_service.dart`](lib/services/radio_browser_service.dart) |
 | Mudar como o estado (São Paulo, Bahia, etc.) é descoberto pelo GPS | [`lib/services/location_service.dart`](lib/services/location_service.dart) |
@@ -683,8 +694,8 @@ implementa:
 | Mudar o logo gerado (iniciais) das rádios sem imagem própria | [`lib/services/station_artwork_service.dart`](lib/services/station_artwork_service.dart) |
 | Mudar o **widget da tela inicial** (Android) | veja "Mantendo o widget no Android Studio" acima |
 | Mudar o **widget da tela inicial** (iOS) | veja "Configurando o Xcode" acima |
-| Mudar quais eventos são enviados para o Firebase Analytics, ou adicionar um novo | [`lib/services/analytics_service.dart`](lib/services/analytics_service.dart) — um método novo por evento |
-| Mudar o que o widget mostra/envia (lado Dart, comum aos dois) | [`lib/services/home_widget_service.dart`](lib/services/home_widget_service.dart) e `_HomeWidgetSync` em [`lib/main.dart`](lib/main.dart) |
+| Mudar quais eventos são enviados para o Firebase Analytics, ou adicionar um novo | [`lib/services/analytics_service.dart`](lib/services/analytics_service.dart) — um método novo por evento; um botão novo só precisa de `ref.trackTap('nome_do_botao')` no toque. Toda tela aberta com `Navigator.push` precisa de `settings: RouteSettings(name: ...)`, senão ela não aparece nos relatórios |
+| Mudar o que o widget mostra/envia (lado Dart, comum aos dois) | [`lib/services/home_widget_service.dart`](lib/services/home_widget_service.dart) e `HomeWidgetSync` em [`lib/app/platform_sync.dart`](lib/app/platform_sync.dart) |
 | Adicionar ou mudar uma tela | [`lib/screens/`](lib/screens) |
 | Adicionar uma nova permissão do celular | `android/app/src/main/AndroidManifest.xml` (Android) e `ios/Runner/Info.plist` (iOS) |
 | Adicionar/alterar testes | Pasta [`test/`](test), espelhando a pasta de `lib/` que foi alterada |
@@ -754,11 +765,14 @@ uma:
 ```
 nice-radio/
 ├── lib/                          # todo o código do aplicativo
-│   ├── main.dart                 # ponto de entrada do app
+│   ├── main.dart                 # ponto de entrada: Firebase, MaterialApp, onboarding-ou-home
+│   ├── app/
+│   │   └── platform_sync.dart    # liga o player ao widget da tela inicial, atalhos e ao retorno do app
 │   ├── theme/
 │   │   └── app_theme.dart        # todas as cores e estilos, num só lugar
 │   ├── utils/
-│   │   └── brazilian_states.dart # os 27 estados + reconhecimento de nomes
+│   │   ├── brazilian_states.dart # os 27 estados + reconhecimento de nomes
+│   │   └── station_lists.dart    # ordenar, unir duplicadas e buscar rádios (funções puras)
 │   ├── models/
 │   │   └── radio_station.dart    # o que é uma "rádio" dentro do app
 │   ├── services/                 # falam com a internet e o celular
@@ -768,6 +782,9 @@ nice-radio/
 │   │   ├── system_volume_service.dart  # volume real do aparelho
 │   │   ├── quick_actions_service.dart  # atalho no ícone do app
 │   │   ├── audio_player_handler.dart   # tocar em segundo plano + Android Auto
+│   │   ├── audio_routing_service.dart  # sessão de áudio e alto-falante automático
+│   │   ├── audio_interruption_pauser.dart # pausa quando outro app (WhatsApp) usa o áudio
+│   │   ├── listening_tracker.dart      # mede o tempo ouvindo (para o Analytics)
 │   │   ├── home_widget_service.dart    # widget na tela inicial (Android/iOS)
 │   │   ├── station_artwork_service.dart # logo da rádio p/ tela de bloqueio e widget
 │   │   └── analytics_service.dart      # eventos enviados ao Firebase Analytics
@@ -775,7 +792,10 @@ nice-radio/
 │   │   ├── settings_provider.dart      # estado, dados usados, modo noturno
 │   │   ├── favorites_provider.dart     # rádios favoritas
 │   │   ├── stations_provider.dart      # lista de rádios visível
-│   │   └── player_provider.dart        # tocando, volume, timers
+│   │   ├── player_provider.dart        # tocando, volume, timers
+│   │   ├── player_state.dart           # o "retrato" do que o player está fazendo
+│   │   ├── voice_commands_provider.dart # o que cada comando de voz faz
+│   │   └── platform_services_provider.dart # serviços de plataforma, trocáveis em testes
 │   ├── widgets/                  # pedacinhos de tela reaproveitados — os blocos
 │   │   │                         # da tela principal (cartão da rádio, controles,
 │   │   │                         # volume, etc.) moraram dentro de home_screen.dart
@@ -896,8 +916,11 @@ acompanhada de um teste, na pasta `test/` correspondente (espelhando a
 estrutura de `lib/`) — é uma política do projeto, não uma sugestão.
 As exceções são os arquivos que falam direto com um player de áudio
 real ou com a rede, sem uma versão "falsa" para testar
-(`player_provider.dart`, `audio_player_handler.dart` e
-`radio_browser_service.dart`).
+(`player_provider.dart`, `audio_player_handler.dart`,
+`audio_routing_service.dart`, `audio_interruption_pauser.dart` e
+`radio_browser_service.dart`) — por isso a lógica pura que dava para
+separar (`ListeningTracker`, `PlayerState`, `station_lists.dart`) tem
+testes próprios.
 
 ---
 

@@ -108,16 +108,18 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
       });
     });
 
-    final settingsAsync = ref.watch(settingsProvider);
-    final selectedState = settingsAsync.value?.selectedState;
+    // `select`: settings change every few seconds while playing (data-usage
+    // counter); only these two values matter here.
+    final selectedState = ref.watch(settingsProvider.select((async) => async.value?.selectedState));
+    final settingsLoading = ref.watch(settingsProvider.select((async) => async.isLoading));
 
     return Scaffold(
       body: SafeArea(
         child: selectedState == null
             ? NoStateSelected(
-                isLoading: settingsAsync.isLoading,
+                isLoading: settingsLoading,
                 onChooseState: () {
-                  ref.read(analyticsServiceProvider).logButtonTap('choose_state_open');
+                  ref.trackTap('choose_state_open');
                   Navigator.of(context).push(
                     MaterialPageRoute(settings: const RouteSettings(name: 'settings'), builder: (_) => const SettingsScreen()),
                   );
@@ -165,9 +167,9 @@ class _HomeContent extends ConsumerWidget {
     final viewMode = ref.watch(viewModeProviderOrAll);
     final favoriteIds = ref.watch(favoritesProviderOrEmpty);
     final visibleStations = ref.watch(visibleStationsProvider);
-    final settingsValue = ref.watch(settingsProvider).value;
-    final selectedState = settingsValue?.selectedState;
-    final darkModeEnabled = settingsValue?.darkModeEnabled ?? false;
+    // `select`: the data-usage counter updates settings every few seconds.
+    final selectedState = ref.watch(settingsProvider.select((async) => async.value?.selectedState));
+    final darkModeEnabled = ref.watch(settingsProvider.select((async) => async.value?.darkModeEnabled ?? false));
     // Shared by both header icon buttons, by explicit request, so
     // Settings always visually matches whatever "modo noturno" currently
     // is — blue when off (light mode: the lamp is lit), neutral once
@@ -237,7 +239,7 @@ class _HomeContent extends ConsumerWidget {
                   iconSize: 22,
                   padding: const EdgeInsets.all(12),
                   onTap: () {
-                    ref.read(analyticsServiceProvider).logButtonTap('night_mode_toggle');
+                    ref.trackTap('night_mode_toggle');
                     ref.read(settingsProvider.notifier).toggleDarkMode();
                   },
                 ),
@@ -249,7 +251,7 @@ class _HomeContent extends ConsumerWidget {
                   iconSize: 22,
                   padding: const EdgeInsets.all(12),
                   onTap: () {
-                    ref.read(analyticsServiceProvider).logButtonTap('settings_open');
+                    ref.trackTap('settings_open');
                     Navigator.of(context).push(MaterialPageRoute(settings: const RouteSettings(name: 'settings'), builder: (_) => const SettingsScreen()));
                   },
                 ),
@@ -263,11 +265,11 @@ class _HomeContent extends ConsumerWidget {
           rightLabel: 'Todas',
           isLeftSelected: viewMode == StationViewMode.favorites,
           onSelectLeft: () {
-            ref.read(analyticsServiceProvider).logButtonTap('view_favorites', screen: 'home');
+            ref.trackTap('view_favorites', screen: 'home');
             ref.read(viewModeProvider.notifier).showFavorites();
           },
           onSelectRight: () {
-            ref.read(analyticsServiceProvider).logButtonTap('view_all', screen: 'home');
+            ref.trackTap('view_all', screen: 'home');
             ref.read(viewModeProvider.notifier).showAll();
           },
         ),
@@ -280,7 +282,7 @@ class _HomeContent extends ConsumerWidget {
             nowPlaying: player.nowPlayingTitle,
             justCopied: justCopied,
             onCopy: () {
-              ref.read(analyticsServiceProvider).logButtonTap('copy_now_playing');
+              ref.trackTap('copy_now_playing');
               onCopy(player.nowPlayingTitle ?? '');
             },
           ),
@@ -291,19 +293,19 @@ class _HomeContent extends ConsumerWidget {
           hasStation: station != null,
           isRefreshMode: stationsUnavailable,
           onPrevious: () {
-            ref.read(analyticsServiceProvider).logButtonTap('previous_station');
+            ref.trackTap('previous_station');
             ref.read(playerProvider.notifier).playPrevious();
           },
           onTogglePlay: () {
-            ref.read(analyticsServiceProvider).logButtonTap('play_pause');
+            ref.trackTap('play_pause');
             ref.read(playerProvider.notifier).togglePlayPause();
           },
           onNext: () {
-            ref.read(analyticsServiceProvider).logButtonTap('next_station');
+            ref.trackTap('next_station');
             ref.read(playerProvider.notifier).playNext();
           },
           onRefresh: () {
-            ref.read(analyticsServiceProvider).logButtonTap('refresh_stations');
+            ref.trackTap('refresh_stations');
             ref.invalidate(stationsProvider);
           },
         ),
@@ -321,17 +323,17 @@ class _HomeContent extends ConsumerWidget {
         const SizedBox(height: 12),
         ActionButtonsRow(
           isFavorite: isFavorite,
-          sleepMinutes: player.sleepMinutes,
+          sleepMinutes: player.sleepRemainingMinutes,
           sleepPanelOpen: sleepPanelOpen,
           hasStation: station != null,
           onToggleFavorite: station == null
               ? null
               : () {
-                  ref.read(analyticsServiceProvider).logButtonTap('favorite_toggle');
+                  ref.trackTap('favorite_toggle');
                   ref.read(favoritesProvider.notifier).toggle(station.id);
                 },
           onToggleSleepPanel: () {
-            ref.read(analyticsServiceProvider).logButtonTap('sleep_panel_toggle');
+            ref.trackTap('sleep_panel_toggle');
             onToggleSleepPanel();
           },
         ),
@@ -340,7 +342,7 @@ class _HomeContent extends ConsumerWidget {
           SleepPanel(
             selectedMinutes: player.sleepMinutes,
             onSelect: (minutes) {
-              ref.read(analyticsServiceProvider).logButtonTap('sleep_option');
+              ref.trackTap('sleep_option');
               ref.read(playerProvider.notifier).setSleepMinutes(minutes);
               onCloseSleepPanel();
             },
@@ -349,7 +351,7 @@ class _HomeContent extends ConsumerWidget {
         const SizedBox(height: 12),
         ChooseStationButton(
           onTap: () {
-            ref.read(analyticsServiceProvider).logButtonTap('choose_station_open');
+            ref.trackTap('choose_station_open');
             Navigator.of(context).push(MaterialPageRoute(settings: const RouteSettings(name: 'station_list'), builder: (_) => const StationListScreen()));
           },
         ),

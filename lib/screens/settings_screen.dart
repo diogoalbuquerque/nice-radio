@@ -41,7 +41,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                     icon: const Icon(Icons.arrow_back),
                     tooltip: 'Voltar',
                     onPressed: () {
-                      ref.read(analyticsServiceProvider).logButtonTap('settings_back');
+                      ref.trackTap('settings_back');
                       Navigator.of(context).pop();
                     },
                   ),
@@ -66,7 +66,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                             ),
                             TextButton(
                               onPressed: () {
-                                ref.read(analyticsServiceProvider).logButtonTap('state_picker_toggle');
+                                ref.trackTap('state_picker_toggle');
                                 setState(() => _statePickerOpen = !_statePickerOpen);
                               },
                               style: TextButton.styleFrom(
@@ -118,7 +118,7 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
                       dataUsedBytes: settings.dataUsedBytes,
                       dataUsedSince: settings.dataUsedSince,
                       onReset: () {
-                        ref.read(analyticsServiceProvider).logButtonTap('data_usage_reset');
+                        ref.trackTap('data_usage_reset');
                         return notifier.resetDataUsage();
                       },
                     ),
