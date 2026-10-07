@@ -4,100 +4,489 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Política de Privacidade — Nice Radio</title>
-<meta name="description" content="Política de privacidade do aplicativo Nice Radio.">
+<meta name="description" content="Como o Nice Radio trata seus dados: sem conta, sem anúncios, sem guardar sua localização.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="icon.png">
+<link rel="preload" href="fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
 <style>
-  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.65;
-         max-width: 720px; margin: 0 auto; padding: 24px 16px 64px; color: #1b2a3a; background: #fdfaf4; }
-  h1 { font-size: 1.8rem; color: #1f4e8c; }
-  h2 { font-size: 1.25rem; margin-top: 2rem; color: #1f4e8c; }
-  a { color: #1f4e8c; }
-  .updated { color: #55606c; font-size: .95rem; }
-  .box { background: #e9f0fa; border-radius: 8px; padding: 12px 16px; }
+  /* Fontes hospedadas aqui mesmo: nenhuma requisição ao Google ao abrir esta página. */
+  @font-face { font-family: "Atkinson Hyperlegible"; font-weight: 400; font-display: swap; src: url(fonts/atkinson-400.woff2) format("woff2"); }
+  @font-face { font-family: "Atkinson Hyperlegible"; font-weight: 700; font-display: swap; src: url(fonts/atkinson-700.woff2) format("woff2"); }
+  @font-face { font-family: "Atkinson Hyperlegible Mono"; font-weight: 500; font-display: swap; src: url(fonts/atkinson-mono-500.woff2) format("woff2"); }
+  @font-face { font-family: "Bricolage Grotesque"; font-weight: 600 800; font-display: swap; src: url(fonts/bricolage.woff2) format("woff2"); }
+
+  /* Mesma paleta do app: azul + laranja, nunca verde (daltonismo). */
+  :root {
+    --bg: #faf7f2;
+    --card: #ffffff;
+    --border: #e4ddd0;
+    --text: #211f1c;
+    --muted: #6b6459;
+    --primary: #1e5c8c;
+    --primary-ink: #ffffff;
+    --primary-tint: #e3edf5;
+    --accent: #c48a2e;
+    --accent-tint: #fbf1de;
+    --accent-border: #e9c878;
+    --accent-text: #8a621e;
+    --subtle: #f4f0e6;
+    --ring: rgba(30, 92, 140, .09);
+    --shadow: 0 1px 2px rgba(33, 31, 28, .06), 0 8px 24px rgba(33, 31, 28, .06);
+    --display: "Bricolage Grotesque", "Atkinson Hyperlegible", system-ui, sans-serif;
+    --body: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --mono: "Atkinson Hyperlegible Mono", ui-monospace, Menlo, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #13171c; --card: #1c222a; --border: #333b46; --text: #f2f0ea; --muted: #aea99f;
+      --primary: #6aa9de; --primary-ink: #13171c; --primary-tint: #1e3349; --accent: #e0ac4e;
+      --accent-tint: #3a2e16; --accent-border: #8a6a34; --accent-text: #efc377; --subtle: #1a2028;
+      --ring: rgba(106, 169, 222, .10); --shadow: none;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #13171c; --card: #1c222a; --border: #333b46; --text: #f2f0ea; --muted: #aea99f;
+    --primary: #6aa9de; --primary-ink: #13171c; --primary-tint: #1e3349; --accent: #e0ac4e;
+    --accent-tint: #3a2e16; --accent-border: #8a6a34; --accent-text: #efc377; --subtle: #1a2028;
+    --ring: rgba(106, 169, 222, .10); --shadow: none;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 130px; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: var(--body); font-size: 1.125rem; line-height: 1.7; -webkit-text-size-adjust: 100%;
+  }
+  a { color: var(--primary); text-underline-offset: 3px; text-decoration-thickness: 2px; }
+  a:hover { text-decoration-thickness: 3px; }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+  strong { font-weight: 700; }
+  code { font-family: var(--mono); font-size: .9em; background: var(--subtle); border: 1px solid var(--border); border-radius: 6px; padding: 1px 6px; }
+
+  .skip { position: absolute; left: -999px; top: 8px; background: var(--primary); color: var(--primary-ink);
+          padding: 8px 14px; border-radius: 8px; z-index: 20; }
+  .skip:focus { left: 8px; }
+
+  /* ───────── Barra fixa: marca + sintonizador ───────── */
+  .bar { position: sticky; top: 0; z-index: 10; background: color-mix(in srgb, var(--bg) 90%, transparent);
+         backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+  .bar-in { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+  .bar-top { display: flex; align-items: center; gap: 12px; padding: 10px 0 6px; }
+  .brand { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 700; font-size: 1.1rem;
+           color: var(--text); text-decoration: none; }
+  .brand img { width: 32px; height: 32px; border-radius: 9px; display: block; }
+  .readout { flex: 1; min-width: 0; text-align: right; font-family: var(--mono); font-size: .8rem; letter-spacing: .06em;
+             text-transform: uppercase; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .readout b { color: var(--accent-text); font-weight: 700; }
+  .theme-btn { font: inherit; font-size: .9rem; color: var(--text); background: var(--card); border: 1.5px solid var(--border);
+               border-radius: 999px; padding: 4px 14px; cursor: pointer; white-space: nowrap; }
+  .theme-btn:hover { border-color: var(--primary); }
+
+  /* O sintonizador: cada marca grande é uma seção; a agulha acompanha a leitura. */
+  .tuner { position: relative; height: 40px; margin-bottom: 4px; }
+  .scale { position: absolute; inset: 0 0 0 0;
+           background:
+             linear-gradient(to right, color-mix(in srgb, var(--muted) 45%, transparent) 2px, transparent 2px) 0 100% / 10% 50% repeat-x,
+             linear-gradient(to right, var(--border) 1px, transparent 1px) 0 100% / 2% 34% repeat-x; }
+  .scale::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: var(--muted); opacity: .5; }
+  .stop { position: absolute; top: 0; bottom: 0; width: 26px; margin-left: -13px; display: block; border-radius: 6px; }
+  .stop::before { content: ""; position: absolute; left: 50%; bottom: 0; width: 4px; height: 70%; margin-left: -2px;
+                  border-radius: 2px 2px 0 0; background: var(--primary); opacity: .55; transition: opacity .2s, height .2s; }
+  .stop:hover::before, .stop.on::before { opacity: 1; height: 86%; }
+  .stop.on::before { background: var(--accent); }
+  .needle { position: absolute; top: -2px; bottom: 0; width: 0; left: 0; pointer-events: none; will-change: transform; }
+  .needle::before { content: ""; position: absolute; left: -1px; top: 8px; bottom: 0; width: 2px; background: var(--accent); }
+  .needle::after { content: ""; position: absolute; left: -6px; top: 0; border: 6px solid transparent; border-top: 9px solid var(--accent); border-bottom: 0; }
+
+  /* ───────── Abertura ───────── */
+  .hero { position: relative; overflow: hidden; border-bottom: 1px solid var(--border); }
+  .hero::before { /* ondas de rádio saindo do canto */
+    content: ""; position: absolute; right: -160px; top: -200px; width: 720px; height: 720px; border-radius: 50%;
+    background: repeating-radial-gradient(circle at center, transparent 0 46px, var(--ring) 46px 48px);
+    -webkit-mask-image: radial-gradient(circle at center, #000 25%, transparent 72%); mask-image: radial-gradient(circle at center, #000 25%, transparent 72%);
+    pointer-events: none; }
+  .hero-in { position: relative; max-width: 1040px; margin: 0 auto; padding: 64px 20px 56px; }
+  .kicker { font-family: var(--mono); font-size: .85rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent-text); margin: 0 0 18px; }
+  h1 { font-family: var(--display); font-weight: 800; font-size: clamp(2.5rem, 7.2vw, 5.4rem); line-height: .98; letter-spacing: -.035em;
+       margin: 0 0 24px; max-width: 12em; font-optical-sizing: auto; }
+  h1 em { font-style: normal; color: var(--primary); }
+  .lead { font-size: clamp(1.15rem, 2.2vw, 1.35rem); line-height: 1.55; color: var(--muted); max-width: 36em; margin: 0 0 36px; }
+
+  /* Botões de memória, como no rádio do carro. */
+  .presets { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin: 0 0 28px; padding: 0; list-style: none; }
+  .preset { display: flex; flex-direction: column; gap: 10px; height: 100%; padding: 16px 18px 14px; text-decoration: none; color: var(--text);
+            background: var(--card); border: 2px solid var(--border); border-bottom-width: 6px; border-radius: 18px;
+            transition: transform .12s ease, border-color .12s ease; }
+  .preset:hover { border-color: var(--primary); transform: translateY(-2px); }
+  .preset:active { transform: translateY(3px); border-bottom-width: 3px; }
+  .preset svg { width: 26px; height: 26px; color: var(--primary); }
+  .preset strong { font-family: var(--display); font-size: 1.2rem; line-height: 1.15; letter-spacing: -.01em; }
+  .preset span { font-size: .98rem; line-height: 1.45; color: var(--muted); }
+  .updated { font-family: var(--mono); font-size: .85rem; letter-spacing: .04em; color: var(--muted); margin: 0; }
+
+  /* ───────── Conteúdo ───────── */
+  main { max-width: 1040px; margin: 0 auto; padding: 24px 20px 72px; }
+  main section { display: grid; grid-template-columns: 170px minmax(0, 1fr); column-gap: 40px; padding: 48px 0; border-bottom: 1px solid var(--border); }
+  main section:last-child { border-bottom: 0; }
+  .label { font-family: var(--mono); font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent-text); padding-top: .75rem; }
+  .body { max-width: 40rem; }
+  main h2 { font-family: var(--display); font-weight: 700; font-size: clamp(1.7rem, 3.4vw, 2.3rem); line-height: 1.12; letter-spacing: -.022em; margin: 0 0 18px; }
+  main h3 { font-family: var(--display); font-weight: 700; font-size: 1.2rem; line-height: 1.25; margin: 28px 0 6px; letter-spacing: -.01em; }
+  main p { margin: 0 0 14px; }
+  main ul { margin: 0 0 14px; padding-left: 1.3em; }
+  main li { margin-bottom: 6px; }
+  main li::marker { color: var(--accent); }
+
+  .callout { background: var(--primary-tint); border-left: 5px solid var(--primary); border-radius: 4px 14px 14px 4px; padding: 14px 18px; margin: 0 0 16px; }
+  .callout.warm { background: var(--accent-tint); border-left-color: var(--accent); }
+  .callout p:last-child { margin-bottom: 0; }
+
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin: 18px 0 20px; }
+  .card { background: var(--card); border: 1.5px solid var(--border); border-radius: 16px; padding: 16px 18px; box-shadow: var(--shadow); }
+  .card h3 { margin: 0 0 6px; font-size: 1.1rem; }
+  .card p { margin: 0; font-size: 1rem; line-height: 1.55; }
+  .tag { display: inline-block; font-family: var(--mono); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase;
+         border-radius: 999px; padding: 2px 10px; margin-bottom: 8px; background: var(--subtle); color: var(--muted); border: 1px solid var(--border); }
+  .tag.opt { background: var(--accent-tint); color: var(--accent-text); border-color: var(--accent-border); }
+
+  .table-wrap { overflow-x: auto; margin: 0 0 16px; border: 1.5px solid var(--border); border-radius: 16px; background: var(--card); }
+  table { border-collapse: collapse; width: 100%; font-size: 1rem; line-height: 1.5; min-width: 520px; }
+  th, td { text-align: left; vertical-align: top; padding: 12px 16px; border-bottom: 1px solid var(--border); }
+  th { background: var(--subtle); font-family: var(--mono); font-weight: 500; font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  tr:last-child td { border-bottom: 0; }
+  td:first-child { font-weight: 700; }
+
+  .nots { list-style: none; padding: 0 !important; display: grid; gap: 10px; }
+  .nots li { display: flex; gap: 12px; align-items: flex-start; background: var(--card); border: 1.5px solid var(--border); border-radius: 14px; padding: 12px 16px; margin: 0; }
+  .nots svg { width: 22px; height: 22px; flex: none; margin-top: 4px; color: var(--accent); }
+
+  .contact { background: var(--primary); color: var(--primary-ink); border-radius: 22px; padding: 28px; position: relative; overflow: hidden; }
+  .contact::after { content: ""; position: absolute; right: -90px; bottom: -90px; width: 300px; height: 300px; border-radius: 50%;
+                    background: repeating-radial-gradient(circle at center, transparent 0 22px, rgba(255,255,255,.14) 22px 24px); pointer-events: none; }
+  .contact p { position: relative; font-size: 1.2rem; max-width: 24em; }
+  .contact .btn { position: relative; display: inline-block; background: var(--primary-ink); color: var(--primary); font-weight: 700;
+                  text-decoration: none; padding: 12px 22px; border-radius: 14px; border-bottom: 4px solid rgba(0,0,0,.25); }
+  .contact .btn:hover { transform: translateY(-1px); }
+
+  footer { border-top: 1px solid var(--border); padding: 28px 20px 44px; text-align: center; color: var(--muted); font-size: .95rem; }
+  footer p { margin: 4px 0; }
+
+  @media (max-width: 820px) {
+    main section { grid-template-columns: minmax(0, 1fr); padding: 36px 0; }
+    .label { padding: 0 0 6px; }
+    .hero-in { padding-top: 44px; }
+    .hero::before { right: -300px; top: -260px; }
+  }
+  @media (max-width: 520px) {
+    body { font-size: 1.06rem; }
+    .brand span { display: none; }
+    .readout { text-align: left; }
+    .presets { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .preset { padding: 14px; } .preset span { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .preset, .stop::before { transition: none; } }
+  @media print {
+    .bar, .skip, .hero::before, .presets { display: none; }
+    body { background: #fff; color: #000; font-size: 11pt; }
+    main section { grid-template-columns: 1fr; break-inside: avoid; }
+    .card, .table-wrap { box-shadow: none; }
+    .contact { background: none; color: #000; border: 1px solid #000; }
+    .contact .btn { color: #000; border: 0; padding: 0; }
+  }
 </style>
 </head>
 <body>
-<h1>Política de Privacidade — Nice Radio</h1>
-<p class="updated">Última atualização: 7 de outubro de 2026</p>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
-<p class="box"><strong>Resumo:</strong> o Nice Radio não tem conta, não tem anúncios, não vende dados e
-não guarda sua localização. Ele só usa sua posição, uma única vez, para descobrir seu estado e mostrar as
-rádios de lá.</p>
+<header class="bar">
+  <div class="bar-in">
+    <div class="bar-top">
+      <a class="brand" href="#"><img src="icon.png" alt="" width="32" height="32"><span>Nice Radio</span></a>
+      <div class="readout" id="readout" aria-hidden="true">Início</div>
+      <button class="theme-btn" id="theme" type="button" aria-label="Alternar entre tema claro e escuro">Modo noturno</button>
+    </div>
+    <nav class="tuner" id="tuner" aria-label="Seções desta página">
+      <div class="scale" aria-hidden="true"></div>
+      <div id="stops"></div>
+      <div class="needle" id="needle" aria-hidden="true"></div>
+    </nav>
+  </div>
+</header>
 
-<h2>1. Quem somos</h2>
-<p>O Nice Radio é um aplicativo gratuito de rádio pela internet, feito para facilitar o uso por pessoas
-idosas. O responsável pelo aplicativo é Diogo Albuquerque. Contato:
-<a href="mailto:shfumaca@gmail.com">shfumaca@gmail.com</a>.</p>
+<div class="hero">
+  <div class="hero-in">
+    <p class="kicker">Política de privacidade</p>
+    <h1>Seu rádio, <em>sem</em> letras miúdas.</h1>
+    <p class="lead">O Nice Radio não tem conta, não tem anúncios, não vende dados e não guarda sua localização.
+    Aqui está tudo o que o aplicativo usa, por quê, e como você controla.</p>
 
-<h2>2. O que o aplicativo usa e por quê</h2>
+    <ul class="presets">
+      <li><a class="preset" href="#nao-fazemos">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/><path d="M3 3l18 18"/></svg>
+        <strong>Sem cadastro</strong><span>Nada de login, nome, e-mail ou telefone.</span></a></li>
+      <li><a class="preset" href="#o-que-usamos">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <strong>Localização, uma vez</strong><span>Só para achar seu estado. Não é gravada.</span></a></li>
+      <li><a class="preset" href="#nao-fazemos">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 3l18 18"/></svg>
+        <strong>Sem anúncios</strong><span>Seus dados nunca são vendidos.</span></a></li>
+      <li><a class="preset" href="#permissoes">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/><path d="M3 3l18 18"/></svg>
+        <strong>Nunca grava áudio</strong><span>O microfone não é usado para ouvir você.</span></a></li>
+    </ul>
+    <p class="updated">Atualizada em 7 de outubro de 2026</p>
+  </div>
+</div>
 
-<h3>Localização (opcional)</h3>
-<p>Na primeira abertura, o aplicativo pede permissão de localização aproximada. Ela é usada <strong>uma
-única vez</strong> para descobrir em qual estado brasileiro você está. As coordenadas ficam apenas na
-memória do aparelho, não são gravadas e não são enviadas por nós a nenhum servidor. Para converter as
-coordenadas em um nome de estado, o aplicativo usa o serviço de geocodificação do próprio sistema
-(Google no Android, Apple no iOS), que segue as políticas dessas empresas.</p>
-<p>Você pode recusar a permissão e escolher o estado manualmente em Configurações. O aplicativo
-funciona normalmente nos dois casos.</p>
+<main id="conteudo">
 
-<h3>Lista de rádios</h3>
-<p>Para listar as estações, o aplicativo consulta o serviço público
-<a href="https://www.radio-browser.info/">Radio Browser</a>, enviando apenas o <strong>nome do
-estado</strong> como filtro. Como em qualquer conexão com a internet, esse serviço pode ver o endereço IP
-do aparelho.</p>
+  <section id="quem-somos" data-name="Quem somos">
+    <div class="label">Seção 1</div>
+    <div class="body">
+      <h2>Quem somos</h2>
+      <p>O Nice Radio é um aplicativo gratuito de rádio pela internet, feito para facilitar o uso por pessoas
+      idosas. O responsável pelo aplicativo e pelo tratamento dos dados descritos aqui é
+      <strong>Diogo Albuquerque</strong>, que pode ser contatado em
+      <a href="mailto:shfumaca@gmail.com">shfumaca@gmail.com</a>.</p>
+    </div>
+  </section>
 
-<h3>Reprodução das rádios</h3>
-<p>Ao tocar uma rádio, o aparelho se conecta diretamente ao servidor da emissora, que pode ver o
-endereço IP, como acontece em qualquer rádio online. Não controlamos esses servidores. Algumas emissoras
-transmitem por conexão sem criptografia (http), por isso o aplicativo permite esse tipo de conexão. São
-apenas transmissões públicas de áudio; o aplicativo não envia dados pessoais nelas.</p>
+  <section id="o-que-usamos" data-name="O que o app usa">
+    <div class="label">Seção 2</div>
+    <div class="body">
+      <h2>O que o aplicativo usa e por quê</h2>
 
-<h3>Estatísticas e relatórios de erro (Firebase)</h3>
-<p>Usamos o Google Firebase (Analytics e Crashlytics) para saber quais botões são mais usados, em quais
-estados e emissoras o aplicativo é mais ouvido, quanto tempo as pessoas ouvem e para corrigir falhas.
-São coletados:</p>
-<ul>
-  <li>um identificador anônimo da instalação do aplicativo;</li>
-  <li>eventos de uso (por exemplo, toques em botões, estação tocada, estado escolhido, tempo de
-      escuta);</li>
-  <li>dados técnicos do aparelho e do erro quando o aplicativo trava (modelo, versão do sistema, versão
-      do aplicativo).</li>
-</ul>
-<p>Esses dados não incluem nome, e-mail, telefone nem localização exata, e não são usados para
-anúncios. Os dados são processados pelo Google, que pode armazená-los fora do Brasil. Mais informações em
-<a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</p>
+      <div class="cards">
+        <article class="card">
+          <span class="tag opt">Opcional</span>
+          <h3>Localização aproximada</h3>
+          <p>Na primeira abertura, o app pede permissão de localização aproximada e a usa <strong>uma única
+          vez</strong> para descobrir seu estado. As coordenadas ficam só na memória do aparelho: não são
+          gravadas nem enviadas por nós a nenhum servidor.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Sempre</span>
+          <h3>Lista de rádios</h3>
+          <p>O app consulta o serviço público Radio Browser enviando apenas o <strong>nome do estado</strong>
+          como filtro.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Sempre</span>
+          <h3>Reprodução</h3>
+          <p>Ao tocar uma rádio, o aparelho se conecta direto ao servidor da emissora. O app não envia dados
+          pessoais nessa conexão.</p>
+        </article>
+        <article class="card">
+          <span class="tag">Sempre</span>
+          <h3>Estatísticas e erros</h3>
+          <p>Usamos o Firebase (Analytics e Crashlytics) para saber o que é mais usado e corrigir falhas.
+          Detalhes na seção 4.</p>
+        </article>
+      </div>
 
-<h3>Dados guardados no seu aparelho</h3>
-<p>O aplicativo guarda localmente suas preferências: estado escolhido, estações favoritas, última estação,
-modo noturno, filtro Favoritas/Todas e a estimativa de uso de dados. Esses dados ficam somente no seu
-aparelho e são apagados ao desinstalar o aplicativo.</p>
+      <div class="callout">
+        <p><strong>Você pode recusar a localização.</strong> Basta escolher seu estado manualmente em
+        Configurações. O aplicativo funciona normalmente nos dois casos.</p>
+      </div>
 
-<h3>Microfone</h3>
-<p>No iPhone, o sistema exige a permissão de microfone para permitir que o som saia pelo alto-falante do
-aparelho. <strong>O aplicativo nunca grava nem ouve áudio.</strong></p>
+      <h3>Como a localização vira um estado</h3>
+      <p>Para converter coordenadas em um nome de estado, o app usa o serviço de geocodificação do próprio
+      sistema (Google no Android, Apple no iOS), que segue as políticas dessas empresas.</p>
 
-<h2>3. O que não fazemos</h2>
-<ul>
-  <li>Não pedimos cadastro, login, nome, e-mail ou telefone.</li>
-  <li>Não exibimos anúncios.</li>
-  <li>Não vendemos nem compartilhamos dados com terceiros para publicidade.</li>
-  <li>Não guardamos seu histórico de localização.</li>
-</ul>
+      <h3>Rádios com conexão sem criptografia</h3>
+      <p>Algumas emissoras transmitem por conexão sem criptografia (<code>http</code>), por isso o app permite
+      esse tipo de conexão. São apenas transmissões públicas de áudio, sem senha ou dado pessoal.</p>
+    </div>
+  </section>
 
-<h2>4. Seus direitos</h2>
-<p>Conforme a Lei Geral de Proteção de Dados (LGPD, Lei 13.709/2018), você pode pedir informações sobre
-os dados tratados, correção ou exclusão, e revogar permissões a qualquer momento. Para revogar a
-localização, use os Ajustes do seu aparelho. Para solicitações sobre dados de uso, escreva para
-<a href="mailto:shfumaca@gmail.com">shfumaca@gmail.com</a>. Como os dados de estatísticas são anônimos,
-talvez não seja possível identificar os registros de uma pessoa específica.</p>
+  <section id="permissoes" data-name="Permissões">
+    <div class="label">Seção 3</div>
+    <div class="body">
+      <h2>Permissões do aparelho</h2>
+      <p>O app pede o mínimo necessário. Você pode revogar qualquer permissão nos Ajustes do aparelho.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Permissão</th><th>Sistema</th><th>Para quê</th></tr></thead>
+          <tbody>
+            <tr><td>Localização aproximada</td><td>Android e iOS</td><td>Descobrir seu estado, uma única vez. Opcional.</td></tr>
+            <tr><td>Internet</td><td>Android e iOS</td><td>Buscar a lista de rádios e tocar as transmissões.</td></tr>
+            <tr><td>Serviço em segundo plano</td><td>Android e iOS</td><td>Continuar tocando com a tela apagada e mostrar os controles na tela de bloqueio.</td></tr>
+            <tr><td>Ajuste de áudio</td><td>Android</td><td>Controlar a saída de som (por exemplo, alto-falante do aparelho).</td></tr>
+            <tr><td>Microfone</td><td>iOS</td><td>Exigido pelo sistema para o som sair no alto-falante. <strong>O app nunca grava nem ouve áudio.</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
 
-<h2>5. Crianças</h2>
-<p>O aplicativo não é direcionado a crianças e não coleta intencionalmente dados de menores.</p>
+  <section id="terceiros" data-name="Terceiros">
+    <div class="label">Seção 4</div>
+    <div class="body">
+      <h2>Serviços de terceiros</h2>
 
-<h2>6. Mudanças nesta política</h2>
-<p>Se algo mudar, atualizaremos esta página e a data no topo. O uso do aplicativo após a mudança indica
-que você concorda com a nova versão.</p>
+      <h3>Radio Browser</h3>
+      <p>Serviço público e gratuito de catálogo de rádios (<a href="https://www.radio-browser.info/">radio-browser.info</a>).
+      Recebe o nome do estado e, como em qualquer conexão com a internet, pode ver o endereço IP do aparelho.</p>
 
-<h2>7. Contato</h2>
-<p>Dúvidas? Escreva para <a href="mailto:shfumaca@gmail.com">shfumaca@gmail.com</a>.</p>
+      <h3>Emissoras de rádio</h3>
+      <p>Cada emissora opera seu próprio servidor, que pode ver o endereço IP de quem escuta, como acontece em
+      qualquer rádio online. Não controlamos esses servidores nem suas políticas.</p>
+
+      <h3>Google Firebase (Analytics e Crashlytics)</h3>
+      <p>Usado para saber quais botões são mais usados, em quais estados e emissoras o app é mais ouvido,
+      quanto tempo as pessoas ouvem e para corrigir falhas. São coletados:</p>
+      <ul>
+        <li>um identificador anônimo da instalação do aplicativo;</li>
+        <li>eventos de uso (por exemplo, toques em botões, estação tocada, estado escolhido, tempo de escuta);</li>
+        <li>dados técnicos quando o app trava (modelo do aparelho, versão do sistema e do aplicativo).</li>
+      </ul>
+      <div class="callout warm">
+        <p>Esses dados <strong>não incluem nome, e-mail, telefone nem localização exata</strong> e não são
+        usados para anúncios. Eles são processados pelo Google, que pode armazená-los fora do Brasil. Saiba
+        mais em <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nao-fazemos" data-name="O que não fazemos">
+    <div class="label">Seção 5</div>
+    <div class="body">
+      <h2>O que não fazemos</h2>
+      <ul class="nots">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>Não pedimos cadastro, login, nome, e-mail ou telefone.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>Não exibimos anúncios.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>Não vendemos nem compartilhamos dados com terceiros para publicidade.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>Não guardamos seu histórico de localização.</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>Não gravamos nem escutamos áudio pelo microfone.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="armazenamento" data-name="No seu aparelho">
+    <div class="label">Seção 6</div>
+    <div class="body">
+      <h2>Dados guardados no seu aparelho</h2>
+      <p>O app guarda localmente apenas suas preferências:</p>
+      <ul>
+        <li>estado escolhido e estações favoritas;</li>
+        <li>última estação ouvida;</li>
+        <li>modo noturno e filtro Favoritas/Todas;</li>
+        <li>estimativa de uso de dados.</li>
+      </ul>
+      <p>Esses dados ficam <strong>somente no seu aparelho</strong> e são apagados quando você desinstala o
+      aplicativo.</p>
+    </div>
+  </section>
+
+  <section id="direitos" data-name="Seus direitos">
+    <div class="label">Seção 7</div>
+    <div class="body">
+      <h2>Seus direitos</h2>
+      <p>Conforme a Lei Geral de Proteção de Dados (LGPD, Lei nº 13.709/2018), você pode:</p>
+      <ul>
+        <li>pedir informações sobre os dados tratados;</li>
+        <li>solicitar correção ou exclusão;</li>
+        <li>revogar permissões a qualquer momento (para a localização, use os Ajustes do aparelho).</li>
+      </ul>
+      <p>Para solicitações sobre dados de uso, escreva para
+      <a href="mailto:shfumaca@gmail.com">shfumaca@gmail.com</a>. Como as estatísticas são anônimas, talvez não
+      seja possível identificar os registros de uma pessoa específica.</p>
+    </div>
+  </section>
+
+  <section id="criancas" data-name="Crianças">
+    <div class="label">Seção 8</div>
+    <div class="body">
+      <h2>Crianças</h2>
+      <p>O aplicativo não é direcionado a crianças e não coleta intencionalmente dados de menores.</p>
+    </div>
+  </section>
+
+  <section id="mudancas" data-name="Mudanças">
+    <div class="label">Seção 9</div>
+    <div class="body">
+      <h2>Mudanças nesta política</h2>
+      <p>Se algo mudar, atualizaremos esta página e a data no topo. O uso do aplicativo após a mudança indica
+      que você concorda com a nova versão.</p>
+    </div>
+  </section>
+
+  <section id="contato" data-name="Contato">
+    <div class="label">Seção 10</div>
+    <div class="body">
+      <h2>Contato</h2>
+      <div class="contact">
+        <p>Ficou com alguma dúvida sobre seus dados? Escreva para nós, responderemos o quanto antes.</p>
+        <a class="btn" href="mailto:shfumaca@gmail.com">shfumaca@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p><strong>Nice Radio</strong> · Rádio fácil para todos</p>
+  <p>Atualizada em 7 de outubro de 2026</p>
+</footer>
+
+<script>
+  // Tema: segue o sistema por padrão; o botão alterna e lembra a escolha (se o navegador permitir).
+  (function () {
+    var root = document.documentElement, btn = document.getElementById('theme');
+    var mq = window.matchMedia('(prefers-color-scheme: dark)');
+    function current() { return root.getAttribute('data-theme') || (mq.matches ? 'dark' : 'light'); }
+    function label() { btn.textContent = current() === 'dark' ? 'Modo claro' : 'Modo noturno'; }
+    try { var s = localStorage.getItem('theme'); if (s) root.setAttribute('data-theme', s); } catch (e) {}
+    label();
+    btn.addEventListener('click', function () {
+      var next = current() === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+      label();
+    });
+  })();
+
+  // Sintonizador: a agulha acompanha a rolagem; cada marca grande é uma seção.
+  (function () {
+    var tuner = document.getElementById('tuner'), stopsBox = document.getElementById('stops'),
+        needle = document.getElementById('needle'), readout = document.getElementById('readout');
+    var sections = Array.prototype.slice.call(document.querySelectorAll('main section'));
+    var stops = [], maxScroll = 1, ticking = false;
+
+    sections.forEach(function (s, i) {
+      var a = document.createElement('a');
+      a.className = 'stop'; a.href = '#' + s.id;
+      a.setAttribute('aria-label', 'Seção ' + (i + 1) + ': ' + s.dataset.name);
+      a.title = s.dataset.name;
+      stopsBox.appendChild(a); stops.push(a);
+    });
+
+    function layout() {
+      maxScroll = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+      sections.forEach(function (s, i) {
+        var top = s.getBoundingClientRect().top + window.scrollY - 130;
+        stops[i].style.left = Math.min(98, Math.max(2, top / maxScroll * 100)) + '%';
+      });
+      update();
+    }
+
+    function update() {
+      ticking = false;
+      var y = window.scrollY, w = tuner.clientWidth;
+      needle.style.transform = 'translateX(' + (Math.min(1, Math.max(0, y / maxScroll)) * w) + 'px)';
+      var active = -1;
+      sections.forEach(function (s, i) { if (s.getBoundingClientRect().top <= 170) active = i; });
+      stops.forEach(function (a, i) { a.classList.toggle('on', i === active); });
+      readout.innerHTML = active < 0 ? 'Início'
+        : '<b>Seção ' + (active + 1) + '</b> · ' + sections[active].querySelector('h2').textContent;
+    }
+
+    window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+    window.addEventListener('resize', layout);
+    window.addEventListener('load', layout);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
+    layout();
+  })();
+</script>
 </body>
 </html>
