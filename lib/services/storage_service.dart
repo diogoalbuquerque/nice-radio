@@ -33,6 +33,7 @@ class StorageService {
   static const _keyDarkModeEnabled = 'dark_mode_enabled';
   static const _keySuppressOfflineWarning = 'suppress_offline_warning';
   static const _keyViewModeFavorites = 'view_mode_favorites';
+  static const _keyBrowsableStations = 'browsable_stations_json';
 
   // Every method below starts by awaiting this. Pulled into one getter
   // instead of repeating `SharedPreferences.getInstance()` at the top of
@@ -113,6 +114,39 @@ class StorageService {
   Future<void> setLastStation(RadioStation station) async {
     final prefs = await _prefs;
     await prefs.setString(_keyLastStation, jsonEncode(station.toJson()));
+  }
+
+  /// The station list the lock screen and Android Auto browse, saved with the
+  /// state it belongs to so a cold start (a car binding the service before the
+  /// first fetch finishes, or no network) still has stations to show. Written
+  /// each time a fresh non-empty list arrives; see
+  /// `PlayerNotifier._loadCachedBrowsableStations` for where it is read.
+  Future<void> setBrowsableStations(String state, List<RadioStation> stations) async {
+    final prefs = await _prefs;
+    await prefs.setString(
+      _keyBrowsableStations,
+      jsonEncode({'state': state, 'stations': [for (final s in stations) s.toJson()]}),
+    );
+  }
+
+  /// The saved list, only if it was saved for [state] — never another state's.
+  /// `null` when nothing usable is stored (absent, corrupt, other state, empty).
+  Future<List<RadioStation>?> getBrowsableStations(String state) async {
+    final prefs = await _prefs;
+    final raw = prefs.getString(_keyBrowsableStations);
+    if (raw == null) return null;
+    try {
+      final map = jsonDecode(raw) as Map<String, dynamic>;
+      if (map['state'] != state) return null;
+      final stations = <RadioStation>[
+        for (final item in map['stations'] as List)
+          ?RadioStation.fromCache(item as Map<String, dynamic>),
+      ];
+      return stations.isEmpty ? null : stations;
+    } catch (_) {
+      // Corrupt or from an older app version: same as "nothing saved".
+      return null;
+    }
   }
 
   /// "Modo noturno" — a manual, explicit toggle rather than something that

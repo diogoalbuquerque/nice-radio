@@ -101,3 +101,21 @@ String _streamKey(String url) {
   final port = uri.hasPort ? ':${uri.port}' : '';
   return '${uri.host.toLowerCase()}$port$path';
 }
+
+/// What the browsable list (Android Auto, lock-screen skip buttons) should
+/// become when [fresh] arrives for [freshState]; `null` means "keep the
+/// current list". [currentListState] is the state the current list belongs to.
+///
+/// An empty [fresh] — every mirror failed, or the phone is offline — must not
+/// wipe a list that already belongs to the *same* state: stale stations beat an
+/// empty car screen. An empty result for a *different* state does replace it,
+/// so another state's stations are never shown. A pure function, like
+/// [sortStationsByFrequency], so the rule is unit tested without a player.
+List<RadioStation>? nextBrowsableList({
+  required List<RadioStation> fresh,
+  required String? freshState,
+  required String? currentListState,
+}) {
+  if (fresh.isEmpty && freshState != null && freshState == currentListState) return null;
+  return fresh;
+}

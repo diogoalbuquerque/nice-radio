@@ -110,6 +110,64 @@ void main() {
     });
   });
 
+  group('browsable stations (Android Auto / lock-screen list)', () {
+    RadioStation station(String id) => RadioStation(
+          id: id,
+          name: 'Rádio $id',
+          streamUrl: 'https://example.com/$id',
+          faviconUrl: null,
+          genre: 'Rádio',
+          state: 'Rio de Janeiro',
+          bitrateKbps: 64,
+        );
+
+    test('nothing saved reads as null', () async {
+      expect(await storage.getBrowsableStations('Rio de Janeiro'), isNull);
+    });
+
+    test('round-trips the list in order for the same state', () async {
+      await storage.setBrowsableStations('Rio de Janeiro', [station('b'), station('a')]);
+
+      final restored = await storage.getBrowsableStations('Rio de Janeiro');
+
+      expect(restored!.map((s) => s.id), ['b', 'a']);
+      expect(restored.first.streamUrl, 'https://example.com/b');
+    });
+
+    test('never returns the list saved for another state', () async {
+      await storage.setBrowsableStations('Rio de Janeiro', [station('a')]);
+
+      expect(await storage.getBrowsableStations('São Paulo'), isNull);
+    });
+
+    test('a newer save replaces the older one', () async {
+      await storage.setBrowsableStations('Rio de Janeiro', [station('a')]);
+      await storage.setBrowsableStations('São Paulo', [station('z')]);
+
+      expect(await storage.getBrowsableStations('Rio de Janeiro'), isNull);
+      expect((await storage.getBrowsableStations('São Paulo'))!.single.id, 'z');
+    });
+
+    test('corrupt stored data reads as null instead of throwing', () async {
+      SharedPreferences.setMockInitialValues({'browsable_stations_json': '{not json'});
+
+      expect(await storage.getBrowsableStations('Rio de Janeiro'), isNull);
+    });
+
+    test('skips unusable entries and returns null if none survive', () async {
+      SharedPreferences.setMockInitialValues({
+        'browsable_stations_json':
+            '{"state":"Rio de Janeiro","stations":[{"id":"a"},{"id":"b","name":"B","streamUrl":"https://e.com/b"}]}',
+      });
+      expect((await storage.getBrowsableStations('Rio de Janeiro'))!.map((s) => s.id), ['b']);
+
+      SharedPreferences.setMockInitialValues({
+        'browsable_stations_json': '{"state":"Rio de Janeiro","stations":[{"id":"a"}]}',
+      });
+      expect(await storage.getBrowsableStations('Rio de Janeiro'), isNull);
+    });
+  });
+
   group('last station', () {
     const station = RadioStation(
       id: 'abc-123',

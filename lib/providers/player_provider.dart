@@ -96,6 +96,10 @@ class PlayerNotifier extends Notifier<PlayerState> {
   /// station fetch race; whichever finishes first leaves it for the other.
   List<RadioStation>? _latestStations;
 
+  /// The state the handler's browse list belongs to (fresh or cached); lets
+  /// [nextBrowsableList] keep it when a refetch for that state comes back empty.
+  String? _browsableForState;
+
   @override
   PlayerState build() {
     _player = _buildPlayer();
@@ -117,11 +121,25 @@ class PlayerNotifier extends Notifier<PlayerState> {
     _volumeService.listen((percent) => state = state.copyWith(volumePercent: percent));
 
     // Feeds Android Auto's browse list (first list and every state change).
+    // Also saved to disk, so the next cold start has a list before the fetch.
     ref.listen<AsyncValue<List<RadioStation>>>(stationsProvider, (previous, next) {
       final stations = next.value;
-      if (stations == null) return;
-      _latestStations = stations;
-      _audioHandler?.updateBrowsableStations(stations);
+      // Skip refreshes: `value` is still the previous state's list while a new
+      // state is loading, and must not be saved under the new state's name.
+      if (stations == null || next.isLoading) return;
+      final selectedState = ref.read(settingsProvider).value?.selectedState;
+      final update = nextBrowsableList(
+        fresh: stations,
+        freshState: selectedState,
+        currentListState: _browsableForState,
+      );
+      if (update == null) return;
+      _latestStations = update;
+      _browsableForState = selectedState;
+      _audioHandler?.updateBrowsableStations(update);
+      if (selectedState != null && update.isNotEmpty) {
+        ref.read(storageServiceProvider).setBrowsableStations(selectedState, update);
+      }
     }, fireImmediately: true);
 
     ref.onDispose(() {
@@ -177,7 +195,28 @@ class PlayerNotifier extends Notifier<PlayerState> {
       final station = state.currentStation;
       if (station != null) _audioHandler!.setMediaItemForStation(station);
       _audioHandler!.onPlayStation = playStation;
-      if (_latestStations != null) _audioHandler!.updateBrowsableStations(_latestStations!);
+      final latest = _latestStations;
+      if (latest != null) _audioHandler!.updateBrowsableStations(latest);
+      if (latest == null || latest.isEmpty) unawaited(_loadCachedBrowsableStations());
+    } catch (_) {}
+  }
+
+  /// A car can bind the service seconds before the first station fetch ends
+  /// (or with no network at all): give the handler the last saved list for the
+  /// selected state meanwhile. A non-empty fresh list wins — it replaces this,
+  /// or, if it landed while the cache was being read, stops this from applying.
+  /// An *empty* [_latestStations] does not count as fresh: offline, the fetch
+  /// fails within milliseconds and would otherwise block the cache.
+  Future<void> _loadCachedBrowsableStations() async {
+    try {
+      final storage = ref.read(storageServiceProvider);
+      final selectedState = await storage.getSelectedState();
+      if (selectedState == null) return;
+      final cached = await storage.getBrowsableStations(selectedState);
+      if (cached == null || (_latestStations?.isNotEmpty ?? false)) return;
+      _latestStations = cached;
+      _browsableForState = selectedState;
+      _audioHandler?.updateBrowsableStations(cached);
     } catch (_) {}
   }
 

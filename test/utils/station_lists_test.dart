@@ -127,4 +127,28 @@ void main() {
       expect(original, [a, b]);
     });
   });
+
+  group('nextBrowsableList', () {
+    final fresh = [_station(id: 'a', name: 'Rádio A'), _station(id: 'b', name: 'Rádio B')];
+
+    test('a non-empty fresh list replaces the current one', () {
+      expect(nextBrowsableList(fresh: fresh, freshState: 'Rio de Janeiro', currentListState: 'Rio de Janeiro'), fresh);
+    });
+
+    test('an empty result (offline / all mirrors failed) keeps the same state\'s list', () {
+      expect(nextBrowsableList(fresh: const [], freshState: 'Rio de Janeiro', currentListState: 'Rio de Janeiro'), isNull);
+    });
+
+    test('an empty result for another state replaces, so no other state\'s stations show', () {
+      expect(nextBrowsableList(fresh: const [], freshState: 'São Paulo', currentListState: 'Rio de Janeiro'), isEmpty);
+    });
+
+    test('an empty result with no state chosen replaces (nothing to keep)', () {
+      expect(nextBrowsableList(fresh: const [], freshState: null, currentListState: null), isEmpty);
+    });
+
+    test('a first list arrives when nothing is loaded yet', () {
+      expect(nextBrowsableList(fresh: fresh, freshState: 'Rio de Janeiro', currentListState: null), fresh);
+    });
+  });
 }
