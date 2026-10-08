@@ -38,6 +38,34 @@ void main() {
     expect(received.last.stationId, 'x1');
   });
 
+  test('a commandAvailable ping drains commands queued after startup', () async {
+    // The launcher-shortcut case: the engine is already alive, Dart finished
+    // its startup drain long ago, and native queues a new command and pings.
+    var queue = <Map<String, String>>[];
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger.setMockMethodCallHandler(channel, (call) async {
+      if (call.method != 'takePendingCommands') return null;
+      final out = queue;
+      queue = [];
+      return out;
+    });
+
+    final received = <VoiceCommand>[];
+    await VoiceCommandService().initialize((c) async => received.add(c));
+    expect(received, isEmpty);
+
+    queue = [
+      {'uri': 'niceradio://next'},
+    ];
+    await TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger.handlePlatformMessage(
+      channel.name,
+      channel.codec.encodeMethodCall(const MethodCall('commandAvailable')),
+      (_) {},
+    );
+
+    expect(received.map((c) => c.action), [VoiceAction.next]);
+    expect(queue, isEmpty);
+  });
+
   test('cacheStations sends id and a "UF - frequency - name" label', () async {
     Object? sent;
     TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger.setMockMethodCallHandler(channel, (call) async {

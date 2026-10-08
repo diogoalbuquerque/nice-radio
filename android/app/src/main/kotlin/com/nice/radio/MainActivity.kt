@@ -34,7 +34,15 @@ class MainActivity : AudioServiceActivity() {
         // Not on a recreation (savedInstanceState != null): Android hands
         // back the original launch intent, which would replay an old
         // "pause" or "next".
-        if (savedInstanceState == null) enqueueCommand(intent)
+        if (savedInstanceState == null) {
+            enqueueCommand(intent)
+            // Also ping: a launcher shortcut (CLEAR_TASK) recreates this
+            // activity while the Flutter engine (shared with audio_service)
+            // is still alive, so Dart will not run its startup drain again.
+            // On a true cold start nobody is listening yet and the ping is
+            // a harmless no-op; Dart's startup drain picks the command up.
+            commandChannel?.invokeMethod("commandAvailable", null)
+        }
     }
 
     override fun onNewIntent(intent: Intent) {
