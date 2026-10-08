@@ -65,3 +65,4 @@ firestore-debug.log
 
 # Xcode-generated Swift Package Manager resolution state (regenerated on build)
 **/xcshareddata/swiftpm/
+/keytool/
