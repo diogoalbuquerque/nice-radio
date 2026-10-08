@@ -26,6 +26,17 @@
          install time, no runtime prompt. -->
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
 
+    <!-- No advertising ID. Firebase Analytics merges these three in by
+         default, but the app has no ads and its privacy policy says the data
+         is never used for advertising; Analytics, Crashlytics and the
+         per-state/per-station reports all work without them (they only feed
+         ad attribution and remarketing audiences). Removing them also keeps
+         the Play Console "Advertising ID" answer at "No". The matching
+         meta-data in <application> turns the SDK's own collection off. -->
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="remove"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" tools:node="remove"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" tools:node="remove"/>
+
     <!-- Android blocks plain http:// connections by default since API 28
          (cleartext traffic), the same way iOS's ATS does — see
          ios/Runner/Info.plist's NSAllowsArbitraryLoads for the same
@@ -86,6 +97,11 @@
              MainActivity.kt instead. -->
         <meta-data
             android:name="flutter_deeplinking_enabled"
+            android:value="false" />
+
+        <!-- See the AD_ID note at the top of this file. -->
+        <meta-data
+            android:name="google_analytics_adid_collection_enabled"
             android:value="false" />
 
         <!-- audio_service's own foreground service, which is what keeps
