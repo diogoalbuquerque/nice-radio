@@ -136,7 +136,7 @@ class PlayerNotifier extends Notifier<PlayerState> {
       if (update == null) return;
       _latestStations = update;
       _browsableForState = selectedState;
-      _audioHandler?.updateBrowsableStations(update);
+      _audioHandler?.updateBrowsableStations(update, stateName: selectedState);
       if (selectedState != null && update.isNotEmpty) {
         ref.read(storageServiceProvider).setBrowsableStations(selectedState, update);
       }
@@ -195,8 +195,9 @@ class PlayerNotifier extends Notifier<PlayerState> {
       final station = state.currentStation;
       if (station != null) _audioHandler!.setMediaItemForStation(station);
       _audioHandler!.onPlayStation = playStation;
+      _audioHandler!.fetchStateStations = _fetchStationsForCar;
       final latest = _latestStations;
-      if (latest != null) _audioHandler!.updateBrowsableStations(latest);
+      if (latest != null) _audioHandler!.updateBrowsableStations(latest, stateName: _browsableForState);
       if (latest == null || latest.isEmpty) unawaited(_loadCachedBrowsableStations());
     } catch (_) {}
   }
@@ -216,8 +217,16 @@ class PlayerNotifier extends Notifier<PlayerState> {
       if (cached == null || (_latestStations?.isNotEmpty ?? false)) return;
       _latestStations = cached;
       _browsableForState = selectedState;
-      _audioHandler?.updateBrowsableStations(cached);
+      _audioHandler?.updateBrowsableStations(cached, stateName: selectedState);
     } catch (_) {}
+  }
+
+  /// Android Auto opened another state's folder: same list as the app would
+  /// show for it (`stationsProvider`'s pipeline), without touching the
+  /// selected state.
+  Future<List<RadioStation>> _fetchStationsForCar(String stateName) async {
+    final stations = await ref.read(radioBrowserServiceProvider).fetchStationsByState(stateName);
+    return sortStationsByFrequency(dedupeStationsByStream(stations));
   }
 
   /// `build()` is synchronous, so the real system volume corrects the

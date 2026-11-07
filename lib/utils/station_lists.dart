@@ -2,6 +2,7 @@
 // the cold-start pick and voice search. No providers or I/O, so they are
 // unit-tested directly (`test/utils/station_lists_test.dart`).
 import '../models/radio_station.dart';
+import 'brazilian_states.dart';
 
 /// Orders [stations] like a real radio dial — ascending by
 /// [RadioStation.frequencySortKey] — instead of leaving them in Radio
@@ -118,4 +119,12 @@ List<RadioStation>? nextBrowsableList({
 }) {
   if (fresh.isEmpty && freshState != null && freshState == currentListState) return null;
   return fresh;
+}
+
+/// State names for Android Auto's root folder list: [homeState] first (when it
+/// is a known state), the rest in the canonical order.
+List<String> browseStateOrder(String? homeState) {
+  final names = BrazilianStates.all.map((s) => s.name).toList();
+  if (homeState != null && names.remove(homeState)) names.insert(0, homeState);
+  return names;
 }

@@ -10,6 +10,7 @@ import 'package:flutter/foundation.dart' show ValueChanged;
 import 'package:just_audio/just_audio.dart';
 
 import '../models/radio_station.dart';
+import '../utils/station_lists.dart';
 import 'station_artwork_service.dart';
 
 class RadioAudioHandler extends BaseAudioHandler {
@@ -18,7 +19,19 @@ class RadioAudioHandler extends BaseAudioHandler {
 
   RadioStation? _station;
   String? _songTitle;
+  /// The list skip/queue walk: the selected state's list, or the other state
+  /// folder the car last played from.
   List<RadioStation> _browsableStations = const [];
+
+  /// The selected state's list (what its folder shows) and that state's name.
+  List<RadioStation> _homeStations = const [];
+  String? _homeState;
+
+  /// Other states' lists, fetched when the car opens their folder.
+  final _otherStates = <String, List<RadioStation>>{};
+
+  /// Set by `PlayerNotifier`: fetches (sorted, deduped) stations of any state.
+  Future<List<RadioStation>> Function(String stateName)? fetchStateStations;
 
   /// Set by `PlayerNotifier`: called when a station is chosen from Android
   /// Auto or the lock-screen skip buttons.
@@ -124,29 +137,86 @@ class RadioAudioHandler extends BaseAudioHandler {
         artUri: station.faviconUrl != null ? Uri.tryParse(station.faviconUrl!) : null,
       );
 
-  /// The list Android Auto browses and skips through. Deliberately the
-  /// *unfiltered* per-state list, not the Favoritas/Todas view: a passenger or
-  /// someone at the lock screen cannot see which tab was selected.
-  void updateBrowsableStations(List<RadioStation> stations) {
+  /// The selected state's list, shown in its Android Auto folder and used for
+  /// skip/queue. Deliberately the *unfiltered* per-state list, not the
+  /// Favoritas/Todas view: a passenger or someone at the lock screen cannot see
+  /// which tab was selected.
+  void updateBrowsableStations(List<RadioStation> stations, {String? stateName}) {
+    _homeStations = stations;
+    _homeState = stateName ?? _homeState;
     _browsableStations = stations;
     queue.add(stations.map(_stationToMediaItem).toList());
   }
 
-  /// Android Auto browse root: the flat station list (no deeper hierarchy).
+  static const _stateFolderPrefix = 'state:';
+
+  /// Android Auto can't ask a question, so "which state?" is the root: one
+  /// folder per state (the person's own first), each listing its stations.
+  /// The app's selected state is never changed by browsing here.
   @override
   Future<List<MediaItem>> getChildren(String parentMediaId, [Map<String, dynamic>? options]) async {
-    if (parentMediaId != AudioService.browsableRootId) return const [];
-    return _browsableStations.map(_stationToMediaItem).toList();
+    if (parentMediaId == AudioService.browsableRootId) {
+      return [
+        for (final name in browseStateOrder(_homeState))
+          MediaItem(
+            id: '$_stateFolderPrefix$name',
+            title: name == _homeState ? '$name (seu estado)' : name,
+            playable: false,
+          ),
+      ];
+    }
+    if (!parentMediaId.startsWith(_stateFolderPrefix)) return const [];
+    final name = parentMediaId.substring(_stateFolderPrefix.length);
+    if (name == _homeState) return _homeStations.map(_stationToMediaItem).toList();
+    var stations = _otherStates[name];
+    if (stations == null) {
+      try {
+        stations = await fetchStateStations?.call(name) ?? const [];
+      } catch (_) {
+        stations = const [];
+      }
+      // Empty (offline) is not cached, so the next open retries.
+      if (stations.isNotEmpty) _otherStates[name] = stations;
+    }
+    return stations.map(_stationToMediaItem).toList();
   }
+
+  /// Plays [station] and makes [list] the one skip/queue walk.
+  void _playFrom(List<RadioStation> list, RadioStation station) {
+    if (!identical(_browsableStations, list)) {
+      _browsableStations = list;
+      queue.add(list.map(_stationToMediaItem).toList());
+    }
+    onPlayStation?.call(station);
+  }
+
+  /// Every list the car has shown, the selected state's first.
+  Iterable<List<RadioStation>> get _knownLists => [_homeStations, ..._otherStates.values];
 
   /// A station tapped in Android Auto; `mediaId` is the stream URL.
   @override
   Future<void> playFromMediaId(String mediaId, [Map<String, dynamic>? extras]) async {
-    for (final station in _browsableStations) {
-      if (station.streamUrl == mediaId) {
-        onPlayStation?.call(station);
-        return;
+    for (final list in _knownLists) {
+      for (final station in list) {
+        if (station.streamUrl == mediaId) return _playFrom(list, station);
       }
+    }
+  }
+
+  /// Android Auto / Assistant voice search ("toque Antena 1 no Nice Radio"),
+  /// across the selected state and any state the car has opened. An empty
+  /// query ("toque uma rádio") plays the current station, or the first. No
+  /// match does nothing (voice users can't dismiss an error).
+  @override
+  Future<void> playFromSearch(String query, [Map<String, dynamic>? extras]) async {
+    if (query.trim().isEmpty) {
+      final station = _station ?? (_homeStations.isEmpty ? null : _homeStations.first);
+      if (station != null) _playFrom(_browsableStations, station);
+      return;
+    }
+    for (final list in _knownLists) {
+      final station = findStationByQuery(list, query);
+      if (station != null) return _playFrom(list, station);
     }
   }
 

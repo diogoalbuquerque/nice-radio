@@ -151,4 +151,19 @@ void main() {
       expect(nextBrowsableList(fresh: fresh, freshState: 'Rio de Janeiro', currentListState: null), fresh);
     });
   });
+
+  group('browseStateOrder', () {
+    test('puts the home state first and keeps every state once', () {
+      final order = browseStateOrder('São Paulo');
+      expect(order.first, 'São Paulo');
+      expect(order.length, 27);
+      expect(order.toSet().length, 27);
+    });
+
+    test('keeps the canonical order with no (or an unknown) home state', () {
+      expect(browseStateOrder(null).first, 'Acre');
+      expect(browseStateOrder('Atlântida').length, 27);
+      expect(browseStateOrder('Atlântida').first, 'Acre');
+    });
+  });
 }
