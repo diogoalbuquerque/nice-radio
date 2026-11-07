@@ -192,7 +192,11 @@ class _HomeContent extends ConsumerWidget {
     // (the controls, volume, favorite star, etc. further down) is
     // deliberately left alone — someone should still be able to pause or
     // favorite whatever is actually playing from here.
-    final showStationCard = station != null && (viewMode == StationViewMode.all || isFavorite);
+    // Favorites are per state: a station still playing from another state is
+    // not "in" this state's Favoritas, even though its id is favorited.
+    final inThisStatesFavorites =
+        station != null && (visibleStations.value?.any((s) => s.id == station.id) ?? false);
+    final showStationCard = station != null && (viewMode == StationViewMode.all || inThisStatesFavorites);
     // Drives PlaybackControls' refresh mode — see its own `isRefreshMode`
     // doc. Mirrors EmptyStationCard's own "Todas empty, not Favoritas
     // empty" and "genuine fetch error, either tab" branches exactly, so
@@ -319,6 +323,16 @@ class _HomeContent extends ConsumerWidget {
           ErrorBanner(message: player.errorMessage!),
         ],
         const SizedBox(height: 12),
+        // Samsung's volume pop-up covers the volume buttons when they sit
+        // high on the screen, so volume is below "Escolher estação". The sleep
+        // row stays last: its panel is the only block that expands downward.
+        ChooseStationButton(
+          onTap: () {
+            ref.trackTap('choose_station_open');
+            Navigator.of(context).push(MaterialPageRoute(settings: const RouteSettings(name: 'station_list'), builder: (_) => const StationListScreen()));
+          },
+        ),
+        const SizedBox(height: 12),
         VolumeCard(volumePercent: player.volumePercent),
         const SizedBox(height: 12),
         ActionButtonsRow(
@@ -348,13 +362,6 @@ class _HomeContent extends ConsumerWidget {
             },
           ),
         ],
-        const SizedBox(height: 12),
-        ChooseStationButton(
-          onTap: () {
-            ref.trackTap('choose_station_open');
-            Navigator.of(context).push(MaterialPageRoute(settings: const RouteSettings(name: 'station_list'), builder: (_) => const StationListScreen()));
-          },
-        ),
         const SizedBox(height: 12),
         Center(
           child: visibleStations.when(

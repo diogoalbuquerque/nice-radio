@@ -45,7 +45,9 @@ class _AboutContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       controller: controller,
-      padding: const EdgeInsets.fromLTRB(24, 12, 24, 32),
+      // `useSafeArea` only covers the top; without the bottom inset the last
+      // paragraph slides under the Android navigation bar (edge-to-edge).
+      padding: EdgeInsets.fromLTRB(24, 12, 24, 32 + MediaQuery.viewPaddingOf(context).bottom),
       children: [
         Center(
           child: Container(
