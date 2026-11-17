@@ -12,14 +12,29 @@ import '../providers/settings_provider.dart';
 import '../providers/stations_provider.dart';
 import '../services/analytics_service.dart';
 import '../theme/app_theme.dart';
+import '../utils/station_lists.dart';
 import '../widgets/segmented_toggle.dart';
 import '../widgets/station_avatar.dart';
 
-class StationListScreen extends ConsumerWidget {
+class StationListScreen extends ConsumerStatefulWidget {
   const StationListScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<StationListScreen> createState() => _StationListScreenState();
+}
+
+class _StationListScreenState extends ConsumerState<StationListScreen> {
+  final _searchController = TextEditingController();
+  String _query = '';
+
+  @override
+  void dispose() {
+    _searchController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
     final viewMode = ref.watch(viewModeProviderOrAll);
     final visibleStations = ref.watch(visibleStationsProvider);
     final currentStationId = ref.watch(playerProvider.select((player) => player.currentStation?.id));
@@ -69,15 +84,55 @@ class StationListScreen extends ConsumerWidget {
                 },
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(22, 12, 22, 0),
+              child: TextField(
+                controller: _searchController,
+                onChanged: (value) => setState(() => _query = value),
+                textInputAction: TextInputAction.search,
+                style: const TextStyle(fontSize: 17),
+                decoration: InputDecoration(
+                  hintText: 'Buscar estação',
+                  hintStyle: TextStyle(color: AppColors.textSecondary),
+                  filled: true,
+                  fillColor: AppColors.card,
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
+                  suffixIcon: _query.isEmpty
+                      ? Icon(Icons.search, color: AppColors.textSecondary)
+                      : IconButton(
+                          icon: Icon(Icons.close, color: AppColors.textSecondary),
+                          tooltip: 'Limpar busca',
+                          onPressed: () {
+                            ref.trackTap('station_search_clear');
+                            _searchController.clear();
+                            setState(() => _query = '');
+                          },
+                        ),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(16),
+                    borderSide: BorderSide(color: AppColors.border, width: 1.5),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(16),
+                    borderSide: BorderSide(color: AppColors.border, width: 1.5),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(16),
+                    borderSide: BorderSide(color: AppColors.primary, width: 1.5),
+                  ),
+                ),
+              ),
+            ),
             Expanded(
               child: visibleStations.when(
-                data: (stations) {
+                data: (all) {
+                  final stations = filterStationsByQuery(all, _query);
                   if (stations.isEmpty) {
                     return Center(
                       child: Padding(
                         padding: const EdgeInsets.all(32),
                         child: Text(
-                          'Nenhuma estação aqui ainda.',
+                          _query.trim().isEmpty ? 'Nenhuma estação aqui ainda.' : 'Nenhuma estação encontrada.',
                           textAlign: TextAlign.center,
                           style: TextStyle(fontSize: 16, color: AppColors.textSecondary),
                         ),

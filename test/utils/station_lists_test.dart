@@ -64,6 +64,24 @@ void main() {
     });
   });
 
+  group('filterStationsByQuery', () {
+    final stations = [
+      _station(id: '1', name: 'Jovem Pan São Paulo'),
+      _station(id: '2', name: '94,7 MHz FM Rádio Pampa'),
+    ];
+
+    test('matches word prefixes, ignoring case and accents', () {
+      expect(filterStationsByQuery(stations, 'sao pa').map((s) => s.id), ['1']);
+      expect(filterStationsByQuery(stations, 'RADIO').map((s) => s.id), ['2']);
+      expect(filterStationsByQuery(stations, '94').map((s) => s.id), ['2']);
+    });
+
+    test('blank query keeps everything; no match gives empty', () {
+      expect(filterStationsByQuery(stations, '  '), stations);
+      expect(filterStationsByQuery(stations, 'zzz'), isEmpty);
+    });
+  });
+
   group('dedupeStationsByStream', () {
     test('merges the same stream, ignoring query string, scheme and trailing slash', () {
       final result = dedupeStationsByStream([

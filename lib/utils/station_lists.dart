@@ -63,6 +63,17 @@ RadioStation? findStationByQuery(List<RadioStation> stations, String query) {
   return best;
 }
 
+/// Stations whose name starts-with-matches every word typed (accent/case
+/// insensitive, "94" finds "94,7 FM"). Blank query keeps the list as is.
+List<RadioStation> filterStationsByQuery(List<RadioStation> stations, String query) {
+  final words = _searchWords(query);
+  if (words.isEmpty) return stations;
+  return stations.where((station) {
+    final haystack = _searchWords('${station.displayName} ${station.name}');
+    return words.every((w) => haystack.any((h) => h.startsWith(w)));
+  }).toList();
+}
+
 List<String> _searchWords(String text) {
   const from = 'àáâãäçèéêëìíîïñòóôõöùúûü';
   const to = 'aaaaaceeeeiiiinooooouuuu';
