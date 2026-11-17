@@ -19,7 +19,7 @@ pluginManagement {
 
 plugins {
     id("dev.flutter.flutter-plugin-loader") version "1.0.0"
-    id("com.android.application") version "9.1.0" apply false
+    id("com.android.application") version "9.1.1" apply false
     // START: FlutterFire Configuration
     // 4.4.1, not flutterfire configure's own default of 4.3.15: the
     // Crashlytics Gradle plugin below (v3) refuses to configure against
