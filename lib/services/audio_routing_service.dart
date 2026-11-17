@@ -28,9 +28,9 @@ class AudioRoutingService {
   /// (Re)applies the media session category and the speaker override.
   Future<void> configureSession({required bool forceSpeaker}) async {
     final session = await AudioSession.instance;
-    // `willPauseWhenDucked` stops Android from auto-ducking our volume; we get
-    // a `duck` event instead and pause (see `AudioInterruptionPauser`).
-    final musicConfig = const AudioSessionConfiguration.music().copyWith(androidWillPauseWhenDucked: true);
+    // `willPauseWhenDucked: false` lets Android auto-lower our volume when a
+    // notification sound plays (like YouTube Music) instead of pausing.
+    final musicConfig = const AudioSessionConfiguration.music().copyWith(androidWillPauseWhenDucked: false);
 
     if (!kIsWeb && Platform.isIOS && forceSpeaker) {
       await session.configure(musicConfig.copyWith(
