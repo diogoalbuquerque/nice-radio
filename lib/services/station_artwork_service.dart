@@ -37,10 +37,12 @@ import 'dart:typed_data';
 import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
 
 import '../models/radio_station.dart';
+import 'station_icons.dart';
 
 class StationArtworkService {
   static const _size = 512.0;
@@ -71,6 +73,11 @@ class StationArtworkService {
   /// update — same reasoning as `PlayerNotifier`'s own `_connectTimeout`,
   /// just for an image fetch instead of a stream.
   Future<Uint8List?> logoBytes(RadioStation station) async {
+    try {
+      return (await rootBundle.load(bundledIconPath(station.id))).buffer.asUint8List();
+    } catch (_) {
+      // No bundled logo for this station — try the network one below.
+    }
     final faviconUrl = station.faviconUrl;
     if (faviconUrl != null) {
       try {

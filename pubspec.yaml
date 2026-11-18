@@ -108,6 +108,7 @@ flutter:
 
   assets:
     - assets/icon/
+    - assets/station_icons/
 
 # Config for `dart run flutter_launcher_icons` — regenerates every
 # platform's launcher icon from the three source images in assets/icon/.
