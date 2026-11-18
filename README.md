@@ -815,8 +815,8 @@ nice-radio/
 │   │   ├── empty_station_card.dart     # texto mostrado quando não há rádio para tocar
 │   │   ├── playback_controls.dart      # avançar / tocar-pausar / próxima
 │   │   ├── volume_card.dart            # cartão de volume com os botões +/-
-│   │   ├── action_buttons_row.dart     # botões "Favoritar" e "Dormir"
-│   │   ├── sleep_panel.dart            # opções do timer de dormir
+│   │   ├── sleep_button.dart           # botão "Dormir" do cabeçalho (lua + minutos)
+│   │   ├── sleep_options.dart          # opções do timer de dormir (tela Dormir)
 │   │   ├── choose_station_button.dart  # botão "Escolher estação"
 │   │   └── no_state_selected.dart      # tela de "ainda não sabemos seu estado"
 │   └── screens/                  # as telas do app

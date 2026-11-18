@@ -8,6 +8,8 @@ import '../theme/app_theme.dart';
 class SegmentedToggle extends StatelessWidget {
   final String leftLabel;
   final String rightLabel;
+  final IconData? leftIcon;
+  final IconData? rightIcon;
   final bool isLeftSelected;
   final VoidCallback onSelectLeft;
   final VoidCallback onSelectRight;
@@ -16,6 +18,8 @@ class SegmentedToggle extends StatelessWidget {
     super.key,
     required this.leftLabel,
     required this.rightLabel,
+    this.leftIcon,
+    this.rightIcon,
     required this.isLeftSelected,
     required this.onSelectLeft,
     required this.onSelectRight,
@@ -31,14 +35,15 @@ class SegmentedToggle extends StatelessWidget {
       ),
       child: Row(
         children: [
-          Expanded(child: _tab(leftLabel, isLeftSelected, onSelectLeft)),
-          Expanded(child: _tab(rightLabel, !isLeftSelected, onSelectRight)),
+          Expanded(child: _tab(leftLabel, leftIcon, isLeftSelected, onSelectLeft)),
+          Expanded(child: _tab(rightLabel, rightIcon, !isLeftSelected, onSelectRight)),
         ],
       ),
     );
   }
 
-  Widget _tab(String label, bool selected, VoidCallback onTap) {
+  Widget _tab(String label, IconData? icon, bool selected, VoidCallback onTap) {
+    final color = selected ? Colors.white : AppColors.textSecondary;
     return Material(
       color: selected ? AppColors.primary : Colors.transparent,
       borderRadius: BorderRadius.circular(10),
@@ -57,15 +62,17 @@ class SegmentedToggle extends StatelessWidget {
           // neighboring tab.
           child: FittedBox(
             fit: BoxFit.scaleDown,
-            child: Text(
-              label,
-              textAlign: TextAlign.center,
-              maxLines: 1,
-              style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.bold,
-                color: selected ? Colors.white : AppColors.textSecondary,
-              ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                if (icon != null) ...[Icon(icon, size: 20, color: color), const SizedBox(width: 6)],
+                Text(
+                  label,
+                  textAlign: TextAlign.center,
+                  maxLines: 1,
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: color),
+                ),
+              ],
             ),
           ),
         ),

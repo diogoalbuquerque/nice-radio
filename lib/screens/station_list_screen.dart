@@ -73,6 +73,8 @@ class _StationListScreenState extends ConsumerState<StationListScreen> {
               child: SegmentedToggle(
                 leftLabel: 'Favoritas',
                 rightLabel: 'Todas',
+                leftIcon: Icons.star,
+                rightIcon: Icons.radio,
                 isLeftSelected: viewMode == StationViewMode.favorites,
                 onSelectLeft: () {
                   ref.trackTap('view_favorites', screen: 'station_list');

@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../models/radio_station.dart';
 import '../theme/app_theme.dart';
 import 'copy_icon_button.dart';
+import 'round_button.dart';
 import 'scrolling_text.dart';
 import 'section_card.dart';
 import 'station_avatar.dart';
@@ -15,6 +16,8 @@ class StationCard extends StatelessWidget {
   final String? nowPlaying;
   final bool justCopied;
   final VoidCallback onCopy;
+  final bool isFavorite;
+  final VoidCallback onToggleFavorite;
 
   const StationCard({
     super.key,
@@ -22,6 +25,8 @@ class StationCard extends StatelessWidget {
     required this.nowPlaying,
     required this.justCopied,
     required this.onCopy,
+    required this.isFavorite,
+    required this.onToggleFavorite,
   });
 
   @override
@@ -59,6 +64,17 @@ class StationCard extends StatelessWidget {
                     ),
                   ],
                 ),
+              ),
+              // The favorite toggle lives on the card of the station it
+              // affects. Circled like the volume buttons so it reads as a
+              // button; orange (`favorite`) when set.
+              RoundButton(
+                icon: isFavorite ? Icons.star : Icons.star_border,
+                color: isFavorite ? AppColors.favorite : AppColors.textSecondary,
+                tooltip: isFavorite ? 'Remover dos favoritos' : 'Favoritar',
+                iconSize: 26,
+                padding: const EdgeInsets.all(11),
+                onTap: onToggleFavorite,
               ),
             ],
           ),

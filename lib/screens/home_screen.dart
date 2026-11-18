@@ -1,14 +1,11 @@
-// The app's only "everyday" screen: current station, now playing, play
-// controls, volume, favorite/sleep timer, and links to the station list
-// and settings. Every other screen is reached from here.
+// The app's only "everyday" screen: current station (with its favorite star),
+// now playing, play controls, volume, and links to the station list, sleep
+// timer and settings. Every other screen is reached from here.
 //
-// WHY a couple of pieces of state live in this widget (not in a
-// provider): `_sleepPanelOpen` (is the sleep-timer picker expanded) and
-// `_justCopied` (the brief checkmark after copying the song title) are
-// purely cosmetic, screen-local, and never need to survive navigating
-// away. Promoting them to global provider state would make the player
-// provider bigger for no benefit — see player_provider.dart's own note
-// on the same tradeoff for why favorite status went the other way.
+// WHY `_justCopied` (the brief checkmark after copying the song title)
+// lives in this widget, not a provider: it is purely cosmetic and
+// screen-local. Promoting it to global state would make the player
+// provider bigger for no benefit.
 //
 // WHY the content blocks below (the station card, playback controls,
 // volume, etc.) are separate widgets in `lib/widgets/` instead of private
@@ -34,7 +31,6 @@ import '../providers/settings_provider.dart';
 import '../providers/stations_provider.dart';
 import '../services/analytics_service.dart';
 import '../theme/app_theme.dart';
-import '../widgets/action_buttons_row.dart';
 import '../widgets/choose_station_button.dart';
 import '../widgets/empty_station_card.dart';
 import '../widgets/error_banner.dart';
@@ -43,11 +39,12 @@ import '../widgets/no_state_selected.dart';
 import '../widgets/playback_controls.dart';
 import '../widgets/round_button.dart';
 import '../widgets/segmented_toggle.dart';
-import '../widgets/sleep_panel.dart';
+import '../widgets/sleep_button.dart';
 import '../widgets/station_card.dart';
 import '../widgets/stations_offline_dialog.dart';
 import '../widgets/volume_card.dart';
 import 'settings_screen.dart';
+import 'sleep_screen.dart';
 import 'station_list_screen.dart';
 
 class HomeScreen extends ConsumerStatefulWidget {
@@ -58,7 +55,6 @@ class HomeScreen extends ConsumerStatefulWidget {
 }
 
 class _HomeScreenState extends ConsumerState<HomeScreen> {
-  bool _sleepPanelOpen = false;
   bool _justCopied = false;
   Timer? _copyFeedbackTimer;
 
@@ -126,10 +122,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                 },
               )
             : _HomeContent(
-                sleepPanelOpen: _sleepPanelOpen,
                 justCopied: _justCopied,
-                onToggleSleepPanel: () => setState(() => _sleepPanelOpen = !_sleepPanelOpen),
-                onCloseSleepPanel: () => setState(() => _sleepPanelOpen = false),
                 onCopy: _handleCopy,
               ),
       ),
@@ -147,17 +140,11 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 }
 
 class _HomeContent extends ConsumerWidget {
-  final bool sleepPanelOpen;
   final bool justCopied;
-  final VoidCallback onToggleSleepPanel;
-  final VoidCallback onCloseSleepPanel;
   final ValueChanged<String> onCopy;
 
   const _HomeContent({
-    required this.sleepPanelOpen,
     required this.justCopied,
-    required this.onToggleSleepPanel,
-    required this.onCloseSleepPanel,
     required this.onCopy,
   });
 
@@ -247,7 +234,16 @@ class _HomeContent extends ConsumerWidget {
                     ref.read(settingsProvider.notifier).toggleDarkMode();
                   },
                 ),
-                const SizedBox(width: 10),
+                const SizedBox(width: 8),
+                SleepButton(
+                  minutes: player.sleepRemainingMinutes,
+                  color: headerIconColor,
+                  onTap: () {
+                    ref.trackTap('sleep_open');
+                    Navigator.of(context).push(MaterialPageRoute(settings: const RouteSettings(name: 'sleep'), builder: (_) => const SleepScreen()));
+                  },
+                ),
+                const SizedBox(width: 8),
                 RoundButton(
                   icon: Icons.settings,
                   color: headerIconColor,
@@ -267,6 +263,8 @@ class _HomeContent extends ConsumerWidget {
         SegmentedToggle(
           leftLabel: 'Favoritas',
           rightLabel: 'Todas',
+          leftIcon: Icons.star,
+          rightIcon: Icons.radio,
           isLeftSelected: viewMode == StationViewMode.favorites,
           onSelectLeft: () {
             ref.trackTap('view_favorites', screen: 'home');
@@ -288,6 +286,11 @@ class _HomeContent extends ConsumerWidget {
             onCopy: () {
               ref.trackTap('copy_now_playing');
               onCopy(player.nowPlayingTitle ?? '');
+            },
+            isFavorite: isFavorite,
+            onToggleFavorite: () {
+              ref.trackTap('favorite_toggle');
+              ref.read(favoritesProvider.notifier).toggle(station.id);
             },
           ),
         const SizedBox(height: 12),
@@ -324,8 +327,7 @@ class _HomeContent extends ConsumerWidget {
         ],
         const SizedBox(height: 12),
         // Samsung's volume pop-up covers the volume buttons when they sit
-        // high on the screen, so volume is below "Escolher estação". The sleep
-        // row stays last: its panel is the only block that expands downward.
+        // high on the screen, so volume is below "Escolher estação".
         ChooseStationButton(
           onTap: () {
             ref.trackTap('choose_station_open');
@@ -334,34 +336,6 @@ class _HomeContent extends ConsumerWidget {
         ),
         const SizedBox(height: 12),
         VolumeCard(volumePercent: player.volumePercent),
-        const SizedBox(height: 12),
-        ActionButtonsRow(
-          isFavorite: isFavorite,
-          sleepMinutes: player.sleepRemainingMinutes,
-          sleepPanelOpen: sleepPanelOpen,
-          hasStation: station != null,
-          onToggleFavorite: station == null
-              ? null
-              : () {
-                  ref.trackTap('favorite_toggle');
-                  ref.read(favoritesProvider.notifier).toggle(station.id);
-                },
-          onToggleSleepPanel: () {
-            ref.trackTap('sleep_panel_toggle');
-            onToggleSleepPanel();
-          },
-        ),
-        if (sleepPanelOpen) ...[
-          const SizedBox(height: 12),
-          SleepPanel(
-            selectedMinutes: player.sleepMinutes,
-            onSelect: (minutes) {
-              ref.trackTap('sleep_option');
-              ref.read(playerProvider.notifier).setSleepMinutes(minutes);
-              onCloseSleepPanel();
-            },
-          ),
-        ],
         const SizedBox(height: 12),
         Center(
           child: visibleStations.when(
