@@ -25,6 +25,7 @@ import '../services/listening_tracker.dart';
 import '../services/system_volume_service.dart';
 import 'player_state.dart';
 import 'settings_provider.dart';
+import '../utils/icy_title.dart';
 import '../utils/station_lists.dart';
 import 'stations_provider.dart';
 
@@ -88,6 +89,10 @@ class PlayerNotifier extends Notifier<PlayerState> {
   /// success. Same pattern as `_HomeWidgetSyncState._updateGeneration` and
   /// `RadioAudioHandler._rebuildMediaItem` — use it for any new async write-back.
   int _loadToken = 0;
+
+  /// Title left over from the previous station when switching (see
+  /// [freshIcyTitle]); ignored until a different one arrives.
+  String? _staleIcyTitle;
 
   int _consecutiveFailures = 0;
   bool _resolvingInitialStation = false;
@@ -285,8 +290,8 @@ class PlayerNotifier extends Notifier<PlayerState> {
   /// independent late-success signal (see [_attachPlayerStateListener]).
   void _attachIcyMetadataListener() {
     _icySubscription = _player.icyMetadataStream.listen((metadata) {
-      final title = metadata?.info?.title?.trim();
-      final hasTitle = title != null && title.isNotEmpty;
+      final title = freshIcyTitle(metadata?.info?.title, stale: _staleIcyTitle);
+      final hasTitle = title != null;
       if (hasTitle) _consecutiveFailures = 0;
       state = state.copyWith(
         isPlaying: hasTitle ? true : state.isPlaying,
@@ -341,6 +346,7 @@ class PlayerNotifier extends Notifier<PlayerState> {
   /// retry live here once.
   Future<void> playStation(RadioStation station) async {
     final token = ++_loadToken;
+    _staleIcyTitle = station.id == _loadedStationId ? null : _player.icyMetadata?.info?.title?.trim();
     state = state.copyWith(
       currentStation: station,
       isLoading: true,
