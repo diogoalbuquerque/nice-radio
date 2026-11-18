@@ -76,11 +76,11 @@ class _StationListScreenState extends ConsumerState<StationListScreen> {
                 isLeftSelected: viewMode == StationViewMode.favorites,
                 onSelectLeft: () {
                   ref.trackTap('view_favorites', screen: 'station_list');
-                  ref.read(viewModeProvider.notifier).showFavorites();
+                  ref.read(playerProvider.notifier).switchViewMode(StationViewMode.favorites);
                 },
                 onSelectRight: () {
                   ref.trackTap('view_all', screen: 'station_list');
-                  ref.read(viewModeProvider.notifier).showAll();
+                  ref.read(playerProvider.notifier).switchViewMode(StationViewMode.all);
                 },
               ),
             ),

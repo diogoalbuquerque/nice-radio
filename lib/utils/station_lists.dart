@@ -139,3 +139,23 @@ List<String> browseStateOrder(String? homeState) {
   if (homeState != null && names.remove(homeState)) names.insert(0, homeState);
   return names;
 }
+
+/// Which station to select when entering a Favoritas/Todas tab whose stations
+/// are [tabList]: the one the person last had in that tab ([remembered], matched
+/// by id, if it is still listed), else the playing/selected one ([current], if
+/// it belongs to the tab), else the tab's first. Null only for an empty list.
+/// Returns the *list's* copy, like [pickInitialStation].
+RadioStation? stationForTab(
+  List<RadioStation> tabList, {
+  required String? rememberedId,
+  required RadioStation? current,
+}) {
+  if (tabList.isEmpty) return null;
+  for (final id in [rememberedId, current?.id]) {
+    if (id == null) continue;
+    for (final station in tabList) {
+      if (station.id == id) return station;
+    }
+  }
+  return tabList.first;
+}

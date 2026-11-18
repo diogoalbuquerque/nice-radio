@@ -360,6 +360,42 @@ class PlayerNotifier extends Notifier<PlayerState> {
     await _connectWithRetry(station, token: token);
   }
 
+  /// The last station the person had in each tab, so Favoritas -> Todas ->
+  /// Favoritas returns to the same one in each. In memory only.
+  final _stationIdByTab = <StationViewMode, String>{};
+
+  /// Switches the Favoritas/Todas tab *and* keeps a station selected in it:
+  /// see [stationForTab] for the order. If audio was playing (or loading) the
+  /// new selection is played, so the card never names a station other than the
+  /// one heard; otherwise it is only selected.
+  Future<void> switchViewMode(StationViewMode to) async {
+    final from = ref.read(viewModeProviderOrAll);
+    final notifier = ref.read(viewModeProvider.notifier);
+    final all = ref.read(stationsProvider).value;
+    if (all == null || from == to) {
+      await (to == StationViewMode.favorites ? notifier.showFavorites() : notifier.showAll());
+      return;
+    }
+    final favoriteIds = ref.read(favoritesProviderOrEmpty);
+    List<RadioStation> listFor(StationViewMode mode) =>
+        mode == StationViewMode.all ? all : all.where((s) => favoriteIds.contains(s.id)).toList();
+
+    final current = state.currentStation;
+    if (current != null && listFor(from).any((s) => s.id == current.id)) {
+      _stationIdByTab[from] = current.id;
+    }
+    final target = stationForTab(listFor(to), rememberedId: _stationIdByTab[to], current: current);
+
+    await (to == StationViewMode.favorites ? notifier.showFavorites() : notifier.showAll());
+    if (target == null || target.id == current?.id) return;
+    if (state.isPlaying || state.isLoading) {
+      await playStation(target);
+    } else {
+      state = state.copyWith(currentStation: target);
+      _persistLastStation(target);
+    }
+  }
+
   void _persistLastStation(RadioStation station) {
     ref.read(storageServiceProvider).setLastStation(station);
   }
