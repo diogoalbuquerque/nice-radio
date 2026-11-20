@@ -46,16 +46,41 @@ class StationCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
-                      decoration: BoxDecoration(
-                        color: AppColors.chipBackground,
-                        borderRadius: BorderRadius.circular(999),
-                      ),
-                      child: Text(
-                        station.genre,
-                        style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold, color: AppColors.primary),
-                      ),
+                    // The star sits on the genre row, not beside the whole
+                    // column, so the station name runs to the card's right
+                    // edge like the song title below it.
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Align(
+                            alignment: Alignment.centerLeft,
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
+                              decoration: BoxDecoration(
+                                color: AppColors.chipBackground,
+                                borderRadius: BorderRadius.circular(999),
+                              ),
+                              child: Text(
+                                station.genre,
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold, color: AppColors.primary),
+                              ),
+                            ),
+                          ),
+                        ),
+                        // The favorite toggle lives on the card of the station
+                        // it affects. Circled like the volume buttons so it
+                        // reads as a button; orange (`favorite`) when set.
+                        RoundButton(
+                          icon: isFavorite ? Icons.star : Icons.star_border,
+                          color: isFavorite ? AppColors.favorite : AppColors.textSecondary,
+                          tooltip: isFavorite ? 'Remover dos favoritos' : 'Favoritar',
+                          iconSize: 30,
+                          padding: const EdgeInsets.all(4),
+                          constraints: const BoxConstraints(),
+                          onTap: onToggleFavorite,
+                        ),
+                      ],
                     ),
                     const SizedBox(height: 5),
                     ScrollingText(
@@ -64,18 +89,6 @@ class StationCard extends StatelessWidget {
                     ),
                   ],
                 ),
-              ),
-              // The favorite toggle lives on the card of the station it
-              // affects. Circled like the volume buttons so it reads as a
-              // button; orange (`favorite`) when set.
-              RoundButton(
-                icon: isFavorite ? Icons.star : Icons.star_border,
-                color: isFavorite ? AppColors.favorite : AppColors.textSecondary,
-                tooltip: isFavorite ? 'Remover dos favoritos' : 'Favoritar',
-                iconSize: 30,
-                padding: const EdgeInsets.all(4),
-                constraints: const BoxConstraints(),
-                onTap: onToggleFavorite,
               ),
             ],
           ),
