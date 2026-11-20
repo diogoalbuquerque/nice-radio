@@ -27,6 +27,8 @@ void main() {
     expect(find.text('Não desligar'), findsOneWidget);
     expect(find.text('30 minutos'), findsOneWidget);
     expect(find.text('Faltam 12 min'), findsOneWidget);
+    expect(find.text('150 minutos'), findsOneWidget);
+    expect(find.text('180 minutos'), findsOneWidget);
 
     await tester.tap(find.text('60 minutos'));
     expect(picked, 60);
@@ -67,5 +69,38 @@ void main() {
     expect(find.byIcon(Icons.star_border), findsOneWidget);
     await tester.tap(find.byTooltip('Favoritar'));
     expect(taps, 1);
+  });
+
+  testWidgets('StationCard favorite and copy buttons share the same vertical axis', (tester) async {
+    await tester.pumpWidget(_wrap(StationCard(
+      station: _station,
+      nowPlaying: 'Artista - Música',
+      justCopied: false,
+      onCopy: () {},
+      isFavorite: false,
+      onToggleFavorite: () {},
+    )));
+    final star = tester.getRect(find.ancestor(of: find.byIcon(Icons.star_border), matching: find.byType(Material)).first);
+    final copy = tester.getRect(find.ancestor(of: find.byIcon(Icons.copy), matching: find.byType(Material)).first);
+    expect(star.center.dx, closeTo(copy.center.dx, 0.5));
+    expect(star.width, closeTo(copy.width, 0.5));
+  });
+
+  testWidgets('SleepButton centers the minutes on the button at 2x font size', (tester) async {
+    await tester.pumpWidget(ProviderScope(
+      child: MaterialApp(
+        builder: (context, child) =>
+            MediaQuery(data: MediaQuery.of(context).copyWith(textScaler: const TextScaler.linear(2)), child: child!),
+        home: Scaffold(body: Center(child: SleepButton(minutes: 120, color: Colors.blue, onTap: () {}))),
+      ),
+    ));
+    final button = tester.getRect(find.byType(SleepButton));
+    final text = tester.getRect(find.text('120'));
+    expect(text.center.dx, closeTo(button.center.dx, 0.5));
+    expect(text.center.dy, closeTo(button.center.dy, 0.5));
+    final pill = tester.getRect(find.ancestor(of: find.text('120'), matching: find.byType(DecoratedBox)).first);
+    expect(pill.center.dx, closeTo(button.center.dx, 0.5));
+    expect(pill.center.dy, closeTo(button.center.dy, 0.5));
+    expect(button.contains(pill.topLeft) && button.contains(pill.bottomRight), isTrue);
   });
 }

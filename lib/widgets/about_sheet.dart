@@ -36,7 +36,7 @@ class _AboutContent extends StatelessWidget {
     (Icons.my_location, 'As principais estações do seu estado'),
     (Icons.play_circle_fill, 'Funcionalidades pensadas para facilitar'),
     (Icons.star, 'Escolha suas estações favoritas'),
-    (Icons.bedtime, 'Temporizador para dormir ouvindo rádio'),
+    (Icons.snooze, 'Temporizador para dormir ouvindo rádio'),
     (Icons.lightbulb, 'Modo noturno'),
     (Icons.mic, 'Atalhos e comandos de voz para tocar sem mexer na tela'),
   ];

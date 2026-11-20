@@ -23,6 +23,8 @@ class RoundButton extends StatelessWidget {
   final double size;
   final double? iconSize;
   final EdgeInsetsGeometry? padding;
+  // IconButton enforces a 48px tap target; set this to go below it.
+  final BoxConstraints? constraints;
   final VoidCallback? onTap;
 
   const RoundButton({
@@ -34,6 +36,7 @@ class RoundButton extends StatelessWidget {
     this.size = 44,
     this.iconSize,
     this.padding,
+    this.constraints,
     required this.onTap,
   }) : assert(icon != null || iconWidget != null, 'Provide either icon or iconWidget');
 
@@ -47,6 +50,9 @@ class RoundButton extends StatelessWidget {
         tooltip: tooltip,
         iconSize: iconSize ?? size * 0.45,
         padding: padding ?? EdgeInsets.all(size * 0.2),
+        constraints: constraints,
+        // Without this the button still reserves a 48px tap target around itself.
+        style: constraints == null ? null : IconButton.styleFrom(tapTargetSize: MaterialTapTargetSize.shrinkWrap),
         onPressed: onTap,
       ),
     );

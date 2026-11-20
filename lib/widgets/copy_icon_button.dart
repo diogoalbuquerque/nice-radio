@@ -15,12 +15,12 @@ class CopyIconButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       color: AppColors.subtleBackground,
-      borderRadius: BorderRadius.circular(10),
+      shape: const CircleBorder(),
       child: InkWell(
-        borderRadius: BorderRadius.circular(10),
+        customBorder: const CircleBorder(),
         onTap: onTap,
         child: Padding(
-          padding: const EdgeInsets.all(8),
+          padding: const EdgeInsets.all(10),
           child: Icon(
             justCopied ? Icons.check : Icons.copy,
             size: 18,

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import 'choice_pill.dart';
 
-const sleepOptions = [0, 30, 60, 120];
+const sleepOptions = [0, 30, 60, 120, 150, 180];
 
 /// The sleep-timer choices, one big full-width row each (the body of
 /// `SleepScreen`). Prop-driven so it is testable without the player.
