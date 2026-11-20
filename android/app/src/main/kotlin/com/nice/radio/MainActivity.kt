@@ -1,6 +1,9 @@
 package com.nice.radio
 
+import android.content.Context
 import android.content.Intent
+import android.media.AudioManager
+import android.media.AudioRecordingConfiguration
 import android.os.Bundle
 import com.ryanheise.audioservice.AudioServiceActivity
 import io.flutter.embedding.engine.FlutterEngine
@@ -25,8 +28,14 @@ import io.flutter.plugin.common.MethodChannel
 // Actions open this activity with a niceradio:// URI. Commands are queued
 // here and Dart *pulls* them (takePendingCommands) — a cold start delivers
 // the intent before Dart is listening, so pushing the payload would lose it.
+//
+// And "com.nice.radio/recording": tells Dart when *another* app is recording
+// the microphone (this app never records), so the radio can pause during a
+// WhatsApp voice note like Apple Music does. Audio focus cannot tell that
+// apart from a notification sound (both ask "may duck").
 class MainActivity : AudioServiceActivity() {
     private var commandChannel: MethodChannel? = null
+    private var recordingCallback: AudioManager.AudioRecordingCallback? = null
     private val pendingCommands = mutableListOf<Map<String, String>>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -58,8 +67,22 @@ class MainActivity : AudioServiceActivity() {
         pendingCommands.add(mapOf("uri" to uri.toString()))
     }
 
+    override fun onDestroy() {
+        recordingCallback?.let { (getSystemService(Context.AUDIO_SERVICE) as AudioManager).unregisterAudioRecordingCallback(it) }
+        recordingCallback = null
+        super.onDestroy()
+    }
+
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
+        val recordingChannel = MethodChannel(flutterEngine.dartExecutor.binaryMessenger, "com.nice.radio/recording")
+        val audioManager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
+        recordingCallback?.let { audioManager.unregisterAudioRecordingCallback(it) }
+        recordingCallback = object : AudioManager.AudioRecordingCallback() {
+            override fun onRecordingConfigChanged(configs: MutableList<AudioRecordingConfiguration>) {
+                recordingChannel.invokeMethod("recordingChanged", configs.isNotEmpty())
+            }
+        }.also { audioManager.registerAudioRecordingCallback(it, null) }
         commandChannel = MethodChannel(flutterEngine.dartExecutor.binaryMessenger, "com.nice.radio/commands").also { channel ->
             channel.setMethodCallHandler { call, result ->
                 if (call.method == "takePendingCommands") {

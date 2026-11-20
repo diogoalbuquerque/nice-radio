@@ -53,10 +53,13 @@ class AudioRoutingService {
   }
 
   /// Whether the phone speaker should be forced right now: `true` when only
-  /// built-in outputs are connected. `null` when it cannot be told (web, or
+  /// built-in outputs are connected. `null` when it cannot be told (web, iOS, or
   /// the query failed) — callers then leave the current routing alone.
   Future<bool?> shouldForceSpeaker() async {
-    if (kIsWeb) return null;
+    // iOS: plain `playback` already plays through the loudspeaker. Forcing
+    // meant `playAndRecord`, a recording category that WhatsApp's voice-note
+    // recording does not interrupt, so the radio kept playing under it.
+    if (kIsWeb || Platform.isIOS) return null;
     try {
       final session = await AudioSession.instance;
       final devices = await session.getDevices(includeInputs: false, includeOutputs: true);
