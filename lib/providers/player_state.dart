@@ -14,7 +14,7 @@ class PlayerState {
   final RadioStation? currentStation;
   final bool isPlaying;
   final bool isLoading;
-  final int volumePercent; // 0-100, always a multiple of 10 (see setVolumePercent)
+  final int volumePercent; // 0-100, the system volume (see SystemVolumeService)
   final int sleepMinutes; // chosen duration; 0 means "no timer set"
   final int sleepRemainingMinutes; // countdown shown on the button; 0 when none
 

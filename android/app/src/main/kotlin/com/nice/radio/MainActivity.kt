@@ -93,6 +93,17 @@ class MainActivity : AudioServiceActivity() {
                 }
             }
         }
+        // Same call the hardware volume buttons make, so both move one identical step.
+        MethodChannel(flutterEngine.dartExecutor.binaryMessenger, "com.nice.radio/volume")
+            .setMethodCallHandler { call, result ->
+                if (call.method == "adjust") {
+                    val direction = if ((call.arguments as Int) > 0) AudioManager.ADJUST_RAISE else AudioManager.ADJUST_LOWER
+                    audioManager.adjustStreamVolume(AudioManager.STREAM_MUSIC, direction, AudioManager.FLAG_SHOW_UI)
+                    result.success(null)
+                } else {
+                    result.notImplemented()
+                }
+            }
         MethodChannel(flutterEngine.dartExecutor.binaryMessenger, "com.nice.radio/home_widget")
             .setMethodCallHandler { call, result ->
                 if (call.method == "updateNowPlaying") {

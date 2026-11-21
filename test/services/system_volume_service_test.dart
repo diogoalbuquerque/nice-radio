@@ -29,8 +29,16 @@ void main() {
     expect(await service.getVolumePercent(), isA<int>());
   });
 
-  test('setVolumePercent does not throw', () async {
-    await expectLater(service.setVolumePercent(50), completes);
+  test('stepVolume does not throw', () async {
+    await expectLater(service.stepVolume(1), completes);
+  });
+
+  test('stepOnScale moves one notch, snapping and clamping', () {
+    expect(SystemVolumeService.stepOnScale(0.5, 1, 16), 9 / 16);
+    expect(SystemVolumeService.stepOnScale(0.5, -1, 16), 7 / 16);
+    expect(SystemVolumeService.stepOnScale(0.52, 1, 16), 9 / 16); // off-notch snaps first
+    expect(SystemVolumeService.stepOnScale(1.0, 1, 16), 1.0);
+    expect(SystemVolumeService.stepOnScale(0.0, -1, 16), 0.0);
   });
 
   test('listen does not throw, even though nothing will ever call back', () {

@@ -29,7 +29,10 @@
 // and so on). Either way, a failure here is treated the same way
 // `LocationService` treats a failed GPS lookup: quietly, with a
 // reasonable fallback, never a crash.
+import 'dart:io' show Platform;
+
 import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:flutter/services.dart';
 import 'package:volume_controller/volume_controller.dart';
 
 class SystemVolumeService {
@@ -52,17 +55,32 @@ class SystemVolumeService {
     }
   }
 
-  /// Sets the system volume from a 0–100 integer percentage. A no-op on
-  /// platforms without system volume support.
-  Future<void> setVolumePercent(int percent) async {
+  /// iOS's hardware buttons move the volume in 16 equal steps (6.25%).
+  static const _iosSteps = 16;
+
+  /// Moves the system volume by exactly one press of the phone's own volume
+  /// buttons ([direction] +1 up, -1 down), so the in-app +/- and the hardware
+  /// buttons always move the same amount. Android: `adjustStreamVolume` in
+  /// `MainActivity.kt` (the very call the hardware button makes; the number of
+  /// steps varies by phone). iOS: one of [_iosSteps]. The listener reports the
+  /// result.
+  Future<void> stepVolume(int direction) async {
     if (kIsWeb) return;
     try {
-      await _controller.setVolume(percent.clamp(0, 100) / 100);
+      if (Platform.isAndroid) {
+        await const MethodChannel('com.nice.radio/volume').invokeMethod('adjust', direction);
+      } else {
+        await _controller.setVolume(stepOnScale(await _controller.getVolume(), direction, _iosSteps));
+      }
     } catch (_) {
-      // Nothing to fall back to — the on-screen percentage the caller
-      // already set optimistically is the best we can do here.
+      // Nothing to fall back to; the listener keeps the shown value honest.
     }
   }
+
+  /// [volume] (0–1) snapped to the nearest of [steps] notches, moved by
+  /// [direction] notches and clamped.
+  static double stepOnScale(double volume, int direction, int steps) =>
+      ((volume * steps).round() + direction).clamp(0, steps) / steps;
 
   /// Notifies [onChanged] whenever the system volume changes — including
   /// when the user presses the phone's physical volume buttons while the

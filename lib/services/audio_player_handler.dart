@@ -242,6 +242,11 @@ class RadioAudioHandler extends BaseAudioHandler {
   @override
   Future<void> pause() => _player.pause();
 
+  /// Android: swiping the app away from recents stops the radio (the
+  /// foreground service would otherwise keep it playing with no app).
+  @override
+  Future<void> onTaskRemoved() => stop();
+
   @override
   Future<void> stop() async {
     await _player.stop();

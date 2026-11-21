@@ -549,7 +549,14 @@ class PlayerNotifier extends Notifier<PlayerState> {
   /// at launch hijacked Bluetooth/car audio.
   Future<void> _updateSpeakerForConnectedDevices() async {
     final forceSpeaker = await _routing.shouldForceSpeaker();
-    if (forceSpeaker == null || forceSpeaker == state.speakerOn) return;
+    if (forceSpeaker == null) {
+      // iOS: volume_controller resets the category to `playback` +
+      // `mixWithOthers` (when it starts listening and on every foreground),
+      // which let Apple Music play over the radio. Re-assert ours each start.
+      await _routing.configureSession(forceSpeaker: state.speakerOn);
+      return;
+    }
+    if (forceSpeaker == state.speakerOn) return;
     state = state.copyWith(speakerOn: forceSpeaker);
     await _routing.configureSession(forceSpeaker: forceSpeaker);
   }
@@ -568,17 +575,11 @@ class PlayerNotifier extends Notifier<PlayerState> {
 
   // ------------------------------------------------------ volume & timers
 
-  /// Moves the phone's *system* volume in 10% steps (fixed steps are easier to
-  /// hit than a slider). The state update is optimistic; the system-volume
-  /// listener confirms or corrects it.
-  void setVolumePercent(int percent) {
-    final clamped = percent.clamp(0, 100);
-    state = state.copyWith(volumePercent: clamped);
-    _volumeService.setVolumePercent(clamped);
-  }
-
-  void increaseVolume() => setVolumePercent(state.volumePercent + 10);
-  void decreaseVolume() => setVolumePercent(state.volumePercent - 10);
+  /// Moves the phone's *system* volume by one hardware-button step (fixed
+  /// steps are easier to hit than a slider; matching the hardware step keeps
+  /// both buttons in agreement). The system-volume listener updates the state.
+  void increaseVolume() => _volumeService.stepVolume(1);
+  void decreaseVolume() => _volumeService.stepVolume(-1);
 
   /// Clears a stale "Rádio não disponível" banner when the person picks another
   /// state. Only the text: it must never interrupt playback.
