@@ -1,0 +1,1002 @@
+[
+ {
+  "stationuuid": "963fa65f-0601-11e8-ae97-52543be04c81",
+  "name": "Antena 1 São Paulo, SP (ZYD823 94,7 MHz FM) [aac]",
+  "url": "http://antena1.newradio.it/stream?ext=.mp3",
+  "url_resolved": "http://antena1.newradio.it/stream?ext=.mp3",
+  "favicon": "",
+  "tags": "adult contemporary,jazz,pop,smooth jazz",
+  "state": "São Paulo",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "531fced7-b22b-11e8-afe1-52543be04c81",
+  "name": "Antena 1 FM 94.7 São Paulo",
+  "url": "http://antena1.newradio.it/stream",
+  "url_resolved": "http://antena1.newradio.it/stream",
+  "favicon": "",
+  "tags": "adult contemporary,lite",
+  "state": "São Paulo",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "ad039169-2969-4a7a-be83-86f079f4a55e",
+  "name": "Rádio Bandeirantes - São Paulo",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RadioBandeirantesAAC.m3u8",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/RadioBandeirantesAAC.m3u8",
+  "favicon": "",
+  "tags": "local news",
+  "state": "São Paulo",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "ef07dbb2-1176-4b09-bb87-9e841300c3cf",
+  "name": "Smooth Jazz Lounge",
+  "url": "https://radio4.vip-radios.fm:18060/stream-128kmp3-SmoothJazzLounge",
+  "url_resolved": "https://radio4.vip-radios.fm:18060/stream-128kmp3-SmoothJazzLounge",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ef07dbb2-1176-4b09-bb87-9e841300c3cf-24a67115f4.png",
+  "tags": "jazz,smooth jazz,smooth lounge",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "4a17b7fa-42a0-4c32-bdc6-dc1c59066c96",
+  "name": "bandnews fm sp",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/BANDNEWSFM_SPAAC.m3u8",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/BANDNEWSFM_SPAAC.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/4a17b7fa-42a0-4c32-bdc6-dc1c59066c96-f3bb335e6f.png",
+  "tags": "news,news talk",
+  "state": "State of São Paulo",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "c8cfc213-6a39-4b45-b925-3c6acb3f8b68",
+  "name": "Rádio Band FM 96.1 FM",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/BANDFM_SPAAC",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/BANDFM_SPAAC",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c8cfc213-6a39-4b45-b925-3c6acb3f8b68-4a457da34d.png",
+  "tags": "pop",
+  "state": "Sao Paulo",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "52994d67-31ea-448f-b6bc-7eaeb6a3504b",
+  "name": "CBN São Paulo",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CBN_SPAAC.aac",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/CBN_SPAAC.aac",
+  "favicon": "",
+  "tags": "news,sports",
+  "state": "Sao Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "b746312d-1fd9-44c5-9db2-de69a8db009f",
+  "name": "RÁDIO LIGA SAMBA",
+  "url": "http://srv1.braudio.com.br:7308/;stream.nsv",
+  "url_resolved": "http://srv1.braudio.com.br:7308/;stream.nsv",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/b746312d-1fd9-44c5-9db2-de69a8db009f-69974c2895.png",
+  "tags": "",
+  "state": "São Paulo",
+  "bitrate": 256
+ },
+ {
+  "stationuuid": "d12439b1-0bfe-4caa-9dec-6f19af01db3a",
+  "name": "Kiss FM São Paulo",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_KISSFMAAC.aac?1655609055880",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_KISSFMAAC.aac?1655609055880",
+  "favicon": "",
+  "tags": "",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "b3a2b935-fa76-4086-9db3-22da3bb1ee9c",
+  "name": "BandNews FM",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/BANDNEWSFM_SPAAC_SC",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/BANDNEWSFM_SPAAC_SC",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/b3a2b935-fa76-4086-9db3-22da3bb1ee9c-f47b5e6a0d.png",
+  "tags": "news,sports",
+  "state": "Sao Paulo",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "c4335568-5976-4275-8f21-b9bae8adae78",
+  "name": "CBN São Paulo",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CBN_SPAAC_SC",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/CBN_SPAAC_SC",
+  "favicon": "",
+  "tags": "news,sports",
+  "state": "Sao Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "c7654109-7d20-4e41-b3e2-afcfdb988be2",
+  "name": "Rádio Anos 80",
+  "url": "http://live2.livemus.com.br:27400/live",
+  "url_resolved": "http://live2.livemus.com.br:27400/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c7654109-7d20-4e41-b3e2-afcfdb988be2-6773fa8a78.png",
+  "tags": "",
+  "state": "São Paulo (SP)",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "1b575746-d639-45f9-b4b7-07b8d82b70f9",
+  "name": "Rádio Buteco Sertanejo",
+  "url": "https://stream.zeno.fm/6kumndewqbruv",
+  "url_resolved": "https://stream.zeno.fm/6kumndewqbruv",
+  "favicon": "",
+  "tags": "anos 80,anos 90,brazilian music,moda de viola,romantica,sertaneja,sertanejo,sertanejo raiz",
+  "state": "São Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "7f1cf5bb-bbea-4d51-b98d-9b024d595043",
+  "name": "Rádio Stereo Mix ",
+  "url": "https://servidor24.brlogic.com:7134/live",
+  "url_resolved": "https://servidor24.brlogic.com:7134/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/7f1cf5bb-bbea-4d51-b98d-9b024d595043-f3f80bd1b6.png",
+  "tags": "flashback",
+  "state": "São Paulo",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "644f8c79-4b7f-4c22-9f5f-4152525d4e30",
+  "name": "Rádio Metropolitana 98.5 FM Pop",
+  "url": "https://ice.fabricahost.com.br/metrosppop",
+  "url_resolved": "https://ice.fabricahost.com.br/metrosppop",
+  "favicon": "",
+  "tags": "",
+  "state": "São Paulo",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "00bc4f1d-050c-49ae-bc42-a8aaa5d0ff5b",
+  "name": "Sertaneja 106.7",
+  "url": "https://sc4s.cdn.upx.com:8067/stream",
+  "url_resolved": "https://sc4s.cdn.upx.com:8067/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/00bc4f1d-050c-49ae-bc42-a8aaa5d0ff5b-4d810f2061.png",
+  "tags": "country,sertanejo",
+  "state": "São Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "484d3f26-659c-4e23-be90-f976849a0e89",
+  "name": "Radio Retrô Brasil",
+  "url": "http://s1.reliastream.com/proxy/radioret?mp=/stream:8076/;",
+  "url_resolved": "http://s1.reliastream.com/proxy/radioret?mp=/stream:8076/;",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/484d3f26-659c-4e23-be90-f976849a0e89-4a63acca33.png",
+  "tags": "",
+  "state": "São Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "0617d31e-d210-4b30-9763-6cf87104ca2f",
+  "name": "Rádio Metropolitana 98.5 FM",
+  "url": "https://ice.fabricahost.com.br/metropolitana985sp",
+  "url_resolved": "https://ice.fabricahost.com.br/metropolitana985sp",
+  "favicon": "",
+  "tags": "",
+  "state": "São Paulo",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "8e9b5ba4-dcc1-4dad-8ddf-e7cc04c33a00",
+  "name": "Rádio Jovem Pan 100.9 FM",
+  "url": "https://stream.zeno.fm/c45wbq2us3buv",
+  "url_resolved": "https://stream.zeno.fm/c45wbq2us3buv",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/8e9b5ba4-dcc1-4dad-8ddf-e7cc04c33a00-376e59ea90.png",
+  "tags": "entertainment,journalism,music,sport",
+  "state": "Sao Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "2eee3e72-5fe3-444c-9be2-72f7a6c7477d",
+  "name": "Rádio Joli MPB",
+  "url": "https://stream-163.zeno.fm/mrutsyhkc3quv",
+  "url_resolved": "https://stream-163.zeno.fm/mrutsyhkc3quv",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/2eee3e72-5fe3-444c-9be2-72f7a6c7477d-0b7fdef573.png",
+  "tags": "adult contemporary,mpb,música popular brasileira",
+  "state": "São Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "ea1961f6-8c80-4b47-b951-4411914dc814",
+  "name": "Progressive Earth Radio",
+  "url": "http://sv10.hdradios.net:6674/listen.pls?sid=1",
+  "url_resolved": "http://sv10.hdradios.net:6674/;",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ea1961f6-8c80-4b47-b951-4411914dc814-a4531afb9d.png",
+  "tags": "progressive rock",
+  "state": "São Paulo",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "4d9b07cb-51a6-4389-97a3-4de5f8aac911",
+  "name": "Rádio Bandeirantes 90.9 FM",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RadioBandeirantesAAC",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/RadioBandeirantesAAC",
+  "favicon": "",
+  "tags": "entertainment,news,sports",
+  "state": "Sao Paulo",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "c40c4d59-b54c-11e8-afe1-52543be04c81",
+  "name": "Digital Jazz",
+  "url": "http://stm01.virtualcast.com.br:8190/live",
+  "url_resolved": "http://stm01.virtualcast.com.br:8190/live",
+  "favicon": "",
+  "tags": "blues,bossa nova,jazz",
+  "state": "São Paulo",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "354d8c7e-a490-4b67-bc23-dd719ea54c83",
+  "name": "Rádio Bandeirantes 90.9 FM",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RadioBandeirantesAAC.m3u8?dist=radios.com.br",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/RadioBandeirantesAAC.m3u8?dist=radios.com.br",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/354d8c7e-a490-4b67-bc23-dd719ea54c83-91186812e2.png",
+  "tags": "news,soccer",
+  "state": "Sao Paulo",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "b3a7491f-e14e-4c1e-83c2-f404e084207b",
+  "name": "Radio Leve - Santos",
+  "url": "https://s09.maxcast.com.br:8098/live",
+  "url_resolved": "https://s09.maxcast.com.br:8098/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/b3a7491f-e14e-4c1e-83c2-f404e084207b-1d7b427145.png",
+  "tags": "adulta,flashback,românticas,webradio",
+  "state": "São Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "c7f6caca-5eb8-418e-a7f1-d52e7ff41926",
+  "name": "Jovem Pan News",
+  "url": "https://stream.zeno.fm/vlcraijc6yiuv",
+  "url_resolved": "https://stream.zeno.fm/vlcraijc6yiuv",
+  "favicon": "",
+  "tags": "news,sports",
+  "state": "São Paulo (SP)",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "030efc7c-8bd0-4fd2-9b52-e5d4e5d72f96",
+  "name": "Rádio Bandeirantes 85.7 FM",
+  "url": "https://stm23.xcast.com.br:11284/stream",
+  "url_resolved": "https://stm23.xcast.com.br:11284/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/030efc7c-8bd0-4fd2-9b52-e5d4e5d72f96-e206534127.png",
+  "tags": "journalism,soccer",
+  "state": "Sao Paulo",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "523fdf97-a758-4ffc-88b9-e36614e943fd",
+  "name": "Rádio Eldorado FM",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_ELDORADOAAC.aac",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_ELDORADOAAC.aac",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/523fdf97-a758-4ffc-88b9-e36614e943fd-bfafe3842b.png",
+  "tags": "adult contemporary,adulta,jazz,mpb",
+  "state": "São Paulo",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "9dea5101-aa15-414e-8dfd-6c29b68e0f59",
+  "name": "Alpha MPB",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/ALPHAMPBAAC.aac",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/ALPHAMPBAAC.aac",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/9dea5101-aa15-414e-8dfd-6c29b68e0f59-e2d35fd3aa.png",
+  "tags": "brazilian music,mpb",
+  "state": "São Paulo",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "55594c6e-bd3d-42ac-ab88-edc155ba303f",
+  "name": "Rádio Dance Music Anos 2000",
+  "url": "https://cloud1.cdnseguro.com:2190/;",
+  "url_resolved": "https://cloud1.cdnseguro.com:2190/;",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/55594c6e-bd3d-42ac-ab88-edc155ba303f-97f6173242.png",
+  "tags": "00s,dance,edm,electronic,techno,trance",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "a5f3e934-50d3-470a-ba18-a9bb29070b23",
+  "name": "Hunter.FM - O Canal MPB",
+  "url": "https://live.hunter.fm/mpb_normal",
+  "url_resolved": "https://live.hunter.fm/mpb_normal",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/a5f3e934-50d3-470a-ba18-a9bb29070b23-6d9fcb19c3.png",
+  "tags": "",
+  "state": "São Paulo",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "d927c675-820e-4d82-91ed-791ad86b0907",
+  "name": "Cultura Brasil (fm77.9)",
+  "url": "https://player-culturaam.stream.uol.com.br/live/culturaam.m3u8",
+  "url_resolved": "https://player-culturaam.stream.uol.com.br/live/culturaam.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d927c675-820e-4d82-91ed-791ad86b0907-6b0beb611e.png",
+  "tags": "",
+  "state": "São Paulo",
+  "bitrate": 716
+ },
+ {
+  "stationuuid": "87325c87-1791-49b6-8b78-27cf4b4413af",
+  "name": "Casa dos Caipiras",
+  "url": "https://8758.brasilstream.com.br/stream",
+  "url_resolved": "https://8758.brasilstream.com.br/stream",
+  "favicon": "",
+  "tags": "caipira,moda de viola,sertanejo raiz,viola",
+  "state": "São Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "296adbae-e14a-4c08-bad3-38e04877cc1d",
+  "name": "LIGA SAMBA WEB RÁDIO",
+  "url": "http://srv1.braudio.com.br:7308/;stream",
+  "url_resolved": "http://srv1.braudio.com.br:7308/;stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/296adbae-e14a-4c08-bad3-38e04877cc1d-2668d39f3f.png",
+  "tags": "",
+  "state": "SÃO PAULO",
+  "bitrate": 256
+ },
+ {
+  "stationuuid": "1aae2254-3d61-43ab-b9b1-d62f20619b05",
+  "name": "Radio Amigos do Flashback ",
+  "url": "https://stm4.voxhd.com.br:7086/;",
+  "url_resolved": "https://stm4.voxhd.com.br:7086/;",
+  "favicon": "",
+  "tags": "flashback",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "9d245111-a72c-404f-aeb3-226a3f597d27",
+  "name": "Rádio Metropolitana 98.5 FM Light",
+  "url": "https://ice.fabricahost.com.br/metropolitanasplight",
+  "url_resolved": "https://ice.fabricahost.com.br/metropolitanasplight",
+  "favicon": "",
+  "tags": "",
+  "state": "São Paulo",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "a731b712-8669-4fcb-a7d9-cc7bf2ce4799",
+  "name": "RÁDIO SÓ MPB SOROCABA",
+  "url": "http://srv1.braudio.com.br:7008/stream",
+  "url_resolved": "http://srv1.braudio.com.br:7008/stream",
+  "favicon": "",
+  "tags": "",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 320
+ },
+ {
+  "stationuuid": "56363d79-d9d7-40eb-9612-0ff1bcb0346a",
+  "name": "Rádio BandNews SP 96.9 FM",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/BANDNEWSFM_SPAAC",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/BANDNEWSFM_SPAAC",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/56363d79-d9d7-40eb-9612-0ff1bcb0346a-f3bb335e6f.png",
+  "tags": "news,sports",
+  "state": "Sao Paulo",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "c177f52c-a3f0-4477-8837-e40990c68232",
+  "name": "Rádio Joli Beatles",
+  "url": "https://stream.zeno.fm/3hgez706e3quv?zs",
+  "url_resolved": "https://stream.zeno.fm/3hgez706e3quv?zs",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c177f52c-a3f0-4477-8837-e40990c68232-13c01c127e.png",
+  "tags": "classic rock",
+  "state": "São Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "23477ac2-6774-4dd0-822e-a2ae0d9f24d1",
+  "name": "Metropolitana MPB São Paulo",
+  "url": "https://ice.fabricahost.com.br/metropolitanampb",
+  "url_resolved": "https://ice.fabricahost.com.br/metropolitanampb",
+  "favicon": "",
+  "tags": "brasil,brazil,mpb",
+  "state": "São Paulo (SP)",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "606fb1a5-5824-4b34-bfb2-18c2e5ca8625",
+  "name": "Radio Amigos do Sertanejo  ",
+  "url": "https://stm4.voxhd.com.br:7086/",
+  "url_resolved": "https://stm4.voxhd.com.br:7086/",
+  "favicon": "",
+  "tags": "sertanejo raiz",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "105608b1-e7e2-4acd-a256-6497225edc0f",
+  "name": "Smooth Jazz Brasil",
+  "url": "https://sc4s.cdn.upx.com:8176/stream",
+  "url_resolved": "https://sc4s.cdn.upx.com:8176/stream",
+  "favicon": "",
+  "tags": "",
+  "state": "São Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "8ea74eba-22fb-420f-a669-d270d24be011",
+  "name": "Rádio Music Hall",
+  "url": "http://server02.ouvir.radio.br:8050/stream",
+  "url_resolved": "http://server02.ouvir.radio.br:8050/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/8ea74eba-22fb-420f-a669-d270d24be011-4f1ed18931.png",
+  "tags": "flashback,pop-rock",
+  "state": "São Paulo",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "df804611-72ca-4207-9031-e6d663fc825d",
+  "name": "Radio Trans Mundial",
+  "url": "https://video.midiaserverbr.com:3975/live/rtmbrlive.m3u8",
+  "url_resolved": "https://video.midiaserverbr.com:3975/live/rtmbrlive.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/df804611-72ca-4207-9031-e6d663fc825d-98ffff856c.png",
+  "tags": "",
+  "state": "São Paulo Braszil",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "9bd72422-4f0a-4006-9bc8-10fa7bf80f2e",
+  "name": "Rádio Scalla Instrumental São Paulo / SP - Brasil",
+  "url": "https://s01.svrdedicado.org:6782/stream",
+  "url_resolved": "https://s01.svrdedicado.org:6782/stream",
+  "favicon": "",
+  "tags": "",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 192
+ },
+ {
+  "stationuuid": "09d32090-d718-4168-8720-ea4517e3481e",
+  "name": "Rádio CBN Campinas 99.1 FM",
+  "url": "https://8214.brasilstream.com.br/stream",
+  "url_resolved": "https://8214.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/09d32090-d718-4168-8720-ea4517e3481e-4c772b421d.png",
+  "tags": "debates & interviews,journalism,soccer",
+  "state": "Sao Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "979ab633-fbc4-4af4-9d14-98a5200fdd2e",
+  "name": "Hunter.FM - O Canal Sertanejo",
+  "url": "https://live.hunter.fm/sertanejo_normal",
+  "url_resolved": "https://live.hunter.fm/sertanejo_normal",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/979ab633-fbc4-4af4-9d14-98a5200fdd2e-6d9fcb19c3.png",
+  "tags": "",
+  "state": "São Paulo",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "8eb03f0d-ebf8-4f97-ba85-cdce78522733",
+  "name": "Rádio Notícias Tatuí - 98,3 FM",
+  "url": "https://ice.fabricahost.com.br/radionoticias",
+  "url_resolved": "https://f100.fabricahost.com.br/radionoticias?f=1794898471N01M7M4JAMHJNNMB51873TZ54M3&tid=01M7M4JAMHKT3KM4R6Y8TF79HD",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/8eb03f0d-ebf8-4f97-ba85-cdce78522733-e545291d1f.png",
+  "tags": "",
+  "state": "São Paulo",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "dac87115-d159-4625-8324-396ea852c661",
+  "name": "Rádio Cidade - Jundiaí",
+  "url": "http://r18.ciclano.io:9693/stream?1653871323495",
+  "url_resolved": "http://r18.ciclano.io:9693/stream?1653871323495",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/dac87115-d159-4625-8324-396ea852c661-00f54ab9d5.png",
+  "tags": "",
+  "state": "São Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "334768d5-38df-4e20-bd97-285acfaec937",
+  "name": "Massa FM São Paulo",
+  "url": "https://stm01.virtualcast.com.br:8000/massasaopaulo",
+  "url_resolved": "https://stm01.virtualcast.com.br:8000/massasaopaulo",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/334768d5-38df-4e20-bd97-285acfaec937-230055d964.png",
+  "tags": "entertainment,music",
+  "state": "Sao Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "3dcc5ceb-7bb4-4bf4-9270-4a6ee5c18a79",
+  "name": "Jovem Pan FM Campinas - 89.9",
+  "url": "https://paineldj5.com.br:20028/stream",
+  "url_resolved": "https://paineldj5.com.br:20028/stream",
+  "favicon": "",
+  "tags": "pop,rock",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "b98c8ab0-5378-4a4f-806b-fc58589f6366",
+  "name": "Rádio Sertaneja Raiz",
+  "url": "http://station.radionanet.com:8330/stream?1713376151781",
+  "url_resolved": "http://station.radionanet.com:8330/stream?1713376151781",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/b98c8ab0-5378-4a4f-806b-fc58589f6366-49fb8b8006.png",
+  "tags": "sertanejo,sertanejo raiz",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "5a2a4794-fbbc-4226-90af-39c80dd3c29b",
+  "name": "Rádio Amigos do Sertanejo ",
+  "url": "https://stm10.voxhd.com.br:7846/;",
+  "url_resolved": "https://stm10.voxhd.com.br:7846/;",
+  "favicon": "",
+  "tags": "",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "fdfc050b-71c8-4c16-9ec3-c91fedf62ae7",
+  "name": "antena1",
+  "url": "https://antenaone.crossradio.com.br/stream/2;",
+  "url_resolved": "https://antenaone.crossradio.com.br/stream/2;",
+  "favicon": "",
+  "tags": "",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "b9e48686-f197-11e9-a96c-52543be04c81",
+  "name": "SM Brasil",
+  "url": "http://stream.zeno.fm/xt4tf9zsxeruv",
+  "url_resolved": "http://stream-179.surfernetwork.com/xt4tf9zsxeruv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ4dDR0Zjl6c3hlcnV2IiwiaG9zdCI6InN0cmVhbS0xNzkuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6InRDOW55NnpfVHNlQTNmYkhwZUhwZGciLCJpYXQiOjE3OTQ5MTA1MTcsImV4cCI6MTc5NDkxMDU3N30.atf2GaXNyy8n0A3P9p5yh1aF_pUih3W74kQVjzfvevw",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/b9e48686-f197-11e9-a96c-52543be04c81-70219ca63a.png",
+  "tags": "",
+  "state": "São Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "487a6dc9-07d0-4d47-9da8-10c3b7a56e2c",
+  "name": "SAD MUSIC l Radio RighRise (Compre sua Radio - Instagram:@jpdofunk.ofc",
+  "url": "http://jpdofunk3.com.br:8242/stream",
+  "url_resolved": "http://jpdofunk3.com.br:8242/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/487a6dc9-07d0-4d47-9da8-10c3b7a56e2c-b6341b97b5.png",
+  "tags": "",
+  "state": "São Paulo (SP)",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "03beadd2-ce1d-4949-bab4-0dcce1894412",
+  "name": "Punk FM Brasil",
+  "url": "https://radio.punkfm.com.br/listen/punkfmbrasil/punkfmbrasil.mp3",
+  "url_resolved": "https://radio.punkfm.com.br/listen/punkfmbrasil/punkfmbrasil.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/03beadd2-ce1d-4949-bab4-0dcce1894412-59955443d7.png",
+  "tags": "",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "17e7e4db-ccf1-430d-80c8-7ec5b2d7ca54",
+  "name": "Rádio Rock - 89,1 FM",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_89FM_ADP.aac?dist=site-89fm",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_89FM_ADP.aac?dist=site-89fm",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/17e7e4db-ccf1-430d-80c8-7ec5b2d7ca54-1a2b811d24.png",
+  "tags": "classic rock,rock",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "c4d92d80-8a7c-4076-9373-3fe4ca74d5af",
+  "name": "Rádio Teomidia Instrumental",
+  "url": "https://usa3.fastcast4u.com/proxy/teomidiainstr?mp=/1",
+  "url_resolved": "https://usa3.fastcast4u.com/proxy/teomidiainstr?mp=/1",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c4d92d80-8a7c-4076-9373-3fe4ca74d5af-be594031f4.png",
+  "tags": "gospel,instrumental",
+  "state": "Sao Paulo",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "0fead09a-0739-46e1-88b6-fa4617ad688b",
+  "name": "Estilo FM 86.7",
+  "url": "https://cloud1.cdnseguro.com:20492/stream",
+  "url_resolved": "https://cloud1.cdnseguro.com:20492/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/0fead09a-0739-46e1-88b6-fa4617ad688b-f57ad67376.png",
+  "tags": "",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 32
+ },
+ {
+  "stationuuid": "7d03dbe5-43d3-4a8e-8cc7-b6d3c42456b9",
+  "name": "Radio Amigos do Futebol ",
+  "url": "https://ssl.voxhd.com.br:7086/;",
+  "url_resolved": "https://ssl.voxhd.com.br:7086/;",
+  "favicon": "",
+  "tags": "eclética",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "b78ee185-ad1c-4d88-adeb-ce993b10cdda",
+  "name": "ALPHA FM 101.7",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_ALPHAFM_ADP.aac",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_ALPHAFM_ADP.aac",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/b78ee185-ad1c-4d88-adeb-ce993b10cdda-e2d35fd3aa.png",
+  "tags": "",
+  "state": "São Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "4dbf247c-52c0-44e8-bf5f-f9803f401fbd",
+  "name": "107 FM Tatuí",
+  "url": "https://ice.fabricahost.com.br/107fm",
+  "url_resolved": "https://f108.fabricahost.com.br/107fm?f=1795303751N01M8072FGMECBJ8J47ZJF5HFBV&tid=01M8072FGMH75RX0V1JZCPS3G4",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/4dbf247c-52c0-44e8-bf5f-f9803f401fbd-f22379e260.png",
+  "tags": "local news,news,noticias,pop,rock",
+  "state": "Sao Paulo",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "0ec65b23-5732-4825-9e39-7df7856bb39b",
+  "name": "Dixie Rebel",
+  "url": "https://servidor36.brlogic.com:8572/live",
+  "url_resolved": "https://servidor36.brlogic.com:8572/live",
+  "favicon": "",
+  "tags": "blues rock,classic rock,rock & roll",
+  "state": "São Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "ea035d44-e6bf-4974-9bf0-a766b44df5ac",
+  "name": "Rádio Joli MPB",
+  "url": "http://stream.zeno.fm/mrutsyhkc3quv",
+  "url_resolved": "http://stream.zeno.fm/mrutsyhkc3quv",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ea035d44-e6bf-4974-9bf0-a766b44df5ac-0b7fdef573.png",
+  "tags": "adult contemporary,mpb,música popular brasileira",
+  "state": "São Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "91f47e52-5346-44d7-b6f8-6dd9e8cda89c",
+  "name": "Radio Amigos do Rock Nacional ",
+  "url": "https://stm10.voxhd.com.br:7846/",
+  "url_resolved": "https://stm10.voxhd.com.br:7846/",
+  "favicon": "",
+  "tags": "",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "f0d81ba6-285c-4b93-97c9-4398d20c7797",
+  "name": "Kiss FM - 92.5 - São Paulo ",
+  "url": "https://26593.live.streamtheworld.com/RADIO_KISSFM_ADP.aac",
+  "url_resolved": "https://26593.live.streamtheworld.com/RADIO_KISSFM_ADP.aac",
+  "favicon": "",
+  "tags": "rock",
+  "state": "São Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "a4282d30-0f30-4f33-b276-6bb675543b7c",
+  "name": "antenAZero",
+  "url": "https://servidor26-4.brlogic.com:8006/live",
+  "url_resolved": "https://servidor26-4.brlogic.com:8006/live",
+  "favicon": "",
+  "tags": "",
+  "state": "São Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "8ee67b0d-757c-4adc-83db-5ab5e26ba2b7",
+  "name": "Mundial Rock",
+  "url": "https://azura.mundialmusic.net/radio/8010/radio.mp3",
+  "url_resolved": "https://azura.mundialmusic.net/radio/8010/radio.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/8ee67b0d-757c-4adc-83db-5ab5e26ba2b7-52728add60.png",
+  "tags": "",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "e29587c0-b1c6-4f50-8209-6c8a098ebcdf",
+  "name": "Rádio Bla Rock",
+  "url": "https://s12.maxcast.com.br:8086/live",
+  "url_resolved": "https://s12.maxcast.com.br:8086/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/e29587c0-b1c6-4f50-8209-6c8a098ebcdf-3d3344954c.png",
+  "tags": "classic rock",
+  "state": "São Paulo",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "f509ca0d-b4fd-44fa-bf88-5a20ddbc7e2d",
+  "name": "012 Rock News",
+  "url": "http://9881.brasilstream.com.br/stream",
+  "url_resolved": "http://9881.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/f509ca0d-b4fd-44fa-bf88-5a20ddbc7e2d-cb9664eec6.png",
+  "tags": "",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "ed0de608-fb9a-49ab-9fd9-91609929be1d",
+  "name": "Rádio Jovem Pan 91.1 FM",
+  "url": "https://cast2.hoost.com.br:8039/stream",
+  "url_resolved": "https://cast2.hoost.com.br:8039/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ed0de608-fb9a-49ab-9fd9-91609929be1d-3c2b5bf403.png",
+  "tags": "pop rock,young",
+  "state": "Sao Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "7c1cc836-6e47-4675-beb4-ee8ca29f04e0",
+  "name": "NuMetal 1.0 - JubsTones ",
+  "url": "https://stream.zeno.fm/zg3ps1ckoeiuv",
+  "url_resolved": "https://stream.zeno.fm/zg3ps1ckoeiuv",
+  "favicon": "",
+  "tags": "",
+  "state": "São Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "70d52c80-84b7-4fc5-99c7-5972f75ded87",
+  "name": "Difusora Jundiaí",
+  "url": "http://shout35.crossradio.com.br:8112/stream?1653871122262",
+  "url_resolved": "http://shout35.crossradio.com.br:8112/stream?1653871122262",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/70d52c80-84b7-4fc5-99c7-5972f75ded87-cc9473ee03.png",
+  "tags": "popular",
+  "state": "São Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "eeacb245-039b-4706-8775-07f31e712a71",
+  "name": "Rádio Educadora 91.7 FM",
+  "url": "https://stm22.xcast.com.br:11282/stream",
+  "url_resolved": "https://stm22.xcast.com.br:11282/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/eeacb245-039b-4706-8775-07f31e712a71-5c885e598a.png",
+  "tags": "dance,pop,pop/rock",
+  "state": "Sao Paulo",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "b09e4efe-a1c0-4cd4-8994-b4edf32dc5ed",
+  "name": "Rádio USP 93.7 FM",
+  "url": "https://flow.emm.usp.br:8008/radiousp-128.mp3",
+  "url_resolved": "https://flow.emm.usp.br:8008/radiousp-128.mp3",
+  "favicon": "",
+  "tags": "mpb",
+  "state": "Sao Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "55f552f6-53fc-4b7e-948b-fd32c41e1871",
+  "name": "Radio Casa 8000",
+  "url": "https://servidor34-5.brlogic.com:7240/live?source=website",
+  "url_resolved": "https://servidor34-5.brlogic.com:7240/live?source=website",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/55f552f6-53fc-4b7e-948b-fd32c41e1871-1bcb6394bb.png",
+  "tags": "anos 80,old school,the best of 80's",
+  "state": "São Paulo",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "5e738d23-9ec6-4629-ac55-f45380f4a03b",
+  "name": "Rádio Difusora 960",
+  "url": "https://s23.maxcast.com.br:8130/live",
+  "url_resolved": "https://s23.maxcast.com.br:8130/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/5e738d23-9ec6-4629-ac55-f45380f4a03b-12a451222d.png",
+  "tags": "flashback",
+  "state": "Sao Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "4912dab1-896c-41af-bf00-99ccafbd8b80",
+  "name": "Rádio TMC 100.1 FM",
+  "url": "https://24373.live.streamtheworld.com/RT_SP.mp3?dist=RadiosComBr-TMC&1771879327541",
+  "url_resolved": "https://24373.live.streamtheworld.com/RT_SP.mp3?dist=RadiosComBr-TMC&1771879327541",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/4912dab1-896c-41af-bf00-99ccafbd8b80-9e44ddd4fa.png",
+  "tags": "debates e entrevistas,esportes,jornalismo(all news)",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "c1fb5788-5031-4eeb-bbc9-e08a8e9878df",
+  "name": "CBN Vale",
+  "url": "https://8018.brasilstream.com.br/stream",
+  "url_resolved": "https://8018.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c1fb5788-5031-4eeb-bbc9-e08a8e9878df-c00473b46e.png",
+  "tags": "news,sports",
+  "state": "Sao Paulo",
+  "bitrate": 32
+ },
+ {
+  "stationuuid": "6f850954-dc06-4952-a785-dab3dd1e387f",
+  "name": "Rádio Bíblia SBB",
+  "url": "https://servidor30-4.brlogic.com:7398/live",
+  "url_resolved": "https://servidor30-4.brlogic.com:7398/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/6f850954-dc06-4952-a785-dab3dd1e387f-815da27d80.png",
+  "tags": "evangelical,missionary",
+  "state": "Sao Paulo",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "54866938-8bf3-456e-8a16-da5695124d72",
+  "name": "Rádio Kboing 100.3 FM",
+  "url": "https://stream.knbcdn.com.br/kboing-fm/kbostream/playlist.m3u8",
+  "url_resolved": "https://stream.knbcdn.com.br/kboing-fm/kbostream/playlist.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/54866938-8bf3-456e-8a16-da5695124d72-82de488ef9.png",
+  "tags": "adult,adulta,pop,pop rock",
+  "state": "São Paulo",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "cea91be9-7157-45ff-a871-afe6dc962f91",
+  "name": "USP FM",
+  "url": "https://flow.emm.usp.br:8008/radiousp-rp-64.mp3",
+  "url_resolved": "https://flow.emm.usp.br:8008/radiousp-rp-64.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/cea91be9-7157-45ff-a871-afe6dc962f91-0c4b22b81b.png",
+  "tags": "",
+  "state": "São Paulo",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "ef610251-1302-47b2-99c5-0c17f13ed95f",
+  "name": "Super Rede Boa Vontade 1230 AM",
+  "url": "https://9000.brasilstream.com.br/stream",
+  "url_resolved": "https://9000.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ef610251-1302-47b2-99c5-0c17f13ed95f-9e9e567f8a.png",
+  "tags": "ecumenical,gospel",
+  "state": "Sao Paulo",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "36fb00ed-0774-41c1-a8fb-9e13cef330c9",
+  "name": "FM Vale Verde",
+  "url": "https://ice.fabricahost.com.br/fmvaleverde",
+  "url_resolved": "https://f100.fabricahost.com.br/fmvaleverde?f=1794873040N01M7KCA7QFJQQCFJXYK499Z88X&tid=01M7KCA7QFTD2GAG8GCQJAEZ29",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/36fb00ed-0774-41c1-a8fb-9e13cef330c9-8031d73744.png",
+  "tags": "música pop,sertanejo",
+  "state": "São Paulo",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "86089540-925b-4dd8-8e12-d69c9308386c",
+  "name": "Rádio Trans Mundial - RTM",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIOTRANSMUNDIALAAC_SC",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIOTRANSMUNDIALAAC_SC",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/86089540-925b-4dd8-8e12-d69c9308386c-c27c2df687.png",
+  "tags": "gospel",
+  "state": "Sao Paulo",
+  "bitrate": 32
+ },
+ {
+  "stationuuid": "ed0c6fe9-ff32-4be1-a662-fe1d0af6146c",
+  "name": "Rádio Brazil Imperial",
+  "url": "https://hts03.brascast.com:8430/live",
+  "url_resolved": "https://hts03.brascast.com:8430/live",
+  "favicon": "",
+  "tags": "music,noticias",
+  "state": "State of São Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "f5a792cd-ad3a-47d8-97d4-f9e3d7817303",
+  "name": "Rádio Band 106.7 FM",
+  "url": "https://stm2.xcast.com.br:11264/stream",
+  "url_resolved": "https://stm2.xcast.com.br:11264/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/f5a792cd-ad3a-47d8-97d4-f9e3d7817303-4e6f43c618.png",
+  "tags": "pagode,popular,samba,sertanejo",
+  "state": "Sao Paulo",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "69cb2356-459d-44a4-94d2-846f5d006cd3",
+  "name": "Radio Fut Music",
+  "url": "http://stm4.voxhd.com.br:7086/",
+  "url_resolved": "http://stm4.voxhd.com.br:7086/",
+  "favicon": "",
+  "tags": "",
+  "state": "Sao Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "42b7407d-5cfc-4a0a-85ca-7c5315181802",
+  "name": "VINTAGE BRASIL",
+  "url": "https://servidor37.brlogic.com:7094/live",
+  "url_resolved": "https://servidor37.brlogic.com:7094/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/42b7407d-5cfc-4a0a-85ca-7c5315181802-4f7ccfb961.png",
+  "tags": "brasil",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "005fe0e9-cb6f-4f75-8459-8b01c8970eac",
+  "name": "Rádio Viva 106.7 FM",
+  "url": "http://stm51.conectastm.com:11314/stream",
+  "url_resolved": "http://stm51.conectastm.com:11314/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/005fe0e9-cb6f-4f75-8459-8b01c8970eac-f49f5210ea.png",
+  "tags": "aracatuba,araçatuba,cultura am,eclética,futebol,popular,ronda policial",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "5da057e1-2928-40a8-a9fb-09d57e77c679",
+  "name": "Rádio Teomidia English",
+  "url": "https://usa3.fastcast4u.com/proxy/atos420engl?mp=/1",
+  "url_resolved": "https://usa3.fastcast4u.com/proxy/atos420engl?mp=/1",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/5da057e1-2928-40a8-a9fb-09d57e77c679-57364cc574.png",
+  "tags": "contemporary christian,gospel",
+  "state": "Sao Paulo",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "52684b6d-700f-4d6d-8f50-92f239026d3e",
+  "name": "Rádio Shekinah Só Louvor",
+  "url": "https://player.voxpainel.com.br/proxy/7076",
+  "url_resolved": "https://player.voxpainel.com.br/proxy/7076",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/52684b6d-700f-4d6d-8f50-92f239026d3e-5dea724bcd.png",
+  "tags": "gospel",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "d8361663-3d7e-425f-85af-b0370d41ce80",
+  "name": "Aquele Rock",
+  "url": "https://azura.servercast.com.br/listen/radio_leandro/radio.mp3?refresh=1744219941974",
+  "url_resolved": "https://azura.servercast.com.br/listen/radio_leandro/radio.mp3?refresh=1744219941974",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d8361663-3d7e-425f-85af-b0370d41ce80-b8d5e5f1aa.png",
+  "tags": "",
+  "state": "São Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "0a1ea001-513d-440e-a2ea-2468cec197f7",
+  "name": "Radio Calhambeque",
+  "url": "https://s01.transmissaodigital.com:7096/stream",
+  "url_resolved": "https://s01.transmissaodigital.com:7096/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/0a1ea001-513d-440e-a2ea-2468cec197f7-ba861266ec.png",
+  "tags": "",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "b30a4855-02c0-4fbf-95db-fde57d0fc06a",
+  "name": "Rádio Disney 91.3 FM",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/DISNEY_BRA_SP.mp3",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/DISNEY_BRA_SP.mp3",
+  "favicon": "",
+  "tags": "jovem,pop rock,sertanejo",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "0c026a08-982f-45a6-9013-920644969844",
+  "name": "CBN Grandes Lagos",
+  "url": "http://stm10.conectastm.com:8276/stream",
+  "url_resolved": "http://stm10.conectastm.com:8276/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/0c026a08-982f-45a6-9013-920644969844-af981fff57.png",
+  "tags": "news,sports",
+  "state": "Sao Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "9944043f-abd1-4d8c-bfea-ed180e1d7036",
+  "name": "Class FM Sorocaba",
+  "url": "https://cast2.hoost.com.br:8248/stream",
+  "url_resolved": "https://cast2.hoost.com.br:8248/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/9944043f-abd1-4d8c-bfea-ed180e1d7036-a46a88f6a9.png",
+  "tags": "",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "b5da1b5e-9b00-44eb-b86b-a6997f1bdf92",
+  "name": "Rádio USP 107.9 FM",
+  "url": "https://flow.emm.usp.br:8008/radiousp-rp-128.mp3",
+  "url_resolved": "https://flow.emm.usp.br:8008/radiousp-rp-128.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/b5da1b5e-9b00-44eb-b86b-a6997f1bdf92-8ca0347f11.png",
+  "tags": "varieties",
+  "state": "Sao Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "21da2b7f-5e81-47eb-bb78-a620dc135215",
+  "name": "Web Vintage Radio",
+  "url": "https://servidor29.brlogic.com:7060/live",
+  "url_resolved": "https://servidor29.brlogic.com:7060/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/21da2b7f-5e81-47eb-bb78-a620dc135215-ffa438b047.png",
+  "tags": "flashback",
+  "state": "São Paulo",
+  "bitrate": 192
+ }
+]

@@ -1,0 +1,352 @@
+[
+ {
+  "stationuuid": "9061e051-2cc3-11e9-a35e-52543be04c81",
+  "name": "Rádio Flashback Fm",
+  "url": "http://hd.matutos.com.br:8008/;stream.mp3",
+  "url_resolved": "http://hd.matutos.com.br:8008/;stream.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/9061e051-2cc3-11e9-a35e-52543be04c81-56cedfbad6.png",
+  "tags": "brasil,flashback,internacionais,nacionais,recordações,saudades",
+  "state": "Pernambuco",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "433073cc-cd48-11e8-a54a-52543be04c81",
+  "name": "Music FM 88.7",
+  "url": "http://cast4.audiostream.com.br:8006/live",
+  "url_resolved": "http://cast4.audiostream.com.br:8006/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/433073cc-cd48-11e8-a54a-52543be04c81-d34afd322a.png",
+  "tags": "",
+  "state": "Pernambuco",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "9643e575-0601-11e8-ae97-52543be04c81",
+  "name": "Nova Brasil FM Recife (ZYD241, 94,3 MHz FM)",
+  "url": "http://provisioning.streamtheworld.com/pls/NOVABRASIL_RECAAC.pls",
+  "url_resolved": "http://24373.live.streamtheworld.com:3690/NOVABRASIL_RECAAC_SC",
+  "favicon": "",
+  "tags": "brazilian music,local news,mpb,news,recife",
+  "state": "Pernambuco",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "6612d505-3b6a-4917-873e-e483d2ac443d",
+  "name": "Rádio Mix FM Recife 97.1 FM",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MIXFM_RECIFE971AAC.aac",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/MIXFM_RECIFE971AAC.aac",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/6612d505-3b6a-4917-873e-e483d2ac443d-83113b9bfc.png",
+  "tags": "",
+  "state": "Pernambuco",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "f4e01db7-ffe6-11e9-bbf2-52543be04c81",
+  "name": "Rádio Comunitária Aconchego",
+  "url": "https://fm.radioaconchego.org",
+  "url_resolved": "https://fm.radioaconchego.org",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/f4e01db7-ffe6-11e9-bbf2-52543be04c81-80edbb0277.png",
+  "tags": "autonomia, tecnologica,comunitaria,engenho do meio,livre,popular,recife,roda de fogo,saúde integral,serviço integrado de saúde,sitio das palmeiras,torrões",
+  "state": "Pernambuco",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "962ee1ed-0601-11e8-ae97-52543be04c81",
+  "name": "Rádio Petrolina FM (ZYX802, 98,3 MHz FM, Petronila, PE)",
+  "url": "http://hd4.matutos.com.br:8324/;stream.mp3",
+  "url_resolved": "http://hd4.matutos.com.br:8324/;stream.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/962ee1ed-0601-11e8-ae97-52543be04c81-1e22c0254d.png",
+  "tags": "community radio,full service,petrolina,petrolinafm",
+  "state": "Pernambuco",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "70d46b47-0f0e-4f37-a14a-310e5a06e23b",
+  "name": "Rádio Jornal de Recife 90.3 FM",
+  "url": "https://player-ne10-radiojornal-app.stream.uol.com.br/live/radiojornalrecifeapp_lsd.m3u8?vhost=player-ne10-radiojornal-app.stream.uol.com.br",
+  "url_resolved": "https://player-ne10-radiojornal-app.stream.uol.com.br/live/radiojornalrecifeapp_lsd.m3u8?vhost=player-ne10-radiojornal-app.stream.uol.com.br",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/70d46b47-0f0e-4f37-a14a-310e5a06e23b-c67a849496.png",
+  "tags": "jornalismo(all news)",
+  "state": "Pernambuco",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "3d6fb356-f695-4f37-9257-793c8c5e4f4b",
+  "name": "87 FM",
+  "url": "http://agrestehost.agrestehost.com.br:8041/stream",
+  "url_resolved": "http://agrestehost.agrestehost.com.br:8041/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/3d6fb356-f695-4f37-9257-793c8c5e4f4b-4bb08bbc6e.png",
+  "tags": "eclética,jovem",
+  "state": "Pernambuco",
+  "bitrate": 36
+ },
+ {
+  "stationuuid": "fdf5e292-9549-4d67-8b47-23d9f028c7a3",
+  "name": "Rádio Criatividade FM",
+  "url": "https://s04.maxcast.com.br:8148/live",
+  "url_resolved": "https://s04.maxcast.com.br:8148/live",
+  "favicon": "",
+  "tags": "",
+  "state": "Pernambuco",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "f4a005b8-b99d-4234-bc06-0d7aa166e941",
+  "name": "Rádio Som Brega ",
+  "url": "https://stm5.painelcast.com:7588/stream",
+  "url_resolved": "https://stm5.painelcast.com:7588/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/f4a005b8-b99d-4234-bc06-0d7aa166e941-82795f8b1f.png",
+  "tags": "musica brasileira",
+  "state": "Pernambuco",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "caad8f51-3bda-4289-a342-130c2e637b1d",
+  "name": "Bezerros FM",
+  "url": "https://sv10.hdradios.net:8616/stream",
+  "url_resolved": "https://sv10.hdradios.net:8616/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/caad8f51-3bda-4289-a342-130c2e637b1d-19934c96f1.png",
+  "tags": "",
+  "state": "Pernambuco",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "913ad0d1-dbc9-4946-9035-6185387beedf",
+  "name": "Rádio Marano FM",
+  "url": "https://streaming.livespanel.com:21023/maranofm",
+  "url_resolved": "https://streaming.livespanel.com:21023/maranofm",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/913ad0d1-dbc9-4946-9035-6185387beedf-abeede3c0c.png",
+  "tags": "eclética,entretenimiento,entrevistas",
+  "state": "Pernambuco",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "bdc15ed2-f76d-433d-ae51-bc231ab90e38",
+  "name": "87 FM",
+  "url": "https://exodo.ddns.seg.br:20011/;?1705778463505=",
+  "url_resolved": "https://exodo.ddns.seg.br:20011/;?1705778463505=",
+  "favicon": "",
+  "tags": "local news,local radio,music,news",
+  "state": "Pernambuco",
+  "bitrate": 36
+ },
+ {
+  "stationuuid": "5572bdc1-a0a2-4361-b1c6-246ee86b0381",
+  "name": "Rádio Riacho FM - O Amor da Cidade",
+  "url": "https://stm23.srvaudio.com.br:10974/stream",
+  "url_resolved": "https://stm23.srvaudio.com.br:10974/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/5572bdc1-a0a2-4361-b1c6-246ee86b0381-c09534d855.png",
+  "tags": "brega,entrevistas,forro,funk,gospel,sertanejo,sertanejo raiz,soul",
+  "state": "Pernambuco",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "ccabda07-5c37-446a-94ee-45dffd01bf5b",
+  "name": "Rádio Sete Colinas FM",
+  "url": "https://streaming.livespanel.com:20107/setecolinas",
+  "url_resolved": "https://streaming.livespanel.com:20107/setecolinas",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ccabda07-5c37-446a-94ee-45dffd01bf5b-2ef57f2c3f.png",
+  "tags": "adulta,entretenimiento,notícias",
+  "state": "Pernambuco",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "36de98f9-00ae-451d-9c55-7fd25b6e3ec2",
+  "name": "Rádio Sertaneja ",
+  "url": "https://stm5.painelcast.com:7584/stream",
+  "url_resolved": "https://stm5.painelcast.com:7584/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/36de98f9-00ae-451d-9c55-7fd25b6e3ec2-85d14ed489.png",
+  "tags": "country",
+  "state": "Pernambuco",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "c34d5589-cc8c-445d-ace0-3a0a26576e0b",
+  "name": "Radio Animu [MP3 192Kbps]",
+  "url": "https://stream.animu.moe/192",
+  "url_resolved": "https://stream.animu.moe/192",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c34d5589-cc8c-445d-ace0-3a0a26576e0b-889fdc3bfe.png",
+  "tags": "anime,anime endings,anime openings,game,japonese anime soundtracks,jpop,song requests,vgm ost",
+  "state": "Santa Cruz do Capibaribe - Pernambuco",
+  "bitrate": 192
+ },
+ {
+  "stationuuid": "2d632e1b-346b-43f7-9acf-fae672c7c6e1",
+  "name": "Rádio Católica ",
+  "url": "https://stm5.painelcast.com:7574/stream",
+  "url_resolved": "https://stm5.painelcast.com:7574/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/2d632e1b-346b-43f7-9acf-fae672c7c6e1-ee1d7fe49c.png",
+  "tags": "catholic",
+  "state": "Pernambuco",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "670827c3-b66b-4d60-a4ea-5d4b993e79a0",
+  "name": "Rádio Local SIVB",
+  "url": "https://s19.maxcast.com.br:8966/live",
+  "url_resolved": "https://s19.maxcast.com.br:8966/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/670827c3-b66b-4d60-a4ea-5d4b993e79a0-441b7380eb.png",
+  "tags": "",
+  "state": "Pernambuco",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "bdf9c69c-d858-4e73-b172-1a91bcaeb878",
+  "name": "Rádio Clube FM 99.1 - Recife (Oficial)",
+  "url": "https://radio.saopaulo01.com.br/8016/stream",
+  "url_resolved": "https://radio.saopaulo01.com.br/8016/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/bdf9c69c-d858-4e73-b172-1a91bcaeb878-0ecb8aee70.png",
+  "tags": "forró,pernambuco,piseiro,pop,recife",
+  "state": "Pernambuco",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "541f6bfb-961a-4453-a22b-7cc27e596355",
+  "name": "Frei Caneca FM",
+  "url": "https://centova3.transmissaodigital.com/proxy/freicaneca/stream",
+  "url_resolved": "https://centova3.transmissaodigital.com/proxy/freicaneca/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/541f6bfb-961a-4453-a22b-7cc27e596355-46c09bfb5e.png",
+  "tags": "",
+  "state": "Pernambuco",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "0d675f09-0753-4a0b-9095-5b7374c7032c",
+  "name": "Rádio Agnus Dei FM",
+  "url": "https://hts03.brascast.com:9144/live",
+  "url_resolved": "https://hts03.brascast.com:9144/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/0d675f09-0753-4a0b-9095-5b7374c7032c-f64b1e3222.png",
+  "tags": "catholic,catolica",
+  "state": "Pernambuco",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "8abb513c-baf3-40b6-bb56-dd824ee71ee7",
+  "name": "Jovem pan 103,1 FM Caruaru",
+  "url": "https://cast4.audiostream.com.br:20003/jp101",
+  "url_resolved": "https://cast4.audiostream.com.br:20003/jp101",
+  "favicon": "",
+  "tags": "jovem,pop rock",
+  "state": "Pernambuco",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "ceda4928-608c-4db7-99c7-f4658d4b24cb",
+  "name": "RadioYAH",
+  "url": "https://cp-1.owh.radio.br/listen/owh_s35277/radio-mp3",
+  "url_resolved": "https://cp-1.owh.radio.br/listen/owh_s35277/radio-mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ceda4928-608c-4db7-99c7-f4658d4b24cb-30340f9269.png",
+  "tags": "tshuvah",
+  "state": "pernambuco",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "567d7262-e75c-4d3c-b2a0-4e5b1b60b53c",
+  "name": "Rádio Vilabela 94.3 FM",
+  "url": "https://audio01.stmserver.com/radio/8010/radio",
+  "url_resolved": "https://audio01.stmserver.com/radio/8010/radio",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/567d7262-e75c-4d3c-b2a0-4e5b1b60b53c-e846aa09d4.png",
+  "tags": "",
+  "state": "Pernambuco ,Brasil",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "e89504a6-ab60-4501-8d7b-b10e92243200",
+  "name": "Rádio Líder FM 93.5",
+  "url": "http://ice.stmserver.com/radio/8020/radio",
+  "url_resolved": "http://ice.stmserver.com/radio/8020/radio",
+  "favicon": "",
+  "tags": "",
+  "state": "Pernambuco ,Brasil",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "a8c654ae-ef89-4f82-9684-e79a7da51cdf",
+  "name": "Rádio Estádio ",
+  "url": "https://stm5.painelcast.com:7556/stream",
+  "url_resolved": "https://stm5.painelcast.com:7556/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/a8c654ae-ef89-4f82-9684-e79a7da51cdf-9bc4442e44.png",
+  "tags": "futebol",
+  "state": "Pernambuco",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "c1300021-e3e0-4b68-9336-a09a8e671d12",
+  "name": "Rádio Kerigma",
+  "url": "https://radiosnet.site/stream/radiokerigma",
+  "url_resolved": "https://radiosnet.site/stream/radiokerigma",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c1300021-e3e0-4b68-9336-a09a8e671d12-7146867a09.png",
+  "tags": "",
+  "state": "Pernambuco",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "f0ea08b6-6702-4ac9-82ab-745e12908d33",
+  "name": "Rádio Multi Gospel",
+  "url": "https://radiosnet.site/stream/radiomultigospel",
+  "url_resolved": "https://radiosnet.site/stream/radiomultigospel",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/f0ea08b6-6702-4ac9-82ab-745e12908d33-63de81ed54.png",
+  "tags": "christian,gospel,religious",
+  "state": "Pernambuco",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "fc638096-92f0-47f0-954f-9eee677ef52b",
+  "name": "Rádio Sertão Gospel",
+  "url": "https://radiosnet.site/stream/radiosertaogospel",
+  "url_resolved": "https://radiosnet.site/stream/radiosertaogospel",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/fc638096-92f0-47f0-954f-9eee677ef52b-16657148e5.png",
+  "tags": "christian,gospel,religious",
+  "state": "Pernambuco",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "60c7f037-0811-4f97-9ec9-ae290ee02d32",
+  "name": "Tribuna FM 107.9 Recife",
+  "url": "https://servidor25-4.brlogic.com:7010/live?source=5258",
+  "url_resolved": "https://servidor25-4.brlogic.com:7010/live?source=5258",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/60c7f037-0811-4f97-9ec9-ae290ee02d32-de0764daf7.png",
+  "tags": "",
+  "state": "Pernambuco",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "18631784-cadc-4702-bcc2-743b302a0022",
+  "name": "Rádio cidade 99.5 FM ",
+  "url": "https://stm18.voxhd.com.br:10762/",
+  "url_resolved": "https://stm18.voxhd.com.br:10762/",
+  "favicon": "",
+  "tags": "rádio cidade fm sucesso em primeiro lugar",
+  "state": "Pernambuco ,Brasil",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "9a79de76-dada-4563-9fad-36ce7d5adebc",
+  "name": "Fundo Musical",
+  "url": "https://radiosnet.site/stream/radiofundomusical",
+  "url_resolved": "https://radiosnet.site/stream/radiofundomusical",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/9a79de76-dada-4563-9fad-36ce7d5adebc-2ec6587e6e.png",
+  "tags": "",
+  "state": "Pernambuco",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "53bae6a6-1304-4fb5-91f1-6fb47adbd2fa",
+  "name": "Rádio Nordestina Gospel",
+  "url": "https://radiosnet.site/stream/radionordestinagospel",
+  "url_resolved": "https://radiosnet.site/stream/radionordestinagospel",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/53bae6a6-1304-4fb5-91f1-6fb47adbd2fa-4320fe4108.png",
+  "tags": "christian,gospel,religious",
+  "state": "Pernambuco",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "e0a970b9-5dc5-4017-8ace-3db1f5172599",
+  "name": "Web Rádio Diz a Bíblia",
+  "url": "https://radiosnet.site/stream/dizabiblia",
+  "url_resolved": "https://radiosnet.site/stream/dizabiblia",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/e0a970b9-5dc5-4017-8ace-3db1f5172599-739a54b56a.png",
+  "tags": "christian,gospel,religious",
+  "state": "Pernambuco",
+  "bitrate": 128
+ }
+]

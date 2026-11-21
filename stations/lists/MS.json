@@ -1,0 +1,122 @@
+[
+ {
+  "stationuuid": "b75c874c-1f89-4bf2-993b-e30807657afe",
+  "name": "Morena FM Easy",
+  "url": "https://centova.svdns.com.br:20110/stream",
+  "url_resolved": "https://centova.svdns.com.br:20110/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/b75c874c-1f89-4bf2-993b-e30807657afe-7f32509d67.png",
+  "tags": "undefined",
+  "state": "Mato Grosso do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "eca86762-c8e0-4f42-baeb-13ec0e38aa69",
+  "name": "Morena FM 107,1 FM - Campo Grande",
+  "url": "https://centova.svdns.com.br:20110/stream.xspf",
+  "url_resolved": "http://centova.svdns.com.br:25518/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/eca86762-c8e0-4f42-baeb-13ec0e38aa69-2c67d008fd.png",
+  "tags": "classic rock,rock",
+  "state": "Mato Grosso do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "35ac4203-2b03-4b57-93d6-3aeb5701d78f",
+  "name": " Rádio Cidade Maracaju 104.3 FM",
+  "url": "https://servidor33-5.brlogic.com:7078/live",
+  "url_resolved": "https://servidor33-5.brlogic.com:7078/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/35ac4203-2b03-4b57-93d6-3aeb5701d78f-32fffbb79c.png",
+  "tags": "chamame,ecletic,hits,sertanejo,sertanejo raiz",
+  "state": "Mato Grosso do Sul",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "17bf4e43-5f4b-4a8a-a162-e5cf413e4cad",
+  "name": "Rádio Marabá FM 93,9",
+  "url": "https://rvn01.painelstream.net:9274/",
+  "url_resolved": "https://rvn01.painelstream.net:9274/",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/17bf4e43-5f4b-4a8a-a162-e5cf413e4cad-9f5013b8b3.png",
+  "tags": "chamame,ecletic,hits,sertanejo,sertanejo raiz",
+  "state": "Mato Grosso do Sul",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "ad4d02f5-82b7-45ba-941a-34ac96e7027c",
+  "name": "Cidade 97 - Campo Grande",
+  "url": "https://radio.megadj.com.br/listen/cidade97/radio.mp3",
+  "url_resolved": "https://radio.megadj.com.br/listen/cidade97/radio.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ad4d02f5-82b7-45ba-941a-34ac96e7027c-c23af24115.png",
+  "tags": "",
+  "state": "Mato Grosso do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "f9ccf0b3-dc5e-465d-99cb-cb8df6c39103",
+  "name": "Educativa FM 104,7 - Campo Grande",
+  "url": "https://stream01.digilab.com.br/fertel/radio/icecast.audio",
+  "url_resolved": "https://stream01.digilab.com.br/fertel/radio/icecast.audio",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/f9ccf0b3-dc5e-465d-99cb-cb8df6c39103-ae568ba24d.png",
+  "tags": "",
+  "state": "Mato Grosso do Sul",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "e0b4dd14-08e3-4fe5-b1be-a61944c8f241",
+  "name": "Rádio Coração 95.7 FM",
+  "url": "https://5a57bda70564a.streamlock.net/coracaohd/coracaohd.stream/chunklist_w23782252.m3u8",
+  "url_resolved": "https://5a57bda70564a.streamlock.net/coracaohd/coracaohd.stream/chunklist_w23782252.m3u8",
+  "favicon": "",
+  "tags": "brazilian music,catholic,christian,gospel,local news,news,religious,sertanejo",
+  "state": "Mato Grosso do Sul",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "ae53c96b-9b16-4036-a078-8b9169c7f30e",
+  "name": "Capital 95 - Campo Grande",
+  "url": "https://stm1.srvif.com:7908/stream",
+  "url_resolved": "https://stm1.srvif.com:7908/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ae53c96b-9b16-4036-a078-8b9169c7f30e-2077d99856.png",
+  "tags": "",
+  "state": "Mato Grosso do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "0564b26b-8d4a-4394-8f27-e195bbb3a610",
+  "name": "Rádio Difusora Pantanal 101.9 FM - Campo Grande",
+  "url": "https://aovivo.difusorapantanal.com.br/listen/difusora_pantanal/radio.mp3",
+  "url_resolved": "https://aovivo.difusorapantanal.com.br/listen/difusora_pantanal/radio.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/0564b26b-8d4a-4394-8f27-e195bbb3a610-3e4ead33dd.png",
+  "tags": "",
+  "state": "Mato Grosso do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "e9582305-3b3a-4495-8fb3-41e0651f7ebe",
+  "name": "Rádio Mega 94",
+  "url": "https://play.audiopromax.com/listen/mega94cg/live",
+  "url_resolved": "https://play.audiopromax.com/listen/mega94cg/live",
+  "favicon": "",
+  "tags": "jovem,mpb,pop,variedades",
+  "state": "Mato Grosso do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "5bc6fe06-6fd0-4bb0-9bf8-115295103c14",
+  "name": "Rádio Líder 87,9 FM",
+  "url": "https://9182.brasilstream.com.br/stream",
+  "url_resolved": "https://9182.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/5bc6fe06-6fd0-4bb0-9bf8-115295103c14-394ba7dfa5.png",
+  "tags": "ecletica,pop,radio comunitaria,sertanejo",
+  "state": "Mato Grosso do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "773a6a80-ab20-4e48-8fd4-f30859fa246b",
+  "name": "BLINK102FM - Campo Grande",
+  "url": "https://27323.live.streamtheworld.com/BLINK102FMAAC.aac",
+  "url_resolved": "https://27323.live.streamtheworld.com/BLINK102FMAAC.aac",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/773a6a80-ab20-4e48-8fd4-f30859fa246b-e05bfdf351.png",
+  "tags": "",
+  "state": "Mato Grosso do Sul",
+  "bitrate": 64
+ }
+]

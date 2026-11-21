@@ -1,0 +1,442 @@
+[
+ {
+  "stationuuid": "d7b33eb9-6692-402e-8abb-85105b57030e",
+  "name": "Jovem Pan Florianópolis",
+  "url": "http://wz5.dnip.com.br/jfloripa/jfloripa.stream/chunklist_w2047482307.m3u8",
+  "url_resolved": "http://wz5.dnip.com.br/jfloripa/jfloripa.stream/chunklist_w2047482307.m3u8",
+  "favicon": "",
+  "tags": "hits,international,local music,music,world music",
+  "state": "Santa Catarina",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "bf64595a-eed4-49de-94e5-87c1bb813a74",
+  "name": "Jovem Pan FM - Florianópolis - SC",
+  "url": "https://live.paineldj.com.br/proxy/jfloripa?mp=/stream",
+  "url_resolved": "https://live.paineldj.com.br/proxy/jfloripa?mp=/stream",
+  "favicon": "",
+  "tags": "chr,contemporary hits radio,dance,electronic dance music,jovem,jovem pan,pop,pop rock,top 40",
+  "state": "Santa Catarina",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "f34d64aa-b0a8-4551-b65f-9bbf4b765b9b",
+  "name": "Elite Studio FM",
+  "url": "https://stream.zeno.fm/jjgtqyoqkpvuv",
+  "url_resolved": "https://stream.zeno.fm/jjgtqyoqkpvuv",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/f34d64aa-b0a8-4551-b65f-9bbf4b765b9b-43b88063bf.png",
+  "tags": "flashback,pop,pop-rock,rock",
+  "state": "Santa Catarina ",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "db8f5d94-d128-4eb6-9dec-797cabee805e",
+  "name": "Radio Germanica",
+  "url": "https://s18.maxcast.com.br:8983/live",
+  "url_resolved": "https://s18.maxcast.com.br:8983/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/db8f5d94-d128-4eb6-9dec-797cabee805e-3c4ebfbbd4.png",
+  "tags": "german,multi,tirol",
+  "state": "Santa Catarina",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "02a3cf55-e3cf-11e9-a8ba-52543be04c81",
+  "name": "Rádio Top 104.9 FM",
+  "url": "http://audio01.viaflux.com.br:5500/live",
+  "url_resolved": "http://audio01.viaflux.com.br:5500/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/02a3cf55-e3cf-11e9-a8ba-52543be04c81-68e256314f.png",
+  "tags": "top40",
+  "state": "Santa Catarina",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "a071f06e-e7a2-4379-b9c9-3ca331f1db48",
+  "name": "Jovem Pan FM - Blumenau - SC",
+  "url": "https://ice.fabricahost.com.br/jpblumenau",
+  "url_resolved": "https://f108.fabricahost.com.br/jpblumenau?f=1794881372N01M7KM8FYV139E6C530NAP6TVN&tid=01M7KM8FYVRDEDV0GM8590K9MX",
+  "favicon": "",
+  "tags": "brazilian pop,contemporary hits radio,dance,electronic dance music,eurodance,jovem,pop,pop rock,top 40",
+  "state": "Santa Catarina",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "e2c08cc1-862c-434d-80f2-bb4a4e27558c",
+  "name": "Jaraguá FM 101.3",
+  "url": "http://cast.hoost.com.br:9701/stream",
+  "url_resolved": "http://cast.hoost.com.br:9701/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/e2c08cc1-862c-434d-80f2-bb4a4e27558c-8d74e24a1a.png",
+  "tags": "journalism,local music,local news",
+  "state": "Santa Catarina, SC",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "2776340d-7615-4c03-ab16-59a058c26c94",
+  "name": "Rádio Atlântida FM Florianópolis",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/ATL_FLO.mp3",
+  "url_resolved": "https://24383.live.streamtheworld.com:443/ATL_FLO.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/2776340d-7615-4c03-ab16-59a058c26c94-0405a7f223.png",
+  "tags": "pop rock",
+  "state": "Santa Catarina",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "cb9614ce-4676-4c83-ab9b-1d13f146d3bd",
+  "name": "Studio FM 99.1",
+  "url": "https://paineldj.com.br:20055/stream",
+  "url_resolved": "https://paineldj.com.br:20055/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/cb9614ce-4676-4c83-ab9b-1d13f146d3bd-a572fa506d.png",
+  "tags": "sertanejo",
+  "state": "Santa Catarina",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "f7ff2097-abdc-4187-b2b1-72308efc711c",
+  "name": "GOLD INSTRUMENTAL",
+  "url": "https://centova2.svdns.com.br:20038/stream",
+  "url_resolved": "https://centova2.svdns.com.br:20038/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/f7ff2097-abdc-4187-b2b1-72308efc711c-b3128b8bc3.png",
+  "tags": "easy listening,instrumental",
+  "state": "Santa Catarina, SC",
+  "bitrate": 160
+ },
+ {
+  "stationuuid": "ed7c66ee-e451-479e-8891-d38a1f3caa23",
+  "name": "Rádio Catarinense FM",
+  "url": "https://catarinensefm.streams.com.br/stream",
+  "url_resolved": "https://catarinensefm.streams.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ed7c66ee-e451-479e-8891-d38a1f3caa23-2447802edb.png",
+  "tags": "brazil",
+  "state": "Santa Catarina",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "a40bf14b-ad2a-4c21-8628-c0ac7c855e55",
+  "name": "Atlantida Blumenau",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/ATL_BLU.mp3",
+  "url_resolved": "https://24383.live.streamtheworld.com:443/ATL_BLU.mp3",
+  "favicon": "",
+  "tags": "",
+  "state": "Santa Catarina, SC",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "2837e1ca-98bd-40dd-9cf9-eaee44dab925",
+  "name": "Udesc FM Joinville - FM 91,9 MHz",
+  "url": "https://icecast.loopert.com/81",
+  "url_resolved": "https://icecast.loopert.com/81",
+  "favicon": "",
+  "tags": "classical,local news,talk",
+  "state": "Santa Catarina",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "9022c744-15fa-4e1f-a5a6-55a0b6850034",
+  "name": "Rádio 105 FM",
+  "url": "https://wz7.servidoresbrasil.com:8070/stream?1771865978025",
+  "url_resolved": "https://wz7.servidoresbrasil.com:8070/stream?1771865978025",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/9022c744-15fa-4e1f-a5a6-55a0b6850034-caa74c8deb.png",
+  "tags": "hits,popular,sertaneja",
+  "state": " Santa Catarina",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "1445d0a2-372d-43cd-80b8-586557985b9b",
+  "name": "GOLD CLASSIC",
+  "url": "https://centova2.svdns.com.br:20009/stream",
+  "url_resolved": "https://centova2.svdns.com.br:20009/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/1445d0a2-372d-43cd-80b8-586557985b9b-c859c69ea3.png",
+  "tags": "60's & 70's,flashback",
+  "state": "Santa Catarina, SC",
+  "bitrate": 160
+ },
+ {
+  "stationuuid": "b1d09314-45ee-4c18-901a-32c8ab1313cf",
+  "name": "Rádio Galegóvski",
+  "url": "https://radio.galegovski.com/live",
+  "url_resolved": "https://radio.galegovski.com/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/b1d09314-45ee-4c18-901a-32c8ab1313cf-bb2c3bbf5b.png",
+  "tags": "mpb,rock",
+  "state": "Santa Catarina",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "697279d0-dccb-4773-a49f-1c856aca4617",
+  "name": "Massa FM Capinzal",
+  "url": "https://paineldj.com.br:20004/live",
+  "url_resolved": "https://paineldj.com.br:20004/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/697279d0-dccb-4773-a49f-1c856aca4617-7ad4454100.png",
+  "tags": "",
+  "state": "Santa Catarina, SC",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "71b0ee14-a29d-458d-be4c-9ffdf53d2f95",
+  "name": "Rádio São Bento FM - RSB 90.3",
+  "url": "https://cast2.youngtech.radio.br/listen/saobento903fm/radio",
+  "url_resolved": "https://cast2.youngtech.radio.br/listen/saobento903fm/radio",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/71b0ee14-a29d-458d-be4c-9ffdf53d2f95-ded5f4e91b.png",
+  "tags": "",
+  "state": "São Bento do Sul, Santa Catarina",
+  "bitrate": 32
+ },
+ {
+  "stationuuid": "3d7b7836-b2e3-4fe4-b594-78f5681ea746",
+  "name": "Rádio Condá",
+  "url": "https://stm10.virtualcast.com.br:8292/conda",
+  "url_resolved": "https://stm10.virtualcast.com.br:8292/conda",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/3d7b7836-b2e3-4fe4-b594-78f5681ea746-2d751a9646.png",
+  "tags": "esportes,futebol,gauchesca,popular",
+  "state": "Santa Catarina, SC",
+  "bitrate": 56
+ },
+ {
+  "stationuuid": "68d4f434-4473-4c89-a21e-adcca9c2afdc",
+  "name": "CBN Floripa",
+  "url": "https://26673.live.streamtheworld.com/CBN_FLOAAC.aac",
+  "url_resolved": "https://26673.live.streamtheworld.com/CBN_FLOAAC.aac",
+  "favicon": "",
+  "tags": "",
+  "state": "Santa Catarina, SC",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "12ced942-05bd-4cab-bbe0-afbd16936388",
+  "name": "Amigos de Cristo Web Rádio ",
+  "url": "https://server06.srvsh.com.br:6856/stream",
+  "url_resolved": "https://server06.srvsh.com.br:6856/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/12ced942-05bd-4cab-bbe0-afbd16936388-5cba0845dd.png",
+  "tags": "christian-gospel",
+  "state": "Santa Catarina",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "18d50a3e-b4a6-4bc2-9fb1-675145b1de83",
+  "name": "Radio Livre 95",
+  "url": "http://aovivo.radiolivre95.com:8000/aovivo",
+  "url_resolved": "http://aovivo.radiolivre95.com:8000/aovivo",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/18d50a3e-b4a6-4bc2-9fb1-675145b1de83-e015dbc695.png",
+  "tags": "",
+  "state": "Santa Catarina",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "468ededb-bcb3-452b-bdaf-03f3ec3e620a",
+  "name": "Rádio Atlântida 97.3 FM - Criciúma",
+  "url": "https://26573.live.streamtheworld.com/ATL_CRI_FM.mp3",
+  "url_resolved": "https://26573.live.streamtheworld.com/ATL_CRI_FM.mp3",
+  "favicon": "",
+  "tags": "",
+  "state": "Santa Catarina, SC",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "f749626f-ebb4-4dd3-adcd-b59af58bbc61",
+  "name": "Capinzal FM",
+  "url": "https://noar.capinzalfm.com.br/capinzalfm.mp3",
+  "url_resolved": "https://noar.capinzalfm.com.br/capinzalfm.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/f749626f-ebb4-4dd3-adcd-b59af58bbc61-a9954a8974.png",
+  "tags": "",
+  "state": "Santa Catarina, SC",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "e82b1aa7-bfd1-4208-bfd6-f9c5ab541b20",
+  "name": "Rádio Brasil Novo 94.3 FM",
+  "url": "https://stm10.virtualcast.com.br:8464/rbnjaraguasul",
+  "url_resolved": "https://stm10.virtualcast.com.br:8464/rbnjaraguasul",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/e82b1aa7-bfd1-4208-bfd6-f9c5ab541b20-fa9413a907.png",
+  "tags": "hits,popular,sertaneja",
+  "state": "Santa Catarina, SC",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "b8a0cfa8-922d-483e-a3d0-540852bf1a46",
+  "name": "Rock Classic Bits",
+  "url": "http://stm25.xcast.com.br:6862/",
+  "url_resolved": "http://stm25.xcast.com.br:6862/",
+  "favicon": "",
+  "tags": "blues,blues rock,classic rock,rock en español,soft rock",
+  "state": "Santa Catarina, SC",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "27ffe2ff-6177-473b-8301-593d7d73bd21",
+  "name": "Radio Nossa fm",
+  "url": "https://sv1.audiostream.com.br/radio/8120/stream",
+  "url_resolved": "https://sv1.audiostream.com.br/radio/8120/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/27ffe2ff-6177-473b-8301-593d7d73bd21-15d773c6a6.png",
+  "tags": "",
+  "state": "Santa Catarina, SC",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "a9f0791e-6f6f-4450-ae80-e3bd721e4ffc",
+  "name": "Rádio Universo Virtual",
+  "url": "https://stm24.xcast.com.br:9142/stream",
+  "url_resolved": "https://stm24.xcast.com.br:9142/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/a9f0791e-6f6f-4450-ae80-e3bd721e4ffc-f4573eee9f.png",
+  "tags": "",
+  "state": "Santa Catarina",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "372e4555-def0-4848-bc68-fe567650801b",
+  "name": "Rádio Videira FM 88.5",
+  "url": "https://5a2b083e9f360.streamlock.net/radiovideira/radiovideira.stream/playlist.m3u8",
+  "url_resolved": "https://5a2b083e9f360.streamlock.net/radiovideira/radiovideira.stream/playlist.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/372e4555-def0-4848-bc68-fe567650801b-778cb9b525.png",
+  "tags": "",
+  "state": "Santa Catarina, SC",
+  "bitrate": 133
+ },
+ {
+  "stationuuid": "4c74936f-f6c9-4a63-be3b-23172b176ac3",
+  "name": "Massa FM - Blumenau",
+  "url": "https://stm04.virtualcast.com.br:8004/massablumenau",
+  "url_resolved": "https://stm04.virtualcast.com.br:8004/massablumenau",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/4c74936f-f6c9-4a63-be3b-23172b176ac3-58d875f66b.png",
+  "tags": "",
+  "state": "Santa Catarina, SC",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "039f89be-6616-4b1d-aad9-ecf9e3c47980",
+  "name": "Rádio Jaraguá 101.3 FM",
+  "url": "https://wz7.servidoresbrasil.com:8066/stream?1771932661160",
+  "url_resolved": "https://wz7.servidoresbrasil.com:8066/stream?1771932661160",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/039f89be-6616-4b1d-aad9-ecf9e3c47980-12fe6c872e.png",
+  "tags": "hits,popular",
+  "state": "Santa Catarina, SC",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "46a14c86-8377-4e96-bdaf-879e52166976",
+  "name": "NBC FM - Rádio Comunitária de Nova Brasília - Imbituba/SC",
+  "url": "https://radio02.zas.media/proxy/nbcfm/stream",
+  "url_resolved": "https://radio02.zas.media/proxy/nbcfm/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/46a14c86-8377-4e96-bdaf-879e52166976-9fb480bde6.png",
+  "tags": "esportes,futebol,gauchesca,local news,noticias,sertanejo",
+  "state": "Santa Catarina",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "7064fb2b-9fb4-4ada-85fc-82be6ece2b04",
+  "name": "Rádio Difusora de Imbituba 100.3 FM",
+  "url": "http://r13.ciclano.io:8927/stream",
+  "url_resolved": "http://r13.ciclano.io:8927/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/7064fb2b-9fb4-4ada-85fc-82be6ece2b04-fc91e49129.png",
+  "tags": "brega,esportes,gauchesca,local news,mpb,notícias,sertanejo",
+  "state": "Santa Catarina",
+  "bitrate": 192
+ },
+ {
+  "stationuuid": "fc76f66d-f894-40da-a3fd-8ff7f111e29e",
+  "name": "Pista das Antigas",
+  "url": "https://stm1.painelvox.xyz:7092/;",
+  "url_resolved": "https://stm1.painelvox.xyz:7092/;",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/fc76f66d-f894-40da-a3fd-8ff7f111e29e-bce8864d3f.png",
+  "tags": "00s,80s,90s,classic hits,flashback",
+  "state": "Santa Catarina",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "8bf5bdf3-13c2-4cf1-bb28-a8244d78b415",
+  "name": "Rádio Adorai Alto Vale",
+  "url": "https://hts02.brascast.com:8682/stream",
+  "url_resolved": "https://hts02.brascast.com:8682/stream",
+  "favicon": "",
+  "tags": "adoracion,adoração,cristo,deus,gospel,gospel evangélica,gospel pentecostal,jesus,levitas,louvor,louvores,meditation,meditação,pentecostal",
+  "state": "Santa Catarina, SC",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "4c63b03f-ef27-44f4-8e13-620a0df0f2f1",
+  "name": "Frequência Um",
+  "url": "https://cc6.streammaximum.com:20032/;",
+  "url_resolved": "https://cc6.streammaximum.com:20032/;",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/4c63b03f-ef27-44f4-8e13-620a0df0f2f1-01444e1b3b.png",
+  "tags": "local news,music,regional",
+  "state": "Santa Catarina, SC",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "7503a23c-9855-41a1-887d-3c1ea10c2607",
+  "name": "Rádio Videira FM 102.9",
+  "url": "https://5a57bda70564a.streamlock.net/videiravideo/videiravideo.sdp/chunklist_w2105992852.m3u8",
+  "url_resolved": "https://5a57bda70564a.streamlock.net/videiravideo/videiravideo.sdp/chunklist_w2105992852.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/7503a23c-9855-41a1-887d-3c1ea10c2607-79e9d6e42a.png",
+  "tags": "",
+  "state": "Santa Catarina, SC",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "8628edce-aa5b-43a7-8ccb-85512bfb362a",
+  "name": "Rádio Cambirela - Virtual,mas real.",
+  "url": "https://stm1.srvif.com:7244/stream",
+  "url_resolved": "https://stm1.srvif.com:7244/stream",
+  "favicon": "",
+  "tags": "",
+  "state": "Santa Catarina,SC",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "45e54471-3ac1-4c29-90c6-fdd76fd92e8f",
+  "name": "Rádio 89.3 FM Imbituba",
+  "url": "https://live.paineldj.com.br/proxy/radiofm89f?mp=/stream",
+  "url_resolved": "https://live.paineldj.com.br/proxy/radiofm89f?mp=/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/45e54471-3ac1-4c29-90c6-fdd76fd92e8f-4a8246b251.png",
+  "tags": "brega,esportes,forró,gauchesca,local news,mpb,noticias,sertanejo,sports",
+  "state": "Santa Catarina",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "0ca4d1f7-c92c-4537-a7db-b3b578d18bec",
+  "name": "Rádio Gaudéria",
+  "url": "https://hts01.brascast.com:12036/stream?1791940594702",
+  "url_resolved": "https://hts01.brascast.com:12036/stream?1791940594702",
+  "favicon": "",
+  "tags": "campeira,gauchesca,gaudéria,palhoça,sertanejo,tradicionalista",
+  "state": "Santa Catarina",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "fdbb0339-e51d-4922-bd90-0f556b9967cc",
+  "name": "Guararema 103.5 FM",
+  "url": "https://srv1.braudio.com.br:7020/;",
+  "url_resolved": "https://srv1.braudio.com.br:7020/;",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/fdbb0339-e51d-4922-bd90-0f556b9967cc-9a2948929f.png",
+  "tags": "",
+  "state": "Santa Catarina, SC",
+  "bitrate": 256
+ },
+ {
+  "stationuuid": "1ff111cc-4330-414c-a4d1-31d85a0746eb",
+  "name": "Rádio Videira - FM 102.9",
+  "url": "https://5a2b083e9f360.streamlock.net/trasvideira/trasvideira.stream/chunklist_w1032255440.m3u8",
+  "url_resolved": "https://5a2b083e9f360.streamlock.net/trasvideira/trasvideira.stream/chunklist_w1032255440.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/1ff111cc-4330-414c-a4d1-31d85a0746eb-79e9d6e42a.png",
+  "tags": "",
+  "state": "Santa Catarina, SC",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "7eddae85-f286-4014-9b12-11c75e66b1f1",
+  "name": "Ultimate Hidden Treasures Of All Multiverses ",
+  "url": "https://sv14.hdradios.net:8216/stream",
+  "url_resolved": "https://sv14.hdradios.net:8216/stream",
+  "favicon": "",
+  "tags": "",
+  "state": "Florianópolis ( Santa Catarina ) .",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "fcdc9336-75d3-42a5-9fe8-5b96b7a973f4",
+  "name": "Rádio Pregação Pentecostal",
+  "url": "https://radiosnet.site/stream/radiopregacaopentecostal",
+  "url_resolved": "https://radiosnet.site/stream/radiopregacaopentecostal",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/fcdc9336-75d3-42a5-9fe8-5b96b7a973f4-36d57d71f3.png",
+  "tags": "christian,gospel,religious",
+  "state": "Santa Catarina",
+  "bitrate": 128
+ }
+]

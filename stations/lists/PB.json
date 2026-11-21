@@ -1,0 +1,172 @@
+[
+ {
+  "stationuuid": "587dbed3-67c8-11ea-be63-52543be04c81",
+  "name": "Campina FM",
+  "url": "http://cast61.sitehosting.com.br:9962/live?1583625618600",
+  "url_resolved": "http://cast61.sitehosting.com.br:9962/live?1583625618600",
+  "favicon": "",
+  "tags": "forró",
+  "state": "Paraiba",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "a44327f2-073a-4a0c-b4f5-2affb090a91e",
+  "name": "Rádio Caturité",
+  "url": "http://radio01.logicahost.com.br:8255/;stream.nsv?1732909310643",
+  "url_resolved": "http://radio01.logicahost.com.br:8255/;stream.nsv?1732909310643",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/a44327f2-073a-4a0c-b4f5-2affb090a91e-9cefaab928.png",
+  "tags": "",
+  "state": "Paraíba",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "60633a59-98ab-4372-a33d-b7f83513de0c",
+  "name": " Rádio Universidade 105.1 FM",
+  "url": "https://stm20.srvstm.com:7264/;?type=https&nocache=1",
+  "url_resolved": "https://stm20.srvstm.com:7264/;?type=https&nocache=1",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/60633a59-98ab-4372-a33d-b7f83513de0c-199e707c03.png",
+  "tags": "adulta,eclética",
+  "state": "Paraíba",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "823e517b-82e0-447c-a8ca-2f6454e9d852",
+  "name": "Rádio Arapuan 98.9 FM",
+  "url": "https://streaming.engelhosting.com.br:10036/stream",
+  "url_resolved": "https://streaming.engelhosting.com.br:10036/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/823e517b-82e0-447c-a8ca-2f6454e9d852-70ded1398d.png",
+  "tags": "eclética,hits",
+  "state": "Paraiba",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "ac0b5f17-93a3-428b-b3c4-e02283cc504d",
+  "name": "Tabajara FM 105,5 Mhz",
+  "url": "https://stm2.xcast.com.br:7524/stream",
+  "url_resolved": "https://stm2.xcast.com.br:7524/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ac0b5f17-93a3-428b-b3c4-e02283cc504d-8e06d57ec1.png",
+  "tags": "",
+  "state": "Paraiba",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "36bb19dc-67ca-45dc-b4eb-b7ef4771bd23",
+  "name": "Rádio Click Guarabira",
+  "url": "https://stm15.voxhd.com.br:12428/",
+  "url_resolved": "https://stm15.voxhd.com.br:12428/",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/36bb19dc-67ca-45dc-b4eb-b7ef4771bd23-11ad3304ae.png",
+  "tags": "",
+  "state": "Paraíba",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "7874dd3f-76a4-4efb-ac08-bb8e66c1f939",
+  "name": "Rádio Zé Ramalho",
+  "url": "https://stream.zeno.fm/qnx6k0pfmxhvv",
+  "url_resolved": "https://stream.zeno.fm/qnx6k0pfmxhvv",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/7874dd3f-76a4-4efb-ac08-bb8e66c1f939-8f4c2b602f.png",
+  "tags": "forro,mpb",
+  "state": "Paraiba",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "fbdef918-5008-4284-9604-d8668f74fd3c",
+  "name": "Mais FM Uirauna ",
+  "url": "https://www.radios.com.br/play/playlist/26316/listen-radio.m3u",
+  "url_resolved": "https://streaming.livespanel.com:20101/maisfm1011",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/fbdef918-5008-4284-9604-d8668f74fd3c-6e8dd45084.png",
+  "tags": "adult",
+  "state": "Paraiba",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "f98b7623-b31d-452d-a496-4b35e7e88ca2",
+  "name": "Radio Espinharas",
+  "url": "https://radio.saopaulo01.com.br:10843/stream",
+  "url_resolved": "https://radio.saopaulo01.com.br:10843/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/f98b7623-b31d-452d-a496-4b35e7e88ca2-e3c127ef57.png",
+  "tags": "popular",
+  "state": "Paraiba",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "cecfa9de-c3ae-44a5-b111-bad4c1d68425",
+  "name": "Radio MAX Correio FM 99.1 Souza - PB ",
+  "url": "https://www.radios.com.br/play/playlist/43041/listen-radio.pls",
+  "url_resolved": "http://stm22.xcast.com.br:9166/stream",
+  "favicon": "",
+  "tags": "esportes,muscat,news,sports",
+  "state": "Paraiba",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "6d2e2602-7569-4267-bb8e-644dafd6aaea",
+  "name": "Rádio Arapuan 98.9 FM",
+  "url": "https://www.radios.com.br/play/playlist/34271/listen-radio.m3u",
+  "url_resolved": "https://streaming.engelhosting.com.br:10036/stream",
+  "favicon": "",
+  "tags": "",
+  "state": "Paraiba",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "f6f2ccd1-9c1a-47ca-9caf-1edd6c66eed1",
+  "name": "Rádio Itatiunga 102.9 FM",
+  "url": "https://str1.streamhostpg.com.br:8100/stream",
+  "url_resolved": "https://str1.streamhostpg.com.br:8100/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/f6f2ccd1-9c1a-47ca-9caf-1edd6c66eed1-4ebb08426f.png",
+  "tags": "eclética,hits",
+  "state": "Paraiba",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "f1af83b3-c4c4-4736-8cdc-cd3153278358",
+  "name": "Rádio Cajá Esportes ",
+  "url": "https://sv16.hdradios.net:8972/stream",
+  "url_resolved": "https://sv16.hdradios.net:8972/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/f1af83b3-c4c4-4736-8cdc-cd3153278358-9cf6017d56.png",
+  "tags": "",
+  "state": "Paraíba",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "2a4413a2-23c5-4fcd-8185-1866596aecfe",
+  "name": "Mais FM",
+  "url": "https://www.radios.com.br/play/playlist/67799/listen-radio.m3u",
+  "url_resolved": "https://streaming.livespanel.com:20970/maisfm977",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/2a4413a2-23c5-4fcd-8185-1866596aecfe-8fc1103a8b.png",
+  "tags": "",
+  "state": "Paraiba",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "722f6b0d-0bdd-42d7-9c85-61fa474f6e0d",
+  "name": "Rádio Lance Oficial",
+  "url": "https://stm23.xcast.com.br:9952/stream",
+  "url_resolved": "https://stm23.xcast.com.br:9952/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/722f6b0d-0bdd-42d7-9c85-61fa474f6e0d-aadc16994f.png",
+  "tags": "",
+  "state": "Paraíba",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "c593daee-3e50-45db-a208-4eaed1be8165",
+  "name": "Correio FM Correio FM Campina Grande",
+  "url": "https://e-spo-106.fabricahost.com.br/98campinagrande?f=1787370738N01M0KSJ4K42PESWXSXPB70EDM9&tid=01M0KSJ4K4KHXWCHENK19GHDF4",
+  "url_resolved": "https://e-spo-106.fabricahost.com.br/98campinagrande?f=1787370738N01M0KSJ4K42PESWXSXPB70EDM9&tid=01M0KSJ4K4KHXWCHENK19GHDF4",
+  "favicon": "",
+  "tags": "",
+  "state": "Paraiba",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "692acc84-76e4-431a-848b-8b99b1ec0ce4",
+  "name": "Serra Branca FM",
+  "url": "https://serrabrancafm.jmvstream.com/stream](https://serrabrancafm.jmvstream.com/stream)",
+  "url_resolved": "https://serrabrancafm.jmvstream.com/stream](https://serrabrancafm.jmvstream.com/stream)",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/692acc84-76e4-431a-848b-8b99b1ec0ce4-d82c5132b1.png",
+  "tags": "",
+  "state": "Paraiba",
+  "bitrate": 128
+ }
+]

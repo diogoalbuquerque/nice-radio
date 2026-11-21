@@ -1,0 +1,482 @@
+[
+ {
+  "stationuuid": "a35b909a-b461-11e8-afe1-52543be04c81",
+  "name": "91 Rock - Curitiba (web)",
+  "url": "http://servidor40.brlogic.com:8044/live",
+  "url_resolved": "http://servidor40.brlogic.com:8044/live",
+  "favicon": "",
+  "tags": "brazilian rock,rock",
+  "state": "Parana",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "d7fa2104-e3a4-11e9-a8ba-52543be04c81",
+  "name": "Rádio Marumby",
+  "url": "http://wz4.dnip.com.br/marumbyaac/marumbyaac.stream/playlist.m3u8",
+  "url_resolved": "http://wz4.dnip.com.br/marumbyaac/marumbyaac.stream/playlist.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d7fa2104-e3a4-11e9-a8ba-52543be04c81-737c8ebf5a.png",
+  "tags": "radio cristiana",
+  "state": "Parana",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "fb1097c0-370b-45de-9d32-7f1f46c13d4e",
+  "name": "RST Radio Rock",
+  "url": "https://servidor37-1.brlogic.com:8100/live",
+  "url_resolved": "https://servidor37-1.brlogic.com:8100/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/fb1097c0-370b-45de-9d32-7f1f46c13d4e-398f67cf21.png",
+  "tags": "hard rock,progressive rock",
+  "state": "Parana",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "1b31973c-7180-4d25-b19d-7825afa8298e",
+  "name": "Rádio Evangelizar ",
+  "url": "https://8239.brasilstream.com.br/stream?origem=radios.com.br",
+  "url_resolved": "https://8239.brasilstream.com.br/stream?origem=radios.com.br",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/1b31973c-7180-4d25-b19d-7825afa8298e-9683a33618.png",
+  "tags": "",
+  "state": "Curitiba Paraná",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "6841c7c3-d33d-42ea-adf0-36b19405ba98",
+  "name": "Radio Advento - Londrina",
+  "url": "https://9121.brasilstream.com.br/stream",
+  "url_resolved": "https://9121.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/6841c7c3-d33d-42ea-adf0-36b19405ba98-754b17b22b.png",
+  "tags": "comunitaria,gospel",
+  "state": "Parana",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "cdd11572-fa0e-4d39-82fe-517efbce772c",
+  "name": "Grauna FM 95,5",
+  "url": "https://ice.fabricahost.com.br/graunafm",
+  "url_resolved": "https://f108.fabricahost.com.br/graunafm?f=1794884469N01M7KQ70P6183WPNMJ8FS1JNGT&tid=01M7KQ70P6T9QH28V5EGEAWB4G",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/cdd11572-fa0e-4d39-82fe-517efbce772c-4c5146a69e.png",
+  "tags": "",
+  "state": "Paraná(Brazil)",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "ae513bd4-a22e-4aec-85af-d06fcb4504fb",
+  "name": "Mundo Livre FM Londrina 93,1",
+  "url": "https://rrdns-continental.webnow.com.br/mllondrina.mp3",
+  "url_resolved": "https://rrdns-continental.webnow.com.br/mllondrina.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ae513bd4-a22e-4aec-85af-d06fcb4504fb-c5ea8cb53a.png",
+  "tags": "londrina,rock",
+  "state": "Parana",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "24378572-cb36-4bb2-bcd7-15c097b2f1b9",
+  "name": "Radio Paiquerê",
+  "url": "https://ice.fabricahost.com.br/paiquere917",
+  "url_resolved": "https://ice.fabricahost.com.br/paiquere917",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/24378572-cb36-4bb2-bcd7-15c097b2f1b9-926cded061.png",
+  "tags": "news,pop",
+  "state": "Londrina, Paraná",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "9932609a-b3d8-4d16-8a51-c2cccedf958f",
+  "name": "RC FM 98,1",
+  "url": "https://player.transmissaodigital.com/proxy/7434/",
+  "url_resolved": "https://player.transmissaodigital.com/proxy/7434/",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/9932609a-b3d8-4d16-8a51-c2cccedf958f-ed88f19708.png",
+  "tags": "",
+  "state": "Paraná(Brazil)",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "d4e2ea20-500a-4f8f-a1cc-c7b53698df18",
+  "name": "Alpha FM 90.1 Curitiba p PR",
+  "url": "https://radio901.webnimbus.cloud/radioalpha/icecast.audio",
+  "url_resolved": "https://radio901.webnimbus.cloud/radioalpha/icecast.audio",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d4e2ea20-500a-4f8f-a1cc-c7b53698df18-c3e306c33c.png",
+  "tags": "adult contemporary",
+  "state": "Paraná(Brazil)",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "bd4a33d0-ace4-4c12-9810-92e9a1be635f",
+  "name": "Radio Dence",
+  "url": "http://servidor32.brlogic.com:8198/live",
+  "url_resolved": "http://servidor32.brlogic.com:8198/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/bd4a33d0-ace4-4c12-9810-92e9a1be635f-eb85bba496.png",
+  "tags": "",
+  "state": "Curitiba Paraná",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "d003d1f3-380e-451d-ad8f-2810ec731c60",
+  "name": "Radio Soft Tribuna FM",
+  "url": "https://ice.fabricahost.com.br/tribunafm",
+  "url_resolved": "https://ice.fabricahost.com.br/tribunafm",
+  "favicon": "",
+  "tags": "flashback",
+  "state": "Paraná(Brazil)",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "1dd87c07-f5b6-4801-b148-3a2ddd9949cd",
+  "name": "Norte FM - Londrina",
+  "url": "https://servidor17.brlogic.com:9394/live",
+  "url_resolved": "https://servidor17.brlogic.com:9394/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/1dd87c07-f5b6-4801-b148-3a2ddd9949cd-6aa6d251eb.png",
+  "tags": "eclectic",
+  "state": "Parana",
+  "bitrate": 320
+ },
+ {
+  "stationuuid": "91b43e8e-5a05-45b6-a43e-f2a9b739efea",
+  "name": "Ilha do Mel FM",
+  "url": "https://str1.streamhostpg.com.br:8002/stream",
+  "url_resolved": "https://str1.streamhostpg.com.br:8002/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/91b43e8e-5a05-45b6-a43e-f2a9b739efea-7694ab7098.png",
+  "tags": "local news,pop,sports",
+  "state": "Paraná(Brazil)",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "2e8a3aae-ef0e-410f-841f-42638f6db041",
+  "name": "Rádio BBN 96.1 FM",
+  "url": "https://audio-edge-es6pf.mia.g.radiomast.io/ec065d59-f358-48c9-a288-4efc797e5860",
+  "url_resolved": "https://audio-edge-es6pf.mia.g.radiomast.io/ec065d59-f358-48c9-a288-4efc797e5860",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/2e8a3aae-ef0e-410f-841f-42638f6db041-0fa469189b.png",
+  "tags": "gospel",
+  "state": "Parana",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "a9f1164d-77a4-4f41-8ce1-86404779ba9e",
+  "name": "Pão Diário",
+  "url": "http://servidor24.brlogic.com:8808/live?1662557159610",
+  "url_resolved": "http://servidor24.brlogic.com:8808/live?1662557159610",
+  "favicon": "",
+  "tags": "gospel",
+  "state": "Paraná(Brazil)",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "6116adf7-d0c7-49ca-91d9-c9e5553d250c",
+  "name": "Ouro Verde FM Easy 105.5",
+  "url": "https://8522.brasilstream.com.br/stream",
+  "url_resolved": "https://8522.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/6116adf7-d0c7-49ca-91d9-c9e5553d250c-f2937c3b62.png",
+  "tags": "brasil,brazilian music,classic hits,curitiba,ouro verde,paraná,pop,pop rock",
+  "state": "Parana",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "8cc31e48-61fd-4dee-ae96-3b74561565ef",
+  "name": "Radio Essencia Gospel",
+  "url": "https://srv2.braudio.com.br/7598//stream",
+  "url_resolved": "https://srv2.braudio.com.br/7598//stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/8cc31e48-61fd-4dee-ae96-3b74561565ef-fe91850067.png",
+  "tags": "",
+  "state": "Paraná(Brazil)",
+  "bitrate": 32
+ },
+ {
+  "stationuuid": "999fce80-0743-445a-9507-6e79358bd980",
+  "name": "Rádio Sertanejo Play",
+  "url": "https://stm2.streaminghd.net.br:7318/stream",
+  "url_resolved": "https://stm2.streaminghd.net.br:7318/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/999fce80-0743-445a-9507-6e79358bd980-290177cb99.png",
+  "tags": "clássico,country,sertanejo",
+  "state": "Parana",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "cf4b3098-b6ff-4386-a8c6-b37b19b0b7ce",
+  "name": "Mundo Livre FM Maringá 102.5",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MUNDOLIVRE_MGAAAC.aac",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/MUNDOLIVRE_MGAAAC.aac",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/cf4b3098-b6ff-4386-a8c6-b37b19b0b7ce-c5ea8cb53a.png",
+  "tags": "alternative rock,indie rock,rock",
+  "state": "Paraná(Brazil)",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "543b1952-3701-45dc-9a57-b6c27c8c0326",
+  "name": "Radio Voz FM 106.7 FM",
+  "url": "https://radio.saopaulo01.com.br/8110/stream",
+  "url_resolved": "https://radio.saopaulo01.com.br/8110/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/543b1952-3701-45dc-9a57-b6c27c8c0326-7fbdc5d02c.png",
+  "tags": "",
+  "state": "Paraná(Brazil)",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "fb299bc3-a9fc-4f53-b5ce-457d0cbd1780",
+  "name": "Massa FM Maringá",
+  "url": "https://stm01.virtualcast.com.br:8116/massamaringa",
+  "url_resolved": "https://stm01.virtualcast.com.br:8116/massamaringa",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/fb299bc3-a9fc-4f53-b5ce-457d0cbd1780-7239320720.png",
+  "tags": "brazilian,popular,sertanejo",
+  "state": "Paraná(Brazil)",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "78870d0c-b443-431d-9379-1710fd2a0563",
+  "name": "Radio Harmonia Mercosul FM 100.7 MHZ",
+  "url": "https://stm1.srvif.com:13938/stream",
+  "url_resolved": "https://stm1.srvif.com:13938/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/78870d0c-b443-431d-9379-1710fd2a0563-239eca4670.png",
+  "tags": "",
+  "state": "Paraná(Brazil)",
+  "bitrate": 40
+ },
+ {
+  "stationuuid": "35066a3c-c987-4961-ab88-42587b41db13",
+  "name": "TMC Curitiba 100.3 FM",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RT_CWB.mp3",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/RT_CWB.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/35066a3c-c987-4961-ab88-42587b41db13-bd647ff29b.png",
+  "tags": "news,sports,talk",
+  "state": "Paraná",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "9e3b025a-0f95-48c2-802f-9e93f6006d5e",
+  "name": "Jovem Pan News 105.1 FM Foz",
+  "url": "https://play.wisestream.io/pannewsfoz",
+  "url_resolved": "https://play.wisestream.io/pannewsfoz",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/9e3b025a-0f95-48c2-802f-9e93f6006d5e-ccb1f73d62.png",
+  "tags": "brasil,foz do iguacu,parana",
+  "state": "Paraná",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "5f89a01a-fd55-4b12-8b48-ca6f74ef6be1",
+  "name": "Massa FM Maringá 92.3",
+  "url": "https://www.radios.com.br/play/playlist/25827/listen-radio.m3u",
+  "url_resolved": "https://stm01.virtualcast.com.br:8116/massamaringa",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/5f89a01a-fd55-4b12-8b48-ca6f74ef6be1-7239320720.png",
+  "tags": "",
+  "state": "Paraná(Brazil)",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "4672d88f-c5ad-41d2-97a0-61b89aebfb37",
+  "name": "Radio Manancial FM",
+  "url": "https://radio.saopaulo01.com.br/8024/stream",
+  "url_resolved": "https://radio.saopaulo01.com.br/8024/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/4672d88f-c5ad-41d2-97a0-61b89aebfb37-dd0e7d5b96.png",
+  "tags": "",
+  "state": "Paraná(Brazil)",
+  "bitrate": 32
+ },
+ {
+  "stationuuid": "10e7cc34-ec4e-407c-ba48-1d54b447476d",
+  "name": "Maior Amor",
+  "url": "https://tgaurl.com.br/maioramor",
+  "url_resolved": "https://tgaurl.com.br/maioramor",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/10e7cc34-ec4e-407c-ba48-1d54b447476d-b957f948d0.png",
+  "tags": "cristiana,evangelical,gospel",
+  "state": "Paraná(Brazil)",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "f9008d87-9351-4a8f-9673-544b0ad1a039",
+  "name": "Jovem pan 101,3 FM Maringá",
+  "url": "https://shout35.crossradio.com.br:18040/stream",
+  "url_resolved": "https://shout35.crossradio.com.br:18040/stream",
+  "favicon": "",
+  "tags": "jovem,pop rock",
+  "state": "Parana",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "66cb7295-1596-43b4-8983-90a3afce42f2",
+  "name": "Jovem pan FM Curitiba 103,9",
+  "url": "https://e-spo-102.fabricahost.com.br/jpcuritiba?f=1781705068N01KVAYBM544A2EGMJKGEDZMDQP&tid=01KVAYBM54RGVTWKGWCDASFWKH",
+  "url_resolved": "https://f100.fabricahost.com.br/jpcuritiba?f=1794894993N01M7M185S47ANE24FSXF39EHYC&tid=01M7M185S4J5CNJYPF4HAYEARJ",
+  "favicon": "",
+  "tags": "jovem,pop rock",
+  "state": "Parana",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "763ee8a1-b002-4f5c-a9d4-2d3db4d01cef",
+  "name": "Rádio RNP",
+  "url": "https://hts02.brascast.com:11442/stream",
+  "url_resolved": "https://hts02.brascast.com:11442/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/763ee8a1-b002-4f5c-a9d4-2d3db4d01cef-42596e563f.png",
+  "tags": "alternative rock,classic rock,curitiba,metal,new music,rock",
+  "state": "Paraná",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "27a2348e-7fc7-406f-93e6-4d328112f984",
+  "name": "Rádio Clube 100.9 FM Foz",
+  "url": "http://srv53.brasilstream.com.br:9105/stream",
+  "url_resolved": "http://srv53.brasilstream.com.br:9105/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/27a2348e-7fc7-406f-93e6-4d328112f984-4f8cbce2ed.png",
+  "tags": "brasil,foz do iguacu,parana",
+  "state": "Paraná",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "c2722e60-1a44-49fa-b45a-bff6f0a63cc6",
+  "name": "89 A Rádio Rock Curitiba 89.3 FM",
+  "url": "https://ice.fabricahost.com.br/89fmcuritiba",
+  "url_resolved": "https://ice.fabricahost.com.br/89fmcuritiba",
+  "favicon": "",
+  "tags": "rock",
+  "state": "Paraná",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "4d01daf5-d90b-4899-accb-3a89e04fdb89",
+  "name": "Rádio Cidade 100.1 FM Foz",
+  "url": "https://ice.fabricahost.com.br/cidadefmfoz",
+  "url_resolved": "https://f108.fabricahost.com.br/cidadefmfoz?f=1794893898N01M7M06REMQ3H6E072ATTH5A19&tid=01M7M06REMZV1A1D9RGX6CR6GJ",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/4d01daf5-d90b-4899-accb-3a89e04fdb89-2eda3a4db0.png",
+  "tags": "brasil,foz do iguacu,parana",
+  "state": "Paraná",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "cec53c33-18de-493c-ae87-096e853878b7",
+  "name": "Melodia Gospel 96.7 FM Foz",
+  "url": "https://srv2.braudio.com.br/7598",
+  "url_resolved": "https://srv2.braudio.com.br/7598",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/cec53c33-18de-493c-ae87-096e853878b7-6a526f3f81.png",
+  "tags": "brasil,foz do iguacu,parana",
+  "state": "Paraná",
+  "bitrate": 32
+ },
+ {
+  "stationuuid": "592d2688-be71-44b0-9d85-b67f629f02f8",
+  "name": "Rádio 104 FM Iguaçu",
+  "url": "https://stream.zeno.fm/xaullu1qjpktv",
+  "url_resolved": "https://stream-176.surfernetwork.com/xaullu1qjpktv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ4YXVsbHUxcWpwa3R2IiwiaG9zdCI6InN0cmVhbS0xNzYuc3VyZmVybmV0d29yay5jb20iLCJydHRsIjo1LCJqdGkiOiJFRmZiOVU1VVNIdUV4Tmx6TFVYVHBnIiwiaWF0IjoxNzk1Mjk3NDYyLCJleHAiOjE3OTUyOTc1MjJ9.oiaOtmsAgQGj50xSzO_pz_5X6oADYMwhrDym_L4CzwM",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/592d2688-be71-44b0-9d85-b67f629f02f8-24da419cc6.png",
+  "tags": "brasil,foz do iguacu,parana",
+  "state": "Paraná",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "bd0e5734-5702-4588-b45a-36279d695cd0",
+  "name": "Rádio Municipal FM 92.5 FM Quedas",
+  "url": "https://8590.omegastreaming.com.br/stream",
+  "url_resolved": "https://8590.omegastreaming.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/bd0e5734-5702-4588-b45a-36279d695cd0-870101c92d.png",
+  "tags": "bandinha,comunitária,quedas do iguaçu,sertanejo",
+  "state": "Paraná(Brazil)",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "30dbddcf-d06b-4ae0-8bc8-679d897920d6",
+  "name": "Rádio Evangelizar Família ",
+  "url": "https://8241.brasilstream.com.br/stream",
+  "url_resolved": "https://8241.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/30dbddcf-d06b-4ae0-8bc8-679d897920d6-f595d76d6d.png",
+  "tags": "catholic,católica",
+  "state": "Paraná",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "c7d885bb-025e-49b2-b20a-63d6f37e445e",
+  "name": "Rádio Cisma Gaudéria",
+  "url": "https://player-ssl.painelstream.net:8394/live?1791939878154",
+  "url_resolved": "https://player-ssl.painelstream.net:8394/live?1791939878154",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c7d885bb-025e-49b2-b20a-63d6f37e445e-b25a0aa1ba.png",
+  "tags": "gauchesca,gaudéria,sertanejo raiz,tradicionalista",
+  "state": "Parana",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "04cc02f0-9ecf-4be9-b295-f3e87c519749",
+  "name": "SidechainFM",
+  "url": "https://admin.sidechainfm.com/listen/sidechainfm/radio.mp3",
+  "url_resolved": "https://admin.sidechainfm.com/listen/sidechainfm/radio.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/04cc02f0-9ecf-4be9-b295-f3e87c519749-c67daac806.png",
+  "tags": "drum n bass,electronic,grime,industrial,jungle,techno,uk garage",
+  "state": "Paraná(Brazil)",
+  "bitrate": 320
+ },
+ {
+  "stationuuid": "067e73f1-7437-4683-84b6-f7690c17c6f6",
+  "name": "Rádio Foz 103.7 FM",
+  "url": "https://stm8.painelvox.com:8224/;",
+  "url_resolved": "https://stm8.painelvox.com:8224/;",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/067e73f1-7437-4683-84b6-f7690c17c6f6-a4a64e377a.png",
+  "tags": "brasil,foz do iguacu,noticias,parana,pop",
+  "state": "Paraná",
+  "bitrate": 32
+ },
+ {
+  "stationuuid": "eed0af81-c5ec-40cf-af2e-f966ce6adfb3",
+  "name": "Rádio Cultura 820 AM Foz",
+  "url": "https://centova4.transmissaodigital.com:20156/stream",
+  "url_resolved": "https://centova4.transmissaodigital.com:20156/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/eed0af81-c5ec-40cf-af2e-f966ce6adfb3-4812f926bb.png",
+  "tags": "brasil,foz do iguacu,parana",
+  "state": "Paraná",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "d61ed0c6-6cdf-4cf8-a803-a5ae3a403250",
+  "name": "Rádio 97.7 FM Foz",
+  "url": "https://audiostreaming1.septecloud.com.br/radio/8030/radio.mp3",
+  "url_resolved": "https://audiostreaming1.septecloud.com.br/radio/8030/radio.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d61ed0c6-6cdf-4cf8-a803-a5ae3a403250-d4d3404bd3.png",
+  "tags": "brasil,foz do iguacu,parana",
+  "state": "Paraná",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "a388eacb-b1d0-459c-868e-cc21c695259c",
+  "name": "Rádio T 88.1 FM Foz",
+  "url": "https://ice4.fabricahost.com.br/radiotfozdoiguacu",
+  "url_resolved": "https://f100.fabricahost.com.br/radiotfozdoiguacu?f=1794907549N01M7MD7BM8DQWMN8E3EDX7YVRH&tid=01M7MD7BM8S06VS1VKWCK109F7",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/a388eacb-b1d0-459c-868e-cc21c695259c-5f08ab912f.png",
+  "tags": "brasil,foz do iguacu,parana",
+  "state": "Paraná",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "7c92097b-73b8-4936-a69b-4a13b6e65527",
+  "name": "Metropolitana FM 93.7 Foz",
+  "url": "https://8624.brasilstream.com.br/stream",
+  "url_resolved": "https://8624.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/7c92097b-73b8-4936-a69b-4a13b6e65527-efa0344c79.png",
+  "tags": "brasil,foz do iguacu,parana",
+  "state": "Paraná",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "1735e2d6-61dc-44e9-9444-dbce6d7c4bf0",
+  "name": "Viola FM 91.7 Foz",
+  "url": "https://ice.fabricahost.com.br/radioviolafoz",
+  "url_resolved": "https://f108.fabricahost.com.br/radioviolafoz?f=1794879672N01M7KJMKQ9MW10ZRHHTG7JZ4TH&tid=01M7KJMKQ9ZP2M1J9JKABZRGXW",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/1735e2d6-61dc-44e9-9444-dbce6d7c4bf0-e09c3d8ce4.png",
+  "tags": "brasil,foz do iguacu,parana",
+  "state": "Paraná",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "ccab4653-ba5e-461e-ae92-f6b0032724ce",
+  "name": "93 FM Foz",
+  "url": "https://radio02.zas.media/proxy/fozdoiguacu93/stream",
+  "url_resolved": "https://radio02.zas.media/proxy/fozdoiguacu93/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ccab4653-ba5e-461e-ae92-f6b0032724ce-b426d15288.png",
+  "tags": "brasil,foz do iguacu,parana",
+  "state": "Paraná",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "37b1f840-9ec8-4cb7-a00f-8f26cc3da0fe",
+  "name": "Rádio Viola FM 98.1",
+  "url": "https://ice.fabricahost.com.br/violafm",
+  "url_resolved": "https://f100.fabricahost.com.br/violafm?f=1795039993N01M7RBH7Z7Q1WAMMDM0J7NTVJQ&tid=01M7RBH7Z7X35BENFPEYGTR4FR",
+  "favicon": "",
+  "tags": "sertanejo",
+  "state": "Paraná(Brazil)",
+  "bitrate": 48
+ }
+]

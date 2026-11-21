@@ -1,0 +1,662 @@
+[
+ {
+  "stationuuid": "e7599368-1801-11e8-ae97-52543be04c81",
+  "name": "Antena 1 Rio de Janeiro, RJ (ZYD 463, 103,7 MHz FM)",
+  "url": "http://a1rj.streams.com.br:7801/sm",
+  "url_resolved": "http://a1rj.streams.com.br:7801/sm",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/e7599368-1801-11e8-ae97-52543be04c81-8b9b11c004.png",
+  "tags": "adult contemporary,brazilian music,jazz,pop,smooth jazz",
+  "state": "Rio de Janeiro",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "84a51775-4137-48c8-b72b-85f4b5edc7e5",
+  "name": "Super Radio Tupi 96.5 ",
+  "url": "https://8923.brasilstream.com.br/stream",
+  "url_resolved": "https://8923.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/84a51775-4137-48c8-b72b-85f4b5edc7e5-c51e3aadc2.png",
+  "tags": "local news,news talk,variety",
+  "state": "Rio de Janeiro",
+  "bitrate": 32
+ },
+ {
+  "stationuuid": "b443a768-fca4-42cb-8b4a-6a3437399c27",
+  "name": "FM O DIA 100.5",
+  "url": "http://streaming.livespanel.com:20000/live",
+  "url_resolved": "http://streaming.livespanel.com:20000/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/b443a768-fca4-42cb-8b4a-6a3437399c27-214ff21550.png",
+  "tags": "",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "96487106-0601-11e8-ae97-52543be04c81",
+  "name": "Mix Rio 102.1 Rio de Janeiro, RJ",
+  "url": "http://provisioning.streamtheworld.com/pls/MIXRIOAAC.pls",
+  "url_resolved": "http://24233.live.streamtheworld.com/MIXRIOAAC_SC",
+  "favicon": "",
+  "tags": "brazilian pop,rio de janeiro,top 40",
+  "state": "Rio de Janeiro",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "8c2922b9-b375-4a3d-97dd-7f8fa8d09512",
+  "name": "CBN Rio de Janeiro 92.5 FM",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CBN_RJ_ADP.m3u8",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/CBN_RJ_ADP.m3u8",
+  "favicon": "",
+  "tags": "live sports,local news,news,news talk,sports,sports news",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "5839c451-da02-421a-b270-8932b162f627",
+  "name": "Melodia FM 97.5",
+  "url": "https://online-radio.eu/export/wmp/58758-r%C3%A1dio-melodia-fm",
+  "url_resolved": "https://server01.ouvir.radio.br:8033/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/5839c451-da02-421a-b270-8932b162f627-0591296626.png",
+  "tags": "gospel",
+  "state": "Rio de Janeiro",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "4317dca3-9e67-4226-82a8-8f650ba50219",
+  "name": "Rádio FM O Dia 99.7 FM",
+  "url": "https://wz7.servidoresbrasil.com:8274/stream",
+  "url_resolved": "https://wz7.servidoresbrasil.com:8274/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/4317dca3-9e67-4226-82a8-8f650ba50219-9a395cf7f4.png",
+  "tags": "popular,samba pagode",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "9d4cc69b-bb83-41c3-b76c-9da2eacee424",
+  "name": "Rádio Globo - Rio de Janeiro",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_GLOBO_RJAAC.aac?dist=site",
+  "url_resolved": "https://26683.live.streamtheworld.com:443/RADIO_GLOBO_RJAAC.aac?dist=site",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/9d4cc69b-bb83-41c3-b76c-9da2eacee424-454bd8c0f1.png",
+  "tags": "",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "9ab23180-17de-11e8-ae97-52543be04c81",
+  "name": "Rádio Cidade",
+  "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/RADIOCIDADEAAC.aac",
+  "url_resolved": "http://playerservices.streamtheworld.com/api/livestream-redirect/RADIOCIDADEAAC.aac",
+  "favicon": "",
+  "tags": "brazilian music,contemporary,pop,rock",
+  "state": "Rio de Janeiro",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "548d3232-fd53-4942-933b-38e9ddb4bcb3",
+  "name": "EldoPop FM",
+  "url": "http://stm10.srvstm.com:34794/stream",
+  "url_resolved": "http://stm10.srvstm.com:34794/stream",
+  "favicon": "",
+  "tags": "hard rock,progressive rock",
+  "state": "Rio de Janeiro",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "19cbf3cf-33c5-4b50-b915-a383b9e8b1ce",
+  "name": "Só Kakarecos Classic Rock",
+  "url": "http://sokakarecos.ddns.net:9030/rock128",
+  "url_resolved": "http://sokakarecos.ddns.net:9030/rock128",
+  "favicon": "",
+  "tags": "",
+  "state": "Rio de Janeiro",
+  "bitrate": 160
+ },
+ {
+  "stationuuid": "962ef199-0601-11e8-ae97-52543be04c81",
+  "name": "Rádio Teresópolis Rio de Janeiro",
+  "url": "http://cast3.hoost.com.br:8096/stream",
+  "url_resolved": "http://cast3.hoost.com.br:8096/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/962ef199-0601-11e8-ae97-52543be04c81-1ca07fbb61.png",
+  "tags": "news,talk,teresópolis",
+  "state": "Rio de Janeiro",
+  "bitrate": 320
+ },
+ {
+  "stationuuid": "475aef60-45f3-48ce-8e6e-a9f0a0212cdc",
+  "name": "Rádio Furacão 2000",
+  "url": "https://servidor24-1.brlogic.com:7516/live?source=website",
+  "url_resolved": "https://servidor24-1.brlogic.com:7516/live?source=website",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/475aef60-45f3-48ce-8e6e-a9f0a0212cdc-d77ae830d1.png",
+  "tags": "brazilian pop,dance",
+  "state": "Rio de Janeiro",
+  "bitrate": 192
+ },
+ {
+  "stationuuid": "22ae5ff0-a313-11e8-abb8-52543be04c81",
+  "name": "Rádio Graviola",
+  "url": "http://servidor30.brlogic.com:8262/live",
+  "url_resolved": "http://servidor30.brlogic.com:8262/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/22ae5ff0-a313-11e8-abb8-52543be04c81-ea14a163d6.png",
+  "tags": "",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "2de0dcdc-6922-4596-a354-fa80b8b060f6",
+  "name": "Rádio Elohim",
+  "url": "https://servidor34-5.brlogic.com:8190/live",
+  "url_resolved": "https://servidor34-5.brlogic.com:8190/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/2de0dcdc-6922-4596-a354-fa80b8b060f6-c5479faa5b.png",
+  "tags": "christian",
+  "state": "Rio de Janeiro",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "12c34710-3f54-4834-b9c4-60b7deebf888",
+  "name": "Rádio Melodia 97.5 FM",
+  "url": "https://26573.live.streamtheworld.com/MELODIAFMAAC.aac?1771864900231",
+  "url_resolved": "https://26573.live.streamtheworld.com/MELODIAFMAAC.aac?1771864900231",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/12c34710-3f54-4834-b9c4-60b7deebf888-533fcace01.png",
+  "tags": "gospel",
+  "state": "Rio de Janeiro",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "bf97c7e7-a960-4ddc-8832-0def9e6d603f",
+  "name": "Rádio JB FM 99.9",
+  "url": "https://26573.live.streamtheworld.com/JBFMAAC.aac?1771934687401",
+  "url_resolved": "https://26573.live.streamtheworld.com/JBFMAAC.aac?1771934687401",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/bf97c7e7-a960-4ddc-8832-0def9e6d603f-9c891ba790.png",
+  "tags": "adulta,flashback,mpb",
+  "state": "Rio de Janeiro",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "aa953a81-6daf-4b14-af2e-51adad60cbfb",
+  "name": "Progsky",
+  "url": "https://cc4.streammaximum.com:20017/stream",
+  "url_resolved": "https://cc4.streammaximum.com:20017/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/aa953a81-6daf-4b14-af2e-51adad60cbfb-977a76510f.png",
+  "tags": "progressive rock",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "9c16f0b1-7764-4264-8d33-68f3566c68ef",
+  "name": "Rádio BandNews RJ 90.3 FM",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/BANDNEWSFM_RJAAC.aac?",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/BANDNEWSFM_RJAAC.aac?",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/9c16f0b1-7764-4264-8d33-68f3566c68ef-9067fd1c3f.png",
+  "tags": "notícias",
+  "state": "Rio de Janeiro",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "d35c9122-e7e6-4d2a-94d0-966fb14a28b5",
+  "name": "Rádio Roquette Pinto",
+  "url": "https://radio.saopaulo01.com.br/8300/stream/",
+  "url_resolved": "https://radio.saopaulo01.com.br/8300/stream/",
+  "favicon": "",
+  "tags": "eclética",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "c6cbbbdf-6a9c-43fc-8400-c875db67d60c",
+  "name": "Antena 1 Rio",
+  "url": "http://a1rj.streams.com.br:7801/stream",
+  "url_resolved": "http://a1rj.streams.com.br:7801/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c6cbbbdf-6a9c-43fc-8400-c875db67d60c-ec242691ad.png",
+  "tags": "adult contemporary,adult hits,mpb,soft adult contemporary",
+  "state": "Rio de Janeiro",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "50cfb4f4-f96d-43af-9c7c-2f258382eb17",
+  "name": "Rádio UFRJ",
+  "url": "https://servidor21.brlogic.com:7712/live",
+  "url_resolved": "https://servidor21.brlogic.com:7712/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/50cfb4f4-f96d-43af-9c7c-2f258382eb17-fcecf7281f.png",
+  "tags": "",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "c8ae4940-7857-4273-8640-e12d743bd659",
+  "name": "Radio UENF",
+  "url": "https://stream-172.zeno.fm/pfsm8zen0lguv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJwZnNtOHplbjBsZ3V2IiwiaG9zdCI6InN0cmVhbS0xNzIuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6IlM1R0dLaktPVFh5cHdkSzRTd1NtSnciLCJpYXQiOjE3NDAyNDg3NDEsImV4cCI6MTc0MDI0ODgwMX0.zRlAJC0hMSi3Kk3NDNBt-XgwR29XnagIU6WYqFLfJi0&1740248741087",
+  "url_resolved": "https://stream-204.surfernetwork.com/pfsm8zen0lguv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJwZnNtOHplbjBsZ3V2IiwiaG9zdCI6InN0cmVhbS0yMDQuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6Im1xVnUtXzh6U0NXQmxSWVViUFl2RlEiLCJpYXQiOjE3OTQ4OTA3MDAsImV4cCI6MTc5NDg5MDc2MH0.wOLPQdXz40vmCgRywwNhGf1-koH05IEpDl_nBaQrAzo&1740248741087",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c8ae4940-7857-4273-8640-e12d743bd659-89d0d869c0.png",
+  "tags": "cultural",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "df98c5cd-6b25-4381-950b-d15753439b97",
+  "name": "Sucesso FM 88,3",
+  "url": "https://servidor36.brlogic.com:8300/live?1696916321806",
+  "url_resolved": "https://servidor36.brlogic.com:8300/live?1696916321806",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/df98c5cd-6b25-4381-950b-d15753439b97-ddf2a3d291.png",
+  "tags": "brasil,funk,nova friburgo,pagode,pop,rio de janeiro,sertanejo",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "0f60e584-d0fd-42ca-bc27-8082df7e6ff6",
+  "name": "Rádio Nacional Rio de Janeiro",
+  "url": "https://radionacionalrio-stream.ebc.com.br/ebc/radionacionalriodejaneiro/playlist.m3u8",
+  "url_resolved": "https://radionacionalrio-stream.ebc.com.br/ebc/radionacionalriodejaneiro/playlist.m3u8",
+  "favicon": "",
+  "tags": "brazilian,mpb,news,sports,talk",
+  "state": "Rio de Janeiro",
+  "bitrate": 235
+ },
+ {
+  "stationuuid": "14206351-8052-46e6-9bc0-4e66d50ad61c",
+  "name": "WebRadio Rama",
+  "url": "https://servidor32-5.brlogic.com:8464/live?source=website",
+  "url_resolved": "https://servidor32-5.brlogic.com:8464/live?source=website",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/14206351-8052-46e6-9bc0-4e66d50ad61c-7a2949a041.png",
+  "tags": "cristã",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "637c36d6-7c28-4184-8340-f569700c2d28",
+  "name": "Rádio LAM",
+  "url": "https://stream1.svrdedicado.org/8028/stream",
+  "url_resolved": "https://stream1.svrdedicado.org/8028/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/637c36d6-7c28-4184-8340-f569700c2d28-799ca36456.png",
+  "tags": "alternative rock,blues,brazilian rock,classic rock,rock",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "5cdbc574-c119-4dec-8d18-acbf1a7b352d",
+  "name": "Rede 3.16",
+  "url": "https://servidor21.brlogic.com:7976/live?1661877997950",
+  "url_resolved": "https://servidor21.brlogic.com:7976/live?1661877997950",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/5cdbc574-c119-4dec-8d18-acbf1a7b352d-dd24237d56.png",
+  "tags": "gospel",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "a5f67526-96c9-46b7-a01f-b07f791535b9",
+  "name": "Rádio MEC AM",
+  "url": "https://radiomec-stream.ebc.com.br/ebc/radiomec/playlist.m3u8",
+  "url_resolved": "https://radiomec-stream.ebc.com.br/ebc/radiomec/playlist.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/a5f67526-96c9-46b7-a01f-b07f791535b9-475caa24fa.png",
+  "tags": "instrumental,jazz,mpb,public radio",
+  "state": "Rio de Janeiro",
+  "bitrate": 307
+ },
+ {
+  "stationuuid": "ca7d9a61-eb28-49bc-99ba-5a140869919c",
+  "name": "Positividade FM",
+  "url": "https://27573.live.streamtheworld.com/POSITIVIDADE_FM_SC",
+  "url_resolved": "https://27573.live.streamtheworld.com/POSITIVIDADE_FM_SC",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ca7d9a61-eb28-49bc-99ba-5a140869919c-f19e371ae5.png",
+  "tags": "adult contemporary,música pop,pop",
+  "state": "Rio de Janeiro",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "5e859c82-1767-4517-9c74-18ebb656740b",
+  "name": "Conselheiro 87.7 FM",
+  "url": "http://stm1.streamproarte.com.br:7204/stream?1685285676227",
+  "url_resolved": "http://stm1.streamproarte.com.br:7204/stream?1685285676227",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/5e859c82-1767-4517-9c74-18ebb656740b-ac49cee8a9.png",
+  "tags": "comunitária,eclética,regional",
+  "state": "Rio de Janeiro",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "55c4c15a-9885-446c-94b0-3ac4e71123f6",
+  "name": "Rádio Nova Paradiso 89.5 FM",
+  "url": "https://27583.live.streamtheworld.com/NOVABRASIL_RIOAAC.aac?1771933348412",
+  "url_resolved": "https://27583.live.streamtheworld.com/NOVABRASIL_RIOAAC.aac?1771933348412",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/55c4c15a-9885-446c-94b0-3ac4e71123f6-5ff5af39bd.png",
+  "tags": "adulta,flashback,mpb",
+  "state": "Rio de Janeiro",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "274bab6a-72af-42bf-b503-01a9fd64dcdb",
+  "name": "CLUBE DA BLACK MUSIC",
+  "url": "https://servidor37-2.brlogic.com:8066/live?source=website",
+  "url_resolved": "https://servidor37-2.brlogic.com:8066/live?source=website",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/274bab6a-72af-42bf-b503-01a9fd64dcdb-e8d9235f8b.png",
+  "tags": "",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "71660681-3835-4a98-85c6-4579a931e3b5",
+  "name": "102 FM Itaperuna",
+  "url": "https://radio.saopaulo01.com.br:10948/stream",
+  "url_resolved": "https://radio.saopaulo01.com.br:10948/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/71660681-3835-4a98-85c6-4579a931e3b5-7c3f96ce24.png",
+  "tags": "",
+  "state": "Itaperuna, Rio de Janeiro",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "800634cc-33c3-4093-8ad0-26888f2434c3",
+  "name": "radio maravilha fm",
+  "url": "https://stm39.srvstm.com:8758/stream",
+  "url_resolved": "https://stm39.srvstm.com:8758/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/800634cc-33c3-4093-8ad0-26888f2434c3-639042330f.png",
+  "tags": "",
+  "state": "Rio de Janeiro, Petropólis",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "6c6187ff-4866-47d0-a340-38967e9dc237",
+  "name": "ELEKTRA RADIO",
+  "url": "https://cast3.hoost.com.br:8952/stream",
+  "url_resolved": "https://cast3.hoost.com.br:8952/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/6c6187ff-4866-47d0-a340-38967e9dc237-6165c96ab9.png",
+  "tags": "'synthpop',breaks,electro,freestyle,indie rock,miami bass,new retro wave",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "c94e44c8-6610-4f0a-8a19-ac15c334abad",
+  "name": "Rádio Cidade - drop80",
+  "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/DROP80_S01AAC.aac",
+  "url_resolved": "http://playerservices.streamtheworld.com/api/livestream-redirect/DROP80_S01AAC.aac",
+  "favicon": "",
+  "tags": "rock",
+  "state": "Rio de Janeiro",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "9b8abf01-0deb-4b96-85f1-dd7e45563415",
+  "name": "Rádio Web Clube Sertanejo",
+  "url": "https://s42.maxcast.com.br:8180/live?_ts=1779664758220",
+  "url_resolved": "https://s42.maxcast.com.br:8180/live?_ts=1779664758220",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/9b8abf01-0deb-4b96-85f1-dd7e45563415-3ff9ab3891.png",
+  "tags": "sertaneja,sertanejo,sertanejo raiz",
+  "state": "Itaperuna, Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "bda04c1b-4276-426a-b7fa-7b81beff0ddb",
+  "name": "Rádio Rede 3.16",
+  "url": "https://servidor21.brlogic.com:7976/live",
+  "url_resolved": "https://servidor21.brlogic.com:7976/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/bda04c1b-4276-426a-b7fa-7b81beff0ddb-dd24237d56.png",
+  "tags": "gospel,varieties",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "6e56e3eb-620e-498d-86a2-ebb27b993d87",
+  "name": "Rádio Cidade - Classic Rock",
+  "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/CLASSICROCK_S01AAC_64.aac",
+  "url_resolved": "http://playerservices.streamtheworld.com/api/livestream-redirect/CLASSICROCK_S01AAC_64.aac",
+  "favicon": "",
+  "tags": "classic rock",
+  "state": "Rio de Janeiro",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "962f0545-c8ec-4fcd-8dae-1d7ddc5a531e",
+  "name": "Manchete FM",
+  "url": "https://8410.brasilstream.com.br/stream?origem=site",
+  "url_resolved": "https://8410.brasilstream.com.br/stream?origem=site",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/962f0545-c8ec-4fcd-8dae-1d7ddc5a531e-c711c1ce20.png",
+  "tags": "",
+  "state": "Rio de Janeiro",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "2caa092a-68c0-46db-a32a-9317e36b1ca0",
+  "name": "93FM",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/FM93AAC.aac?dist=RadiosNet",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/FM93AAC.aac?dist=RadiosNet",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/2caa092a-68c0-46db-a32a-9317e36b1ca0-0a10c777ca.png",
+  "tags": "",
+  "state": "Rio de Janeiro",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "15791798-2591-4cc2-aa38-dd680da995e1",
+  "name": "Hitmix Brasil",
+  "url": "https://radio.stmsrv.com:8464/stream",
+  "url_resolved": "https://radio.stmsrv.com:8464/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/15791798-2591-4cc2-aa38-dd680da995e1-ea6c5b7306.png",
+  "tags": "",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "790e2018-20dd-425f-a451-2e5825ab7cda",
+  "name": "Rádio Coroados AM 1310",
+  "url": "https://s41.maxcast.com.br:8176/live?1740250777185",
+  "url_resolved": "https://s41.maxcast.com.br:8176/live?1740250777185",
+  "favicon": "",
+  "tags": "",
+  "state": "Rio de Janeiro",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "66623675-5487-4432-a032-c4dc510b73b8",
+  "name": "Rádio Roberto Carlos",
+  "url": "https://stream.zeno.fm/erbpkq1cz55vv",
+  "url_resolved": "https://stream.zeno.fm/erbpkq1cz55vv",
+  "favicon": "",
+  "tags": "mpb,romantica",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "7e18c18d-dabe-404c-941d-9ebe811ddd90",
+  "name": "Rádio 107.1 FM",
+  "url": "https://servidor25.brlogic.com:7024/live",
+  "url_resolved": "https://servidor25.brlogic.com:7024/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/7e18c18d-dabe-404c-941d-9ebe811ddd90-129666ab3f.png",
+  "tags": "80s,90s,brazilian music,charme,edm,freestyle,funk antigo,funk melody,house,international,latin,latin freestyle,miami bass,national,pop,r&b,rnb,rock",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "5a45dd8c-9269-435b-8395-fde4f5c80f63",
+  "name": "Roberto Carlos Web",
+  "url": "https://centova5.transmissaodigital.com:20032/stream",
+  "url_resolved": "https://centova5.transmissaodigital.com:20032/stream",
+  "favicon": "",
+  "tags": "mpb,romantica",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "18487161-666a-4d59-8ccb-5150d0c8c23e",
+  "name": "Radio Estilo Leblon",
+  "url": "http://198.58.98.83:8193/stream",
+  "url_resolved": "http://198.58.98.83:8193/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/18487161-666a-4d59-8ccb-5150d0c8c23e-d33274d996.png",
+  "tags": "",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "26ff6924-856b-489c-970c-c90dd361c8f1",
+  "name": "Rádio Escola de Rádio",
+  "url": "https://radio.escoladeradio.com.br/listen/radio_er/radio.mp3",
+  "url_resolved": "https://radio.escoladeradio.com.br/listen/radio_er/radio.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/26ff6924-856b-489c-970c-c90dd361c8f1-b425fb0310.png",
+  "tags": "brazilian music,mpb,music school,pop,rio de janeiro,rock",
+  "state": "Rio de Janeiro",
+  "bitrate": 192
+ },
+ {
+  "stationuuid": "0552145e-09a0-4dde-8ad3-3b3f9826d725",
+  "name": "Serra Verde FM",
+  "url": "http://servidor36.dnip.com.br:2199/tunein/serraverdefm.asx",
+  "url_resolved": "http://40.160.24.87:10650/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/0552145e-09a0-4dde-8ad3-3b3f9826d725-1934df32a1.png",
+  "tags": "",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "22e73d38-9092-4e05-8092-fc36a4899ded",
+  "name": "SO Kakarecos Light",
+  "url": "http://sokakarecos.ddns.net:9005/",
+  "url_resolved": "http://sokakarecos.ddns.net:9005/",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/22e73d38-9092-4e05-8092-fc36a4899ded-f1dd5151b3.png",
+  "tags": "musica romantica,retro,soft rock",
+  "state": "Rio de Janeiro",
+  "bitrate": 160
+ },
+ {
+  "stationuuid": "0809ba73-3b08-4ec3-a577-2e280e792536",
+  "name": "Radio Tabira",
+  "url": "https://radio.stmsrv.com:8444/;",
+  "url_resolved": "https://radio.stmsrv.com:8444/;",
+  "favicon": "",
+  "tags": "",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "4bf3be0e-a138-46a3-ab52-72b8816a7038",
+  "name": "Aloha Web Rádio",
+  "url": "https://servidor27-3.brlogic.com:8156/live?source=website",
+  "url_resolved": "https://servidor27-3.brlogic.com:8156/live?source=website",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/4bf3be0e-a138-46a3-ab52-72b8816a7038-626ec21825.png",
+  "tags": "classick rock,pop rock,reggae,rock,surf music",
+  "state": "Rio de Janeiro",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "32d4ce82-424c-43c6-97e6-e910b2976875",
+  "name": "maracutaia.fm",
+  "url": "https://stream.maracutaia.fm",
+  "url_resolved": "https://maracutaiafm.radiocult.fm/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/32d4ce82-424c-43c6-97e6-e910b2976875-35d6e94723.png",
+  "tags": "dance,electronica,experimental,house,techno,world music",
+  "state": "Rio de Janeiro",
+  "bitrate": 320
+ },
+ {
+  "stationuuid": "e020677b-ad8f-409f-a9d5-2a4592a69faa",
+  "name": "Rádio Charme",
+  "url": "https://stm6.xcast.com.br:7988/stream",
+  "url_resolved": "https://stm6.xcast.com.br:7988/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/e020677b-ad8f-409f-a9d5-2a4592a69faa-04b7a0bc95.png",
+  "tags": "hiphop,rnb,soul",
+  "state": "Rio de Janeiro",
+  "bitrate": 32
+ },
+ {
+  "stationuuid": "d7bda278-d367-415e-959b-72c53e011b4c",
+  "name": "Rio Sul Radio",
+  "url": "https://stream.riosulradio.com/",
+  "url_resolved": "https://stream.riosulradio.com/",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d7bda278-d367-415e-959b-72c53e011b4c-ba89faa8e4.png",
+  "tags": "adult,adult contemporary,pop rock",
+  "state": "Rio de Janeiro",
+  "bitrate": 192
+ },
+ {
+  "stationuuid": "f5e47b29-9241-4906-a218-e84da6a1eb17",
+  "name": "Rádio Diversão FM live",
+  "url": "https://stream-177.surfernetwork.com/7k889br3c48uv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiI3azg4OWJyM2M0OHV2IiwiaG9zdCI6InN0cmVhbS0xNzcuc3VyZmVybmV0d29yay5jb20iLCJydHRsIjo1LCJqdGkiOiJwQWVzSGIwZVRqcTR5bnRZLUtVRWFRIiwiaWF0IjoxNzkwMDM0MTA2LCJleHAiOjE3OTAwMzQxNjZ9.8TNrnfvcn9JR_4FzNwG287DWhVsii7ynInGA7VLTxtM",
+  "url_resolved": "https://stream-177.surfernetwork.com/7k889br3c48uv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiI3azg4OWJyM2M0OHV2IiwiaG9zdCI6InN0cmVhbS0xNzcuc3VyZmVybmV0d29yay5jb20iLCJydHRsIjo1LCJqdGkiOiJwQWVzSGIwZVRqcTR5bnRZLUtVRWFRIiwiaWF0IjoxNzkwMDM0MTA2LCJleHAiOjE3OTAwMzQxNjZ9.8TNrnfvcn9JR_4FzNwG287DWhVsii7ynInGA7VLTxtM",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/f5e47b29-9241-4906-a218-e84da6a1eb17-f0b6bf97e5.png",
+  "tags": "electronic,house,techno,trance",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "acf7f401-8a0b-4174-919e-c8989c73780c",
+  "name": "Hits FM 897",
+  "url": "https://s44.maxcast.com.br:8255/live",
+  "url_resolved": "https://s44.maxcast.com.br:8255/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/acf7f401-8a0b-4174-919e-c8989c73780c-a06734040c.png",
+  "tags": "",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "ea3c45d3-6a11-4e57-86d9-7fe01f07303e",
+  "name": "Rádio Catedral FM 106.7",
+  "url": "https://hts10.brascast.com:13728/live",
+  "url_resolved": "https://hts10.brascast.com:13728/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ea3c45d3-6a11-4e57-86d9-7fe01f07303e-0d94c0959e.png",
+  "tags": "catholic,religious",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "2a5e6c05-3b5a-4a91-b4fd-f6e91301de41",
+  "name": "Rádio Dosvox",
+  "url": "https://streaming.studioshopping.com.br:8200/stream",
+  "url_resolved": "https://streaming.studioshopping.com.br:8200/stream",
+  "favicon": "",
+  "tags": "college,variety",
+  "state": "Rio de Janeiro - RJ",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "be4f4e10-704a-40e2-af31-71a89b24175b",
+  "name": "Rádio Cidade - Stereo Zero",
+  "url": "http://playerservices.streamtheworld.com/api/livestream-redirect/STEREOZERO_S01AAC.aac",
+  "url_resolved": "http://playerservices.streamtheworld.com/api/livestream-redirect/STEREOZERO_S01AAC.aac",
+  "favicon": "",
+  "tags": "rock",
+  "state": "Rio de Janeiro",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "e8477ff6-812f-4e51-a0fe-67dd93ef2872",
+  "name": "Rádio Vibe Ploc",
+  "url": "https://s43.maxcast.com.br:9082/live",
+  "url_resolved": "https://s43.maxcast.com.br:9082/live",
+  "favicon": "",
+  "tags": "",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "93672f94-0957-4fe4-98ed-1a09c37d6073",
+  "name": "Rádio Kbum 102,7FM",
+  "url": "https://stm1.glaudiotecnology.uk:7008/stream",
+  "url_resolved": "https://stm1.glaudiotecnology.uk:7008/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/93672f94-0957-4fe4-98ed-1a09c37d6073-bdcdf0aa50.png",
+  "tags": "",
+  "state": "Rio de Janeiro",
+  "bitrate": 256
+ },
+ {
+  "stationuuid": "4eb77e6b-7034-4335-b85f-271fc641e873",
+  "name": "Rádio Harpa Cristã",
+  "url": "https://radiosnet.site/stream/reliquiasgospel",
+  "url_resolved": "https://radiosnet.site/stream/reliquiasgospel",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/4eb77e6b-7034-4335-b85f-271fc641e873-331a917eef.png",
+  "tags": "christian,gospel,religious",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "6017fa3a-3529-49cc-a38c-31ebb4f953ac",
+  "name": "Rádio Saudade Gospel",
+  "url": "https://radiosnet.site/stream/radiosaudadegospel",
+  "url_resolved": "https://radiosnet.site/stream/radiosaudadegospel",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/6017fa3a-3529-49cc-a38c-31ebb4f953ac-34fdc25f96.png",
+  "tags": "christian,gospel,religious",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "0dfa77bf-fc81-4ed8-9994-744bf8d7cc7e",
+  "name": "ONBL RÁDIO",
+  "url": "https://cp-1.owh.radio.br/listen/owh_s33915/radio-mp3",
+  "url_resolved": "https://cp-1.owh.radio.br/listen/owh_s33915/radio-mp3",
+  "favicon": "",
+  "tags": "diversificado",
+  "state": "Rio de Janeiro",
+  "bitrate": 96
+ }
+]

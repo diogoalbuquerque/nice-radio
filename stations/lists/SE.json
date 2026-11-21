@@ -1,0 +1,102 @@
+[
+ {
+  "stationuuid": "b8cb31b3-5a4b-11e9-a622-52543be04c81",
+  "name": "Nova Brasil FM 93.5 Aracaju",
+  "url": "http://playerservices.streamtheworld.com/pls/NOVABRASIL_ARACAJUAAC.pls",
+  "url_resolved": "http://24493.live.streamtheworld.com/NOVABRASIL_ARACAJUAAC_SC",
+  "favicon": "",
+  "tags": "aracaju,brazilian pop,mpb",
+  "state": "Sergipe",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "8cbe4f82-4bbc-4afe-b39e-63a5b3e2497f",
+  "name": "Rádio Sergipe 95.9 FM - Aracaju Sergipe",
+  "url": "http://08.stmip.net:8012/stream",
+  "url_resolved": "http://08.stmip.net:8012/stream",
+  "favicon": "",
+  "tags": "",
+  "state": "Sergipe",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "9eacfbe2-1368-416d-8eeb-e55d4feb0f6b",
+  "name": "Rádio Xodó 89.9 FM -  Aracaju Sergipe",
+  "url": "http://09.stmip.net:8824/stream",
+  "url_resolved": "http://09.stmip.net:8824/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/9eacfbe2-1368-416d-8eeb-e55d4feb0f6b-de606a6b3c.png",
+  "tags": "pop music",
+  "state": "Sergipe",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "f42f8a02-a87f-41a3-a53a-ab36a2797d2b",
+  "name": "Boa Fm - Aracaju Sergipe",
+  "url": "https://s07.maxcast.com.br:8074/live",
+  "url_resolved": "https://s07.maxcast.com.br:8074/live",
+  "favicon": "",
+  "tags": "",
+  "state": "Sergipe",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "faca1ae5-f170-4428-a0e7-b8ab6502f6bf",
+  "name": "Rádio Jornal 91.3 FM",
+  "url": "https://str1.streamhostpg.com.br:8124/stream",
+  "url_resolved": "https://str1.streamhostpg.com.br:8124/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/faca1ae5-f170-4428-a0e7-b8ab6502f6bf-eaffddc781.png",
+  "tags": "jornalismo",
+  "state": "Sergipe",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "355e20ee-5e3e-4e0d-88e2-40950003ee86",
+  "name": "Web Rádio Arauto da Imaculada",
+  "url": "https://servidor34-1.brlogic.com:8090/live",
+  "url_resolved": "https://servidor34-1.brlogic.com:8090/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/355e20ee-5e3e-4e0d-88e2-40950003ee86-ca11fc6247.png",
+  "tags": "católica",
+  "state": "Sergipe",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "9c7a386f-8575-4f60-baae-f8c6db926fce",
+  "name": "Rádio Jornal 91.3 FM",
+  "url": "https://str1.streamhostpg.com.br:8124/stream?1771879202034",
+  "url_resolved": "https://str1.streamhostpg.com.br:8124/stream?1771879202034",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/9c7a386f-8575-4f60-baae-f8c6db926fce-eaffddc781.png",
+  "tags": "flashback,futebol,jornalismo(all news)",
+  "state": "Sergipe",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "d558fc34-e423-485f-90a5-b3f939cfd1b3",
+  "name": "Jovem Pan Aracaju 88,7 FM",
+  "url": "https://8060.brasilstream.com.br/stream",
+  "url_resolved": "https://8060.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d558fc34-e423-485f-90a5-b3f939cfd1b3-862abc09e6.png",
+  "tags": "",
+  "state": "Sergipe",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "3560e702-faaa-4b32-8193-d6ac5994649d",
+  "name": "LTS",
+  "url": "http://uk3freenew.listen2myradio.com:39449/;streamType=mp3;",
+  "url_resolved": "http://uk3freenew.listen2myradio.com:39449/;streamType=mp3;",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/3560e702-faaa-4b32-8193-d6ac5994649d-e361c49713.png",
+  "tags": "",
+  "state": "Sergipe",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "57b45695-ff27-49ae-8b94-6dead00e6bc8",
+  "name": "Observatorio Radio Web",
+  "url": "https://observatoriosergipe.com.br/radio/live.mp3",
+  "url_resolved": "https://observatoriosergipe.com.br/radio/live.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/57b45695-ff27-49ae-8b94-6dead00e6bc8-2eebb11139.png",
+  "tags": "various",
+  "state": "Sergipe",
+  "bitrate": 320
+ }
+]

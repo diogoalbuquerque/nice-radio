@@ -1,0 +1,162 @@
+[
+ {
+  "stationuuid": "964704f6-0601-11e8-ae97-52543be04c81",
+  "name": "Nova Brasil FM Brasília, DF (ZYC476, 97,5 MHz)",
+  "url": "http://provisioning.streamtheworld.com/pls/NOVABRASIL_BSBAAC.pls",
+  "url_resolved": "http://27323.live.streamtheworld.com:3690/NOVABRASIL_BSBAAC_SC",
+  "favicon": "",
+  "tags": "brasilia,brazilian music,brazilian pop,mpb",
+  "state": "Distrito Federal",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "2ecd468b-523e-4f35-8f5b-251390b642f0",
+  "name": "Hunter FM - Hits Brasil",
+  "url": "https://live.hunter.fm/hitsbrasil_normal",
+  "url_resolved": "https://live.hunter.fm/hitsbrasil_normal",
+  "favicon": "",
+  "tags": "sertaneja,sertanejo",
+  "state": "Distrito Federal",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "f39f6d0e-a534-4d21-9352-e35e3bdddd48",
+  "name": "Hunter FM - Pagode",
+  "url": "https://live.hunter.fm/pagode_normal",
+  "url_resolved": "https://live.hunter.fm/pagode_normal",
+  "favicon": "",
+  "tags": "pagode",
+  "state": "Distrito Federal",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "4f374f52-6938-4954-a10b-4a70f6048ae9",
+  "name": "PorDeus.fm",
+  "url": "https://stream.zenolive.com/92ptm8uua2zuv.aac",
+  "url_resolved": "https://stream.zenolive.com/92ptm8uua2zuv.aac",
+  "favicon": "",
+  "tags": "antena 1,band,band news,batista,brasil,brazil,brazilian music,cbn,christian,christian praise&worship,church,cnn,crente,cristão,deus,devotion,evangelica,fiel,fox,gospel,gospel eletronica,gospel music,hillsong,igreja,jesus,jovem pan,louvor,nethel,planetshakers,pop gospel,pordeus,pordeus.fm,prayer,reggae gospel,us,worship",
+  "state": "Distrito Federal",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "4ac3c8ce-bdfd-4e5b-84e9-f527012dd80b",
+  "name": "Radio Camara 96.9 FM",
+  "url": "http://stream3.camara.gov.br/radiocamara1t64/manifest.m3u8",
+  "url_resolved": "http://stream3.camara.gov.br/radiocamara1t64/manifest.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/4ac3c8ce-bdfd-4e5b-84e9-f527012dd80b-8588ada839.png",
+  "tags": "adulta,mpb,talk news",
+  "state": "Distrito Federal",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "95610d19-0cfb-4a98-b2dc-faa27fbec3ec",
+  "name": "Rádio Justiça 104.7 FM",
+  "url": "https://server01.ouvir.radio.br:8036/stream",
+  "url_resolved": "https://server01.ouvir.radio.br:8036/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/95610d19-0cfb-4a98-b2dc-faa27fbec3ec-93e7d42d27.png",
+  "tags": "jornalismo,news,news talk,noticias",
+  "state": "Distrito Federal",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "aab7e6fd-6a3c-4e82-a415-a6685c6963bb",
+  "name": "Rádio Nacional Brasília FM",
+  "url": "https://radionacionalfm-stream.ebc.com.br/ebc/radionacionalfm/playlist.m3u8",
+  "url_resolved": "https://radionacionalfm-stream.ebc.com.br/ebc/radionacionalfm/playlist.m3u8",
+  "favicon": "",
+  "tags": "brazilian,mpb",
+  "state": "Distrito Federal",
+  "bitrate": 235
+ },
+ {
+  "stationuuid": "594546be-bd95-4eb4-9418-7a0767d37486",
+  "name": "Rádio Nacional Brasília AM",
+  "url": "https://radionacionalbrasilia-stream.ebc.com.br/index.m3u8",
+  "url_resolved": "https://radionacionalbrasilia-stream.ebc.com.br/index.m3u8",
+  "favicon": "",
+  "tags": "brazilian,mpb,news,public radio,talk",
+  "state": "Distrito Federal",
+  "bitrate": 235
+ },
+ {
+  "stationuuid": "dc8c5a9f-8765-4ad3-bb83-f3c52d91b9d8",
+  "name": "Rádio Eixo",
+  "url": "https://hts02.brascast.com:9758/live",
+  "url_resolved": "https://hts02.brascast.com:9758/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/dc8c5a9f-8765-4ad3-bb83-f3c52d91b9d8-7a8be9b2a0.png",
+  "tags": "brasília,df,latin,mpb,world",
+  "state": "Distrito Federal",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "2d2955df-3e64-49cc-a275-203ca4defee0",
+  "name": "Rádio Nacional Amazônia",
+  "url": "https://radionacionalamazonia-stream.ebc.com.br/ebc/radionacionalamazonia/playlist.m3u8",
+  "url_resolved": "https://radionacionalamazonia-stream.ebc.com.br/ebc/radionacionalamazonia/playlist.m3u8",
+  "favicon": "",
+  "tags": "brazilian,mpb,news,public radio,talk",
+  "state": "Distrito Federal",
+  "bitrate": 235
+ },
+ {
+  "stationuuid": "1485fb07-7889-4bba-bb37-c7f1e576b7da",
+  "name": "ÚNICA - Gospel Music",
+  "url": "https://stm8.painelcast.com:7024/stream",
+  "url_resolved": "https://stm8.painelcast.com:7024/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/1485fb07-7889-4bba-bb37-c7f1e576b7da-977b480447.png",
+  "tags": "",
+  "state": "Distrito Federal",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "452c8c70-4a49-4a2b-a586-66e57d8353c2",
+  "name": "UnbCast",
+  "url": "https://servidor28-5.brlogic.com:7120/live",
+  "url_resolved": "https://servidor28-5.brlogic.com:7120/live",
+  "favicon": "",
+  "tags": "educação,ensino,informação,notícias,pesquisa,university radio",
+  "state": "Distrito Federal",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "0e3c61c0-3980-4848-8ae6-ff68d550a5f6",
+  "name": "ÚNICA - Gospel Music",
+  "url": "https://stream.zeno.fm/dw99giyhtnauv",
+  "url_resolved": "https://stream-204.surfernetwork.com/dw99giyhtnauv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJkdzk5Z2l5aHRuYXV2IiwiaG9zdCI6InN0cmVhbS0yMDQuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IjFXYjlaOWdFUlBlV0FwQ0IxUExKU0EiLCJpYXQiOjE3OTQ4NzQ4NTYsImV4cCI6MTc5NDg3NDkxNn0.mgrrsowr7AGvx2vKgNUU9_WcOIX_UB0PCn50ysz_4dM",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/0e3c61c0-3980-4848-8ae6-ff68d550a5f6-977b480447.png",
+  "tags": "gospel dance,hits sertanejo pagode,reggae gospel,samba pagode",
+  "state": "Distrito Federal",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "ada8b5ce-f118-4815-a5dd-ecbd47e13427",
+  "name": "Rádioweb Cult 22",
+  "url": "https://s24.maxcast.com.br:8168/live?id=1622747293019",
+  "url_resolved": "https://s24.maxcast.com.br:8168/live?id=1622747293019",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ada8b5ce-f118-4815-a5dd-ecbd47e13427-f076b6dfc6.png",
+  "tags": "alternative rock,classic rock,rock",
+  "state": "Distrito Federal",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "a3f7425f-da3c-4169-90b4-c63b298ee799",
+  "name": "Sara Brasil FM 99.7 Brasília",
+  "url": "https://hts07.brascast.com:13482/live",
+  "url_resolved": "https://hts07.brascast.com:13482/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/a3f7425f-da3c-4169-90b4-c63b298ee799-45ad3d67fa.png",
+  "tags": "",
+  "state": "Distrito Federal",
+  "bitrate": 32
+ },
+ {
+  "stationuuid": "11f394ba-a852-4036-9378-6c3ec2d46033",
+  "name": "Rádio Verde Oliva - Brasília",
+  "url": "https://e-spo-106.fabricahost.com.br/verdeolivabsb?f=1787572727N01M0ST6BAZJKS4H70RRJ44H20H",
+  "url_resolved": "https://f100.fabricahost.com.br/verdeolivabsb?f=1794887099N01M7KSQ8RZXB0Z1AYBW55P3XCZ&tid=01M7KSQ8RZV5E43TBSXQ82HAYY",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/11f394ba-a852-4036-9378-6c3ec2d46033-ef5c357cb3.png",
+  "tags": "",
+  "state": "Distrito Federal",
+  "bitrate": 48
+ }
+]

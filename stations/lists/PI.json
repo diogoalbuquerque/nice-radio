@@ -1,0 +1,182 @@
+[
+ {
+  "stationuuid": "98af7955-fe4f-11e9-bbf2-52543be04c81",
+  "name": "Rádio Som do Céu",
+  "url": "http://stream.zeno.fm/t5y50e2ekbruv",
+  "url_resolved": "http://stream.zeno.fm/t5y50e2ekbruv",
+  "favicon": "",
+  "tags": "gospel,public radio",
+  "state": "Piauí",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "b50dee4e-4dca-43f3-82fb-d7d049dc5391",
+  "name": "Radio Grande FM",
+  "url": "https://stm21.srvaudio.com.br:9634/stream",
+  "url_resolved": "https://stm21.srvaudio.com.br:9634/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/b50dee4e-4dca-43f3-82fb-d7d049dc5391-99fde43889.png",
+  "tags": "brega,forró,local news,sertanejo",
+  "state": "Piauí",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "d71cb707-6f1c-4ef5-92a4-8deab12b4334",
+  "name": "Rádio Boa fm",
+  "url": "https://webradio.amsolution.com.br/radio/8290/boa",
+  "url_resolved": "https://webradio.amsolution.com.br/radio/8290/boa",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d71cb707-6f1c-4ef5-92a4-8deab12b4334-62804ffa06.png",
+  "tags": "",
+  "state": "Brasil ,Piaui ,Brasil",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "4afd3392-e88a-4675-a10d-9e3c3a466cec",
+  "name": "Mix Fm Teresina",
+  "url": "https://webradio.amsolution.com.br/radio/8080/mix",
+  "url_resolved": "https://webradio.amsolution.com.br/radio/8080/mix",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/4afd3392-e88a-4675-a10d-9e3c3a466cec-23e4e1b270.png",
+  "tags": "",
+  "state": "Piauí ,Teresina",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "d649e7e1-d7a8-4790-a8d9-6a9f76a2a7cf",
+  "name": "Rádio Nação Vitoriosa",
+  "url": "http://stream.zeno.fm/2rsloyfvsy9tv",
+  "url_resolved": "http://stream-179.surfernetwork.com/2rsloyfvsy9tv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiIycnNsb3lmdnN5OXR2IiwiaG9zdCI6InN0cmVhbS0xNzkuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IjIwdmtKQmJwVDRhbE1qdktxRGFpYXciLCJpYXQiOjE3OTQ4ODIzNTgsImV4cCI6MTc5NDg4MjQxOH0.JCRgPQZx9R3JHczU7DsNlvqRSZnE_zGdfOMRnVcjKmk",
+  "favicon": "",
+  "tags": "",
+  "state": "Piaui",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "a2a887c9-7249-4bbc-80e3-a13bc3c882cd",
+  "name": "Rádio CV Mais 97.5 FM",
+  "url": "https://ssl1.transmissaodigital.com:20098/;?1771932556038",
+  "url_resolved": "https://ssl1.transmissaodigital.com:20098/;?1771932556038",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/a2a887c9-7249-4bbc-80e3-a13bc3c882cd-e504e2d479.png",
+  "tags": "hits,popular",
+  "state": "Piauí ,Teresina",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "a5db862d-aff9-4118-92ad-7ab6134dadf0",
+  "name": "Fm Imperial",
+  "url": "https://cast.radiograma.com.br:8005/fmimperial",
+  "url_resolved": "https://cast.radiograma.com.br:8005/fmimperial",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/a5db862d-aff9-4118-92ad-7ab6134dadf0-8e45f512d5.png",
+  "tags": "",
+  "state": "Piauí",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "feaca9c8-663a-419a-95df-bd9df90d6e44",
+  "name": "Rádio Serra da Capivara 550 AM",
+  "url": "https://stream1.svrdedicado.org:7090/stream",
+  "url_resolved": "https://stream1.svrdedicado.org:7090/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/feaca9c8-663a-419a-95df-bd9df90d6e44-2ecbf9aef2.png",
+  "tags": "",
+  "state": "São Raimundo Nonato, Piauí, Brasil",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "fe8c679d-4a2b-460d-8721-c8501e52e258",
+  "name": "Rádio Cultura 105.9 FM",
+  "url": "https://wms5.webradios.com.br:19082/9082?1777496765798",
+  "url_resolved": "https://wms5.webradios.com.br:19082/9082?1777496765798",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/fe8c679d-4a2b-460d-8721-c8501e52e258-53d326ca9d.png",
+  "tags": "",
+  "state": "São Raimundo Nonato, Piauí, Brasil",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "b06e5e01-1e64-44f3-a579-1f302639f135",
+  "name": "Cacais FM",
+  "url": "https://webradio.amsolution.com.br/radio/8230/cocais",
+  "url_resolved": "https://webradio.amsolution.com.br/radio/8230/cocais",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/b06e5e01-1e64-44f3-a579-1f302639f135-bc7e347dd2.png",
+  "tags": "",
+  "state": "Piaui",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "77b0bd81-c63b-4e9f-93fd-0c867f9c965f",
+  "name": "Rede Impacto Gospel",
+  "url": "https://radiosnet.site/stream/redeimpactogospel",
+  "url_resolved": "https://radiosnet.site/stream/redeimpactogospel",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/77b0bd81-c63b-4e9f-93fd-0c867f9c965f-7ab7913f3b.png",
+  "tags": "christian,gospel",
+  "state": "Piauí",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "f0a273b9-4be0-47d9-b233-866e3f54e2c1",
+  "name": "Rádio Estação Gospel",
+  "url": "https://radiosnet.site/stream/radioestacaogospeloficial",
+  "url_resolved": "https://radiosnet.site/stream/radioestacaogospeloficial",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/f0a273b9-4be0-47d9-b233-866e3f54e2c1-f0937aab65.png",
+  "tags": "christian,gospel,religious",
+  "state": "Piauí",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "f6e87168-692f-4ca9-a567-add65088f4a4",
+  "name": "Rádio Som do Avivamento",
+  "url": "https://radiosnet.site/stream/radiosomdoavivamento",
+  "url_resolved": "https://radiosnet.site/stream/radiosomdoavivamento",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/f6e87168-692f-4ca9-a567-add65088f4a4-637ea8ae78.png",
+  "tags": "christian,gospel,religious",
+  "state": "Piauí",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "3dd67138-8d9c-4ff4-98ee-f967cd38277c",
+  "name": "Rádio CEADEP",
+  "url": "https://radiosnet.site/stream/radioceadep",
+  "url_resolved": "https://radiosnet.site/stream/radioceadep",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/3dd67138-8d9c-4ff4-98ee-f967cd38277c-6ea38754c1.png",
+  "tags": "christian,gospel,religious",
+  "state": "Piauí",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "59be5fb9-7aa8-47ef-a7ca-99c7c903dd5a",
+  "name": "Rádio Picos Gospel",
+  "url": "https://radiosnet.site/stream/picosgospel",
+  "url_resolved": "https://radiosnet.site/stream/picosgospel",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/59be5fb9-7aa8-47ef-a7ca-99c7c903dd5a-86f0ca763f.png",
+  "tags": "christian,gospel,religious",
+  "state": "Piauí",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "eecfdb28-d69d-4be6-abda-842f2fc9f1c8",
+  "name": "Rádio Missão Resgate",
+  "url": "https://radiosnet.site/stream/radiomissaoresgate",
+  "url_resolved": "https://radiosnet.site/stream/radiomissaoresgate",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/eecfdb28-d69d-4be6-abda-842f2fc9f1c8-ac5d7b7086.png",
+  "tags": "christian,gospel,religious",
+  "state": "Piauí",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "82d9d74f-9183-40ab-b78f-4340eee54cd5",
+  "name": "Rádio AD DEL",
+  "url": "https://radiosnet.site/stream/radioaddel",
+  "url_resolved": "https://radiosnet.site/stream/radioaddel",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/82d9d74f-9183-40ab-b78f-4340eee54cd5-a1782795d6.png",
+  "tags": "christian,gospel,religious",
+  "state": "Piauí",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "3f1c8628-af97-40ac-89d4-e07f1772168a",
+  "name": "Rádio Esperança AM 850",
+  "url": "https://radiosnet.site/stream/radioesperancadepicos",
+  "url_resolved": "https://radiosnet.site/stream/radioesperancadepicos",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/3f1c8628-af97-40ac-89d4-e07f1772168a-9f7e4f26a8.png",
+  "tags": "christian,gospel,religious",
+  "state": "Piauí",
+  "bitrate": 128
+ }
+]

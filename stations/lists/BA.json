@@ -1,0 +1,502 @@
+[
+ {
+  "stationuuid": "a181aafe-82ec-4b2c-bd62-04c1b70b8a6a",
+  "name": "Rádio Itapoan 97.5 FM",
+  "url": "http://cast.radiu.live:9300/stream",
+  "url_resolved": "http://cast.radiu.live:9300/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/a181aafe-82ec-4b2c-bd62-04c1b70b8a6a-71a0a00951.png",
+  "tags": "",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "7b630dda-fb58-4c39-ba30-2f6eed3361ef",
+  "name": "Piatã FM",
+  "url": "https://streaming.livespanel.com:9430/stream",
+  "url_resolved": "https://streaming.livespanel.com:9430/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/7b630dda-fb58-4c39-ba30-2f6eed3361ef-d4762c655f.png",
+  "tags": "axé,local music,local news,local radio,pagode",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "a61eff3f-323b-4c7c-95da-8c9f804d5e88",
+  "name": "Bahia FM 88.7",
+  "url": "https://ice.fabricahost.com.br/radiobahiafm",
+  "url_resolved": "https://ice.fabricahost.com.br/radiobahiafm",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/a61eff3f-323b-4c7c-95da-8c9f804d5e88-eb8f85e75c.png",
+  "tags": "brazilian music,entretenimento,música popular brasileira",
+  "state": "Bahia",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "bdae6342-983a-4856-88cd-31b317c69b62",
+  "name": "Antena 1 100.1 FM Salvador Bahia",
+  "url": "https://www.antena1.com.br/stream/stream/1",
+  "url_resolved": "https://www.antena1.com.br/stream/stream/1",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/bdae6342-983a-4856-88cd-31b317c69b62-8c7626060a.png",
+  "tags": "adulto contemporáneo",
+  "state": "Bahia",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "cc1d42e7-85ba-49e1-a085-a43840b6318f",
+  "name": "BRADO RADIO",
+  "url": "https://servidor17-5.brlogic.com:8300/live",
+  "url_resolved": "https://servidor17-5.brlogic.com:8300/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/cc1d42e7-85ba-49e1-a085-a43840b6318f-337a4ae9a6.png",
+  "tags": "",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "d744c6d4-fbe9-4538-a279-b2e4d05b2a69",
+  "name": "Rádio Nativa 93.7 FM Irecê - BA",
+  "url": "http://stm3.srvif.com:7128/stream?1716397382938=",
+  "url_resolved": "http://stm3.srvif.com:7128/stream?1716397382938=",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d744c6d4-fbe9-4538-a279-b2e4d05b2a69-9980f4f1d2.png",
+  "tags": "forró,sertanejo",
+  "state": "Bahia",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "0ed5a697-31d6-401b-bfa5-bb9d13156e24",
+  "name": "Morena FM 98",
+  "url": "https://ssl1.transmissaodigital.com:2692/stream",
+  "url_resolved": "https://ssl1.transmissaodigital.com:2692/stream",
+  "favicon": "",
+  "tags": "blues,brazilian music,classic rock,pop,rock",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "b0e9b5a1-2c70-4a46-8e8e-503d858c47bf",
+  "name": "A Tarde FM",
+  "url": "https://stm35.srvstm.com:7920/stream%22%3E%3C/audio%3E",
+  "url_resolved": "https://stm35.srvstm.com:7920/stream%22%3E%3C/audio%3E",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/b0e9b5a1-2c70-4a46-8e8e-503d858c47bf-6ece29294d.png",
+  "tags": "",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "bc0d26be-3ac9-4e98-954b-a65919b528c0",
+  "name": "Rádio yeshua 103.5 FM WEB",
+  "url": "https://stm24.srvaudio.com.br:9306/;",
+  "url_resolved": "https://stm24.srvaudio.com.br:9306/;",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/bc0d26be-3ac9-4e98-954b-a65919b528c0-ed46178bb5.png",
+  "tags": "\"today's best country\"",
+  "state": "bahia ",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "ed074046-2fd9-483f-9511-e00da77469b9",
+  "name": "Rádio Metrópole FM 101.3 Salvador",
+  "url": "https://listen.radioking.com/radio/268642/stream/313975",
+  "url_resolved": "https://listen.radioking.com/radio/268642/stream/313975",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ed074046-2fd9-483f-9511-e00da77469b9-f5061c6682.png",
+  "tags": "news,sports,talk",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "cf255f4f-ebed-4bdc-be53-0547489abf03",
+  "name": "Rádio Itapoan FM 97.5",
+  "url": "https://cast.radiu.live:9300/stream",
+  "url_resolved": "https://cast.radiu.live:9300/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/cf255f4f-ebed-4bdc-be53-0547489abf03-71a0a00951.png",
+  "tags": "axé,local music,local radio,pagode",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "b57a7a67-0f63-4412-b79c-3274f64d4d47",
+  "name": "Bahia FM Sul 102.1",
+  "url": "https://ice.fabricahost.com.br/bahiafmsul",
+  "url_resolved": "https://f100.fabricahost.com.br/bahiafmsul?f=1794890959N01M7KXD2SXQN6Z8F98ZD26GFQX&tid=01M7KXD2SXJXE9S07P452GZ8VZ",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/b57a7a67-0f63-4412-b79c-3274f64d4d47-eb8f85e75c.png",
+  "tags": "brazilian music,entretenimento,música popular brasileira",
+  "state": "Bahia",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "f75fad4e-a4b7-11e9-a787-52543be04c81",
+  "name": "Tucano FM",
+  "url": "http://centova13.ciclanohost.com.br:8056/stream",
+  "url_resolved": "http://centova13.ciclanohost.com.br:8056/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/f75fad4e-a4b7-11e9-a787-52543be04c81-afd55b6c3d.png",
+  "tags": "rádio do sertão,tucano fm",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "9c8d1f36-5266-4027-bedb-11a626cfb7b8",
+  "name": "Rádio boa fm",
+  "url": "http://stream.zeno.fm/svapy9sa7f8uv",
+  "url_resolved": "http://stream-204.surfernetwork.com/svapy9sa7f8uv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJzdmFweTlzYTdmOHV2IiwiaG9zdCI6InN0cmVhbS0yMDQuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6InBYMjJyOU8xVGxlZC1WWkt3X1prZUEiLCJpYXQiOjE3OTQ5MDY0NTIsImV4cCI6MTc5NDkwNjUxMn0.qX8z1Z60SRJLhF3nhX-rQh_Qfmb0-WxPPG23V7iiI9A",
+  "favicon": "",
+  "tags": "",
+  "state": "Bahia",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "61d08a95-9781-4b50-9669-0ad0fe79a0da",
+  "name": "Bíblia em Áudio Rádio Web ",
+  "url": "https://stm3.voxhd.com.br:8062/stream",
+  "url_resolved": "https://stm3.voxhd.com.br:8062/stream",
+  "favicon": "",
+  "tags": "gospel",
+  "state": "Bahia",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "ccff0729-31ee-4717-abd0-e4ebec61ab2d",
+  "name": "Rádio 93 FM",
+  "url": "https://stream.zenolive.com/3x2dtz84qzzuv.aac",
+  "url_resolved": "https://stream-282.surfernetwork.com/3x2dtz84qzzuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiIzeDJkdHo4NHF6enV2IiwiaG9zdCI6InN0cmVhbS0yODIuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IjB2Rndoc0pHVGdpSnZaU00wN3MwWmciLCJpYXQiOjE3OTUzMDE3NDEsImV4cCI6MTc5NTMwMTgwMX0.Wr2aJy-3mu7xbM6q_06OrNvVMIA5vqRmc59-EJTGoiQ",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ccff0729-31ee-4717-abd0-e4ebec61ab2d-c26575d9ac.png",
+  "tags": "adulta,flashback,mpb",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "c6908544-cef0-40df-86fa-959f38ab2d73",
+  "name": "Rádio 95 FM Jequié - BA",
+  "url": "https://stream01.ouveai.com.br:1040/stream?1716398413708=",
+  "url_resolved": "https://stream01.ouveai.com.br:1040/stream?1716398413708=",
+  "favicon": "",
+  "tags": "ecletica",
+  "state": "Bahia",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "86d98175-2210-42e0-8f65-b29454ed5967",
+  "name": "Irecê Líder FM 103.7 Irecê - BA",
+  "url": "http://192.99.14.210:8223/stream?1716384253550=",
+  "url_resolved": "http://192.99.14.210:8223/stream?1716384253550=",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/86d98175-2210-42e0-8f65-b29454ed5967-cfeab1c711.png",
+  "tags": "eclética",
+  "state": "Bahia",
+  "bitrate": 112
+ },
+ {
+  "stationuuid": "5472237e-f2e2-41eb-b783-a3f63b225ffe",
+  "name": "Educadora FM Bahia- 107.5 fm",
+  "url": "https://streaming.educadorafm.ba.gov.br/stream-01",
+  "url_resolved": "https://streaming.educadorafm.ba.gov.br/stream-01",
+  "favicon": "",
+  "tags": "",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "2f9956ae-b407-46d0-99ff-9f18de4e98ad",
+  "name": "Radio 93 FM",
+  "url": "https://cast.radiu.live:9346/stream",
+  "url_resolved": "https://cast.radiu.live:9346/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/2f9956ae-b407-46d0-99ff-9f18de4e98ad-c26575d9ac.png",
+  "tags": "",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "3e87cb57-27a0-4344-be4d-d8d20a7f4587",
+  "name": "Rádio 95 FM 95.7 Alagoinhas",
+  "url": "https://stream.zenolive.com/t799cry0yv8uv",
+  "url_resolved": "https://stream.zenolive.com/t799cry0yv8uv",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/3e87cb57-27a0-4344-be4d-d8d20a7f4587-8779e8fb75.png",
+  "tags": "entertainment,news,pop,talk",
+  "state": "Bahia",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "a8e3f689-4c8a-4e6c-be47-f611871965b0",
+  "name": "Nova Brasil FM Salvador",
+  "url": "https://stream.zeno.fm/gkbgs81xvfztv",
+  "url_resolved": "https://stream-204.surfernetwork.com/gkbgs81xvfztv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJna2JnczgxeHZmenR2IiwiaG9zdCI6InN0cmVhbS0yMDQuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IkZaUWFsdkozUl9heDBvMGNJLVJhbVEiLCJpYXQiOjE3OTQ5MDYyODksImV4cCI6MTc5NDkwNjM0OX0.oHe-TXlYTl6m6coJ5KkGRRGAbgpQfv0rlJLaxSi7Rt0",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/a8e3f689-4c8a-4e6c-be47-f611871965b0-7b527601df.png",
+  "tags": "musicas nacionais e internacionais",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "80feaea2-2264-47f8-afe4-e9cfba2d969b",
+  "name": "Rádio Sabiá FM 92.1 Coité",
+  "url": "http://stm18.xcast.com.br:11414/stream",
+  "url_resolved": "http://stm18.xcast.com.br:11414/stream",
+  "favicon": "",
+  "tags": "",
+  "state": "Bahia",
+  "bitrate": 320
+ },
+ {
+  "stationuuid": "24e13dea-b6e0-4d07-9f8b-b73d02c7d495",
+  "name": "Rádio RBN Digital",
+  "url": "https://radio.rbndigital.com/live",
+  "url_resolved": "https://radio.rbndigital.com/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/24e13dea-b6e0-4d07-9f8b-b73d02c7d495-82178a4b54.png",
+  "tags": "flashback",
+  "state": "Bahia",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "472b09f1-69a9-4be7-bd20-86b7e76acfa8",
+  "name": "Rádio Boa 94.1 Fm Alagoinhas",
+  "url": "https://cast.radiu.live:9304/stream",
+  "url_resolved": "https://cast.radiu.live:9304/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/472b09f1-69a9-4be7-bd20-86b7e76acfa8-f67be9a841.png",
+  "tags": "eclética,popular",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "7360b558-8f9d-4397-9996-92c531d85b73",
+  "name": "Digital FM",
+  "url": "https://8058.brasilstream.com.br/stream",
+  "url_resolved": "https://8058.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/7360b558-8f9d-4397-9996-92c531d85b73-2faf852444.png",
+  "tags": "",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "227aa3fe-38f6-4ae0-89aa-2857f2fe86ab",
+  "name": "BandNews Salvador",
+  "url": "https://server23.srvsh.com.br:7918/live.mp3",
+  "url_resolved": "https://server23.srvsh.com.br:7918/live.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/227aa3fe-38f6-4ae0-89aa-2857f2fe86ab-b859f3120e.png",
+  "tags": "news,noticias",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "6438e07f-708c-4da8-9f58-80ad981b90fe",
+  "name": "Nova Brasil FM Salvador",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NOVABRASIL_SSAAAC.aac?dist=cadena-app",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/NOVABRASIL_SSAAAC.aac?dist=cadena-app",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/6438e07f-708c-4da8-9f58-80ad981b90fe-7b527601df.png",
+  "tags": "",
+  "state": "Bahia",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "144d3067-58a0-4765-b4b1-89be04ee4ffc",
+  "name": "baiana fm 89.3",
+  "url": "https://www.radios.com.br/play/playlist/10355/listen-radio.m3u",
+  "url_resolved": "https://cast.radiu.live:8903/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/144d3067-58a0-4765-b4b1-89be04ee4ffc-f6a48f9769.png",
+  "tags": "esportes,music,noticias",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "3630e4a3-c1b5-46f1-b828-3cadc072427f",
+  "name": "Namoro Web Rádio",
+  "url": "https://stream.namorowebradio.com.br/listen/namoro_webradio/namorowebradio.aac",
+  "url_resolved": "https://stream.namorowebradio.com.br/listen/namoro_webradio/namorowebradio.aac",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/3630e4a3-c1b5-46f1-b828-3cadc072427f-094d249ddd.png",
+  "tags": "70s,70s 80s 90s music,80s,90s,anos 70,anos 80,anos 90,flashback,music 70s 80s 90s,musica romantica,oldies & retro hits 70s 80s 90s 00s,romantic music",
+  "state": "Bahia",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "6531caf5-ab54-4045-9767-9d977b95830f",
+  "name": "RADIO EJN",
+  "url": "https://s10.maxcast.com.br:8304/live",
+  "url_resolved": "https://s10.maxcast.com.br:8304/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/6531caf5-ab54-4045-9767-9d977b95830f-fd6592d90c.png",
+  "tags": "eclectic prog",
+  "state": "bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "43e8d928-1b59-47b2-9ffb-d33c175ec1bc",
+  "name": "Rádio XPsky",
+  "url": "https://radio.xpsky.online/stream",
+  "url_resolved": "https://radio.xpsky.online/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/43e8d928-1b59-47b2-9ffb-d33c175ec1bc-ef3ea206c7.png",
+  "tags": "edm,lofi,rap,rock",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "d9bff3e6-ca14-498a-868d-d400766beb71",
+  "name": "Bandnews FM Salvador",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/BANDNEWSFM_SALAAC.aac",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/BANDNEWSFM_SALAAC.aac",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d9bff3e6-ca14-498a-868d-d400766beb71-a9244684a0.png",
+  "tags": "",
+  "state": "Bahia",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "cfcd4939-2052-45fc-b2a2-54680decef18",
+  "name": "Jovem pan 100,9 FM feira de Santana",
+  "url": "https://8046.brasilstream.com.br/stream",
+  "url_resolved": "https://8046.brasilstream.com.br/stream",
+  "favicon": "",
+  "tags": "jovem,pop rock",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "62f3f2d6-adcf-4eab-a700-7e02e0b3fc5d",
+  "name": "Jovem Pan FM",
+  "url": "https://stream-280.surfernetwork.com/c45wbq2us3buv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJjNDV3YnEydXMzYnV2IiwiaG9zdCI6InN0cmVhbS0yODAuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6Ilo4Qzl3MFYxUm1tX3l2b2p6elE5R3ciLCJpYXQiOjE3OTI2NDQyNDUsImV4cCI6MTc5MjY0NDMwNX0.vimk_dUGx3HfUkCbO08d4S43xox0Iqnw52t5Ymw2XzU",
+  "url_resolved": "https://stream-280.surfernetwork.com/c45wbq2us3buv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJjNDV3YnEydXMzYnV2IiwiaG9zdCI6InN0cmVhbS0yODAuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6Ilo4Qzl3MFYxUm1tX3l2b2p6elE5R3ciLCJpYXQiOjE3OTI2NDQyNDUsImV4cCI6MTc5MjY0NDMwNX0.vimk_dUGx3HfUkCbO08d4S43xox0Iqnw52t5Ymw2XzU",
+  "favicon": "",
+  "tags": "",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "a38c11b9-ba9a-4b5b-a2cb-4cf40b1d26c9",
+  "name": "Radio Rede Dakota",
+  "url": "https://stream.zeno.fm/rpudyh6mfuhvv",
+  "url_resolved": "https://stream.zeno.fm/rpudyh6mfuhvv",
+  "favicon": "",
+  "tags": "",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "6a28e578-a55e-4760-adab-fc9d69c39edf",
+  "name": "Rádio MB FM",
+  "url": "https://stm3.xcast.com.br:7420/",
+  "url_resolved": "https://stm3.xcast.com.br:7420/",
+  "favicon": "",
+  "tags": "ecletica",
+  "state": "Bahia",
+  "bitrate": 104
+ },
+ {
+  "stationuuid": "10d0e11e-35ca-4b6f-a956-d1749dd8f0f0",
+  "name": "Radio Serra do Ramalho",
+  "url": "https://on.sucesso.fm/live",
+  "url_resolved": "https://on.sucesso.fm/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/10d0e11e-35ca-4b6f-a956-d1749dd8f0f0-5c07072269.png",
+  "tags": "",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "d29d93f1-62c8-47b2-9dc5-1b027cd2eeec",
+  "name": "Jovem pan 91,3 FM ",
+  "url": "https://e-spo-101.fabricahost.com.br/jpsalvador?f=1781720454N01KVBD156X2QB7Q3HVYGECQMZ5&tid=01KVBD156XN96YD5591R27V2R9",
+  "url_resolved": "https://e-spo-101.fabricahost.com.br/jpsalvador?f=1781720454N01KVBD156X2QB7Q3HVYGECQMZ5&tid=01KVBD156XN96YD5591R27V2R9",
+  "favicon": "",
+  "tags": "jovem,pop rock",
+  "state": "Bahia",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "48c11d12-5a09-4534-9ce6-363b24f49334",
+  "name": "Radio A Voz da Salvação Divina ",
+  "url": "https://cast1.midiazdx.com.br:6678/stream",
+  "url_resolved": "https://cast1.midiazdx.com.br:6678/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/48c11d12-5a09-4534-9ce6-363b24f49334-7c3125cf37.png",
+  "tags": "radio cristal",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "cc7a1aa7-96c8-40a6-a323-078b4915332a",
+  "name": "Rádio Seabra FM 104.9",
+  "url": "http://stm17.marqhost.com.br:7148/stream",
+  "url_resolved": "http://stm17.marqhost.com.br:7148/stream",
+  "favicon": "",
+  "tags": "",
+  "state": "Bahia",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "770a976d-a4bd-44b6-9fdd-67cda9697f06",
+  "name": "Rádio Novo Amanhecer 104.9 FM",
+  "url": "https://hts07.brascast.com:11434/stream",
+  "url_resolved": "https://hts07.brascast.com:11434/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/770a976d-a4bd-44b6-9fdd-67cda9697f06-7d07a456d8.png",
+  "tags": "",
+  "state": "Bahia",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "75d25349-e7a2-4892-abce-69b3437159c3",
+  "name": "Rádio Chapada 101.9 FM",
+  "url": "https://stm6.xcast.com.br:7866/stream",
+  "url_resolved": "https://stm6.xcast.com.br:7866/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/75d25349-e7a2-4892-abce-69b3437159c3-17ea142f45.png",
+  "tags": "",
+  "state": "Bahia",
+  "bitrate": 192
+ },
+ {
+  "stationuuid": "d40554e4-e46d-446c-8fa7-18b8c07a0cf9",
+  "name": "Nossa Rádio 80 e 90",
+  "url": "https://servidor16-3.brlogic.com:7058/live?identifier=radiobrowser&source=13176",
+  "url_resolved": "https://servidor16-3.brlogic.com:7058/live?identifier=radiobrowser&source=13176",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d40554e4-e46d-446c-8fa7-18b8c07a0cf9-ac5d289fe8.png",
+  "tags": "",
+  "state": "Bahia",
+  "bitrate": 192
+ },
+ {
+  "stationuuid": "c07a8180-e604-4197-803d-b4b8560a0f98",
+  "name": "Abrantes gospel",
+  "url": "https://stm3.uniservstm.stream:6762/stream",
+  "url_resolved": "https://stm3.uniservstm.stream:6762/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c07a8180-e604-4197-803d-b4b8560a0f98-7b5a1b5386.png",
+  "tags": "",
+  "state": "Bahia",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "bfbdc311-b922-4e47-8e8e-ce2e4d4692df",
+  "name": "Rádio Bom Jesus 98.1 FM",
+  "url": "https://stream19.streamingdevideo.com.br:18050/stream?1785695163267",
+  "url_resolved": "https://stream19.streamingdevideo.com.br:18050/stream?1785695163267",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/bfbdc311-b922-4e47-8e8e-ce2e4d4692df-07a89d2d06.png",
+  "tags": "",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "f6e99720-4f7d-44ef-8870-d85e8238c9cc",
+  "name": "Rádio UP 100.1 FM Vitoria da Conquista",
+  "url": "https://azura4.cmaudioevideo.com:8290/radio.aac",
+  "url_resolved": "https://azura4.cmaudioevideo.com:8290/radio.aac",
+  "favicon": "",
+  "tags": "",
+  "state": "Bahia",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "0f2ee084-9a81-40aa-a5a5-086fb2369c73",
+  "name": "Rede Grauna FM",
+  "url": "https://centova11.ipstm.net:20032/stream",
+  "url_resolved": "https://centova11.ipstm.net:20032/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/0f2ee084-9a81-40aa-a5a5-086fb2369c73-4fa8698adb.png",
+  "tags": "brasil,local news,mpb,música popular brasileira,pop rock,various",
+  "state": "Bahia",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "1f21b6cd-a78e-499f-a63e-069dcf4d6144",
+  "name": "RADIO BORG",
+  "url": "http://stm12.painelcast.com:6956/STREAM",
+  "url_resolved": "http://stm12.painelcast.com:6956/STREAM",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/1f21b6cd-a78e-499f-a63e-069dcf4d6144-82383e4cbc.png",
+  "tags": "",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "80728630-85a9-4725-b685-1eecd4d44f84",
+  "name": "Rádio Sintonia FM Salvador ",
+  "url": "http://stm26.srvaudio.com.br:9732/",
+  "url_resolved": "http://stm26.srvaudio.com.br:9732/",
+  "favicon": "",
+  "tags": "",
+  "state": "Bahia",
+  "bitrate": 64
+ }
+]

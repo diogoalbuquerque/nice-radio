@@ -1,0 +1,122 @@
+[
+ {
+  "stationuuid": "e6863ec0-9d04-4da3-97c2-db6cac2ed845",
+  "name": "Rockett 97,7",
+  "url": "https://8817.brasilstream.com.br/stream?cc=1645359200316",
+  "url_resolved": "https://8817.brasilstream.com.br/stream?cc=1645359200316",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/e6863ec0-9d04-4da3-97c2-db6cac2ed845-1b72a1a583.png",
+  "tags": "rock",
+  "state": "Espírito Santo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "eaec8346-31ce-4047-98bf-f4960f8f605a",
+  "name": "Ouvindo a Biblia ",
+  "url": "http://v3.directradios.com:8235/stream",
+  "url_resolved": "http://v3.directradios.com:8235/stream",
+  "favicon": "",
+  "tags": "",
+  "state": "Espírito Santo",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "f2b280eb-dfd6-4642-af2b-5b4293c2c80c",
+  "name": "Jovem Pan FM - Vitória - ES - 100.1",
+  "url": "https://shout25.crossradio.com.br:18022/1",
+  "url_resolved": "https://shout25.crossradio.com.br:18022/1",
+  "favicon": "",
+  "tags": "contemporary hits radio,jovem,jovem pan,pop,pop rock,top 40",
+  "state": "Espírito Santo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "b337787e-dca7-4e3f-aa9a-84bd16f82889",
+  "name": "Rádio Clock 94,1 FM",
+  "url": "https://azura4.cmaudioevideo.com:8040/radio.aac",
+  "url_resolved": "https://azura4.cmaudioevideo.com:8040/radio.aac",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/b337787e-dca7-4e3f-aa9a-84bd16f82889-825c688b4b.png",
+  "tags": "adult,contemporany,news",
+  "state": "Espírito Santo",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "4daed06d-617f-4035-993e-663252016232",
+  "name": "Rádio Tradição Católica ",
+  "url": "https://servidor17-1.brlogic.com:7126/live",
+  "url_resolved": "https://servidor17-1.brlogic.com:7126/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/4daed06d-617f-4035-993e-663252016232-dedda07c08.png",
+  "tags": "católica,cristã,tradicional",
+  "state": "Espírito Santo",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "696d7b85-d8ca-45a3-8fa6-7ec5ff7e905c",
+  "name": "Rádio Maanaim",
+  "url": "https://65492b4a9e231.streamlock.net/liverm/rmaac/playlist.m3u8",
+  "url_resolved": "https://65492b4a9e231.streamlock.net/liverm/rmaac/playlist.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/696d7b85-d8ca-45a3-8fa6-7ec5ff7e905c-b284a1c0bb.png",
+  "tags": "evangélica,gospel",
+  "state": "Espírito Santo",
+  "bitrate": 49
+ },
+ {
+  "stationuuid": "8aa8eeac-b0f5-4eed-b601-974ec0309762",
+  "name": "Rádio Serrana Mix",
+  "url": "https://stream03.dghost.com.br:8260/stream?1725121241607",
+  "url_resolved": "https://stream03.dghost.com.br:8260/stream?1725121241607",
+  "favicon": "",
+  "tags": "ecletic,ecletica",
+  "state": "Espírito Santo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "31fa0dbf-da4b-4b5b-b5e1-dd4f76723c2f",
+  "name": "SpaceSex 93.1",
+  "url": "https://8846.brasilstream.com.br/stream",
+  "url_resolved": "https://8846.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/31fa0dbf-da4b-4b5b-b5e1-dd4f76723c2f-3a67badf75.png",
+  "tags": "eletronic,flashback,música pop",
+  "state": "Espírito Santo",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "4239e6f5-3046-407f-9b53-ac811664e9cd",
+  "name": "Radio Sepiol",
+  "url": "https://paineldj.com.br:20087/stream",
+  "url_resolved": "https://paineldj.com.br:20087/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/4239e6f5-3046-407f-9b53-ac811664e9cd-774647cf7b.png",
+  "tags": "",
+  "state": "Espírito Santo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "c3499a5f-6cc9-4ee3-9d13-ba28d3955e1c",
+  "name": "Radio Monte Sinai",
+  "url": "https://stm9.voxhd.com.br:7794/",
+  "url_resolved": "https://stm9.voxhd.com.br:7794/",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c3499a5f-6cc9-4ee3-9d13-ba28d3955e1c-5647a381db.png",
+  "tags": "gospel",
+  "state": "Espírito Santo",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "70bedac5-8e8b-4a49-9bdf-9a4f75defb49",
+  "name": "RÁDIO CIDADE  (SATÉLITE)",
+  "url": "https://cp-1.owh.radio.br/listen/owh_s35226/radio-mp3",
+  "url_resolved": "https://cp-1.owh.radio.br/listen/owh_s35226/radio-mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/70bedac5-8e8b-4a49-9bdf-9a4f75defb49-6294c48531.png",
+  "tags": "popular",
+  "state": "Espírito santo",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "33b3e547-375e-4674-bcdf-f28968ac1111",
+  "name": "Rádio Nova Onda 104.9 FM",
+  "url": "https://virtues.live:8076/stream",
+  "url_resolved": "https://virtues.live:8076/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/33b3e547-375e-4674-bcdf-f28968ac1111-537637ff61.png",
+  "tags": "country music,linhares,religiosa",
+  "state": "Espírito Santo",
+  "bitrate": 64
+ }
+]

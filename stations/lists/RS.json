@@ -1,0 +1,1002 @@
+[
+ {
+  "stationuuid": "961e74e5-0601-11e8-ae97-52543be04c81",
+  "name": "Atlântida - ATL",
+  "url": "http://42747t.lp.azioncdn.net/2747t/a/mp4:access_options/rtmp-live/atl_poa.sdp/playlist.m3u8",
+  "url_resolved": "http://42747t.lp.azioncdn.net/2747t/a/mp4:access_options/rtmp-live/atl_poa.sdp/playlist.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/961e74e5-0601-11e8-ae97-52543be04c81-87567fe375.png",
+  "tags": "m3u8",
+  "state": "Rio Grande do Sul",
+  "bitrate": 1000
+ },
+ {
+  "stationuuid": "f109f3c2-792d-41db-90cb-dec82a466925",
+  "name": "Radio Pampa FM 97,5 - Porto Alegre",
+  "url": "http://cast4.audiostream.com.br:8653/aac",
+  "url_resolved": "http://cast4.audiostream.com.br:8653/aac",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/f109f3c2-792d-41db-90cb-dec82a466925-f8b20fd573.png",
+  "tags": "news",
+  "state": "Rio Grande do Sul",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "b8999692-0fba-4660-8934-c74167efc9e0",
+  "name": "Antena 1  - Porto Alegre",
+  "url": "https://antenaone.crossradio.com.br/stream/1",
+  "url_resolved": "https://antenaone.crossradio.com.br/stream/1",
+  "favicon": "",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "a36df590-84eb-46d5-bd28-560436e135de",
+  "name": "Rádio Gaúcha",
+  "url": "https://1132747t.ha.azioncdn.net/primary/gaucha_rbs.sdp/playlist.m3u8",
+  "url_resolved": "https://1132747t.ha.azioncdn.net/primary/gaucha_rbs.sdp/playlist.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/a36df590-84eb-46d5-bd28-560436e135de-5fc5553aa7.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 1000
+ },
+ {
+  "stationuuid": "02fb63e7-410d-4dcb-a85f-1665cbd67a83",
+  "name": "Rádio Gaúcha 93.7 FM",
+  "url": "https://liverdgaupoa.rbsdirect.com.br/primary/gaucha_rbs.sdp/playlist.m3u8",
+  "url_resolved": "https://liverdgaupoa.rbsdirect.com.br/primary/gaucha_rbs.sdp/playlist.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/02fb63e7-410d-4dcb-a85f-1665cbd67a83-5fc5553aa7.png",
+  "tags": "news,soccer",
+  "state": "Rio Grande do Sul",
+  "bitrate": 1000
+ },
+ {
+  "stationuuid": "e6daf94b-d5aa-11e9-a861-52543be04c81",
+  "name": "Caiçara (Porto Alegre)",
+  "url": "http://cast4.audiostream.com.br:8654/mp3",
+  "url_resolved": "http://cast4.audiostream.com.br:8654/mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/e6daf94b-d5aa-11e9-a861-52543be04c81-65c00b34f0.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "06a4a5f8-5aec-11e9-a622-52543be04c81",
+  "name": "104 (Porto Alegre)",
+  "url": "http://cast4.audiostream.com.br:8651/mp3",
+  "url_resolved": "http://cast4.audiostream.com.br:8651/mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/06a4a5f8-5aec-11e9-a622-52543be04c81-a9fc377f01.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "59b79175-8524-45ad-ba89-bb6c16d7e2c0",
+  "name": "Mix FM - Porto Alegre",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/MIXFM_POAAAC.aac",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/MIXFM_POAAAC.aac",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/59b79175-8524-45ad-ba89-bb6c16d7e2c0-70a4b576a1.png",
+  "tags": "jovem,pop-rock",
+  "state": "Rio Grande do Sul",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "a862a27c-5a10-11e8-b0ce-52543be04c81",
+  "name": "Atlântida (Santa Maria)",
+  "url": "http://222747t.lp.azioncdn.net/2747t/a/mp4:access_options/rtmp-live/atl_sma.sdp/playlist.m3u8",
+  "url_resolved": "http://222747t.lp.azioncdn.net/2747t/a/mp4:access_options/rtmp-live/atl_sma.sdp/playlist.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/a862a27c-5a10-11e8-b0ce-52543be04c81-bb07011ee5.png",
+  "tags": "music",
+  "state": "Rio Grande do Sul",
+  "bitrate": 1000
+ },
+ {
+  "stationuuid": "7b8238f0-d5ac-11e9-a861-52543be04c81",
+  "name": "Liberdade (Porto Alegre)",
+  "url": "http://cast4.audiostream.com.br:8655/mp3",
+  "url_resolved": "http://cast4.audiostream.com.br:8655/mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/7b8238f0-d5ac-11e9-a861-52543be04c81-4381a35e6b.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "d9a43146-5a14-11e8-b0ce-52543be04c81",
+  "name": "Nativa",
+  "url": "http://centova17.ciclanohost.com.br:8085/stream.mp3",
+  "url_resolved": "http://centova17.ciclanohost.com.br:8085/stream.mp3",
+  "favicon": "",
+  "tags": "local music",
+  "state": "Rio Grande do Sul",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "3c835bae-67a2-48d1-adf6-c1d967ad3d31",
+  "name": "Rádio Campeira FM",
+  "url": "https://servidor34-3.brlogic.com:8164/live?source=website",
+  "url_resolved": "https://servidor34-3.brlogic.com:8164/live?source=website",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/3c835bae-67a2-48d1-adf6-c1d967ad3d31-ca70c3bedc.png",
+  "tags": "gaúcha,nativa,pampa",
+  "state": "Rio Grande do Sul",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "66ffbb08-88bd-11e9-ad01-52543be04c81",
+  "name": "Jovem Pan (Porto Alegre)",
+  "url": "http://centova6.ciclanohost.com.br:9256/;",
+  "url_resolved": "http://centova6.ciclanohost.com.br:9256/;",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/66ffbb08-88bd-11e9-ad01-52543be04c81-29a927cb00.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "8c8825fe-e150-11e9-a8ba-52543be04c81",
+  "name": "Jean Majolo Player",
+  "url": "http://jeanmajolo.com.br:8000/radio",
+  "url_resolved": "http://jeanmajolo.com.br:8000/radio",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/8c8825fe-e150-11e9-a8ba-52543be04c81-57e8c29546.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "737269d6-fa3e-493c-a5cc-883df75a327e",
+  "name": "Venenos Psicodélicos",
+  "url": "https://stream.zeno.fm/c5bc53qc3k0uv",
+  "url_resolved": "https://stream.zeno.fm/c5bc53qc3k0uv",
+  "favicon": "",
+  "tags": "60's,70's,psychedelic rock",
+  "state": "Rio Grande do Sul",
+  "bitrate": 192
+ },
+ {
+  "stationuuid": "3a1b96d5-3581-437d-8760-7074a2a13e34",
+  "name": "Radio Putzgrila",
+  "url": "https://stream.ouveai.com.br/proxy/putzgrila?mp=/stream",
+  "url_resolved": "https://stream.ouveai.com.br/proxy/putzgrila?mp=/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/3a1b96d5-3581-437d-8760-7074a2a13e34-953097f8bd.png",
+  "tags": "alternative rock,classic rock,rock n roll",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "a938dfe1-7a03-4ba0-99b2-fcf60910f5f5",
+  "name": "Venenos do Rock",
+  "url": "https://stream.zeno.fm/dy417tqqmd0uv",
+  "url_resolved": "https://stream.zeno.fm/dy417tqqmd0uv",
+  "favicon": "",
+  "tags": "60's,70's,classic rock,obscure",
+  "state": "Rio Grande do Sul",
+  "bitrate": 192
+ },
+ {
+  "stationuuid": "8914d51f-6458-4dee-9fe8-c2993fe1ec0e",
+  "name": "Rádio Grenal 95.9 FM",
+  "url": "https://grenal.audiostream.com.br:20000/aac?1771934582309",
+  "url_resolved": "https://grenal.audiostream.com.br:20000/aac?1771934582309",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/8914d51f-6458-4dee-9fe8-c2993fe1ec0e-13a580677f.png",
+  "tags": "esportes,futebol,jornalismo(all news)",
+  "state": "Rio Grande do Sul",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "bc97d762-e996-44da-93f6-5769cadd2059",
+  "name": "Lightness of Rock",
+  "url": "https://stream.zeno.fm/n0dt87vrnd0uv",
+  "url_resolved": "https://stream.zeno.fm/n0dt87vrnd0uv",
+  "favicon": "",
+  "tags": "blues,folk,progressive rock,psychedelic rock",
+  "state": "Rio Grande do Sul",
+  "bitrate": 192
+ },
+ {
+  "stationuuid": "7c0bdad6-cb94-11e9-8502-52543be04c81",
+  "name": "92 FM (Porto Alegre)",
+  "url": "https://1592747t.ha.azioncdn.net/primary/92fm.sdp/playlist.m3u8",
+  "url_resolved": "https://1592747t.ha.azioncdn.net/primary/92fm.sdp/playlist.m3u8",
+  "favicon": "",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 1000
+ },
+ {
+  "stationuuid": "0f9b53ac-460c-4ad1-8fdc-aee4f446fafd",
+  "name": "Itapema 102.3 FM",
+  "url": "https://liverd102fm.rbsdirect.com.br/primary/ita_poa.sdp/chunklist_0ac85862-caaa-446f-93bf-3e12816c36a0.m3u8",
+  "url_resolved": "https://liverd102fm.rbsdirect.com.br/primary/ita_poa.sdp/chunklist_0ac85862-caaa-446f-93bf-3e12816c36a0.m3u8",
+  "favicon": "",
+  "tags": "blues,classic rock,jazz,rock,soft rock",
+  "state": "Rio Grande do Sul",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "ae76d510-a627-4367-9dd8-07124d8edb46",
+  "name": "Radio Uirapuru",
+  "url": "https://radio.saopaulo01.com.br:7002/stream",
+  "url_resolved": "https://radio.saopaulo01.com.br:7002/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ae76d510-a627-4367-9dd8-07124d8edb46-2179a20fd2.png",
+  "tags": "deportes,música,noticias,novedades",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "aa519ac4-be25-40af-a134-8233403674d5",
+  "name": "Sonora FM - Farroupilha",
+  "url": "https://casthttps1.suaradionanet.net/10318/stream",
+  "url_resolved": "https://casthttps1.suaradionanet.net/10318/stream",
+  "favicon": "",
+  "tags": "adulta,pop-rock",
+  "state": "Rio Grande do Sul",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "04b569c2-d729-4874-ad04-1341f43df03e",
+  "name": "Jovem Pan FM - Osório",
+  "url": "http://centova14.ciclanohost.com.br:8405/stream",
+  "url_resolved": "http://centova14.ciclanohost.com.br:8405/stream",
+  "favicon": "",
+  "tags": "electronic,pop rock",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "add6cef5-d892-4248-b542-f981f2d97665",
+  "name": "Eldorado FM",
+  "url": "https://cast4.audiostream.com.br:2652/mp3",
+  "url_resolved": "https://cast4.audiostream.com.br:2652/mp3",
+  "favicon": "",
+  "tags": "pagode,samba",
+  "state": "Rio Grande do Sul",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "52a39c75-1035-4f92-a432-38168b8fd5b1",
+  "name": "Torres FM 101,1",
+  "url": "https://cast4.audiostream.com.br:2661/mp3",
+  "url_resolved": "https://cast4.audiostream.com.br:2661/mp3",
+  "favicon": "",
+  "tags": "80's,80s,90's,90s",
+  "state": "Rio Grande do Sul",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "521e0177-f6a0-4207-9ec4-c780befc06a9",
+  "name": "Atlántida",
+  "url": "https://1852747t.ha.azioncdn.net/primary/atl_poa.sdp/playlist.m3u8",
+  "url_resolved": "https://1852747t.ha.azioncdn.net/primary/atl_poa.sdp/playlist.m3u8",
+  "favicon": "",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 1000
+ },
+ {
+  "stationuuid": "e5623144-c167-4495-86d7-37e5ffb29645",
+  "name": "Rádio Universidade (1.160 KHz - Pelotas)",
+  "url": "http://suaradio2.dyndns.ws:8098/stream",
+  "url_resolved": "http://suaradio2.dyndns.ws:8098/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/e5623144-c167-4495-86d7-37e5ffb29645-ba050e1a23.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 32
+ },
+ {
+  "stationuuid": "d9939788-2129-468d-af64-ac2db3704085",
+  "name": "Tupancy AM Pelotas",
+  "url": "https://casthttps.suaradionanet.net/10024/stream",
+  "url_resolved": "https://casthttps.suaradionanet.net/10024/stream",
+  "favicon": "",
+  "tags": "esportes futebol,musica popular,notícias",
+  "state": "Rio Grande do Sul",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "eb519bfc-e1ac-42ff-9ea0-ee4b6f21355a",
+  "name": "Rádio Delta FM Bagé",
+  "url": "https://player.painelvox.com/proxy/8066",
+  "url_resolved": "https://player.painelvox.com/proxy/8066",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/eb519bfc-e1ac-42ff-9ea0-ee4b6f21355a-553b294957.png",
+  "tags": "bagé,brasil,brazilian music,delta fm bage,rio grande do sul",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "272ae372-1df7-4e12-935f-b0e9fad65282",
+  "name": "Estção FM 89.5",
+  "url": "https://play.radio.br:8089/estacaofm/estacaofm/icecast.audio",
+  "url_resolved": "https://play.radio.br:8089/estacaofm/estacaofm/icecast.audio",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/272ae372-1df7-4e12-935f-b0e9fad65282-1c3e9a8cde.png",
+  "tags": "barão,carlos barbosa,notícias",
+  "state": "Rio Grande do Sul",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "2c718693-fdf4-451b-b716-fb1ab1a0c7d4",
+  "name": "Rádio Cultura Rio Grande",
+  "url": "https://casthttps.suaradionanet.net/10402/stream",
+  "url_resolved": "https://casthttps.suaradionanet.net/10402/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/2c718693-fdf4-451b-b716-fb1ab1a0c7d4-3fe2f33c08.png",
+  "tags": "esportes futebol,musica popular",
+  "state": "Rio Grande do Sul",
+  "bitrate": 32
+ },
+ {
+  "stationuuid": "4e2d1d5d-5ec5-4d62-b314-19585078c078",
+  "name": "Rádio Galera",
+  "url": "http://stream.zeno.fm/hwuwmm0dvp8uv",
+  "url_resolved": "http://stream.zeno.fm/hwuwmm0dvp8uv",
+  "favicon": "",
+  "tags": "live sports,local news,sports news",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "6d24d90c-8a8b-447c-a8d6-514fd4bff799",
+  "name": "Rádio Hospício Tricolor",
+  "url": "https://servidor39.brlogic.com:8624/live#.mp3",
+  "url_resolved": "https://servidor39.brlogic.com:8624/live#.mp3",
+  "favicon": "",
+  "tags": "futebol",
+  "state": "Rio Grande do Sul",
+  "bitrate": 192
+ },
+ {
+  "stationuuid": "cc2142dc-ac7c-4ce2-a760-e909f1d890e4",
+  "name": "Gaúcha Serra",
+  "url": "https://liverdgauserra.rbsdirect.com.br/primary/gau_serra.sdp/chunklist_b32baa2b-bdde-45e8-bf11-b64cac697b0a.m3u8",
+  "url_resolved": "https://liverdgauserra.rbsdirect.com.br/primary/gau_serra.sdp/chunklist_b32baa2b-bdde-45e8-bf11-b64cac697b0a.m3u8",
+  "favicon": "",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "964c645f-b08b-4bd3-99e9-9f13c721ccbb",
+  "name": "Rádio Noroeste Fm Santa Rosa RS",
+  "url": "http://paineldj5.com.br:12222//listen.pls?sid=1",
+  "url_resolved": "http://paineldj5.com.br:12222//listen.pls?sid=1",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/964c645f-b08b-4bd3-99e9-9f13c721ccbb-0a0bfd891f.png",
+  "tags": "local music,local news,news",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "bd7426de-4985-11e9-a4d7-52543be04c81",
+  "name": "Unijuí FM",
+  "url": "http://fm.unijui.edu.br:8000/stream",
+  "url_resolved": "http://fm.unijui.edu.br:8000/stream",
+  "favicon": "",
+  "tags": "educação",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "9c6caf67-afba-4382-9904-0bbb2cacb887",
+  "name": "Rádio Vale Feliz FM",
+  "url": "https://stream02.ouveai.com.br/8066/stream",
+  "url_resolved": "https://stream02.ouveai.com.br/8066/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/9c6caf67-afba-4382-9904-0bbb2cacb887-3e3c73e9aa.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "e9e32558-7654-11e9-8b97-52543be04c81",
+  "name": "Web Ijuí (Ijuí)",
+  "url": "http://stm22.srvaudio.com.br:10282/;",
+  "url_resolved": "http://stm22.srvaudio.com.br:10282/;",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/e9e32558-7654-11e9-8b97-52543be04c81-8c5bf92a71.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "04a6848d-12b5-45cc-a181-8855780d5ddb",
+  "name": "Novos Horizontes FM",
+  "url": "https://paineldj5.com.br:20013/stream",
+  "url_resolved": "https://paineldj5.com.br:20013/stream",
+  "favicon": "",
+  "tags": "pop,regional,rock",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "371ed326-d331-4e2e-950c-7b1bd7b37ea8",
+  "name": "Rádio Marajá AM 660 kHz  - RFC -",
+  "url": "https://servidor28-1.brlogic.com:8028/live",
+  "url_resolved": "https://servidor28-1.brlogic.com:8028/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/371ed326-d331-4e2e-950c-7b1bd7b37ea8-224e0b9c83.png",
+  "tags": "nativista",
+  "state": "Rio Grande do Sul",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "4f404fcd-418e-48e5-87b0-2d6d6ea0130b",
+  "name": "Rádio Difusora Bagé",
+  "url": "https://player.painelvox.com/player-ssl/8052/;/;",
+  "url_resolved": "https://player.painelvox.com/player-ssl/8052/;/;",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/4f404fcd-418e-48e5-87b0-2d6d6ea0130b-3af367fd31.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "38618d37-a992-4304-b703-6c083b4f05df",
+  "name": "ABC FM 103.3 Porto Alegre ",
+  "url": "https://streamabc.gruposinos.com.br:8443/radio",
+  "url_resolved": "https://streamabc.gruposinos.com.br:8443/radio",
+  "favicon": "",
+  "tags": "esportes,notícias",
+  "state": "Rio Grande do Sul",
+  "bitrate": 192
+ },
+ {
+  "stationuuid": "64caf80b-487a-479b-b2fa-5db9ab3db642",
+  "name": "Radio Haragano",
+  "url": "https://casthttps1.suaradionanet.net/13175/stream",
+  "url_resolved": "https://casthttps1.suaradionanet.net/13175/stream",
+  "favicon": "",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "25bea8ca-2f20-4c87-aae3-df6cb527cad0",
+  "name": "Rádio HT",
+  "url": "https://servidor39.brlogic.com:8624/live",
+  "url_resolved": "https://servidor39.brlogic.com:8624/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/25bea8ca-2f20-4c87-aae3-df6cb527cad0-a75288172c.png",
+  "tags": "classic rock,futebol,local news,rock",
+  "state": "Rio Grande do Sul",
+  "bitrate": 192
+ },
+ {
+  "stationuuid": "94fe8c3e-f741-4aa7-a377-6b7bcfd763a1",
+  "name": "Rádio Caverá FM 87.9",
+  "url": "https://s05.maxcast.com.br:8012/live?id=692006007223",
+  "url_resolved": "https://s05.maxcast.com.br:8012/live?id=692006007223",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/94fe8c3e-f741-4aa7-a377-6b7bcfd763a1-d26a59e9cf.png",
+  "tags": "nativista,pop",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "dd253849-92b2-4e15-a6e5-28e6aa57e02a",
+  "name": "Rádio Repórter (Ijuí)",
+  "url": "https://centova4.transmissaodigital.com:20080/;",
+  "url_resolved": "https://centova4.transmissaodigital.com:20080/;",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/dd253849-92b2-4e15-a6e5-28e6aa57e02a-ffb4b11a5a.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "80ff27cd-9267-4a38-ba95-974722cb0cb7",
+  "name": "Mundial (Ijuí)",
+  "url": "https://centova4.transmissaodigital.com:20071/;",
+  "url_resolved": "https://centova4.transmissaodigital.com:20071/;",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/80ff27cd-9267-4a38-ba95-974722cb0cb7-01c91a8e3f.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "926afb0f-e508-45e0-9817-00fd541620f4",
+  "name": "Rádio Tapejara",
+  "url": "https://radio.saopaulo01.com.br/8026/stream",
+  "url_resolved": "https://radio.saopaulo01.com.br/8026/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/926afb0f-e508-45e0-9817-00fd541620f4-d0cc01bb1d.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "388cf178-1497-40da-a8c0-f2155362a6dd",
+  "name": "Rádio Atlântida 94.3 FM - Porto Alegre",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RBS_RADIOSAAC.m3u8",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/RBS_RADIOSAAC.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/388cf178-1497-40da-a8c0-f2155362a6dd-23a804c4e9.png",
+  "tags": "brazilian music,classic rock,rock,world music",
+  "state": "Rio Grande do Sul",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "7ebac1d9-4195-472e-bf22-6f0e70b8e210",
+  "name": "Rádio Regional Net",
+  "url": "https://servidor26-2.brlogic.com:8280/live",
+  "url_resolved": "https://servidor26-2.brlogic.com:8280/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/7ebac1d9-4195-472e-bf22-6f0e70b8e210-209f960445.png",
+  "tags": "campeira,gaúcha",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "e5edcc05-c286-4bed-8ddf-67ae9db9c295",
+  "name": "Rádio Guaíba 101.3 FM",
+  "url": "https://www.radios.com.br/play/playlist/13174/listen-radio.asx",
+  "url_resolved": "https://radio.saopaulo01.com.br:10827/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/e5edcc05-c286-4bed-8ddf-67ae9db9c295-3090a909ee.png",
+  "tags": "futebol,musica,noticias",
+  "state": "Rio Grande do Sul",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "1e273d5e-9559-41e4-96e0-309baca00ea4",
+  "name": "Odisséia FM",
+  "url": "http://apps01.star10.com.br:10012/radioodisseia",
+  "url_resolved": "http://apps01.star10.com.br:10012/radioodisseia",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/1e273d5e-9559-41e4-96e0-309baca00ea4-f3af48de5c.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "1261b546-da1d-4525-8119-44d5c7112ec8",
+  "name": "Rádio Guaíba",
+  "url": "https://radio.saopaulo01.com.br:10827/stream",
+  "url_resolved": "https://radio.saopaulo01.com.br:10827/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/1261b546-da1d-4525-8119-44d5c7112ec8-3090a909ee.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "26ae7032-1659-4cea-ae09-0a30606a276e",
+  "name": "Rádio caiçara",
+  "url": "https://cast4.audiostream.com.br:2654/mp3",
+  "url_resolved": "https://cast4.audiostream.com.br:2654/mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/26ae7032-1659-4cea-ae09-0a30606a276e-65c00b34f0.png",
+  "tags": "pop music",
+  "state": "Rio Grande do Sul",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "99124e93-00cb-40ad-a26f-eefb8263c178",
+  "name": "Rádio UPF",
+  "url": "https://servidor38-2.brlogic.com:8134/live?source=app_pwa",
+  "url_resolved": "https://servidor38-2.brlogic.com:8134/live?source=app_pwa",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/99124e93-00cb-40ad-a26f-eefb8263c178-6ba90b35b1.png",
+  "tags": "classic rock,rock",
+  "state": "Rio Grande do Sul",
+  "bitrate": 192
+ },
+ {
+  "stationuuid": "3649928e-bc53-4040-8971-dd1972815e5c",
+  "name": "Radio Espirita Luz do Amanha",
+  "url": "https://servidor39.brlogic.com:7146/live",
+  "url_resolved": "https://servidor39.brlogic.com:7146/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/3649928e-bc53-4040-8971-dd1972815e5c-5aba770ad1.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "5be9a097-5d3e-443f-9265-32418c20b48d",
+  "name": "Portal da Tradição",
+  "url": "https://servidor18-3.brlogic.com:8486/live?source=website",
+  "url_resolved": "https://servidor18-3.brlogic.com:8486/live?source=website",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/5be9a097-5d3e-443f-9265-32418c20b48d-b805d66f24.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "c10e3a03-8a2b-423e-9725-096f65b669c7",
+  "name": "Progresso (Ijuí)",
+  "url": "https://9727.brasilstream.com.br/stream",
+  "url_resolved": "https://9727.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c10e3a03-8a2b-423e-9725-096f65b669c7-5791932008.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "d07edb36-fdf7-4271-90d4-4694b3a2cafd",
+  "name": "Iguatemi (Ijuí)",
+  "url": "https://centova4.transmissaodigital.com:20065/;",
+  "url_resolved": "https://centova4.transmissaodigital.com:20065/;",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d07edb36-fdf7-4271-90d4-4694b3a2cafd-2bd7fb0ec1.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "8d5776d2-80a0-4a00-a1bb-527f7f8d6a7f",
+  "name": "Rádio Mega FM Sananduva",
+  "url": "https://stm01.virtualcast.com.br:8312/megasananduva",
+  "url_resolved": "https://stm01.virtualcast.com.br:8312/megasananduva",
+  "favicon": "",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "ddcf7d66-4ea2-4983-a6e9-26d9cf0c798d",
+  "name": "Rádio Marajá AM 660 kHz - RFC -",
+  "url": "https://servidor28-1.brlogic.com:8028/live?source=website",
+  "url_resolved": "https://servidor28-1.brlogic.com:8028/live?source=website",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ddcf7d66-4ea2-4983-a6e9-26d9cf0c798d-224e0b9c83.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "f71c6531-1af4-4886-8ce8-533f7daa90a5",
+  "name": "Jovem Pan FM - Passo Fundo - RS",
+  "url": "https://radio.saopaulo01.com.br:10937/aac",
+  "url_resolved": "https://radio.saopaulo01.com.br:10937/aac",
+  "favicon": "",
+  "tags": "80s,90s,music,pop",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "809daa08-65e3-404a-8ea3-01685cf1dbd7",
+  "name": "Rádio Fandango 102.5 FM",
+  "url": "https://s01.transmissaodigital.com:7112/stream",
+  "url_resolved": "https://s01.transmissaodigital.com:7112/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/809daa08-65e3-404a-8ea3-01685cf1dbd7-3a3a4e6c80.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "6fa7d97e-5324-42d4-ba53-9ecf32d8c486",
+  "name": "Fronteira FM 97.1",
+  "url": "https://sonicpanel.oficialserver.com/9992/stream",
+  "url_resolved": "https://sonicpanel.oficialserver.com/9992/stream",
+  "favicon": "",
+  "tags": "hits,pop,rock,sertanejo",
+  "state": "Rio Grande do Sul",
+  "bitrate": 24
+ },
+ {
+  "stationuuid": "efb9d0cc-9d9e-41ef-acdd-a98a4247009e",
+  "name": "Rádio Mega FM Sananduva",
+  "url": "https://live.virtualcast.com.br/megasananduva",
+  "url_resolved": "https://live.virtualcast.com.br/megasananduva",
+  "favicon": "",
+  "tags": "pop",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "fa900afa-b10a-467f-ace1-f150ae48a61f",
+  "name": "Rádio Gaudéria das Missões",
+  "url": "https://s41.maxcast.com.br:8258/live?id=319843422524",
+  "url_resolved": "https://s41.maxcast.com.br:8258/live?id=319843422524",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/fa900afa-b10a-467f-ace1-f150ae48a61f-2f6779aa05.png",
+  "tags": "gaúcha,nativa",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "c24d18ac-2022-4ebc-8e76-7dc0c435af32",
+  "name": "Nova FM Tapejara",
+  "url": "https://stm2.streamproarte.com.br:7358/stream/",
+  "url_resolved": "https://stm2.streamproarte.com.br:7358/stream/",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c24d18ac-2022-4ebc-8e76-7dc0c435af32-618ecf81bc.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "64be3a17-ddc1-4a6a-a26b-6172c092786b",
+  "name": "Cultura AM 1260",
+  "url": "https://sonicpanel.oficialserver.com/9990/stream",
+  "url_resolved": "https://sonicpanel.oficialserver.com/9990/stream",
+  "favicon": "",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 24
+ },
+ {
+  "stationuuid": "ed02a49b-11e2-4de3-b279-279529290257",
+  "name": "Montiel Rock",
+  "url": "https://radio.mntl.top/listen/montiel_rock/radio.mp3",
+  "url_resolved": "https://radio.mntl.top/listen/montiel_rock/radio.mp3",
+  "favicon": "",
+  "tags": "80s rock,aor,glam metal,hair metal,hard rock,heavy metal",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "56bc3c1f-ca97-49f6-a212-e047dda93239",
+  "name": "Kero Rock",
+  "url": "https://stm1.painelwshost.com.br:7012/",
+  "url_resolved": "https://stm1.painelwshost.com.br:7012/",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/56bc3c1f-ca97-49f6-a212-e047dda93239-bce8864d3f.png",
+  "tags": "classic rock,rock",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "b4442bfc-4f67-47eb-b88b-44a2785cc6df",
+  "name": "Rádio Gazeta 107.9 FM",
+  "url": "https://www.radios.com.br/play/playlist/13201/listen-radio.asx",
+  "url_resolved": "https://hts03.brascast.com:7106/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/b4442bfc-4f67-47eb-b88b-44a2785cc6df-f616373b5e.png",
+  "tags": "popular",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "e997087e-3aad-4f16-a451-262753ea3f6e",
+  "name": "Rádio Cachoeira 94.7 FM",
+  "url": "http://s01.transmissaodigital.com:7120/stream",
+  "url_resolved": "http://s01.transmissaodigital.com:7120/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/e997087e-3aad-4f16-a451-262753ea3f6e-0067654fe2.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "209986f7-e934-4291-bbc2-b6190b20aabf",
+  "name": "Jaguarão FM 87,9",
+  "url": "https://stm19.xcast.com.br:11526/",
+  "url_resolved": "https://stm19.xcast.com.br:11526/",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/209986f7-e934-4291-bbc2-b6190b20aabf-3a067eb1a2.png",
+  "tags": "eclectic,radio comunitaria",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "3d88b1f3-4963-4ea2-8ae0-4fe598cb6cb9",
+  "name": "Jaguarão FM 87,9",
+  "url": "https://stm19.xcast.com.br:11526/stream",
+  "url_resolved": "https://stm19.xcast.com.br:11526/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/3d88b1f3-4963-4ea2-8ae0-4fe598cb6cb9-3a067eb1a2.png",
+  "tags": "eclectic programming,radio comunitaria",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "4ee36915-3e13-45d2-9b7a-cb6558350c34",
+  "name": "FM Cultura 107,7",
+  "url": "https://streaming.procergs.com.br:8443/fmcultura/sfmcultura/chunklist_w644085663.m3u8",
+  "url_resolved": "https://streaming.procergs.com.br:8443/fmcultura/sfmcultura/chunklist_w644085663.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/4ee36915-3e13-45d2-9b7a-cb6558350c34-9b516f58f2.png",
+  "tags": "jazz,mpb,public radio,rock",
+  "state": "Rio Grande do Sul",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "f9961f66-1b14-4ddc-b8b7-943ca6ac096c",
+  "name": "Rádio Quintanares",
+  "url": "https://stm2.srvif.com:8328/stream",
+  "url_resolved": "https://stm2.srvif.com:8328/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/f9961f66-1b14-4ddc-b8b7-943ca6ac096c-fe8f1d10b7.png",
+  "tags": "arte,casa de cultura mario quintana,cidadania,cultura,inclusão,porto alegre",
+  "state": "Rio Grande do Sul",
+  "bitrate": 256
+ },
+ {
+  "stationuuid": "cc068951-5c09-4828-8b1f-447e83906fb5",
+  "name": "Rádio Yard Sounds",
+  "url": "https://hts10.brascast.com:7966/live",
+  "url_resolved": "https://hts10.brascast.com:7966/live",
+  "favicon": "",
+  "tags": "reggae,rock",
+  "state": "Rio Grande do Sul",
+  "bitrate": 320
+ },
+ {
+  "stationuuid": "fe6da4f5-f85f-4c36-a346-4f78d384a2a4",
+  "name": "Radio S D S",
+  "url": "https://radio.serradosul.com.br/listen/serra_do_sul_/live",
+  "url_resolved": "https://radio.serradosul.com.br/listen/serra_do_sul_/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/fe6da4f5-f85f-4c36-a346-4f78d384a2a4-049dc5ec56.png",
+  "tags": "pop,radiohits,top40",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "522c1f49-26f9-4099-9ffc-01eb23ce2cc5",
+  "name": "Rádio Unisinos",
+  "url": "https://servidor16-5.brlogic.com:7064/live",
+  "url_resolved": "https://servidor16-5.brlogic.com:7064/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/522c1f49-26f9-4099-9ffc-01eb23ce2cc5-0a17fb5bf6.png",
+  "tags": "bossa nova,brazilian music,culture",
+  "state": "Rio Grande do Sul",
+  "bitrate": 192
+ },
+ {
+  "stationuuid": "8b2cfba0-12b6-4e5f-bee9-a593332514ca",
+  "name": "Radio Som Sem Fronteiras",
+  "url": "https://stream.zeno.fm/tplr8yve9jptv",
+  "url_resolved": "https://stream.zeno.fm/tplr8yve9jptv",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/8b2cfba0-12b6-4e5f-bee9-a593332514ca-fa94feb66e.png",
+  "tags": "eclética",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "8eb049c1-ff57-4c44-856c-d6355b56ec56",
+  "name": "Independente FM",
+  "url": "https://8563.brasilstream.com.br/stream",
+  "url_resolved": "https://8563.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/8eb049c1-ff57-4c44-856c-d6355b56ec56-2e34d0fb9b.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "f9cc88ea-1d7c-4290-8db4-28e5e761e3e3",
+  "name": "94fm",
+  "url": "https://8567.brasilstream.com.br/stream",
+  "url_resolved": "https://8567.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/f9cc88ea-1d7c-4290-8db4-28e5e761e3e3-41b21c843f.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "7c1aa1c2-7651-4b6a-8936-4efea94e572a",
+  "name": "Radio Mais FM Santa Rosa - Santo Cristo",
+  "url": "https://virtues.live:8168/stream",
+  "url_resolved": "https://virtues.live:8168/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/7c1aa1c2-7651-4b6a-8936-4efea94e572a-d22177d5fa.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "c2a28850-5c5b-461a-8fe4-26680a68a9f5",
+  "name": "A Hora FM 102.9",
+  "url": "https://cast2.youngtech.radio.br/radio/8340/radio",
+  "url_resolved": "https://cast2.youngtech.radio.br/radio/8340/radio",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c2a28850-5c5b-461a-8fe4-26680a68a9f5-df447f034c.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "bab4080b-5584-4de5-b15c-ac04ba3ba0be",
+  "name": "DinamicoFM",
+  "url": "https://medicp.radiovinil.com.br:2020/stream/dinamicofm",
+  "url_resolved": "https://medicp.radiovinil.com.br:2020/stream/dinamicofm",
+  "favicon": "",
+  "tags": "rock em geral",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "ac9c0013-04d2-4ddc-9845-ac1db4172ad5",
+  "name": "Rádio Web Sangue Gaúcho",
+  "url": "https://stm8.srvvox.com.br:7200/stream",
+  "url_resolved": "https://stm8.srvvox.com.br:7200/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ac9c0013-04d2-4ddc-9845-ac1db4172ad5-7bb8ca2f9d.png",
+  "tags": "gauchesca,tradicionalista gaúcha,campeira,gaudéria",
+  "state": "Rio Grande do Sul",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "786a5387-e402-40cb-8e54-7c6ba33e50f6",
+  "name": "Rádio Atlântida 93.3 FM",
+  "url": "https://www.radios.com.br/play/playlist/17504/listen-radio.m3u",
+  "url_resolved": "https://liverdatlsc.rbsdirect.com.br/primary/atl_scr.sdp/playlist.m3u8",
+  "favicon": "",
+  "tags": "jovem,jungle,pop rock",
+  "state": "Rio Grande do Sul",
+  "bitrate": 1000
+ },
+ {
+  "stationuuid": "610d8546-7428-42ff-be3b-d69c732fed7a",
+  "name": "Rádio Difusão FM Erechim ",
+  "url": "http://stm10.virtualcast.com.br:8322/difusaoerechimfm",
+  "url_resolved": "http://stm10.virtualcast.com.br:8322/difusaoerechimfm",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/610d8546-7428-42ff-be3b-d69c732fed7a-deea2e58b7.png",
+  "tags": "gauchesca",
+  "state": "Rio Grande do Sul",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "964e3372-260e-4882-b162-6536365e47d6",
+  "name": "Rádio Maristela",
+  "url": "https://stm4.srvif.com:6744/stream",
+  "url_resolved": "https://stm4.srvif.com:6744/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/964e3372-260e-4882-b162-6536365e47d6-338e859458.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "cfa64fd4-8c2b-4cdc-b240-9a53d2789010",
+  "name": "Rádio Guajuvira",
+  "url": "https://s01.svrdedicado.org:7492/stream",
+  "url_resolved": "https://s01.svrdedicado.org:7492/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/cfa64fd4-8c2b-4cdc-b240-9a53d2789010-c130c559a7.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "6f57ce47-4767-462d-8b48-34517cdecdba",
+  "name": "RÁDIO S.H.O",
+  "url": "https://sv11.hdradios.net:8092/steam",
+  "url_resolved": "https://sv11.hdradios.net:8092/steam",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/6f57ce47-4767-462d-8b48-34517cdecdba-a0043ca3a2.png",
+  "tags": "bailão,eclético,popular,regional",
+  "state": "Rio Grande do Sul",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "be7c6ab1-5092-45dd-a088-0232c7dc30da",
+  "name": "Rádio Fábrica de Gaiteiros",
+  "url": "https://servidor28-1.brlogic.com:8540/live",
+  "url_resolved": "https://servidor28-1.brlogic.com:8540/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/be7c6ab1-5092-45dd-a088-0232c7dc30da-22bff2449a.png",
+  "tags": "gaita,instrumental,regional,tradicionalista",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "99a8db21-bde4-4f3a-a7ae-a0e3553a7ced",
+  "name": "Rádio Caxias",
+  "url": "https://stream.radiocaxias.com.br/listen/radiocaxias/radio.mp3",
+  "url_resolved": "https://stream.radiocaxias.com.br/listen/radiocaxias/radio.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/99a8db21-bde4-4f3a-a7ae-a0e3553a7ced-13ae124ffc.png",
+  "tags": "caxias do sul,journalism,news,sports,talk",
+  "state": "Rio Grande do Sul",
+  "bitrate": 192
+ },
+ {
+  "stationuuid": "aa7bac93-f6d7-4fbd-99e9-5624702da94e",
+  "name": "Radio Planalto Fm",
+  "url": "https://r18.ciclano.io/proxy/rdplanaltofm/stream",
+  "url_resolved": "https://r18.ciclano.io/proxy/rdplanaltofm/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/aa7bac93-f6d7-4fbd-99e9-5624702da94e-3d088319ae.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "969f5147-ac6c-41b8-bc3e-dd547e5b1c1a",
+  "name": "Coletiva.rádio",
+  "url": "https://superaudio.radio.br/radio/8150/stream",
+  "url_resolved": "https://superaudio.radio.br/radio/8150/stream",
+  "favicon": "",
+  "tags": "classic rock,jornalismo,mpb,pop rock,rock",
+  "state": "Rio Grande do Sul",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "9f5846e5-0db1-4657-b04f-5cfddc110fe3",
+  "name": "BandNews FM 93.3 Porto Alegre",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/BANDFM_POAAAC.m3u8",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/BANDFM_POAAAC.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/9f5846e5-0db1-4657-b04f-5cfddc110fe3-5bce815317.png",
+  "tags": "esportes,jornalismo(all news),noticias",
+  "state": "Rio Grande do Sul",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "3906490c-bf8e-4536-b91c-f9035168da60",
+  "name": "Capão FM",
+  "url": "https://cast4.audiostream.com.br:2656/mp3",
+  "url_resolved": "https://cast4.audiostream.com.br:2656/mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/3906490c-bf8e-4536-b91c-f9035168da60-918b7d31e7.png",
+  "tags": "2000's,80's,90's,hits",
+  "state": "Rio Grande do Sul",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "a79962fa-ba92-4f6c-a9b0-6f84dccaac4b",
+  "name": "Web Rádio Índio Capilé",
+  "url": "https://hts02.brascast.com:10428/live",
+  "url_resolved": "https://hts02.brascast.com:10428/live",
+  "favicon": "",
+  "tags": "music",
+  "state": "Rio Grande do Sul",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "365c7548-2eff-426d-b76d-6ddb85cb9215",
+  "name": "RDW Rádio Web",
+  "url": "https://radiowebzonasulpoa.duckdns.org/listen/webradiozonasulpoa/radio.mp3",
+  "url_resolved": "https://radiowebzonasulpoa.duckdns.org/listen/webradiozonasulpoa/radio.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/365c7548-2eff-426d-b76d-6ddb85cb9215-75f88815b3.png",
+  "tags": "brazilian,mpb,pop,porto alegre,sertanejo,variedades,web radio",
+  "state": "Rio Grande do Sul",
+  "bitrate": 192
+ }
+]

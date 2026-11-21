@@ -1,0 +1,92 @@
+[
+ {
+  "stationuuid": "5469196d-3ed8-4228-9d44-5dac3c6144f2",
+  "name": "Rádio Maroca",
+  "url": "https://server03.srvsh.com.br:6844/",
+  "url_resolved": "https://server03.srvsh.com.br:6844/",
+  "favicon": "",
+  "tags": "mpb",
+  "state": "Rio Grande do Norte",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "86e9afc9-e7bd-4864-87ab-58166e97662d",
+  "name": "94 FM Natal | Rádio Cidade",
+  "url": "https://cidadedosolaac.jmvstream.com/stream",
+  "url_resolved": "https://cidadedosolaac.jmvstream.com/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/86e9afc9-e7bd-4864-87ab-58166e97662d-0b16b61391.png",
+  "tags": "",
+  "state": "Rio Grande do Norte",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "d0eddde0-9105-4af6-a61b-9679ed8ba96d",
+  "name": "97 FM Natal",
+  "url": "https://azevedo.jmvstream.com/stream",
+  "url_resolved": "https://azevedo.jmvstream.com/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d0eddde0-9105-4af6-a61b-9679ed8ba96d-3d09b34436.png",
+  "tags": "arrocha,forró,forró e sertanejo,pisadinha,pop,sertanejo,vaquejada",
+  "state": "Rio Grande do Norte",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "f8dad9f0-2871-4edb-a9f8-1fbb8f6c02bd",
+  "name": "Rádio 104 FM Natal RN",
+  "url": "https://radios.braviahost.com.br:8000/radio.mp3?1732983388728",
+  "url_resolved": "https://radios.braviahost.com.br:8000/radio.mp3?1732983388728",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/f8dad9f0-2871-4edb-a9f8-1fbb8f6c02bd-0b59494e5b.png",
+  "tags": "mpb,pop music,pop rock",
+  "state": "Rio Grande do Norte",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "78681021-3333-4df7-a28d-ef420a92812d",
+  "name": "Rádio Rural de Natal 91.9 FM",
+  "url": "https://live9.livemus.com.br:27802/stream?1732977845423",
+  "url_resolved": "https://live9.livemus.com.br:27802/stream?1732977845423",
+  "favicon": "",
+  "tags": "local news,mpb,música religiosa,pop music",
+  "state": "Rio Grande do Norte",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "61b9176a-a6b2-4d41-b6d7-3462d643c968",
+  "name": "Rádio Grafith",
+  "url": "https://stream-152.zeno.fm/qxabz8qwfzzuv?zs=gmU4MKWKQPeTDQAQsYjKiw",
+  "url_resolved": "https://stream-204.surfernetwork.com/qxabz8qwfzzuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJxeGFiejhxd2Z6enV2IiwiaG9zdCI6InN0cmVhbS0yMDQuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IndXbzJxb1F6UVZDNkd1eFdZWkd0NnciLCJpYXQiOjE3OTQ4OTYxOTYsImV4cCI6MTc5NDg5NjI1Nn0.Xudhw2G9cv2LcRU24ZvjgoUWMMtN8yCLQeNG5bBeMXM",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/61b9176a-a6b2-4d41-b6d7-3462d643c968-917e935469.png",
+  "tags": "eclectic",
+  "state": "Rio Grande do Norte",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "146be1df-bf51-4fad-8940-a1a9b48fb6a0",
+  "name": "Radio Libertadora",
+  "url": "https://stm12.pluscast.com.br:7222//;stream.mp3",
+  "url_resolved": "https://stm12.pluscast.com.br:7222//;stream.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/146be1df-bf51-4fad-8940-a1a9b48fb6a0-ef4694fc79.png",
+  "tags": "gospel",
+  "state": "Rio Grande do Norte",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "46c4f8fd-af3e-4e94-9abb-3bdcfe7f1bc5",
+  "name": "Rádio Marinha (Natal) 100.1 FM  RN Brasil",
+  "url": "https://stm0.inovativa.net/listen/radiomarinha/radio.mp3",
+  "url_resolved": "https://stm0.inovativa.net/listen/radiomarinha/radio.mp3",
+  "favicon": "",
+  "tags": "",
+  "state": "Rio Grande do Norte",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "a8ab203e-df01-4d80-9f09-481eafbc8af9",
+  "name": "104.7 FM Natal RN Brazil",
+  "url": "https://radios.braviahost.com.br:8000/radio.mp3",
+  "url_resolved": "https://radios.braviahost.com.br:8000/radio.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/a8ab203e-df01-4d80-9f09-481eafbc8af9-e156685273.png",
+  "tags": "",
+  "state": "Rio Grande do Norte",
+  "bitrate": 128
+ }
+]

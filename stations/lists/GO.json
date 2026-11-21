@@ -1,0 +1,222 @@
+[
+ {
+  "stationuuid": "7cd8d364-8e80-4a6c-a9a2-18d104f14612",
+  "name": "Brahma FM",
+  "url": "https://casthttps1.suaradionanet.net/13385/stream",
+  "url_resolved": "https://casthttps1.suaradionanet.net/13385/stream",
+  "favicon": "",
+  "tags": "sertanejo",
+  "state": "Goias",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "36d4f4f9-cca9-4b37-9f9b-e0972cb6cd23",
+  "name": "Rádio São Francisco Anápolis - 97.7FM",
+  "url": "https://cast.hoost.com.br:20150/stream",
+  "url_resolved": "https://cast.hoost.com.br:20150/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/36d4f4f9-cca9-4b37-9f9b-e0972cb6cd23-c7028899ae.png",
+  "tags": "notícias,sertanejo",
+  "state": "Goiás",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "90d4675e-67c8-11ea-be63-52543be04c81",
+  "name": "WEBGIO",
+  "url": "http://servidor34.brlogic.com:8080/live?1583625685800",
+  "url_resolved": "http://servidor34.brlogic.com:8080/live?1583625685800",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/90d4675e-67c8-11ea-be63-52543be04c81-ed6e25b583.png",
+  "tags": "flashback,nostalgia",
+  "state": "Goias",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "5dc7a91f-c5b9-49aa-9c49-dd6fe31fb776",
+  "name": "Rádio The Beatles (MP3)",
+  "url": "http://stream.zeno.fm/6gnr5yq68nhvv",
+  "url_resolved": "http://stream-284.surfernetwork.com/6gnr5yq68nhvv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiI2Z25yNXlxNjhuaHZ2IiwiaG9zdCI6InN0cmVhbS0yODQuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IlFZSXZnWmlEUTVpdWRVanB1TmFyRUEiLCJpYXQiOjE3OTQ5MDg1MzgsImV4cCI6MTc5NDkwODU5OH0.xIGwWRnozyR3tGZa-ddoLEpQbEWjP6cZZSchC6qRuto",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/5dc7a91f-c5b9-49aa-9c49-dd6fe31fb776-6158940e8a.png",
+  "tags": "1960s,1970s,classic rock,oldies,pop,the beatles",
+  "state": "Goiás",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "d52e84ff-262f-4db5-9a63-6fcc7879f88b",
+  "name": "Rádio Vinha FM 91,9",
+  "url": "http://streaming.vinhafm.com.br/stream",
+  "url_resolved": "http://streaming.vinhafm.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d52e84ff-262f-4db5-9a63-6fcc7879f88b-15a7ae26e8.png",
+  "tags": "gospel",
+  "state": "Goias",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "d2f8cb21-1530-42ea-b7be-880e0d2e1904",
+  "name": "Rádio Studio Souto - The Beatles (AAC+)",
+  "url": "https://centova5.transmissaodigital.com:20001/;",
+  "url_resolved": "https://centova5.transmissaodigital.com:20001/;",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d2f8cb21-1530-42ea-b7be-880e0d2e1904-4d3666b3a4.png",
+  "tags": "alternative rock,classic rock,rock,the beatles",
+  "state": "Goiás",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "3553483b-8f69-4edb-8add-626d28d08f5d",
+  "name": "Rádio Nova FM Anápolis",
+  "url": "https://player.g2play.com.br/proxy/27362",
+  "url_resolved": "https://player.g2play.com.br/proxy/27362",
+  "favicon": "",
+  "tags": "",
+  "state": "Goiás",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "19bfbc5e-6f8a-4fb1-9ac5-38005b3369c2",
+  "name": "Rádio 96 FM",
+  "url": "https://cast4.hoost.com.br:20079/stream",
+  "url_resolved": "https://cast4.hoost.com.br:20079/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/19bfbc5e-6f8a-4fb1-9ac5-38005b3369c2-18463e996c.png",
+  "tags": "música pop,pop rock",
+  "state": "Goias",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "d4fa1f3e-db66-437c-8528-79f281c2e535",
+  "name": "Rádio Máxima Goiânia ",
+  "url": "http://sv12.hdradios.net:7696/",
+  "url_resolved": "http://sv12.hdradios.net:7696/",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d4fa1f3e-db66-437c-8528-79f281c2e535-dce8266449.png",
+  "tags": "",
+  "state": "Goiás",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "d4b4155c-a2a7-4a3a-b946-9eedc4c6231d",
+  "name": "105.7 FM Anápolis",
+  "url": "https://ice.fabricahost.com.br/1057anapolis?1744807879795",
+  "url_resolved": "https://ice.fabricahost.com.br/1057anapolis?1744807879795",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d4b4155c-a2a7-4a3a-b946-9eedc4c6231d-875ee680f1.png",
+  "tags": "",
+  "state": "Goias",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "eb129913-2c84-4272-b4da-ac0475989fb2",
+  "name": "Gazeta Anápolis 87.9",
+  "url": "https://radio.gazetaanapolis.fm.br/listen/on_line/mp3-high?1744807592276",
+  "url_resolved": "https://radio.gazetaanapolis.fm.br/listen/on_line/mp3-high?1744807592276",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/eb129913-2c84-4272-b4da-ac0475989fb2-7ae80c3c0c.png",
+  "tags": "",
+  "state": "Goias",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "21cc59d1-83c5-408c-bff1-f797e3916cbd",
+  "name": "sucesso fm 101,5",
+  "url": "https://www.radios.com.br/play/playlist/18220/listen-radio.m3u",
+  "url_resolved": "https://radio02.logicahost.com.br:7035/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/21cc59d1-83c5-408c-bff1-f797e3916cbd-1f89683ce0.png",
+  "tags": "",
+  "state": "Goias",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "e03626d0-8df7-4ceb-ace4-c8e66a94d30e",
+  "name": "Rádio Universitária UFG",
+  "url": "https://streaming.ufg.br:8443/radiouniversitaria",
+  "url_resolved": "https://streaming.ufg.br:8443/radiouniversitaria",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/e03626d0-8df7-4ceb-ace4-c8e66a94d30e-02088f4d72.png",
+  "tags": "",
+  "state": "Goias",
+  "bitrate": 160
+ },
+ {
+  "stationuuid": "46594381-95a0-4dde-b76e-4b6b24c1f688",
+  "name": "AUTOESTIMA JD33",
+  "url": "https://usa16.fastcast4u.com/proxy/jeder22?mp=/1",
+  "url_resolved": "https://usa16.fastcast4u.com/proxy/jeder22?mp=/1",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/46594381-95a0-4dde-b76e-4b6b24c1f688-46820b67ba.png",
+  "tags": "católico,relig",
+  "state": "Goias",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "19080a63-c279-436f-b2c2-b2062143b31f",
+  "name": "TOP POP WEB RÁDIO - A Estação Das Melhores Músicas",
+  "url": "http://usa3.fastcast4u.com:1932/stream?type=http&nocache=4",
+  "url_resolved": "http://usa3.fastcast4u.com:1932/stream?type=http&nocache=4",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/19080a63-c279-436f-b2c2-b2062143b31f-f8c058a640.png",
+  "tags": "dance,pop,remix,rock",
+  "state": "Goias",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "96f3d845-aa25-4ebe-a1be-08dfe0972337",
+  "name": "TOP-POP WEB RÁDIO - JD33 ONE PRODUTION",
+  "url": "https://usa3.fastcast4u.com/stream/jd33corp/stream.pls",
+  "url_resolved": "https://usa3.fastcast4u.com/proxy/jd33corp/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/96f3d845-aa25-4ebe-a1be-08dfe0972337-f8c058a640.png",
+  "tags": "dance,pop,remix,rock",
+  "state": "Goias",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "424a13aa-4d3a-4b90-9932-1957d0324ca1",
+  "name": "Rádio Amado Batista",
+  "url": "https://stream-282.surfernetwork.com/aeab6tt0yqruv",
+  "url_resolved": "https://stream-282.surfernetwork.com/aeab6tt0yqruv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJhZWFiNnR0MHlxcnV2IiwiaG9zdCI6InN0cmVhbS0yODIuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IjNGaVY0ek9DUUVxUTJDOGxTVmZfWGciLCJpYXQiOjE3OTQ4ODY4NDksImV4cCI6MTc5NDg4NjkwOX0.VSUfLfvAnDQ21_COFon7qwosOFpxedwZdwkCyyfIKZ8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/424a13aa-4d3a-4b90-9932-1957d0324ca1-dcdd94ede7.png",
+  "tags": "brega,mpb,música sertaneja",
+  "state": "Goiás",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "c30ab7e7-4f34-4e86-9dc3-7594596fa9c9",
+  "name": "KWR - Kacopi Web Radiio",
+  "url": "https://radio.kacopi.com.br/radio",
+  "url_resolved": "https://radio.kacopi.com.br/radio",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c30ab7e7-4f34-4e86-9dc3-7594596fa9c9-69920a396a.png",
+  "tags": "",
+  "state": "Goias",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "4bb0139a-94c2-4a87-8e1a-d72af921a921",
+  "name": "Radio Studio Souto - Techno",
+  "url": "https://centova5.transmissaodigital.com:20039/stream",
+  "url_resolved": "https://centova5.transmissaodigital.com:20039/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/4bb0139a-94c2-4a87-8e1a-d72af921a921-f4025e307d.png",
+  "tags": "2000s,electronic,techno",
+  "state": "Goiás",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "7f56bc7c-2185-4271-9e3a-793bf920629f",
+  "name": "Rádio Sertanejo Gospel",
+  "url": "https://radiosnet.site/stream/sertanejogospel",
+  "url_resolved": "https://radiosnet.site/stream/sertanejogospel",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/7f56bc7c-2185-4271-9e3a-793bf920629f-9bdd9c76f6.png",
+  "tags": "christian,gospel,religious",
+  "state": "Goiás",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "4eca04fa-8ee1-48d7-bf76-4da8aadf4e21",
+  "name": "radio eu aqui com jesus",
+  "url": "http://166.stm-ip.net:7212/stearm",
+  "url_resolved": "http://166.stm-ip.net:7212/stearm",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/4eca04fa-8ee1-48d7-bf76-4da8aadf4e21-d8da092dc3.png",
+  "tags": "christian-gospel",
+  "state": "goias",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "6c91e829-e037-45f8-86cb-f23975c70e4f",
+  "name": "Rádio Em Defesa da Sã Doutrina",
+  "url": "https://casthttps1.suaradionanet.net/10797/stream",
+  "url_resolved": "https://casthttps1.suaradionanet.net/10797/stream",
+  "favicon": "",
+  "tags": "christian,evangelical,gospel,portuguese,religious",
+  "state": "Goiás",
+  "bitrate": 128
+ }
+]

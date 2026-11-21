@@ -1,0 +1,52 @@
+[
+ {
+  "stationuuid": "48045353-18f1-11e8-9a35-52543be04c81",
+  "name": "Jovem Fm",
+  "url": "http://wz3.dnip.com.br/aycomau1/aycomau1.stream/playlist.m3u8",
+  "url_resolved": "http://wz3.dnip.com.br/aycomau1/aycomau1.stream/playlist.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/48045353-18f1-11e8-9a35-52543be04c81-3913e7d485.png",
+  "tags": "pop rock,popular",
+  "state": "Tocantins",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "657b7033-e4fb-47f3-8c43-629244f5f3da",
+  "name": "Unitins FM",
+  "url": "https://live.unitins.br/",
+  "url_resolved": "https://live.unitins.br/",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/657b7033-e4fb-47f3-8c43-629244f5f3da-54e554c261.png",
+  "tags": "",
+  "state": "Tocantins",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "6cb336e1-3f19-43f0-9e17-e1de50b3ad99",
+  "name": "Radio Capital 87.9 FM",
+  "url": "https://sv11.hdradios.net:6928/stream",
+  "url_resolved": "https://sv11.hdradios.net:6928/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/6cb336e1-3f19-43f0-9e17-e1de50b3ad99-f14f8669a2.png",
+  "tags": "",
+  "state": "Tocantins",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "1d29549e-b10e-4cd5-8937-ab5687d66ace",
+  "name": "Conexão FM 98,1",
+  "url": "https://ssl1.transmissaodigital.com:20441/stream",
+  "url_resolved": "https://ssl1.transmissaodigital.com:20441/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/1d29549e-b10e-4cd5-8937-ab5687d66ace-1df4c2e1ba.png",
+  "tags": "entreterimento,musicas,noticias",
+  "state": "Tocantins",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "8502b446-a0b2-4d7e-a418-f305dfb14235",
+  "name": "Rádio Meio Norte 91.1 FM",
+  "url": "http://webradio.amsolution.com.br:8300/live?1782849020576",
+  "url_resolved": "http://webradio.amsolution.com.br:8300/live?1782849020576",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/8502b446-a0b2-4d7e-a418-f305dfb14235-46bcad0cf5.png",
+  "tags": "",
+  "state": "Tocantins",
+  "bitrate": 64
+ }
+]

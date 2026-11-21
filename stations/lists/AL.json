@@ -1,0 +1,282 @@
+[
+ {
+  "stationuuid": "77502e2f-6ac7-4489-9a8f-0b94eda12855",
+  "name": "Nova Brasil FM - Maceió",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NOVABRASIL_MACAAC.aac",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/NOVABRASIL_MACAAC.aac",
+  "favicon": "",
+  "tags": "",
+  "state": "Alagoas",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "cb95bf54-e976-4994-ab0c-77d7c0b0ac9d",
+  "name": "Radio UFAL",
+  "url": "https://directradios.net/proxy/ufal?mp=/stream",
+  "url_resolved": "https://directradios.net/proxy/ufal?mp=/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/cb95bf54-e976-4994-ab0c-77d7c0b0ac9d-6ce86c10f8.png",
+  "tags": "",
+  "state": "Alagoas",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "3533ed9c-d371-4202-91a5-ab77aa600492",
+  "name": "96 FM Maceió",
+  "url": "https://streaming.livespanel.com:20096/radio96fm",
+  "url_resolved": "https://streaming.livespanel.com:20096/radio96fm",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/3533ed9c-d371-4202-91a5-ab77aa600492-bc8512b22e.png",
+  "tags": "eclética,hits,popular",
+  "state": "Alagoas",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "e7b6a268-2c4e-42c9-8556-f03a9349220e",
+  "name": "Gazeta FM 94,1 Maceió",
+  "url": "https://www.appradio.app:8061/stream",
+  "url_resolved": "https://www.appradio.app:8061/stream",
+  "favicon": "",
+  "tags": "eclética,popular",
+  "state": "Alagoas",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "dce066a5-0682-4604-a4c3-66b8c0deaece",
+  "name": "Nova Brasil 106,5 FM Maceió",
+  "url": "https://26643.live.streamtheworld.com/NOVABRASIL_MACAAC.aac?dist=RadiosNet",
+  "url_resolved": "https://26643.live.streamtheworld.com/NOVABRASIL_MACAAC.aac?dist=RadiosNet",
+  "favicon": "",
+  "tags": "adult contemporary,contemporary hits,mpb",
+  "state": "Alagoas",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "a5c615ac-7cf2-47a7-89a6-b84a302fb9fc",
+  "name": "Rede aleluia 100,3 FM Maceió",
+  "url": "https://station.azrmcsoftbroadcast.com.br/listen/radio_alagoas/Alagoas",
+  "url_resolved": "https://station.azrmcsoftbroadcast.com.br/listen/radio_alagoas/Alagoas",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/a5c615ac-7cf2-47a7-89a6-b84a302fb9fc-7cb5b11de0.png",
+  "tags": "gospel music",
+  "state": "Alagoas",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "cb4b365b-bd73-4711-8baf-db3efc107487",
+  "name": "Alerta Penedo",
+  "url": "http://stm28.srvaudio.com.br:11706/stream",
+  "url_resolved": "http://stm28.srvaudio.com.br:11706/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/cb4b365b-bd73-4711-8baf-db3efc107487-b487b324da.png",
+  "tags": "eclética",
+  "state": "Alagoas",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "ef15c12d-fc7a-4559-852c-cdcc997f7b15",
+  "name": "Francês FM 106,1 Maceió",
+  "url": "https://26643.live.streamtheworld.com/FRANCESFM_MACAAC.aac?dist=RadiosNet",
+  "url_resolved": "https://26643.live.streamtheworld.com/FRANCESFM_MACAAC.aac?dist=RadiosNet",
+  "favicon": "",
+  "tags": "eclética,popular",
+  "state": "Alagoas",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "d27508c7-9b6b-4eba-812a-09a94143f68a",
+  "name": "Jovem pan 100,7 FM Maceió",
+  "url": "https://directradios.net/proxy/jpmaceio?mp=/stream",
+  "url_resolved": "https://directradios.net/proxy/jpmaceio?mp=/stream",
+  "favicon": "",
+  "tags": "jovem,top 40",
+  "state": "Alagoas",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "0dda9883-f824-46ff-8989-634daf5b53a3",
+  "name": "Alagoas FM 102,5 Penedo",
+  "url": "https://stm26.xcast.com.br:11260/stream",
+  "url_resolved": "https://stm26.xcast.com.br:11260/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/0dda9883-f824-46ff-8989-634daf5b53a3-62f3fbce03.png",
+  "tags": "jornalismo(all news)",
+  "state": "Alagoas",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "e9fce72c-61dc-44a0-a6cd-11e5fd297ebd",
+  "name": "Difusora 93,3 FM Maceió",
+  "url": "https://radio.saopaulo01.com.br/9348/stream",
+  "url_resolved": "https://radio.saopaulo01.com.br/9348/stream",
+  "favicon": "",
+  "tags": "jornalismo,popular",
+  "state": "Alagoas",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "f47365a8-f55d-48ca-957c-6ec6d26a1617",
+  "name": "Educativa 107,7 FM Maceió",
+  "url": "https://radio.saopaulo01.com.br/9370/stream",
+  "url_resolved": "https://radio.saopaulo01.com.br/9370/stream",
+  "favicon": "",
+  "tags": "jornalismo,música,radio pública",
+  "state": "Alagoas",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "81d917bd-da4c-4ee5-b880-435256c2f5c4",
+  "name": "Imaculada 92,3 FM Maceió",
+  "url": "https://radio.saopaulo01.com.br:10862/stream",
+  "url_resolved": "https://radio.saopaulo01.com.br:10862/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/81d917bd-da4c-4ee5-b880-435256c2f5c4-4c60c3bf64.png",
+  "tags": "católica",
+  "state": "Alagoas",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "a41c5dcc-7cd8-44da-a071-d74a3ea01ce4",
+  "name": "Metropolitana FM 97,7 Maceió",
+  "url": "https://streaming.livespanel.com:8032/maceiofm",
+  "url_resolved": "https://streaming.livespanel.com:8032/maceiofm",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/a41c5dcc-7cd8-44da-a071-d74a3ea01ce4-5a68ceb82f.png",
+  "tags": "pop rock popular,sertaneja",
+  "state": "Alagoas",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "e24dea61-3ca4-4bbb-8ba2-2125b5b1233e",
+  "name": "Jovem pan News Maceió 102,7 FM",
+  "url": "https://streaming.livespanel.com:20520/",
+  "url_resolved": "https://streaming.livespanel.com:20520/",
+  "favicon": "",
+  "tags": "jornalismo(all news)",
+  "state": "Alagoas",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "ba4f0645-cbfb-42b7-b511-7f01ad8e7483",
+  "name": "Adore 89,3 FM Maceió",
+  "url": "https://03.painelstreaming.com.br:27014/stream",
+  "url_resolved": "https://03.painelstreaming.com.br:27014/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ba4f0645-cbfb-42b7-b511-7f01ad8e7483-89ff7e35fa.png",
+  "tags": "católica,gospel music",
+  "state": "Alagoas",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "0c598d60-f9f3-4813-86c6-92cbd81ac864",
+  "name": "CBN 104,5 FM Maceió",
+  "url": "http://v3.directradios.com:8229/stream",
+  "url_resolved": "http://v3.directradios.com:8229/stream",
+  "favicon": "",
+  "tags": "esportes,jornalismo(all news),popular",
+  "state": "Alagoas",
+  "bitrate": 32
+ },
+ {
+  "stationuuid": "552e5477-0986-494e-af5c-33724580a1bd",
+  "name": "Mix FM 98,3 Maceió",
+  "url": "https://virtues.live:8184/stream",
+  "url_resolved": "https://virtues.live:8184/stream",
+  "favicon": "",
+  "tags": "jovem,pop rock",
+  "state": "Alagoas",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "37f2eb85-d9a8-4ca4-b113-01481d66c45d",
+  "name": "Pajuçara FM 103,7 Maceió",
+  "url": "https://cast3.hoost.com.br:8679/stream",
+  "url_resolved": "https://cast3.hoost.com.br:8679/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/37f2eb85-d9a8-4ca4-b113-01481d66c45d-029cb3c630.png",
+  "tags": "eclética,popular",
+  "state": "Alagoas",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "f7387e77-0e61-4078-987e-bbae8504c053",
+  "name": "Penedo FM 97,3",
+  "url": "https://stm16.painelcast.com:7206/stream",
+  "url_resolved": "https://stm16.painelcast.com:7206/stream",
+  "favicon": "",
+  "tags": "hits,popular",
+  "state": "Alagoas",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "fde7409a-7f2d-452a-9c8f-a3fa8bde5d3d",
+  "name": "Francês FM 103,6 Penedo",
+  "url": "https://s16.maxcast.com.br:8711/live",
+  "url_resolved": "https://s16.maxcast.com.br:8711/live",
+  "favicon": "",
+  "tags": "eclética,popular",
+  "state": "Alagoas",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "727b6563-bce9-49a8-9312-2690d339a8c8",
+  "name": "Mar azul 104,9 FM Maceió",
+  "url": "http://stm25.xcast.com.br:7666/stream",
+  "url_resolved": "http://stm25.xcast.com.br:7666/stream",
+  "favicon": "",
+  "tags": "comunitária,eclética",
+  "state": "Alagoas",
+  "bitrate": 104
+ },
+ {
+  "stationuuid": "33db71c9-ceb8-42ea-9414-a422ac94ece3",
+  "name": "Opara News web rádio Penedo",
+  "url": "https://sv12.hdradios.net:7514/stream",
+  "url_resolved": "https://sv12.hdradios.net:7514/stream",
+  "favicon": "",
+  "tags": "eclética,esportes",
+  "state": "Alagoas",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "ea53eebf-6fb8-49a4-be61-9b834678b222",
+  "name": "Lobo web rádio Penedo",
+  "url": "http://stm21.srvaudio.com.br:9358/stream",
+  "url_resolved": "http://stm21.srvaudio.com.br:9358/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ea53eebf-6fb8-49a4-be61-9b834678b222-c3f9fd731c.png",
+  "tags": "gospel music",
+  "state": "Alagoas",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "0d12be7b-dce0-4a8a-857b-9d20d742bb8c",
+  "name": "Jornal web rádio de Penedo",
+  "url": "https://09.stmip.net:2380/stream",
+  "url_resolved": "https://09.stmip.net:2380/stream",
+  "favicon": "",
+  "tags": "eclética",
+  "state": "Alagoas",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "e4906342-204c-4b06-bbc8-721fe64c2364",
+  "name": "Grande Rio FM 99,1 Penedo",
+  "url": "https://hts07.brascast.com:10708/live",
+  "url_resolved": "https://hts07.brascast.com:10708/live",
+  "favicon": "",
+  "tags": "eclética,musical",
+  "state": "Alagoas",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "49666676-d7b1-4a78-a2c2-b051f7b81d2c",
+  "name": "Rádio Lagoa nova fm",
+  "url": "https://stm20.srvaudio.com.br:9990/;",
+  "url_resolved": "https://stm20.srvaudio.com.br:9990/;",
+  "favicon": "",
+  "tags": "",
+  "state": "alagoas",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "0c7b22e4-b262-4f98-80e7-e4bdc097cc35",
+  "name": "Maragogi Fm 97.3",
+  "url": "https://04.painelstreaming.com.br:27124/;",
+  "url_resolved": "https://04.painelstreaming.com.br:27124/;",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/0c7b22e4-b262-4f98-80e7-e4bdc097cc35-78b637d7e5.png",
+  "tags": "contemporary music,forró,local news,mpb",
+  "state": "Alagoas",
+  "bitrate": 128
+ }
+]

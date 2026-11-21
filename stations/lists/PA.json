@@ -1,0 +1,52 @@
+[
+ {
+  "stationuuid": "44313e8b-8999-4e00-ac9d-3d59c62c3a50",
+  "name": "Liberal FM 97.5MHz",
+  "url": "http://177.105.192.70:9750/liberalfm.mp3",
+  "url_resolved": "http://177.105.192.70:9750/liberalfm.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/44313e8b-8999-4e00-ac9d-3d59c62c3a50-8113fb305d.png",
+  "tags": "local music",
+  "state": "Para",
+  "bitrate": 32
+ },
+ {
+  "stationuuid": "35fafa39-7784-43bd-897e-605b72d5e11d",
+  "name": "Rádio Castanhal 105.9 FM",
+  "url": "https://server08.srvsh.com.br:8484/stream",
+  "url_resolved": "https://server08.srvsh.com.br:8484/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/35fafa39-7784-43bd-897e-605b72d5e11d-033c012034.png",
+  "tags": "",
+  "state": "Pará",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "e22a9daa-8f48-4950-9c59-bda4356abe86",
+  "name": "Jovem pan 107,5 FM Belém",
+  "url": "https://radio01.zas.media/8038/stream",
+  "url_resolved": "https://radio01.zas.media/8038/stream",
+  "favicon": "",
+  "tags": "jovem,pop rock,top 40",
+  "state": "Pará",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "6f6e79f3-3697-4707-b64a-0ef20df068ba",
+  "name": "Radio Brega Paraense",
+  "url": "https://stream-178.surfernetwork.com/6a4genq4by8uv",
+  "url_resolved": "https://stream-178.surfernetwork.com/6a4genq4by8uv",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/6f6e79f3-3697-4707-b64a-0ef20df068ba-ab5e28218c.png",
+  "tags": "",
+  "state": "Pará",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "f1432da2-33fa-4f18-aedc-fd1ea646eaa9",
+  "name": "Liberal FM Web",
+  "url": "https://s09.maxcast.com.br:8122/live",
+  "url_resolved": "https://s09.maxcast.com.br:8122/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/f1432da2-33fa-4f18-aedc-fd1ea646eaa9-12b4e73283.png",
+  "tags": "",
+  "state": "Pará",
+  "bitrate": 128
+ }
+]

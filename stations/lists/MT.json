@@ -1,0 +1,62 @@
+[
+ {
+  "stationuuid": "9a3ef6e4-900f-4294-bdef-9f761fccf16a",
+  "name": "Rádio Centro América - Rondonópolis",
+  "url": "https://centova.svdns.com.br:20111/stream",
+  "url_resolved": "https://centova.svdns.com.br:20111/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/9a3ef6e4-900f-4294-bdef-9f761fccf16a-ab55ca7b2c.png",
+  "tags": "easy listening,local news",
+  "state": "Mato Grosso",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "ce9e3fa7-331d-43af-9248-9d1d59f6cfec",
+  "name": "Rádio Modão MT",
+  "url": "http://stm1.matutos.com.br:11356/stream",
+  "url_resolved": "http://stm1.matutos.com.br:11356/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ce9e3fa7-331d-43af-9248-9d1d59f6cfec-ac54da2b60.png",
+  "tags": "brasil,brazilian music,sertanejo",
+  "state": "Mato Grosso",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "ad3b4743-8400-4b41-8351-60b0bac9fc4b",
+  "name": "POP ROCK BRASIL (A Rádio Pop Rock Brasil em Rondonópolis, Mato Grosso)",
+  "url": "https://stm2.sradios.com.br:7048/stream",
+  "url_resolved": "https://stm2.sradios.com.br:7048/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ad3b4743-8400-4b41-8351-60b0bac9fc4b-bd7fee4afb.png",
+  "tags": "",
+  "state": "Mato Grosso",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "e1fb3547-73f6-4b22-a4cd-ca28d02a7f1a",
+  "name": "Rádio Jovem Pan 102.9 FM",
+  "url": "https://paineldj5.com.br:20030/stream",
+  "url_resolved": "https://paineldj5.com.br:20030/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/e1fb3547-73f6-4b22-a4cd-ca28d02a7f1a-4efce983c5.png",
+  "tags": "entertainment,journalism,music",
+  "state": "Mato Grosso",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "e106985b-2404-4c66-b420-2544ab8510f4",
+  "name": "Rádio Amorim 104.1 FM",
+  "url": "http://streaming05.maxcast.com.br:8080/live",
+  "url_resolved": "http://streaming05.maxcast.com.br:8080/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/e106985b-2404-4c66-b420-2544ab8510f4-8915f70bfa.png",
+  "tags": "entertainment,local news,music",
+  "state": "Mato Grosso",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "fce1fac2-1606-49aa-a6c0-fd942d508337",
+  "name": "Radio Nova FM Nova Canaã",
+  "url": "http://stream.splug.com.br:8000/Radio136",
+  "url_resolved": "http://stream.splug.com.br:8000/Radio136",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/fce1fac2-1606-49aa-a6c0-fd942d508337-37c0c2a8f3.png",
+  "tags": "",
+  "state": "Mato Grosso",
+  "bitrate": 128
+ }
+]

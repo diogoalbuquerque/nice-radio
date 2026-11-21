@@ -1,0 +1,1002 @@
+[
+ {
+  "stationuuid": "bedcf517-f9a6-11e8-a97a-52543be04c81",
+  "name": "Jazz Medley Webradio",
+  "url": "http://server01.ouvir.radio.br:8006/stream",
+  "url_resolved": "http://server01.ouvir.radio.br:8006/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/bedcf517-f9a6-11e8-a97a-52543be04c81-d07ae003d5.png",
+  "tags": "classic jazz,jazz",
+  "state": "Minas Gerais",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "d4f0f5ca-b0a5-4de4-be3b-e686920d94b0",
+  "name": "Jovem Pan FM - Belo Horizonte - MG - 99.1 Mhz",
+  "url": "https://8062.brasilstream.com.br/stream?origem=task_site",
+  "url_resolved": "https://8062.brasilstream.com.br/stream?origem=task_site",
+  "favicon": "",
+  "tags": "",
+  "state": "Minas Gerais",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "193e3072-b88d-4e33-90e7-fb1564713e95",
+  "name": "Rádio Mix FM 88,9 MHz (Juiz de Fora - MG)",
+  "url": "https://stream02.ouveai.com.br/8034/stream",
+  "url_resolved": "https://stream02.ouveai.com.br/8034/stream",
+  "favicon": "",
+  "tags": "misc",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "c064c241-a2c2-4dd9-b889-b292535397fe",
+  "name": "Rádio Studio Flashback",
+  "url": "https://stream-163.zeno.fm/6gv76f1xruquv?zs=SvdWy-tsTtCXPZ9IZC0ASA",
+  "url_resolved": "https://stream-163.zeno.fm/6gv76f1xruquv?zs=SvdWy-tsTtCXPZ9IZC0ASA",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c064c241-a2c2-4dd9-b889-b292535397fe-1e303daaee.png",
+  "tags": "00's,00s,2000's,2000s,70's,70s,80's,80s,90's,90s,adult contemporary,adult hits,classic hits,classic rock,classics,flash back,flashback,love songs,new classics,oldies,pop,romantic",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "13e3e176-b32a-49d2-86e3-9869dc5baab6",
+  "name": "RÁDIO SÓ MPB",
+  "url": "https://s27.maxcast.com.br:8103/live",
+  "url_resolved": "https://s27.maxcast.com.br:8103/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/13e3e176-b32a-49d2-86e3-9869dc5baab6-d5e0c62b55.png",
+  "tags": "",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "22476f57-1d03-4718-a56e-c3d1f58f2e0f",
+  "name": "Rádio Alvorada",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_ALVORADAAAC.aac",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_ALVORADAAAC.aac",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/22476f57-1d03-4718-a56e-c3d1f58f2e0f-a347539178.png",
+  "tags": "",
+  "state": "Minas Gerais",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "cab8d5ed-4b9a-4fff-abde-a9d07032529d",
+  "name": "Liberdade 92.9 (Belo Horizonte - MG)",
+  "url": "http://8335.brasilstream.com.br/stream.m3u",
+  "url_resolved": "http://srv15.brasilstream.com.br:8335/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/cab8d5ed-4b9a-4fff-abde-a9d07032529d-afdd3588c9.png",
+  "tags": "sertanejo",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "c0cfd9d5-823d-4a96-be7f-5dedff5cff2c",
+  "name": "Rádio Alvorada (MP3)",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_ALVORADA.mp3",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_ALVORADA.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c0cfd9d5-823d-4a96-be7f-5dedff5cff2c-a347539178.png",
+  "tags": "",
+  "state": "Minas Gerais",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "b0d6222c-8bf8-4fe9-8666-e4b66f7a9057",
+  "name": "Rádio Café Viola",
+  "url": "https://stm6.xcast.com.br:9328/;?1685284162874",
+  "url_resolved": "https://stm6.xcast.com.br:9328/;?1685284162874",
+  "favicon": "",
+  "tags": "sertaneja,sertanejo,sertanejo raiz",
+  "state": "Minas Gerais Brasil",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "3998f9ae-ed80-4319-8109-0acb29efb256",
+  "name": "BH FM 102,1 MHz ZYC690 (Belo Horizonte - MG)",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/BHFMAAC.aac",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/BHFMAAC.aac",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/3998f9ae-ed80-4319-8109-0acb29efb256-2400b65645.png",
+  "tags": "funk,internacional,nacional,pagode,pop,samba,sertanejo",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "2eb41659-1b7c-43e5-9b98-36634086a73c",
+  "name": "Radio Jovem Pan 99.1 FM Belo Horizonte",
+  "url": "https://8062.brasilstream.com.br//stream?origem=jovem_pan_site",
+  "url_resolved": "https://8062.brasilstream.com.br//stream?origem=jovem_pan_site",
+  "favicon": "",
+  "tags": "90s,pop,rock",
+  "state": "Minas Gerais",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "195f2990-e0d3-4b34-8aab-5b173ddb6c6e",
+  "name": "BR - The Classic Rock",
+  "url": "https://stream.zeno.fm/nbq1aq62gd0uv",
+  "url_resolved": "https://stream.zeno.fm/nbq1aq62gd0uv",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/195f2990-e0d3-4b34-8aab-5b173ddb6c6e-434f319011.png",
+  "tags": "classic rock,hard rock,heavy metal,oldies,rock",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "23e0b52b-6488-11e8-b15b-52543be04c81",
+  "name": "Imparsom FM Governador Valadares",
+  "url": "http://wz3.dnip.com.br/imparsomhd/imparsomhd.stream/playlist.m3u8",
+  "url_resolved": "http://wz3.dnip.com.br/imparsomhd/imparsomhd.stream/playlist.m3u8",
+  "favicon": "",
+  "tags": "#pop",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "d2678e94-cc54-457a-bef4-2fc355ec4199",
+  "name": "Radio Liberdade 92.9 (Belo Horizonte - MG)",
+  "url": "https://8335.brasilstream.com.br/stream",
+  "url_resolved": "https://8335.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d2678e94-cc54-457a-bef4-2fc355ec4199-afdd3588c9.png",
+  "tags": "sertanejo",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "d93a1368-9156-44de-a895-05b25605263b",
+  "name": "CBN - Belo Horizonte ",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/CBN_BHAAC.aac",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/CBN_BHAAC.aac",
+  "favicon": "",
+  "tags": "news,notícias,sports",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "d0823979-3e98-4d12-a5f6-3a995ec0e52f",
+  "name": "Conquista FM 97,7 Sertaneja",
+  "url": "https://rrdns-megasistema.webnow.com.br/conquista.mp3",
+  "url_resolved": "https://rrdns-megasistema.webnow.com.br/conquista.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d0823979-3e98-4d12-a5f6-3a995ec0e52f-e939d0aac1.png",
+  "tags": "country,sertanejo",
+  "state": "Minas Gerais",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "46e300c2-4013-4442-baa0-eeaae28cff1f",
+  "name": "Light FM 103.9 MHz ZYC699 (Belo Horizonte - MG)",
+  "url": "https://8231.brasilstream.com.br/stream",
+  "url_resolved": "https://8231.brasilstream.com.br/stream",
+  "favicon": "",
+  "tags": "light classics",
+  "state": "Minas Gerais",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "4a5e0a7c-8daf-4168-b125-d3aec2ee28a6",
+  "name": "Jovem Pan Patos de Minas",
+  "url": "https://shout25.crossradio.com.br:24030//1",
+  "url_resolved": "https://shout25.crossradio.com.br:24030//1",
+  "favicon": "",
+  "tags": "",
+  "state": "Minas Gerais",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "c4e68be4-9014-4b1f-b29f-2ceeefb665b4",
+  "name": "Rádio Ziggy - Raiz (MP3)",
+  "url": "http://stream.zeno.fm/pyt8f8z5gd0uv",
+  "url_resolved": "http://stream.zeno.fm/pyt8f8z5gd0uv",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c4e68be4-9014-4b1f-b29f-2ceeefb665b4-1d061c4d5b.png",
+  "tags": "sertaneja",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "026dac2f-47ba-47df-b691-d640dc9bc00e",
+  "name": "Rádio Tropical FM 94.7 MHz (Barbacena - MG)",
+  "url": "https://servidor37-5.brlogic.com:8044/live?source=website",
+  "url_resolved": "https://servidor37-5.brlogic.com:8044/live?source=website",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/026dac2f-47ba-47df-b691-d640dc9bc00e-7d8e55d05e.png",
+  "tags": "misc",
+  "state": "Minas Gerais",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "8089807a-1201-11e9-a80b-52543be04c81",
+  "name": "Radio Cidade JF",
+  "url": "http://wz1.dnip.com.br/cidadefmjf/cidadefmjf.stream/playlist.m3u8",
+  "url_resolved": "http://wz1.dnip.com.br/cidadefmjf/cidadefmjf.stream/playlist.m3u8",
+  "favicon": "",
+  "tags": "pop,rock",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "f05a93b9-c679-481f-b793-1a43d45c1e90",
+  "name": "Band FM Triângulo 99.9 Mhz ZYC832 (Uberlândia - MG)",
+  "url": "https://stm28.xcast.com.br:11364/stream",
+  "url_resolved": "https://stm28.xcast.com.br:11364/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/f05a93b9-c679-481f-b793-1a43d45c1e90-fd3e684635.png",
+  "tags": "música popular brasileira",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "960ff62c-0601-11e8-ae97-52543be04c81",
+  "name": "Radio Boa Vista 96.5 Paracatu, MG",
+  "url": "http://wz3.dnip.com.br/sc_boavi/sc_boavi.stream/playlist.m3u8",
+  "url_resolved": "http://wz3.dnip.com.br/sc_boavi/sc_boavi.stream/playlist.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/960ff62c-0601-11e8-ae97-52543be04c81-efd11f14c7.png",
+  "tags": "brazilian music",
+  "state": "Minas Gerais",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "7c2d7c4d-3b2f-446f-a317-f2313ce53c58",
+  "name": "Rádio Sucesso FM 101,7 Mhz (Barbacena MG)",
+  "url": "http://s01.onradio.biz:7666/stream",
+  "url_resolved": "http://s01.onradio.biz:7666/stream",
+  "favicon": "",
+  "tags": "misc",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "ba4e0d3a-809f-4714-93a8-da9e0d1c2e56",
+  "name": "Primeira Linha Web Rádio",
+  "url": "https://rrdns-megasistema.webnow.com.br/diario.aac?v=5499",
+  "url_resolved": "https://rrdns-megasistema.webnow.com.br/diario.aac?v=5499",
+  "favicon": "",
+  "tags": "adulta",
+  "state": "Minas Gerais",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "806d6ae2-a7c8-496f-a2de-81a2a840089e",
+  "name": "Minas FM 104,1 MHz (Divinópolis - MG)",
+  "url": "https://minasfmaac.jmvstream.com/stream",
+  "url_resolved": "https://minasfmaac.jmvstream.com/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/806d6ae2-a7c8-496f-a2de-81a2a840089e-ef6a5f5d85.png",
+  "tags": "brazilian music,misc,sertanejo",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "943c65a8-3411-11e9-8f31-52543be04c81",
+  "name": "Espacial FM - Pará de Minas 105.5 FM",
+  "url": "http://paineldj4.com.br:8300/stream.mp3?type=.mp3",
+  "url_resolved": "http://paineldj4.com.br:8300/stream.mp3?type=.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/943c65a8-3411-11e9-8f31-52543be04c81-c7ad4d85ca.png",
+  "tags": "brazilian music,gerais,minas",
+  "state": "Minas Gerais",
+  "bitrate": 192
+ },
+ {
+  "stationuuid": "b0522684-48fa-488e-a4c5-9398b61c3766",
+  "name": "Web Rádio CCB",
+  "url": "https://player.hoststreaming.com.br/player/7088/winamp.pls",
+  "url_resolved": "http://stm1.hoststreaming.com.br:7088/;",
+  "favicon": "",
+  "tags": "church,faith,god,praise,worship",
+  "state": "Minas Gerais",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "99c828d5-f2dd-4314-9984-03ca68fe43e0",
+  "name": "BandNews BH",
+  "url": "https://cdn-web.tunein.com/assets/media/blank.mp3",
+  "url_resolved": "https://cdn-web.tunein.com/assets/media/blank.mp3",
+  "favicon": "",
+  "tags": "análise,informação,news,notícias",
+  "state": "Minas Gerais",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "924352fe-4a3c-47b5-83b7-370595ae42f9",
+  "name": "Rádio Super",
+  "url": "https://servidor32.brlogic.com:8200/live",
+  "url_resolved": "https://servidor32.brlogic.com:8200/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/924352fe-4a3c-47b5-83b7-370595ae42f9-0104381376.png",
+  "tags": "gospel",
+  "state": "Minas Gerais",
+  "bitrate": 192
+ },
+ {
+  "stationuuid": "8a611c57-3bb7-461d-82be-64183f72380e",
+  "name": "Rádio ON FM 107,7 MHz (Juiz de Fora - MG)",
+  "url": "https://cast4.hoost.com.br:20214/stream",
+  "url_resolved": "https://cast4.hoost.com.br:20214/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/8a611c57-3bb7-461d-82be-64183f72380e-85849ac53b.png",
+  "tags": "misc",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "7e1c7041-c288-4f9a-b859-1a461cf728dc",
+  "name": "Clube FM 96,5 MHz ZYC692 (Belo Horizonte - MG)",
+  "url": "https://8112.brasilstream.com.br/stream",
+  "url_resolved": "https://8112.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/7e1c7041-c288-4f9a-b859-1a461cf728dc-7a6537982f.png",
+  "tags": "internacional,nacional,samba,sertanejo",
+  "state": "Minas Gerais",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "950a73c1-5be8-4e99-b525-1f969e8daafe",
+  "name": "Rádio Ecológica FM 98,7 Mhz (São João Del Rei - MG)",
+  "url": "https://server06.srvsh.com.br:7440/stream",
+  "url_resolved": "https://server06.srvsh.com.br:7440/stream",
+  "favicon": "",
+  "tags": "misc",
+  "state": "Minas Gerais",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "6eb9a15f-09c4-40f7-b5b0-dcb62b959439",
+  "name": "Rádio 94 FM 94.7 MHz (Lavras - MG)",
+  "url": "http://wz5.dnip.com.br:1935/riograndefmhd/riograndefmhd.stream/chunklist_w2010560414.m3u8",
+  "url_resolved": "http://wz5.dnip.com.br:1935/riograndefmhd/riograndefmhd.stream/chunklist_w2010560414.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/6eb9a15f-09c4-40f7-b5b0-dcb62b959439-6ea9808008.png",
+  "tags": "misc",
+  "state": "Minas Gerais",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "6b06dd9c-bd2e-48f1-a4a3-462241b45b1b",
+  "name": "Rádio Alô FM 96,7 MHz (Juiz de Fora - MG)",
+  "url": "http://wz3.dnip.com.br/energiafmjf1/energiafmjf1.stream/playlist.m3u8",
+  "url_resolved": "http://wz3.dnip.com.br/energiafmjf1/energiafmjf1.stream/playlist.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/6b06dd9c-bd2e-48f1-a4a3-462241b45b1b-dee9222c92.png",
+  "tags": "misc",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "d23b3619-a296-46ac-b4a6-77a27877376c",
+  "name": "Rádio Estrada Real FM 102.5 MHz (Ouro Branco - MG)",
+  "url": "https://9981.brasilstream.com.br/stream",
+  "url_resolved": "https://9981.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d23b3619-a296-46ac-b4a6-77a27877376c-26b916ac62.png",
+  "tags": "misc",
+  "state": "Minas Gerais",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "7c559c93-7e49-11e9-aa30-52543be04c81",
+  "name": "Rádio Federal Fm 101,3 Mhz UNIFAL",
+  "url": "http://cast61.sitehosting.com.br:8443/live",
+  "url_resolved": "http://cast61.sitehosting.com.br:8443/live",
+  "favicon": "",
+  "tags": "educational,university radio",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "d1c70e9c-6703-4f1d-9db2-fb095d8aacc9",
+  "name": "93,3 FM (Barbacena MG)",
+  "url": "https://sws.onradio.biz/8126/stream",
+  "url_resolved": "https://sws.onradio.biz/8126/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d1c70e9c-6703-4f1d-9db2-fb095d8aacc9-6426cbaf70.png",
+  "tags": "",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "461f7d50-a8ad-4437-a371-b01fa1d65b2f",
+  "name": "Rádio Emboabas FM 96,9 Mhz (São João Del Rei - MG)",
+  "url": "https://paineldj6.com.br:20144/stream",
+  "url_resolved": "https://paineldj6.com.br:20144/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/461f7d50-a8ad-4437-a371-b01fa1d65b2f-0eb85924e1.png",
+  "tags": "misc",
+  "state": "Minas Gerais",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "ff190f46-3e85-40bc-9173-720e8e211fb1",
+  "name": "Rádio Inconfidência FM 100,9",
+  "url": "https://ssl.zoeweb.net/proxy/inconfidencia?mp=/stream",
+  "url_resolved": "https://ssl.zoeweb.net/proxy/inconfidencia?mp=/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ff190f46-3e85-40bc-9173-720e8e211fb1-52b3cfe9aa.png",
+  "tags": "",
+  "state": "Minas Gerais Brasil",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "a2ef7994-db83-4953-b2c4-2415c0b9b2da",
+  "name": "Rádio Café Modão",
+  "url": "https://stm22.xcast.com.br:8866/",
+  "url_resolved": "https://stm22.xcast.com.br:8866/",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/a2ef7994-db83-4953-b2c4-2415c0b9b2da-91194a16fb.png",
+  "tags": "",
+  "state": "Patos de Minas , Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "327d35f3-ddea-48bb-ba97-632d38c5890b",
+  "name": "Rádio Rock FM",
+  "url": "https://stream-159.zeno.fm/bd9p0p44puquv?zs=V_zU2Gc-TXGWa_BXm42cMA",
+  "url_resolved": "https://stream-159.zeno.fm/bd9p0p44puquv?zs=V_zU2Gc-TXGWa_BXm42cMA",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/327d35f3-ddea-48bb-ba97-632d38c5890b-298e8bdfed.png",
+  "tags": "alternative,alternative / indie,alternative rock,brazilian rock,modern rock,pop rock,rock",
+  "state": "Minas Gerais",
+  "bitrate": 112
+ },
+ {
+  "stationuuid": "b9ab2a19-2a03-4a59-928f-73b8b056891b",
+  "name": "Sete Colinas FM 101.7",
+  "url": "https://8300.brasilstream.com.br/stream",
+  "url_resolved": "https://8300.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/b9ab2a19-2a03-4a59-928f-73b8b056891b-97bce664e5.png",
+  "tags": "musicas,notícias",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "94050e87-1c05-4eaa-bab4-8744c7260b02",
+  "name": "Rádio Ziggy - MPB (MP3)",
+  "url": "http://stream.zeno.fm/g5xt330zkd0uv",
+  "url_resolved": "http://stream.zeno.fm/g5xt330zkd0uv",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/94050e87-1c05-4eaa-bab4-8744c7260b02-e862e3dab4.png",
+  "tags": "brazilian music,pop",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "317901fe-8e85-4c3a-bb05-4c889cdc5439",
+  "name": "Supersom FM 97.1 MHz ZYC813 (Uberaba - MG)",
+  "url": "https://9790.brasilstream.com.br/stream",
+  "url_resolved": "https://9790.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/317901fe-8e85-4c3a-bb05-4c889cdc5439-b168d9b8be.png",
+  "tags": "música popular brasileira,sertanejo",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "aeae9162-babb-4c40-8e08-ce22dbbf08fe",
+  "name": "Radio Ativa Bom Despacho",
+  "url": "http://148.72.158.239:8036/live",
+  "url_resolved": "http://148.72.158.239:8036/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/aeae9162-babb-4c40-8e08-ce22dbbf08fe-d889d4c2b2.png",
+  "tags": "",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "32c450f7-c02d-4080-a1b6-f7d3292ae283",
+  "name": "Rádio Ziggy - Blues Rock (MP3)",
+  "url": "http://stream.zeno.fm/apph08p9hqzuv",
+  "url_resolved": "http://stream.zeno.fm/apph08p9hqzuv",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/32c450f7-c02d-4080-a1b6-f7d3292ae283-419d3702c3.png",
+  "tags": "blues rock,heavy metal",
+  "state": "Minas Gerais",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "5833150e-9b78-483e-88af-ba27a4ff6ce2",
+  "name": "Rádio Catedral FM 102,3 MHz (Juiz de Fora - MG)",
+  "url": "https://5a2b083e9f360.streamlock.net//catedral/catedral.stream/playlist.m3u8",
+  "url_resolved": "https://5a2b083e9f360.streamlock.net//catedral/catedral.stream/playlist.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/5833150e-9b78-483e-88af-ba27a4ff6ce2-dfa3e3cd71.png",
+  "tags": "religious",
+  "state": "Minas Gerais",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "0db29eac-2354-4cd6-8fcc-1810993bce03",
+  "name": "Musirama FM 92.1 MHz ZYC709 (Sete Lagoas - MG)",
+  "url": "https://ice.fabricahost.com.br/musirama",
+  "url_resolved": "https://f100.fabricahost.com.br/musirama?f=1794894243N01M7M0H9K8N786P5KV7VYSZ75T&tid=01M7M0H9K8ZBDYJA7S1WXQEZD0",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/0db29eac-2354-4cd6-8fcc-1810993bce03-96261f315f.png",
+  "tags": "brazilian music,misc",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "2184ccd3-cf03-49c2-96cc-748f422fe9a6",
+  "name": "Rádio Ziggy - The Beatles (MP3)",
+  "url": "http://stream.zeno.fm/18sv42teknzuv",
+  "url_resolved": "http://stream.zeno.fm/18sv42teknzuv",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/2184ccd3-cf03-49c2-96cc-748f422fe9a6-805ba459fa.png",
+  "tags": "classic rock,the beatles",
+  "state": "Minas Gerais",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "a5f7ce2c-c6bd-424b-9b9a-4f1e1be86929",
+  "name": "Rádio Ziggy - Rock Brasil (MP3)",
+  "url": "http://stream.zeno.fm/0y68rshdreruv",
+  "url_resolved": "http://stream.zeno.fm/0y68rshdreruv",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/a5f7ce2c-c6bd-424b-9b9a-4f1e1be86929-042093a663.png",
+  "tags": "brazilian music,rock",
+  "state": "Minas Gerais",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "f5bb8e71-3333-4468-9cab-70389a9cf45b",
+  "name": "Cultura FM 95.1 Mhz (Uberlândia - MG) (ZYC697)",
+  "url": "https://8040.brasilstream.com.br/stream",
+  "url_resolved": "https://8040.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/f5bb8e71-3333-4468-9cab-70389a9cf45b-900ac396c7.png",
+  "tags": "brazilian music,miscellaneous,popular music",
+  "state": "Minas Gerais",
+  "bitrate": 84
+ },
+ {
+  "stationuuid": "4994acda-5e0d-46fe-9b67-371ea4d19aae",
+  "name": "Luz de zambi",
+  "url": "https://stream.zeno.fm/z6w4zbvs4a0uv",
+  "url_resolved": "https://stream.zeno.fm/z6w4zbvs4a0uv",
+  "favicon": "",
+  "tags": "",
+  "state": "Minas Gerais Brasil",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "3a05c1a3-cfd9-4963-af65-b6a4db787884",
+  "name": "Canarinho FM 102.3 Mhz (Divinésia - MG) (ZYE339)",
+  "url": "https://paineldj.com.br:20196/stream",
+  "url_resolved": "https://paineldj.com.br:20196/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/3a05c1a3-cfd9-4963-af65-b6a4db787884-dfef4194ce.png",
+  "tags": "",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "db9901ae-88a7-452a-a528-1f378dd817bf",
+  "name": "Z-top",
+  "url": "https://stream.zeno.fm/gzf0stmb2d0uv",
+  "url_resolved": "https://stream.zeno.fm/gzf0stmb2d0uv",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/db9901ae-88a7-452a-a528-1f378dd817bf-330235c84b.png",
+  "tags": "chr,contemporary hits radio,dance,electronic dance music,eurodance,jovem,pop,pop rock,top 40",
+  "state": "Minas Gerais",
+  "bitrate": 112
+ },
+ {
+  "stationuuid": "9957a979-628f-4f1b-90c3-cde1d8db2abf",
+  "name": "Cultura FM 104.9 MHz ZYC799 (Uberaba - MG)",
+  "url": "https://8571.brasilstream.com.br/stream",
+  "url_resolved": "https://8571.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/9957a979-628f-4f1b-90c3-cde1d8db2abf-a8bf984622.png",
+  "tags": "música popular brasileira,sertanejo raiz",
+  "state": "Minas Gerais",
+  "bitrate": 256
+ },
+ {
+  "stationuuid": "7c7def30-9ae1-47b2-868b-6b0f1626d268",
+  "name": "Aliança Fm",
+  "url": "https://server01.srvsh.com.br:13788/stream",
+  "url_resolved": "https://server01.srvsh.com.br:13788/stream",
+  "favicon": "",
+  "tags": "brazil,jazz,mg,musica,musica latinoamericana,ouro branco",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "7379f99a-0f90-44a2-9f3c-fcc8fd9687a3",
+  "name": "BandNews FM Belo Horizonte",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/BANDNEWSFM_BHAAC.aac",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/BANDNEWSFM_BHAAC.aac",
+  "favicon": "",
+  "tags": "news,sports,talk",
+  "state": "Minas Gerais",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "b3b053ca-7aad-47cb-b239-eafff4cadd1b",
+  "name": "Rádio Q FM 97.9 MHz 9 (Viçosa - MG)",
+  "url": "http://wz6.dnip.com.br/lfm979/lfm979.stream/playlist.m3u8",
+  "url_resolved": "http://wz6.dnip.com.br/lfm979/lfm979.stream/playlist.m3u8",
+  "favicon": "",
+  "tags": "misc",
+  "state": "Minas Gerais",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "bc406763-0a3e-4137-9969-1562812c6447",
+  "name": "Radio Inconfidencia AM",
+  "url": "https://ssl.zoeweb.net/proxy/inconfidencia2?mp=/stream",
+  "url_resolved": "https://ssl.zoeweb.net/proxy/inconfidencia2?mp=/stream",
+  "favicon": "",
+  "tags": "",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "ef2e29ca-73cd-4847-a17b-759aca37800a",
+  "name": "Radio Lasafá",
+  "url": "https://servidor29-3.brlogic.com:8100/live",
+  "url_resolved": "https://servidor29-3.brlogic.com:8100/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ef2e29ca-73cd-4847-a17b-759aca37800a-ed7025226b.png",
+  "tags": "",
+  "state": "Minas Gerais",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "da1db972-5954-433c-a87b-2a36aca7e346",
+  "name": "Educativa Inatel - 107,9 FM",
+  "url": "https://educativainatel.radioca.st/stream",
+  "url_resolved": "https://educativainatel.radioca.st/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/da1db972-5954-433c-a87b-2a36aca7e346-74b9850a13.png",
+  "tags": "adult contemporary,classic hits",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "ee82bd66-9d78-4130-a8b1-5e7beff49405",
+  "name": "Voz News FM 100.9 MHz ZYN317 (Januária - MG)",
+  "url": "http://s01.transmissaodigital.com:7390/stream",
+  "url_resolved": "http://s01.transmissaodigital.com:7390/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ee82bd66-9d78-4130-a8b1-5e7beff49405-5d71d34454.png",
+  "tags": "esportes,nacionais,noticias",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "de240058-265d-40c8-ad7c-4b87ffd1086d",
+  "name": "Difusora Bomdespachense",
+  "url": "https://ssl.conectastreaming.com:7040/;",
+  "url_resolved": "https://ssl.conectastreaming.com:7040/;",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/de240058-265d-40c8-ad7c-4b87ffd1086d-80951656ed.png",
+  "tags": "",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "ce5a556b-6d3e-47d6-953e-2af89ebe95e1",
+  "name": "Power Web Radio",
+  "url": "https://live9.livemus.com.br:27460/stream",
+  "url_resolved": "https://live9.livemus.com.br:27460/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ce5a556b-6d3e-47d6-953e-2af89ebe95e1-3fb2180093.png",
+  "tags": "dance,flashback,pop",
+  "state": "Minas Gerais",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "48a71f65-ccf3-45b9-b350-8bee19aaad01",
+  "name": "94 Live (Divinópolis - MG)",
+  "url": "https://94fm64aac.jmvstream.com/stream",
+  "url_resolved": "https://94fm64aac.jmvstream.com/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/48a71f65-ccf3-45b9-b350-8bee19aaad01-bd5557e05e.png",
+  "tags": "hits,pop rock",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "87086b06-203f-4e81-8479-c5d6b66901f8",
+  "name": "Radio ZTOP",
+  "url": "https://stream.zeno.fm/bd0hmtmb2d0uv",
+  "url_resolved": "https://stream.zeno.fm/bd0hmtmb2d0uv",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/87086b06-203f-4e81-8479-c5d6b66901f8-634ec564de.png",
+  "tags": "contemporary hits radio,dance,electronic dance music,eurodance,jovem,op,pop rock,top 40",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "beae34f5-a369-4dc9-99ae-a419313c601c",
+  "name": "93.3 FM (Barbacena)",
+  "url": "https://sws.onradio.biz/8126/stream?1746145643130",
+  "url_resolved": "https://sws.onradio.biz/8126/stream?1746145643130",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/beae34f5-a369-4dc9-99ae-a419313c601c-c475850d88.png",
+  "tags": "mpb,noticias",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "3aeea828-d971-4ebf-9134-ab0266570d15",
+  "name": "Rádio Virgo Net",
+  "url": "https://cast.mgtradio.net/radio/8020/radio.aac",
+  "url_resolved": "https://cast.mgtradio.net/radio/8020/radio.aac",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/3aeea828-d971-4ebf-9134-ab0266570d15-ce954b3730.png",
+  "tags": "",
+  "state": "Minas Gerais",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "ce0ed64c-a063-4ffa-9b9a-9adab7ab1c54",
+  "name": "Dadiva Net",
+  "url": "https://stm47.stmsrv.com:16180/stream",
+  "url_resolved": "https://stm47.stmsrv.com:16180/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ce0ed64c-a063-4ffa-9b9a-9adab7ab1c54-b70dba439f.png",
+  "tags": "gospel evangélica",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "dd921cac-7264-49dd-aeac-47ecb5c4f100",
+  "name": "Rádio Ponte Nova FM 89.7 MHz (Ponte Nova - MG)",
+  "url": "http://wz1.dnip.com.br:1935/pontenova/pontenova.stream/playlist.m3u8",
+  "url_resolved": "http://wz1.dnip.com.br:1935/pontenova/pontenova.stream/playlist.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/dd921cac-7264-49dd-aeac-47ecb5c4f100-c2ed819734.png",
+  "tags": "misc",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "03f20e45-50cb-4f0a-8d8b-703a7a234f0c",
+  "name": "Rádio Almenara FM",
+  "url": "https://8247.brasilstream.com.br/stream?rand=DRo5m",
+  "url_resolved": "https://8247.brasilstream.com.br/stream?rand=DRo5m",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/03f20e45-50cb-4f0a-8d8b-703a7a234f0c-2910f93a39.png",
+  "tags": "sertanejo",
+  "state": "Minas Gerais",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "fbc8a547-2764-4b35-a3cb-4b9ea2ffab1f",
+  "name": "Antena 1 FM 91.3 MHz / Juiz de Fora - MG",
+  "url": "https://stream02.ouveai.com.br:7017/stream",
+  "url_resolved": "https://stream02.ouveai.com.br:7017/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/fbc8a547-2764-4b35-a3cb-4b9ea2ffab1f-c2e58605b8.png",
+  "tags": "soft adult contemporary,soft rock",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "d3b79baa-5c90-4ae8-ba30-8b574b15eae7",
+  "name": "Sensação FM 105.5 Mhz (Rio Pomba - MG) (ZYN228)",
+  "url": "https://sv10.hdradios.net:8226/stream",
+  "url_resolved": "https://sv10.hdradios.net:8226/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d3b79baa-5c90-4ae8-ba30-8b574b15eae7-2b062e02c9.png",
+  "tags": "miscellaneous,popular music",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "65631bce-f20e-4cda-a420-eb11bbe3aa5c",
+  "name": "Rádio Café Viola",
+  "url": "https://stm6.xcast.com.br:9328/",
+  "url_resolved": "https://stm6.xcast.com.br:9328/",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/65631bce-f20e-4cda-a420-eb11bbe3aa5c-e61dc13135.png",
+  "tags": "",
+  "state": "Patos de Minas, Minas Gerais Brasil",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "4cb94b99-ff06-4521-b643-a78bf272dbe3",
+  "name": "Jovem Pan BH",
+  "url": "https://8062.brasilstream.com.br/mp3",
+  "url_resolved": "https://8062.brasilstream.com.br/mp3",
+  "favicon": "",
+  "tags": "entertainment,music,pop",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "dccc4010-9c0a-489b-a216-d47df5e4bafd",
+  "name": "Rádio Bom Sucesso 95.5 FM",
+  "url": "http://euroticast5.euroti.com.br:8110/stream",
+  "url_resolved": "http://euroticast5.euroti.com.br:8110/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/dccc4010-9c0a-489b-a216-d47df5e4bafd-147c82ac2c.png",
+  "tags": "cultural",
+  "state": "Minas Gerais Brasil",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "aba56ee3-be9c-4b85-add0-c748b679fbfb",
+  "name": "Jovem Pan BH",
+  "url": "https://8062.brasilstream.com.br/stream",
+  "url_resolved": "https://8062.brasilstream.com.br/stream",
+  "favicon": "",
+  "tags": "entertainment,music,pop",
+  "state": "Minas Gerais",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "f0ba63f6-43e7-4fcc-8db7-d62f731fa88f",
+  "name": "Espiritismo BH",
+  "url": "http://paineldj4.com.br:8047/stream",
+  "url_resolved": "http://paineldj4.com.br:8047/stream",
+  "favicon": "",
+  "tags": "espirita,espiritismo,espírita,jesus,kardec,rádio espírita",
+  "state": "Minas Gerais",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "be3907df-64a7-4df9-8158-61b7dc8c881c",
+  "name": "98 Rock",
+  "url": "https://8185.brasilstream.com.br/stream",
+  "url_resolved": "https://8185.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/be3907df-64a7-4df9-8158-61b7dc8c881c-f5c8cf8f7d.png",
+  "tags": "rock",
+  "state": "Minas Gerais",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "0d8777d1-9e71-41cf-b728-6c85d4066a7f",
+  "name": "TMC Belo Horizonte",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RT_BH.mp3",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/RT_BH.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/0d8777d1-9e71-41cf-b728-6c85d4066a7f-f895546fe1.png",
+  "tags": "music,news,sports",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "605b1ff1-b913-4dc6-8979-a7d2cc8f9012",
+  "name": "Rádio Ziggy - MIX (MP3)",
+  "url": "http://stream.zeno.fm/h0bbyx9fzs8uv",
+  "url_resolved": "http://stream.zeno.fm/h0bbyx9fzs8uv",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/605b1ff1-b913-4dc6-8979-a7d2cc8f9012-2e81714756.png",
+  "tags": "brazilian music,pop",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "75a77837-026a-4346-8cb3-1e15f0787fe3",
+  "name": "Web Rádio Fraternidade",
+  "url": "https://paineldj5.com.br:2100/stream?type=.mp3",
+  "url_resolved": "https://paineldj5.com.br:2100/stream?type=.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/75a77837-026a-4346-8cb3-1e15f0787fe3-412c35792d.png",
+  "tags": "espiritismo,espiritual,rádio espírita",
+  "state": "Minas Gerais Brasil",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "609182ef-e88a-4fbe-99ae-68f5fe7c8579",
+  "name": "Psybrazil - Main",
+  "url": "https://radio.psybrazil.com.br/psybr",
+  "url_resolved": "https://radio.psybrazil.com.br/psybr",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/609182ef-e88a-4fbe-99ae-68f5fe7c8579-59de00d3c5.png",
+  "tags": "electronic,psychedelic,psytrance",
+  "state": "Minas Gerais",
+  "bitrate": 256
+ },
+ {
+  "stationuuid": "293a9c9f-d3f8-4ce5-a074-7caa268c5dac",
+  "name": "Itatiaia FM 105.3 MHz (Juiz de Fora/MG)",
+  "url": "https://8372.brasilstream.com.br/stream",
+  "url_resolved": "https://8372.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/293a9c9f-d3f8-4ce5-a074-7caa268c5dac-239659e4fe.png",
+  "tags": "",
+  "state": "Minas Gerais",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "36cb3478-f5ad-4bf1-a387-2a3b440b013f",
+  "name": "Benchi FM",
+  "url": "https://radio.pevaio.top/listen/benchi/radio.mp3",
+  "url_resolved": "https://radio.pevaio.top/listen/benchi/radio.mp3",
+  "favicon": "",
+  "tags": "eclectic",
+  "state": "Minas Gerais",
+  "bitrate": 192
+ },
+ {
+  "stationuuid": "64ed000d-85be-4a30-ad96-a8b34d09c02f",
+  "name": "Psybrazil - Dumangue",
+  "url": "https://radio.psybrazil.com.br/dumangue",
+  "url_resolved": "https://radio.psybrazil.com.br/dumangue",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/64ed000d-85be-4a30-ad96-a8b34d09c02f-bf29a9b762.png",
+  "tags": "electronic,psychedelic,psytrance",
+  "state": "Minas Gerais",
+  "bitrate": 192
+ },
+ {
+  "stationuuid": "93325b02-1b6b-4602-b18e-9356129d54ca",
+  "name": "Psybrazil - Progressive",
+  "url": "https://radio.psybrazil.com.br/progressive",
+  "url_resolved": "https://radio.psybrazil.com.br/progressive",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/93325b02-1b6b-4602-b18e-9356129d54ca-8d2b282601.png",
+  "tags": "hard techno,progressive,techno",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "a8368d61-2e7c-47c9-8ae2-943fe5b2fff5",
+  "name": "Psybrazil - LowBPM",
+  "url": "https://radio.psybrazil.com.br/lowbpm",
+  "url_resolved": "https://radio.psybrazil.com.br/lowbpm",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/a8368d61-2e7c-47c9-8ae2-943fe5b2fff5-e0858b81d8.png",
+  "tags": "electronic,minimal techno,psytrance",
+  "state": "Minas Gerais",
+  "bitrate": 256
+ },
+ {
+  "stationuuid": "c41ca905-b8fc-4d4c-9678-791c4650f22c",
+  "name": "Pagode pra Valer",
+  "url": "https://stm15.xcast.com.br:12534/;",
+  "url_resolved": "https://stm15.xcast.com.br:12534/;",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c41ca905-b8fc-4d4c-9678-791c4650f22c-0289a796ac.png",
+  "tags": "pagode,samba",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "7055ef6e-d084-4fa6-a98b-75de2d76dc35",
+  "name": "Rádio Universitária Uberlândia 107.5 FM",
+  "url": "https://servidor33.brlogic.com:7006/live",
+  "url_resolved": "https://servidor33.brlogic.com:7006/live",
+  "favicon": "",
+  "tags": "",
+  "state": "Minas Gerais",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "4034497d-cbcc-4a14-8ef3-ad9f15293c00",
+  "name": "Rádio Grande Vale 93.1 FM",
+  "url": "https://sonicpanel.oficialserver.com:7004/;stream.nsv&type=ac+",
+  "url_resolved": "https://sonicpanel.oficialserver.com:7004/;stream.nsv&type=ac+",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/4034497d-cbcc-4a14-8ef3-ad9f15293c00-96026b6261.png",
+  "tags": "brazilian music,brazilian pop,sertanejo",
+  "state": "Minas Gerais",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "2dbfee14-d5a9-4a26-aee2-3c54a7c5b599",
+  "name": "Rádio Estância FM São Lourenço MG",
+  "url": "https://r13.ciclano.io/proxy/radioes1/stream?1784414437274",
+  "url_resolved": "https://r13.ciclano.io/proxy/radioes1/stream?1784414437274",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/2dbfee14-d5a9-4a26-aee2-3c54a7c5b599-ab4a7f3008.png",
+  "tags": "",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "c08d9307-11d0-425b-a0ab-3adc0f734a98",
+  "name": "Rádio 98.1 FM",
+  "url": "https://9526.brasilstream.com.br/stream?1771933780794",
+  "url_resolved": "https://9526.brasilstream.com.br/stream?1771933780794",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c08d9307-11d0-425b-a0ab-3adc0f734a98-3f05fa19fc.png",
+  "tags": "eclética,samba pagode,sertaneja",
+  "state": "Minas Gerais",
+  "bitrate": 256
+ },
+ {
+  "stationuuid": "cd32e3d2-2209-4180-8ef7-5b31f1ed34cf",
+  "name": "Rádio Nove",
+  "url": "https://servidor22.brlogic.com:7050/live",
+  "url_resolved": "https://servidor22.brlogic.com:7050/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/cd32e3d2-2209-4180-8ef7-5b31f1ed34cf-49a7b4dfbc.png",
+  "tags": "brazilian,latin,mpb,rock",
+  "state": "Minas Gerais",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "13f079c2-cfb8-4d7d-8c77-aca6bd0f8608",
+  "name": "Rádio jovem pan 107,3 FM Varginha",
+  "url": "https://server01.ouvir.radio.br:8042/stream",
+  "url_resolved": "https://server01.ouvir.radio.br:8042/stream",
+  "favicon": "",
+  "tags": "jovem,top 40",
+  "state": "Minas Gerais Brasil",
+  "bitrate": 32
+ },
+ {
+  "stationuuid": "d5c86265-5c96-4d18-a206-0d6c8cdad0b3",
+  "name": "Viola Viva Instrumental",
+  "url": "https://centova.euroti.com.br:20191//stream",
+  "url_resolved": "https://centova.euroti.com.br:20191//stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d5c86265-5c96-4d18-a206-0d6c8cdad0b3-673aef4eca.png",
+  "tags": "caipira,folclore,modao",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "cb42eaf3-a129-4e56-86ec-5ccfa7cf195f",
+  "name": "Rádio Liberdade Fm 87.9 Jaíba",
+  "url": "https://stm15.srvstm.com:13696/stream",
+  "url_resolved": "https://stm15.srvstm.com:13696/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/cb42eaf3-a129-4e56-86ec-5ccfa7cf195f-4a1a67106e.png",
+  "tags": "",
+  "state": "Minas Gerais",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "ca715499-e254-4609-8823-a1a533339246",
+  "name": "Psybrazil - Electro",
+  "url": "https://radio.psybrazil.com.br/electro",
+  "url_resolved": "https://radio.psybrazil.com.br/electro",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ca715499-e254-4609-8823-a1a533339246-087f8d44b4.png",
+  "tags": "electronic,house,progressive",
+  "state": "Minas Gerais",
+  "bitrate": 192
+ },
+ {
+  "stationuuid": "517bd2f9-8e72-42a9-9d6e-ea07521a7544",
+  "name": "Psybrazil - Whapade",
+  "url": "https://radio.psybrazil.com.br/whapade",
+  "url_resolved": "https://radio.psybrazil.com.br/whapade",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/517bd2f9-8e72-42a9-9d6e-ea07521a7544-f80a87a4a5.png",
+  "tags": "chillout,rock,soft rock",
+  "state": "Minas Gerais",
+  "bitrate": 96
+ }
+]

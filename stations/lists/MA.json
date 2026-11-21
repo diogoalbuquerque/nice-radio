@@ -1,0 +1,72 @@
+[
+ {
+  "stationuuid": "84137697-9722-11e9-a605-52543be04c81",
+  "name": "Rádio Terra FM 100.3",
+  "url": "http://servidor30.brlogic.com:8622/live?1561450793452",
+  "url_resolved": "http://servidor30.brlogic.com:8622/live?1561450793452",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/84137697-9722-11e9-a605-52543be04c81-d67636649e.png",
+  "tags": "",
+  "state": "Maranhão",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "f192696a-9755-11e9-a605-52543be04c81",
+  "name": "Nova FM",
+  "url": "http://hd3.matutos.com.br:8394/stream?1561472887177",
+  "url_resolved": "http://hd3.matutos.com.br:8394/stream?1561472887177",
+  "favicon": "",
+  "tags": "",
+  "state": "Maranhão",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "9312868a-e231-4ad8-877a-7df77dad4509",
+  "name": "Universidade FM 106,9",
+  "url": "https://player.hstbr.net/universidadefm/winamp.pls",
+  "url_resolved": "http://s26.maxcast.com.br:8280/live",
+  "favicon": "",
+  "tags": "local music,local radio,radio universitaria,university radio",
+  "state": "Maranhão",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "70962492-2208-496a-b7da-efb1e418d938",
+  "name": "Rádio Cidade Grajaú 91.1 FM",
+  "url": "https://servidor25-2.brlogic.com:8268/live?source=website",
+  "url_resolved": "https://servidor25-2.brlogic.com:8268/live?source=website",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/70962492-2208-496a-b7da-efb1e418d938-3594f08cf5.png",
+  "tags": "",
+  "state": "Maranhão",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "918e02e3-f592-4ab5-81a8-86bc89dbf403",
+  "name": "Rádio Nacional São Luís",
+  "url": "https://radionacionalfmsl-stream.ebc.com.br/index.m3u8",
+  "url_resolved": "https://radionacionalfmsl-stream.ebc.com.br/index.m3u8",
+  "favicon": "",
+  "tags": "brazilian,mpb,news,public radio,talk",
+  "state": "Maranhão",
+  "bitrate": 119
+ },
+ {
+  "stationuuid": "efb11e94-09bd-4851-a67a-9139d85632fd",
+  "name": "Rádio Reprise",
+  "url": "https://usa10.fastcast4u.com:1890/;?type=http&nocache=1791042940",
+  "url_resolved": "https://usa10.fastcast4u.com:1890/;?type=http&nocache=1791042940",
+  "favicon": "",
+  "tags": "cristã,gospel,jovem",
+  "state": "Maranhão",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "34860139-5bdd-472e-83fe-45a9ce949255",
+  "name": "Newton Bello FM",
+  "url": "https://stm1.voxnovo.com.br:7010/stream",
+  "url_resolved": "https://stm1.voxnovo.com.br:7010/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/34860139-5bdd-472e-83fe-45a9ce949255-f97f9692b4.png",
+  "tags": "ecletica,forró,radio comunitaria,sertanejo",
+  "state": "Maranhão",
+  "bitrate": 128
+ }
+]

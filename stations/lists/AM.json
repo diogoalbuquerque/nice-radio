@@ -1,0 +1,112 @@
+[
+ {
+  "stationuuid": "1dedfe49-c6fd-4105-a017-3857f5069d80",
+  "name": "Difusora Manaus 96,9",
+  "url": "http://69.16.236.247:9300/;mp3",
+  "url_resolved": "http://69.16.236.247:9300/;mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/1dedfe49-c6fd-4105-a017-3857f5069d80-c73a628db8.png",
+  "tags": "jornalismo",
+  "state": "Amazonas",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "6d1b820c-99b7-4c2c-b2ec-715e8510adc5",
+  "name": "Tiradentes (Manaus) 89.7 FM",
+  "url": "http://189.2.83.108:8040/tiradentes",
+  "url_resolved": "http://189.2.83.108:8040/tiradentes",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/6d1b820c-99b7-4c2c-b2ec-715e8510adc5-0dfc04ea4d.png",
+  "tags": "jornalismo,local music,local news,local radio",
+  "state": "Amazonas",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "3b5c6ce9-ff88-4976-92ac-e9e35b453e06",
+  "name": "Norte FM Manaus",
+  "url": "https://radio.saopaulo01.com.br:10839/stream",
+  "url_resolved": "https://radio.saopaulo01.com.br:10839/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/3b5c6ce9-ff88-4976-92ac-e9e35b453e06-465c3c153e.png",
+  "tags": "",
+  "state": "Amazonas",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "9bfabb47-dd28-48c6-af71-fc1543f04478",
+  "name": "Rádio Nacional Alto Solimões",
+  "url": "https://radionacionalaltosolimoes-stream.ebc.com.br/ebc/radionacionalaltosolimoes/playlist.m3u8",
+  "url_resolved": "https://radionacionalaltosolimoes-stream.ebc.com.br/ebc/radionacionalaltosolimoes/playlist.m3u8",
+  "favicon": "",
+  "tags": "brazilian,mpb,news,public radio,talk",
+  "state": "Amazonas",
+  "bitrate": 119
+ },
+ {
+  "stationuuid": "e78f0093-be57-4709-9bff-da876ab4841c",
+  "name": "Rádio AM News",
+  "url": "https://stm17.painelcast.com:7442/stream",
+  "url_resolved": "https://stm17.painelcast.com:7442/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/e78f0093-be57-4709-9bff-da876ab4841c-2c590cb399.png",
+  "tags": "amazonas,brazil,information,journalism,manaus,news,portuguese,talk,variety",
+  "state": "Amazonas",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "1711620a-b6bd-4b9b-bc07-297e0f0649d7",
+  "name": "maresol web radio - Manaus",
+  "url": "https://stream.zeno.fm/pxbrdor4opmvv",
+  "url_resolved": "https://stream.zeno.fm/pxbrdor4opmvv",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/1711620a-b6bd-4b9b-bc07-297e0f0649d7-a116b02156.png",
+  "tags": "jazz,pagode,pop,rock",
+  "state": "Amazonas",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "dbb02536-91dc-40b8-83a0-c3284105bf33",
+  "name": "Rádio Verde Oliva - Manaus (98.3 FM)",
+  "url": "https://ice.fabricahost.com.br/verdeolivama",
+  "url_resolved": "https://ice.fabricahost.com.br/verdeolivama",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/dbb02536-91dc-40b8-83a0-c3284105bf33-3ad19e4e0b.png",
+  "tags": "adult contemporary,mpb,música popular brasileira,pop,soft adult contemporary",
+  "state": "Amazonas",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "b3a9cf30-7b88-436b-b5c7-ca92eac44091",
+  "name": "Radio Web Coopnews",
+  "url": "https://painel.streamcasthost.com/listen/radio_web_coopnews/radio",
+  "url_resolved": "https://painel.streamcasthost.com/listen/radio_web_coopnews/radio",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/b3a9cf30-7b88-436b-b5c7-ca92eac44091-016175f725.png",
+  "tags": "",
+  "state": "Amazonas",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "7152317d-bf6a-4be9-a7a7-9e8c57a89c45",
+  "name": "Rádio Xibé",
+  "url": "https://radio.terrapreta.org.br/listen/xibe/radio.mp3",
+  "url_resolved": "https://radio.terrapreta.org.br/listen/xibe/radio.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/7152317d-bf6a-4be9-a7a7-9e8c57a89c45-87524e7faf.png",
+  "tags": "",
+  "state": "Amazonas",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "5ac41e74-1541-4759-86a3-b97e95ea5df1",
+  "name": "R�dio Barcelos na NET",
+  "url": "https://stream.barcelosnanet.com.br/listen/barcelos/radio.mp3",
+  "url_resolved": "https://stream.barcelosnanet.com.br/listen/barcelos/radio.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/5ac41e74-1541-4759-86a3-b97e95ea5df1-33e510e62d.png",
+  "tags": "amazonas,barcelos,musica,noticias,variado",
+  "state": "Amazonas",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "4b72d2d8-53f5-4c88-a14d-8183f2ac75cd",
+  "name": "R�dio Luciano Kik�o",
+  "url": "https://lucianokikao.com.br/radio/kikao.mp3",
+  "url_resolved": "https://lucianokikao.com.br/radio/kikao.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/4b72d2d8-53f5-4c88-a14d-8183f2ac75cd-f8d7a27a1b.png",
+  "tags": "brazilian music,forro,forr�,luciano kik�o,piseiro",
+  "state": "Amazonas",
+  "bitrate": 128
+ }
+]

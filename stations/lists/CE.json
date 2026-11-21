@@ -1,0 +1,382 @@
+[
+ {
+  "stationuuid": "1c071369-7d75-48c7-8565-6c67cedf2b8d",
+  "name": "Rádio Jangadeiro 88.9 FM",
+  "url": "https://stream-173.zeno.fm/xuh02vfzurhvv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ4dWgwMnZmenVyaHZ2IiwiaG9zdCI6InN0cmVhbS0xNzMuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6IkJHc3RGbW5SUmtHcGZRaU1BeWYwQVEiLCJpYXQiOjE3MzIzMTc5ODQsImV4cCI6MTczMjMxODA0NH0.hliqQ3jfax1Meam5u3WqqW_DM-nDoS3rj-ZgxCB4b0M",
+  "url_resolved": "https://stream-173.zeno.fm/xuh02vfzurhvv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ4dWgwMnZmenVyaHZ2IiwiaG9zdCI6InN0cmVhbS0xNzMuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6IkJHc3RGbW5SUmtHcGZRaU1BeWYwQVEiLCJpYXQiOjE3MzIzMTc5ODQsImV4cCI6MTczMjMxODA0NH0.hliqQ3jfax1Meam5u3WqqW_DM-nDoS3rj-ZgxCB4b0M",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/1c071369-7d75-48c7-8565-6c67cedf2b8d-f72be85861.png",
+  "tags": "mix",
+  "state": "Fortaleza, Ceará",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "d0172871-03b2-4037-ac2c-ff75298b091b",
+  "name": "Rádio Assunção AM620",
+  "url": "https://str.7br.com.br/radio/8170/stream",
+  "url_resolved": "https://str.7br.com.br/radio/8170/stream",
+  "favicon": "",
+  "tags": "notícias",
+  "state": "Ceara",
+  "bitrate": 48
+ },
+ {
+  "stationuuid": "7806a99c-a311-11e8-abb8-52543be04c81",
+  "name": "Rádio Beach Park FM",
+  "url": "http://www.radioideal.net:8026/;stream/1",
+  "url_resolved": "http://www.radioideal.net:8026/;stream/1",
+  "favicon": "",
+  "tags": "",
+  "state": "Ceara",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "5a7e4715-12b4-4dcd-a2a4-c6d96185f210",
+  "name": "Rádio União FM 104,9 Mauriti",
+  "url": "https://servidor35-2.brlogic.com:7030/live?1599145118524",
+  "url_resolved": "https://servidor35-2.brlogic.com:7030/live?1599145118524",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/5a7e4715-12b4-4dcd-a2a4-c6d96185f210-00f54ab9d5.png",
+  "tags": "forró,mauriti,mpb,sertaneja",
+  "state": "Ceará",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "3765672e-9137-448d-ad49-d7feb6cfc314",
+  "name": "Atos FM",
+  "url": "https://s.bul.tec.br:8020/128",
+  "url_resolved": "https://s.bul.tec.br:8020/128",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/3765672e-9137-448d-ad49-d7feb6cfc314-5a6d788e3d.png",
+  "tags": "adult,adult contemporary,christian-gospel,flash back,flashback,gospel",
+  "state": "Ceara",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "c3a7fe1d-c087-4ad1-8f9c-ec27a43e2545",
+  "name": "PLUS FM SOBRAL 105.1MHz",
+  "url": "http://webradio.amsolution.com.br/radio/8030/sobral",
+  "url_resolved": "http://webradio.amsolution.com.br/radio/8030/sobral",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c3a7fe1d-c087-4ad1-8f9c-ec27a43e2545-735e1c8328.png",
+  "tags": "",
+  "state": "Ceara",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "17802543-f4c6-4657-a4b0-ad13ff900859",
+  "name": "Novabrasil FM Fortaleza, CE",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/NOVABRASIL_FORAAC.aac",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/NOVABRASIL_FORAAC.aac",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/17802543-f4c6-4657-a4b0-ad13ff900859-95c14ad0f1.png",
+  "tags": "brasil,brasileira,brazilian,brazilian music,local news,mpb,música popular brasileira,notícias",
+  "state": "Fortaleza, Ceará",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "bb48f7f6-a90f-45ae-9d66-4bcfed6a3158",
+  "name": "Rádio Voz do Povo 104.9 FM",
+  "url": "http://stm8.painelcast.com:7454/stream?1661881380835",
+  "url_resolved": "http://stm8.painelcast.com:7454/stream?1661881380835",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/bb48f7f6-a90f-45ae-9d66-4bcfed6a3158-7bce57c35c.png",
+  "tags": "gospel",
+  "state": "Ceara",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "c371db98-d7af-46ed-b9d5-e749ac4e3c93",
+  "name": "Rádio Verdinha 92.5 FM",
+  "url": "https://5a1c76baf08c0.streamlock.net/z18-live/stream/playlist.m3u8",
+  "url_resolved": "https://5a1c76baf08c0.streamlock.net/z18-live/stream/playlist.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c371db98-d7af-46ed-b9d5-e749ac4e3c93-bc54e1a397.png",
+  "tags": "mix",
+  "state": "Fortaleza, Ceará",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "7ba98642-6001-42fe-9e32-72a9231e8bfa",
+  "name": "Rádio Atlântico Sul FM",
+  "url": "https://streaming.livespanel.com:21057/stream",
+  "url_resolved": "https://streaming.livespanel.com:21057/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/7ba98642-6001-42fe-9e32-72a9231e8bfa-a01c3ad278.png",
+  "tags": "",
+  "state": "Fortaleza, Ceará",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "6e3f1913-08da-46ff-bfe3-9af841d22424",
+  "name": "Web Rádio NelSons",
+  "url": "https://stm4.srvstm.com:9716/stream",
+  "url_resolved": "https://stm4.srvstm.com:9716/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/6e3f1913-08da-46ff-bfe3-9af841d22424-d0a4c7a963.png",
+  "tags": "instrumental,mpb",
+  "state": "Ceara",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "98568cdf-2ef1-45ac-8db7-992cd781050c",
+  "name": "RÁDIO WEB LUNA ",
+  "url": "https://stream.zeno.fm/1qxe7gsah0hvv",
+  "url_resolved": "https://stream-178.surfernetwork.com/1qxe7gsah0hvv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiIxcXhlN2dzYWgwaHZ2IiwiaG9zdCI6InN0cmVhbS0xNzguc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6ImZuWkczTWxHU3lhNmZHUkZEcGFsakEiLCJpYXQiOjE3OTQ5MDQ0MjMsImV4cCI6MTc5NDkwNDQ4M30.h6f6miyAmqNGKyp1rtnBN5ab7HbVH5zHKPPBDAnUOg0",
+  "favicon": "",
+  "tags": "eclectic programming,popular music",
+  "state": "Ceará ",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "573ce430-2797-477e-b659-401a3a5c5023",
+  "name": "Rádio Verdinha 92.5 FM",
+  "url": "https://jvcs2dtro0.zoeweb.tv/z18-live/stream/chunklist.m3u8",
+  "url_resolved": "https://jvcs2dtro0.zoeweb.tv/z18-live/stream/chunklist.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/573ce430-2797-477e-b659-401a3a5c5023-0bd3e9d467.png",
+  "tags": "debates e entrevistas,jornalismo(all news)",
+  "state": "Fortaleza, Ceará",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "bb36d3ba-dd98-4c60-b5db-279f4e480995",
+  "name": "Rádio universitária FM 107.9",
+  "url": "http://200.129.35.230:8081/ouvir.xspf",
+  "url_resolved": "http://200.129.35.230:8081/ouvir",
+  "favicon": "",
+  "tags": "",
+  "state": "Ceará",
+  "bitrate": 56
+ },
+ {
+  "stationuuid": "6b3092d4-bbfc-4f72-98c9-bc70958def7f",
+  "name": "Rádio 93 FM",
+  "url": "http://zoeweb.net:8176/stream",
+  "url_resolved": "http://zoeweb.net:8176/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/6b3092d4-bbfc-4f72-98c9-bc70958def7f-ee1b104bc8.png",
+  "tags": "mix",
+  "state": "Fortaleza, Ceará",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "b7fa3cb2-4f55-4d0b-8e6e-1da488a9aa70",
+  "name": "Jaguaribe FM",
+  "url": "http://stream.zeno.fm/3mydb487f0hvv",
+  "url_resolved": "http://stream.zeno.fm/3mydb487f0hvv",
+  "favicon": "",
+  "tags": "",
+  "state": "Ceara",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "f028b48f-8b12-4b19-99b5-2f8e7000964b",
+  "name": "Rádio 100 FM",
+  "url": "https://stream-012.zeno.fm/3x2dtz84qzzuv?zs=3I6xOdjNTymq-ntfNuxrdg?dist=mix-web-player-radio-ao-vivo&803368.5984383549",
+  "url_resolved": "https://stream-282.surfernetwork.com/3x2dtz84qzzuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiIzeDJkdHo4NHF6enV2IiwiaG9zdCI6InN0cmVhbS0yODIuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6ImJFRUJIVC1WU1BDZlotdlBJRlZyaGciLCJpYXQiOjE3OTQ5MDEyOTUsImV4cCI6MTc5NDkwMTM1NX0.YWHCIOXaN5UR1qJNsEKE36eJ3r5AYu-Ilq97bckPJWo&803368.5984383549",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/f028b48f-8b12-4b19-99b5-2f8e7000964b-7471591d80.png",
+  "tags": "mix",
+  "state": "Fortaleza, Ceará",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "52bc3543-ea10-4149-9e22-65831d92c4be",
+  "name": "Radio Jamaica Brasileira",
+  "url": "https://s03.transmissaodigital.com:6772/stream",
+  "url_resolved": "https://s03.transmissaodigital.com:6772/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/52bc3543-ea10-4149-9e22-65831d92c4be-f5dcf18860.png",
+  "tags": "reggea",
+  "state": "Ceará",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "c6e94ff2-ce2f-4ddf-be5f-25a2604c9395",
+  "name": "Radio Tropical Fm 98,7 Fortaleza",
+  "url": "http://centova2.svdns.com.br:8315/live",
+  "url_resolved": "http://centova2.svdns.com.br:8315/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c6e94ff2-ce2f-4ddf-be5f-25a2604c9395-30ef30c3e9.png",
+  "tags": "",
+  "state": "Fortaleza, Ceará",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "d8c71837-e70f-476e-97b9-e213009d5b3a",
+  "name": "Rádio Forró Brega",
+  "url": "https://stream.zeno.fm/38zc8xggntzuv",
+  "url_resolved": "https://stream-280.surfernetwork.com/38zc8xggntzuv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiIzOHpjOHhnZ250enV2IiwiaG9zdCI6InN0cmVhbS0yODAuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6Imtkem84VF91U2dDdHpBZ1VOb0piNVEiLCJpYXQiOjE3OTQ5MDQxMDAsImV4cCI6MTc5NDkwNDE2MH0.qesiCpF_DiF7ftyaqF9fmJb5a-Evc1CmzJjjENS41XQ",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d8c71837-e70f-476e-97b9-e213009d5b3a-e7bfd470c4.png",
+  "tags": "folclore,regional",
+  "state": "Ceará",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "ac3e370d-c885-4173-87ed-068dc9c30088",
+  "name": "FM Rio Jaguaribe 104.5",
+  "url": "https://sws.onradio.biz:9972/stream",
+  "url_resolved": "https://sws.onradio.biz:9972/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ac3e370d-c885-4173-87ed-068dc9c30088-662c12858c.png",
+  "tags": "jaguaribe",
+  "state": "Ceará",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "c98912d9-35c1-413b-9f42-10f189221b6e",
+  "name": "Rádio jangadeiro 88,9 FM",
+  "url": "https://stream.zeno.fm/xuh02vfzurhvv",
+  "url_resolved": "https://stream.zeno.fm/xuh02vfzurhvv",
+  "favicon": "",
+  "tags": "eclética,popular",
+  "state": "Fortaleza, Ceará",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "5edff0bc-af5c-497f-b9f8-7c1b23b1af24",
+  "name": "Alternativa FM Quixadá 93.7",
+  "url": "https://srv1.braudio.com.br:7412/stream",
+  "url_resolved": "https://srv1.braudio.com.br:7412/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/5edff0bc-af5c-497f-b9f8-7c1b23b1af24-686e19380b.png",
+  "tags": "eclética",
+  "state": "Quixadá, Ceará",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "c0f65217-cfb7-41bb-8a30-53354fd21437",
+  "name": "Radio Sinal Fm 91,1",
+  "url": "https://cdn-radiosin.ciclano.io/proxy/radiosin/stream",
+  "url_resolved": "https://cdn-radiosin.ciclano.io/proxy/radiosin/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c0f65217-cfb7-41bb-8a30-53354fd21437-aaf5a8e03b.png",
+  "tags": "",
+  "state": "Ceará",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "affd2c1d-9f26-40e0-a380-f18293585a9d",
+  "name": "FM JOVEM 104.9",
+  "url": "https://stm25.xcast.com.br:7082/",
+  "url_resolved": "https://stm25.xcast.com.br:7082/",
+  "favicon": "",
+  "tags": "",
+  "state": "Ceará ",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "a96f0e8e-7b9a-4504-9978-eb8f0fe0f72d",
+  "name": "Alternativa Educadora FM HD - Baixio CE",
+  "url": "https://www.radios.com.br/play/playlist/9039/listen-radio.pls",
+  "url_resolved": "http://radio.saopaulo01.com.br:8050/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/a96f0e8e-7b9a-4504-9978-eb8f0fe0f72d-a748b18675.png",
+  "tags": "",
+  "state": "Ceará",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "3b848cc8-e9d6-4cbd-a77e-2cc1984b3b4b",
+  "name": "Web Rádio Doval",
+  "url": "https://stm9.voxhd.com.br:13288/",
+  "url_resolved": "https://stm9.voxhd.com.br:13288/",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/3b848cc8-e9d6-4cbd-a77e-2cc1984b3b4b-398c4f1f27.png",
+  "tags": "dance,forró,sertanejo",
+  "state": "Fortaleza, Ceará",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "ab90f112-2d9b-4631-bf1a-9e29aa6264df",
+  "name": "Radio Tropical Fm 98,7",
+  "url": "http://centova2.svdns.com.br:8315/",
+  "url_resolved": "http://centova2.svdns.com.br:8315/",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ab90f112-2d9b-4631-bf1a-9e29aa6264df-30ef30c3e9.png",
+  "tags": "",
+  "state": "Fortaleza, Ceará",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "3336d71f-2f1c-4233-9336-bc3a1f82fd0e",
+  "name": "Radio RCK+",
+  "url": "https://stm1.colossocastpro.com.br:7064/stream",
+  "url_resolved": "https://stm1.colossocastpro.com.br:7064/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/3336d71f-2f1c-4233-9336-bc3a1f82fd0e-a41ef6b9f5.png",
+  "tags": "",
+  "state": "Ceará",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "2d1dfffd-e4a6-4c3b-9bea-605ed26be21d",
+  "name": "Meio Norte FM 96.7",
+  "url": "https://webradio.amsolution.com.br/radio/8200/quixada",
+  "url_resolved": "https://webradio.amsolution.com.br/radio/8200/quixada",
+  "favicon": "",
+  "tags": "",
+  "state": "Quixadá, Ceará",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "87f61f56-11ef-40b2-be5c-730bcb7dc2b3",
+  "name": "Liderança FM 105.9",
+  "url": "http://stream.notoris.com.br:8472/stream?1785032475212=",
+  "url_resolved": "http://stream.notoris.com.br:8472/stream?1785032475212=",
+  "favicon": "",
+  "tags": "",
+  "state": "Quixadá, Ceará",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "fccab674-11ac-4669-8a9e-95c31407a8a5",
+  "name": "ESPAÇO ÊXTASE",
+  "url": "https://cp-1.owh.radio.br/listen/owh_s35409/radio-mp3",
+  "url_resolved": "https://cp-1.owh.radio.br/listen/owh_s35409/radio-mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/fccab674-11ac-4669-8a9e-95c31407a8a5-a14e9347c7.png",
+  "tags": "popular",
+  "state": "Ceará",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "13ddf741-6332-4b11-bed8-07e34774cb2f",
+  "name": "Rádio Bíblia NVT",
+  "url": "https://radiosnet.site/stream/biblianvt",
+  "url_resolved": "https://radiosnet.site/stream/biblianvt",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/13ddf741-6332-4b11-bed8-07e34774cb2f-3c0d7438cd.png",
+  "tags": "christian,gospel,religious",
+  "state": "Ceará",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "fbc200de-3de1-4a02-89c9-e2ddb3b42155",
+  "name": "Rádio Seara 102.7 FM",
+  "url": "https://8396.brasilstream.com.br/stream?1781462749920",
+  "url_resolved": "https://8396.brasilstream.com.br/stream?1781462749920",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/fbc200de-3de1-4a02-89c9-e2ddb3b42155-57138263dc.png",
+  "tags": "cristã,gospel,religião",
+  "state": "Ceará",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "1c1a5cbc-f4fb-4e14-8d5b-b1c2c1562148",
+  "name": "Rádio Forró Gospel",
+  "url": "https://radiosnet.site/stream/radioforrogospel",
+  "url_resolved": "https://radiosnet.site/stream/radioforrogospel",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/1c1a5cbc-f4fb-4e14-8d5b-b1c2c1562148-25072b0de8.png",
+  "tags": "christian,gospel,religious",
+  "state": "Ceará",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "a967ec4d-45cf-40af-8f5e-dc367fba74d6",
+  "name": "Central FM 104.9",
+  "url": "https://stream3.svrdedicado.org/8174/stream?1785033180115=",
+  "url_resolved": "https://stream3.svrdedicado.org/8174/stream?1785033180115=",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/a967ec4d-45cf-40af-8f5e-dc367fba74d6-c228924281.png",
+  "tags": "",
+  "state": "Quixadá, Ceará",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "2d7d7bf0-05de-4cb0-a3eb-227b94ed3ee3",
+  "name": "Cidade AM 860",
+  "url": "https://streaming.livespanel.com:8860/stream",
+  "url_resolved": "https://streaming.livespanel.com:8860/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/2d7d7bf0-05de-4cb0-a3eb-227b94ed3ee3-8a47fec8b2.png",
+  "tags": "am,ceará,fortaleza,news,talk",
+  "state": "Ceará",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "91925735-aaf1-4b17-b093-2196883e8f66",
+  "name": "Jovem Pan FM Fortaleza",
+  "url": "https://streaming.livespanel.com:8060/stream",
+  "url_resolved": "https://streaming.livespanel.com:8060/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/91925735-aaf1-4b17-b093-2196883e8f66-6aa2d88713.png",
+  "tags": "ceará,fortaleza,hits,pop,top 40",
+  "state": "Ceará",
+  "bitrate": 128
+ }
+]

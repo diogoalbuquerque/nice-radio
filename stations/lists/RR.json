@@ -1,0 +1,42 @@
+[
+ {
+  "stationuuid": "67dbed89-c876-478f-80dc-eb4d34e46ece",
+  "name": "Radio Folha",
+  "url": "https://cc6.streammaximum.com/proxy/radiofolha/stream",
+  "url_resolved": "https://cc6.streammaximum.com/proxy/radiofolha/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/67dbed89-c876-478f-80dc-eb4d34e46ece-be81f4a643.png",
+  "tags": "",
+  "state": "Roraima",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "ba25ccd7-e1fd-48a6-bafc-3ad57c8f6836",
+  "name": "Rádio Roraima",
+  "url": "https://stm1.srvif.com:7704/",
+  "url_resolved": "https://stm1.srvif.com:7704/",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/ba25ccd7-e1fd-48a6-bafc-3ad57c8f6836-7a1ae0d0fc.png",
+  "tags": "",
+  "state": "Roraima",
+  "bitrate": 32
+ },
+ {
+  "stationuuid": "240bcb33-44b1-4496-949c-9cbf231ecb2e",
+  "name": "Radio Universitária de Roraima",
+  "url": "https://radio.ufrr.br/radio.mp3",
+  "url_resolved": "https://radio.ufrr.br/radio.mp3",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/240bcb33-44b1-4496-949c-9cbf231ecb2e-934e42afad.png",
+  "tags": "",
+  "state": "Roraima",
+  "bitrate": 0
+ },
+ {
+  "stationuuid": "58b31188-e6e7-4b7e-aabf-9ba4d8b51bfb",
+  "name": "Radio Alto Astral",
+  "url": "https://centova.euroti.com.br:2199/stream/?porta=8090&svtipo=ShoutCast2",
+  "url_resolved": "https://centova.euroti.com.br:2199/stream/?porta=8090&svtipo=ShoutCast2",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/58b31188-e6e7-4b7e-aabf-9ba4d8b51bfb-7a9215b9ed.png",
+  "tags": "",
+  "state": "Roraima",
+  "bitrate": 0
+ }
+]

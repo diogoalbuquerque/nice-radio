@@ -1,0 +1,72 @@
+name: Stations
+
+# Builds the station lists + logos the app downloads and publishes them to
+# Cloudflare Pages (project `nice-radio-stations`). See tool/build_stations.py
+# and stations/README.md.
+#
+# Runs weekly, on demand ("Run workflow"), and whenever stations/overrides.json
+# or stations/custom_logos/ change, so a hand edit goes live right away.
+# The bot's own commit only touches generated files and is pushed with
+# GITHUB_TOKEN, which never starts another workflow run, so there is no loop.
+#
+# Needs repo secrets CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_API_TOKEN
+# (token permission: Account > Cloudflare Pages > Edit).
+on:
+  schedule:
+    - cron: '0 5 * * 1'   # Mondays, 05:00 UTC (02:00 in Brasília)
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'stations/overrides.json'
+      - 'stations/custom_logos/**'
+      - 'tool/build_stations.py'
+      - '.github/workflows/stations.yml'
+
+concurrency:
+  group: stations
+  cancel-in-progress: false
+
+permissions:
+  contents: write   # commits the refreshed lists/logos back to main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install pillow
+
+      - name: Self-checks
+        run: python3 -m unittest discover -s tool -p 'test_*.py'
+
+      - name: Build lists and logos
+        run: python3 tool/build_stations.py --site build/stations-site
+
+      # Publish before committing: the repo never claims a list that isn't live.
+      - name: Publish to Cloudflare Pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          # First run only: creates the project (fails harmlessly once it exists).
+          npx --yes wrangler@4 pages project create nice-radio-stations --production-branch=main || true
+          npx --yes wrangler@4 pages deploy build/stations-site --project-name=nice-radio-stations --branch=main --commit-dirty=true
+
+      - name: Commit refreshed lists and logos
+        run: |
+          git add stations
+          if git diff --cached --quiet; then
+            echo "Nothing changed this week."
+            exit 0
+          fi
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -m "Update station lists"
+          git pull --rebase
+          git push
