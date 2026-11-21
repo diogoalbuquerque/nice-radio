@@ -1,7 +1,7 @@
 """Self-checks for tool/build_stations.py: `python3 -m unittest discover -s tool`."""
 import unittest
 
-from build_stations import apply_overrides, choose_base, keep_in_state, state_of, unknown_ids, validate_overrides
+from build_stations import _check_public, apply_overrides, choose_base, keep_in_state, state_of, unknown_ids, validate_overrides
 
 
 def station(uid, name="Rádio", url="https://a/stream"):
@@ -61,6 +61,14 @@ class StateTest(unittest.TestCase):
         stations = [dict(station(str(i)), state=label) for i, label in
                     enumerate(["Pará", "Paraná", "Paraiba", "Belém"])]
         self.assertEqual([s["stationuuid"] for s in keep_in_state(stations, "Pará")], ["0", "3"])
+
+
+class NetworkGuardTest(unittest.TestCase):
+    def test_internal_addresses_are_refused(self):
+        for url in ("http://127.0.0.1/x.png", "http://169.254.169.254/latest", "http://10.0.0.1/",
+                    "http://[::1]/", "http://localhost/"):
+            with self.assertRaises(ValueError, msg=url):
+                _check_public(url)
 
 
 class ChooseBaseTest(unittest.TestCase):

@@ -35,14 +35,17 @@ get the app's coloured initials.
 import argparse
 import hashlib
 import io
+import ipaddress
 import json
 import os
 import shutil
+import socket
 import ssl
 import sys
 import unicodedata
 import urllib.parse
 import urllib.request
+import warnings
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from html.parser import HTMLParser
@@ -60,6 +63,7 @@ MIRRORS = ["de1.api.radio-browser.info", "de2.api.radio-browser.info", "at1.api.
 UA = "NiceRadio-StationBuilder/1.0"
 SIZE = 160  # px, longest side: covers the 72dp home card at ~2x
 MIN_SIDE = 48  # smaller images are blurry placeholders, not logos
+MAX_PIXELS = 4096 * 4096  # bigger is no logo; refusing it stops decompression bombs
 MIN_KEEP = 0.5  # a fresh list below half the published one is treated as a bad fetch
 MANUAL_PREFIX = "manual-"
 # Fields the app reads (`RadioStation.fromJson`); order is Radio Browser's votes ranking,
@@ -202,9 +206,32 @@ def _ssl_context():
 CTX = _ssl_context()
 
 
+def _check_public(url):
+    """Refuses URLs whose host resolves to a private/loopback/link-local address: logo and
+    homepage URLs come from crowdsourced data, and the runner must not fetch its own network."""
+    host = urllib.parse.urlparse(url).hostname
+    if not host:
+        raise ValueError(f"no host in {url}")
+    for info in socket.getaddrinfo(host, None):
+        if not ipaddress.ip_address(info[4][0].split("%")[0]).is_global:
+            raise ValueError(f"non-public address for {host}")
+
+
+class _PublicRedirects(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        _check_public(newurl)  # every hop, not just the first URL
+        return super().redirect_request(req, fp, code, msg, headers, newurl)
+
+
+_OPENER = urllib.request.build_opener(urllib.request.HTTPSHandler(context=CTX), _PublicRedirects)
+
+
 def get(url, limit=3_000_000, timeout=8):
+    # shortcut: the address is checked, then resolved again by urllib (DNS rebinding window);
+    # fine for a throwaway CI runner, pin the IP if this ever runs somewhere with secrets nearby.
+    _check_public(url)
     req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=timeout, context=CTX) as r:
+    with _OPENER.open(req, timeout=timeout) as r:
         return r.read(limit), r.headers.get("content-type", "")
 
 
@@ -225,11 +252,15 @@ def to_png(raw):
     """Raw image bytes -> small PNG bytes, or None when unusable."""
     from PIL import Image  # only the logo step needs Pillow (tests don't)
     try:
-        img = Image.open(io.BytesIO(raw))
-        if min(img.size) < MIN_SIDE:
-            return None
-        img = img.convert("RGBA")
-        img.thumbnail((SIZE, SIZE), Image.LANCZOS)
+        with warnings.catch_warnings():
+            warnings.simplefilter("error", Image.DecompressionBombWarning)
+            img = Image.open(io.BytesIO(raw))
+            # The size comes from the header, before decoding: refuse decompression bombs.
+            if min(img.size) < MIN_SIDE or img.size[0] * img.size[1] > MAX_PIXELS:
+                return None
+            img.draft("RGB", (SIZE, SIZE))  # JPEG: decode straight at a reduced scale
+            img = img.convert("RGBA")
+            img.thumbnail((SIZE, SIZE), Image.LANCZOS)
         out = io.BytesIO()
         img.save(out, "PNG", optimize=True)
         return out.getvalue()
