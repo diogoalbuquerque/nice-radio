@@ -790,16 +790,6 @@
   "bitrate": 128
  },
  {
-  "stationuuid": "c1fb5788-5031-4eeb-bbc9-e08a8e9878df",
-  "name": "CBN Vale",
-  "url": "https://8018.brasilstream.com.br/stream",
-  "url_resolved": "https://8018.brasilstream.com.br/stream",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c1fb5788-5031-4eeb-bbc9-e08a8e9878df-c00473b46e.png",
-  "tags": "news,sports",
-  "state": "Sao Paulo",
-  "bitrate": 32
- },
- {
   "stationuuid": "6f850954-dc06-4952-a785-dab3dd1e387f",
   "name": "Rádio Bíblia SBB",
   "url": "https://servidor30-4.brlogic.com:7398/live",
@@ -808,6 +798,16 @@
   "tags": "evangelical,missionary",
   "state": "Sao Paulo",
   "bitrate": 64
+ },
+ {
+  "stationuuid": "c1fb5788-5031-4eeb-bbc9-e08a8e9878df",
+  "name": "CBN Vale",
+  "url": "https://8018.brasilstream.com.br/stream",
+  "url_resolved": "https://8018.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c1fb5788-5031-4eeb-bbc9-e08a8e9878df-c00473b46e.png",
+  "tags": "news,sports",
+  "state": "Sao Paulo",
+  "bitrate": 32
  },
  {
   "stationuuid": "54866938-8bf3-456e-8a16-da5695124d72",
