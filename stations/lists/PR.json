@@ -320,6 +320,56 @@
   "bitrate": 64
  },
  {
+  "stationuuid": "39efea04-18a0-47d6-b871-7c98939cdef1",
+  "name": "Clube FM 101,5 Curitiba",
+  "url": "https://df1.cdnsimba.com.br/bpk-tv/Df1_fm_1015/hls/master.m3u8",
+  "url_resolved": "https://df1.cdnsimba.com.br/bpk-tv/Df1_fm_1015/hls/master.m3u8",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/39efea04-18a0-47d6-b871-7c98939cdef1-96bfe16899.png",
+  "tags": "sertanejo",
+  "state": "Curitiba Paraná",
+  "bitrate": 120
+ },
+ {
+  "stationuuid": "b69e9a65-f57a-4914-bea9-95c3afc3dc6c",
+  "name": "Nova Cerro Azul FM 87,9",
+  "url": "https://servidor28-2.brlogic.com:8646/live?source=website",
+  "url_resolved": "https://servidor28-2.brlogic.com:8646/live?source=website",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/b69e9a65-f57a-4914-bea9-95c3afc3dc6c-d3c48c4321.png",
+  "tags": "forró,forró e sertanejo,sertanejo",
+  "state": "Cerro Azul Paraná",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "69b374ec-62ab-4f2b-b320-a527cec49895",
+  "name": "Difusora FM 101,9",
+  "url": "https://8545.brasilstream.com.br/stream?origem=site",
+  "url_resolved": "https://8545.brasilstream.com.br/stream?origem=site",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/69b374ec-62ab-4f2b-b320-a527cec49895-54e4737914.png",
+  "tags": "curitiba",
+  "state": "Curitiba Paraná",
+  "bitrate": 64
+ },
+ {
+  "stationuuid": "01944866-91da-43a7-8359-6445ce3c5774",
+  "name": "98,9 FM Curitiba",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/98FM_CWBAAC.aac?dist=site",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/98FM_CWBAAC.aac?dist=site",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/01944866-91da-43a7-8359-6445ce3c5774-663665dab5.png",
+  "tags": "",
+  "state": "Paraná",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "ec4d7c72-d4ca-43fd-8838-77879dfb9f24",
+  "name": "Massa FM Curitiba 97.7",
+  "url": "https://live.virtualcast.com.br/massacuritiba",
+  "url_resolved": "https://live.virtualcast.com.br/massacuritiba",
+  "favicon": "",
+  "tags": "",
+  "state": "Paraná",
+  "bitrate": 96
+ },
+ {
   "stationuuid": "c2722e60-1a44-49fa-b45a-bff6f0a63cc6",
   "name": "89 A Rádio Rock Curitiba 89.3 FM",
   "url": "https://ice.fabricahost.com.br/89fmcuritiba",

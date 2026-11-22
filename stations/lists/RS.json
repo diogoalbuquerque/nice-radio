@@ -480,16 +480,6 @@
   "bitrate": 96
  },
  {
-  "stationuuid": "926afb0f-e508-45e0-9817-00fd541620f4",
-  "name": "Rádio Tapejara",
-  "url": "https://radio.saopaulo01.com.br/8026/stream",
-  "url_resolved": "https://radio.saopaulo01.com.br/8026/stream",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/926afb0f-e508-45e0-9817-00fd541620f4-d0cc01bb1d.png",
-  "tags": "",
-  "state": "Rio Grande do Sul",
-  "bitrate": 64
- },
- {
   "stationuuid": "388cf178-1497-40da-a8c0-f2155362a6dd",
   "name": "Rádio Atlântida 94.3 FM - Porto Alegre",
   "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RBS_RADIOSAAC.m3u8",
@@ -498,6 +488,16 @@
   "tags": "brazilian music,classic rock,rock,world music",
   "state": "Rio Grande do Sul",
   "bitrate": 48
+ },
+ {
+  "stationuuid": "926afb0f-e508-45e0-9817-00fd541620f4",
+  "name": "Rádio Tapejara",
+  "url": "https://radio.saopaulo01.com.br/8026/stream",
+  "url_resolved": "https://radio.saopaulo01.com.br/8026/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/926afb0f-e508-45e0-9817-00fd541620f4-d0cc01bb1d.png",
+  "tags": "",
+  "state": "Rio Grande do Sul",
+  "bitrate": 64
  },
  {
   "stationuuid": "7ebac1d9-4195-472e-bf22-6f0e70b8e210",

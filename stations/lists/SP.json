@@ -820,6 +820,16 @@
   "bitrate": 32
  },
  {
+  "stationuuid": "42b7407d-5cfc-4a0a-85ca-7c5315181802",
+  "name": "VINTAGE BRASIL",
+  "url": "https://servidor37.brlogic.com:7094/live",
+  "url_resolved": "https://servidor37.brlogic.com:7094/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/42b7407d-5cfc-4a0a-85ca-7c5315181802-4f7ccfb961.png",
+  "tags": "brasil",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 96
+ },
+ {
   "stationuuid": "ed0c6fe9-ff32-4be1-a662-fe1d0af6146c",
   "name": "Rádio Brazil Imperial",
   "url": "https://hts03.brascast.com:8430/live",
@@ -848,16 +858,6 @@
   "tags": "",
   "state": "Sao Paulo",
   "bitrate": 128
- },
- {
-  "stationuuid": "42b7407d-5cfc-4a0a-85ca-7c5315181802",
-  "name": "VINTAGE BRASIL",
-  "url": "https://servidor37.brlogic.com:7094/live",
-  "url_resolved": "https://servidor37.brlogic.com:7094/live",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/42b7407d-5cfc-4a0a-85ca-7c5315181802-4f7ccfb961.png",
-  "tags": "brasil",
-  "state": "Sao Paulo (Brazil)",
-  "bitrate": 96
  },
  {
   "stationuuid": "005fe0e9-cb6f-4f75-8459-8b01c8970eac",

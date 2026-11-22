@@ -60,16 +60,6 @@
   "bitrate": 64
  },
  {
-  "stationuuid": "4317dca3-9e67-4226-82a8-8f650ba50219",
-  "name": "Rádio FM O Dia 99.7 FM",
-  "url": "https://wz7.servidoresbrasil.com:8274/stream",
-  "url_resolved": "https://wz7.servidoresbrasil.com:8274/stream",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/4317dca3-9e67-4226-82a8-8f650ba50219-9a395cf7f4.png",
-  "tags": "popular,samba pagode",
-  "state": "Rio de Janeiro",
-  "bitrate": 128
- },
- {
   "stationuuid": "9d4cc69b-bb83-41c3-b76c-9da2eacee424",
   "name": "Rádio Globo - Rio de Janeiro",
   "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_GLOBO_RJAAC.aac?dist=site",
