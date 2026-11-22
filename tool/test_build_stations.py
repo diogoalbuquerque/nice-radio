@@ -1,7 +1,7 @@
 """Self-checks for tool/build_stations.py: `python3 -m unittest discover -s tool`."""
 import unittest
 
-from build_stations import _check_public, apply_overrides, choose_base, keep_in_state, state_of, unknown_ids, validate_overrides
+from build_stations import _check_public, apply_overrides, choose_base, dedupe_by_frequency, keep_in_state, state_of, unknown_ids, validate_overrides
 
 
 def station(uid, name="Rádio", url="https://a/stream"):
@@ -61,6 +61,23 @@ class StateTest(unittest.TestCase):
         stations = [dict(station(str(i)), state=label) for i, label in
                     enumerate(["Pará", "Paraná", "Paraiba", "Belém"])]
         self.assertEqual([s["stationuuid"] for s in keep_in_state(stations, "Pará")], ["0", "3"])
+
+
+class DedupeByFrequencyTest(unittest.TestCase):
+    def names(self, *names):
+        return [s["name"] for s in dedupe_by_frequency([{"name": n} for n in names])]
+
+    def test_same_frequency_and_name_word_merge_keeping_first(self):
+        self.assertEqual(self.names("Melodia FM 97.5", "Rádio Melodia 97,5 FM"), ["Melodia FM 97.5"])
+
+    def test_same_frequency_other_station_stays(self):
+        names = ("Rádio Seabra FM 104.9", "Rádio Novo Amanhecer 104.9 FM",
+                 "Clube FM 96,5 MHz (Belo Horizonte - MG)", "Radio Boa Vista 96.5 Paracatu, MG")
+        self.assertEqual(self.names(*names), list(names))
+
+    def test_same_name_other_frequency_or_none_stays(self):
+        names = ("FM O DIA 100.5", "Rádio FM O Dia 99.7 FM", "Rádio Cidade", "Rádio Cidade - drop80")
+        self.assertEqual(self.names(*names), list(names))
 
 
 class NetworkGuardTest(unittest.TestCase):

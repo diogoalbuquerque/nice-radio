@@ -187,6 +187,36 @@ def keep_in_state(stations, state):
     return [s for s in stations if state_of(s.get("state")) in (None, state)]
 
 
+# Words that say nothing about which station it is.
+GENERIC = set("radio fm am mhz khz web brasil brazil rio sao santa nova novo de da do das dos e "
+              "the aac mp3 hd live ao vivo".split()) | {uf.lower() for uf in STATES.values()}
+
+
+def _fm_frequency(name):
+    """97.5 from "Melodia FM 97,5" (FM band only), else None."""
+    words = _words(name).split()
+    for a, b in zip(words, words[1:]):
+        if a.isdigit() and b.isdigit() and len(b) == 1 and 87 <= int(a) <= 108:
+            return f"{a}.{b}"
+    return None
+
+
+def dedupe_by_frequency(stations):
+    """Drops a station when an earlier (more voted) one in the same state has the same FM frequency
+    and shares a meaningful name word: "Melodia FM 97.5" and "Rádio Melodia 97.5 FM" are one station,
+    while "Rádio Seabra FM 104.9" and "Rádio Novo Amanhecer 104.9 FM" (two cities) stay apart."""
+    kept, seen = [], {}
+    for s in stations:
+        freq = _fm_frequency(s.get("name"))
+        words = {w for w in _words(s.get("name")).split() if not w.isdigit() and w not in GENERIC}
+        if freq and any(words & other for other in seen.get(freq, [])):
+            continue
+        if freq:
+            seen.setdefault(freq, []).append(words)
+        kept.append(s)
+    return kept
+
+
 def choose_base(fresh, published):
     """Fresh Radio Browser list, or the published one when the fetch failed or shrank a lot."""
     published = [s for s in published if not s["stationuuid"].startswith(MANUAL_PREFIX)]
@@ -423,7 +453,7 @@ def main():
             print(f"::warning::{state}: Radio Browser returned {len(fresh[state])} stations, "
                   f"published has {len(published)}; keeping the published ones")
         complete &= ok
-        lists[state] = apply_overrides(state, base, overrides)
+        lists[state] = apply_overrides(state, dedupe_by_frequency(base), overrides)
 
     every = [s for stations in lists.values() for s in stations]
     if not every:

@@ -38,7 +38,10 @@ valor de `"stationuuid"`.
 }
 ```
 
-- **hide**: some com a rádio.
+- **hide**: some com a rádio. A pipeline já junta sozinha as cópias de uma
+  mesma rádio (mesma frequência FM e uma palavra do nome em comum, ex.:
+  "Melodia FM 97.5" e "Rádio Melodia 97,5 FM"), mantendo a mais votada; use
+  `hide` para os casos que ela não pega.
 - **rename**: troca o nome. Mantenha a frequência no nome ("98,1 FM") — o app
   ordena por ela.
 - **stream**: troca o endereço do áudio.
