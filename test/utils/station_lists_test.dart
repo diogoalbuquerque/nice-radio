@@ -146,6 +146,16 @@ void main() {
     });
   });
 
+  group('isStationListStale', () {
+    final fetched = DateTime(2026, 11, 22, 8);
+
+    test('fresh before the max age, stale from it on', () {
+      expect(isStationListStale(fetched, fetched.add(const Duration(hours: 2, minutes: 59))), isFalse);
+      expect(isStationListStale(fetched, fetched.add(stationListMaxAge)), isTrue);
+      expect(isStationListStale(fetched, fetched.add(const Duration(days: 2))), isTrue);
+    });
+  });
+
   group('nextBrowsableList', () {
     final fresh = [_station(id: 'a', name: 'Rádio A'), _station(id: 'b', name: 'Rádio B')];
 

@@ -21,9 +21,12 @@ import '../providers/stations_provider.dart';
 import '../providers/voice_commands_provider.dart';
 import '../services/home_widget_service.dart';
 import '../utils/brazilian_states.dart';
+import '../utils/station_lists.dart';
 
 /// Tells the player every time the app returns to the foreground (iOS
-/// lock-screen controls fix; see `PlayerNotifier.handleAppResumed`).
+/// lock-screen controls fix; see `PlayerNotifier.handleAppResumed`), and
+/// re-downloads the station list when it is older than
+/// [stationListMaxAge] (the app can stay alive for days while it plays).
 class AppLifecycleSync extends ConsumerStatefulWidget {
   final Widget child;
 
@@ -34,6 +37,9 @@ class AppLifecycleSync extends ConsumerStatefulWidget {
 }
 
 class _AppLifecycleSyncState extends ConsumerState<AppLifecycleSync> with WidgetsBindingObserver {
+  // The first fetch happens at startup, right after this is created.
+  DateTime _stationsFetchedAt = DateTime.now();
+
   @override
   void initState() {
     super.initState();
@@ -50,6 +56,11 @@ class _AppLifecycleSyncState extends ConsumerState<AppLifecycleSync> with Widget
   void didChangeAppLifecycleState(AppLifecycleState state) {
     if (state == AppLifecycleState.resumed) {
       ref.read(playerProvider.notifier).handleAppResumed();
+      final now = DateTime.now();
+      if (isStationListStale(_stationsFetchedAt, now)) {
+        _stationsFetchedAt = now;
+        ref.invalidate(stationsProvider);
+      }
     }
   }
 

@@ -94,10 +94,9 @@ List<String> _searchWords(String text) {
 /// Cidade channel shares `streamtheworld.com` and differs only by path.
 ///
 /// Keeps the first entry of each group; the API already returns most-voted
-/// first, so that is the most trusted copy. Order is preserved. Does not
-/// catch the same station under different paths (Antena 1's `/stream` vs.
-/// `/sm`) — that would need a name/frequency heuristic that risks merging
-/// genuinely different stations.
+/// first, so that is the most trusted copy. Order is preserved. The same
+/// station under different streams is merged earlier, by the CDN pipeline
+/// (`dedupe_by_frequency` in `tool/build_stations.py`).
 List<RadioStation> dedupeStationsByStream(List<RadioStation> stations) {
   final seen = <String>{};
   return [
@@ -113,6 +112,13 @@ String _streamKey(String url) {
   final port = uri.hasPort ? ':${uri.port}' : '';
   return '${uri.host.toLowerCase()}$port$path';
 }
+
+/// How old the station list may get before returning to the app downloads it
+/// again (the CDN publishes weekly, or right after a hand edit).
+const stationListMaxAge = Duration(hours: 3);
+
+bool isStationListStale(DateTime fetchedAt, DateTime now) =>
+    now.difference(fetchedAt) >= stationListMaxAge;
 
 /// What the browsable list (Android Auto, lock-screen skip buttons) should
 /// become when [fresh] arrives for [freshState]; `null` means "keep the
