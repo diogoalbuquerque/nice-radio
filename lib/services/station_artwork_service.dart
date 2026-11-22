@@ -37,58 +37,71 @@ import 'dart:typed_data';
 import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart' show rootBundle;
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
 
 import '../models/radio_station.dart';
-import 'station_icons.dart';
 
 class StationArtworkService {
   static const _size = 512.0;
 
-  /// A local filesystem path (not a URI) to [station]'s logo — its real
-  /// favicon when one exists and can be downloaded, otherwise a generated
-  /// initials image (see `_renderInitialsPng`) — written to the temp
-  /// directory on first use and reused after that. Returns `null` only if
-  /// both the favicon fetch and the initials render fail (never in
-  /// practice, since the initials render has no network dependency).
-  Future<String?> cachedArtworkFilePath(RadioStation station) async {
-    final dir = await getTemporaryDirectory();
-    final file = File('${dir.path}/station_logo_${station.id.hashCode}.png');
-    if (await file.exists()) return file.path;
+  final http.Client _client;
+  final Future<Directory> Function() _cacheDir;
 
-    final bytes = await logoBytes(station);
-    if (bytes == null) return null;
-    await file.writeAsBytes(bytes, flush: true);
-    return file.path;
+  /// [client] and [cacheDir] are for tests.
+  StationArtworkService({http.Client? client, Future<Directory> Function()? cacheDir})
+      : _client = client ?? http.Client(),
+        _cacheDir = cacheDir ?? getTemporaryDirectory;
+
+  /// The logo at [url] (a station's `faviconUrl`) downloaded once into the cache folder and reused after
+  /// that, or `null` when it has none or the download fails (not cached, so it
+  /// is tried again next time). The file is named after the URL, which carries
+  /// a content hash (`<id>-<hash>.png`, see `tool/build_stations.py`): a changed
+  /// logo gets a new file instead of a stale one. The temp folder can be
+  /// cleared by the OS; that only costs a re-download.
+  Future<File?> cachedLogoFile(String? url) async {
+    if (url == null) return null;
+    try {
+      final dir = Directory('${(await _cacheDir()).path}/station_logos');
+      final file = File('${dir.path}/${url.replaceAll(RegExp(r'[^A-Za-z0-9._-]'), '_')}');
+      if (await file.exists()) return file;
+      final response = await _client.get(Uri.parse(url)).timeout(const Duration(seconds: 5));
+      if (response.statusCode != 200 || response.bodyBytes.isEmpty) return null;
+      await dir.create(recursive: true);
+      await file.writeAsBytes(response.bodyBytes, flush: true);
+      return file;
+    } catch (_) {
+      // Unreachable/broken logo: the caller falls back to the initials.
+      return null;
+    }
   }
 
-  /// Raw PNG bytes for [station]'s logo — its real favicon when one
-  /// exists and can be downloaded, otherwise a generated initials image.
-  /// Used directly by the home-screen widget (which needs bytes to hand
-  /// to a native `Bitmap`/`UIImage`, not a file path) and, via
-  /// [cachedArtworkFilePath], by the lock-screen/notification artwork. A
-  /// short timeout keeps a slow/unreachable favicon host from stalling an
-  /// update — same reasoning as `PlayerNotifier`'s own `_connectTimeout`,
-  /// just for an image fetch instead of a stream.
-  Future<Uint8List?> logoBytes(RadioStation station) async {
+  /// A local file path (not a URI) for the lock-screen/notification artwork:
+  /// the cached logo, else a generated initials image (see `_renderInitialsPng`,
+  /// cached separately so a logo that downloads later still wins). `null` only
+  /// if the initials render fails too (never in practice).
+  Future<String?> cachedArtworkFilePath(RadioStation station) async {
+    final logo = await cachedLogoFile(station.faviconUrl);
+    if (logo != null) return logo.path;
     try {
-      return (await rootBundle.load(bundledIconPath(station.id))).buffer.asUint8List();
+      final file = File('${(await _cacheDir()).path}/station_initials_${station.id.hashCode}.png');
+      if (!await file.exists()) await file.writeAsBytes(await _renderInitialsPng(station), flush: true);
+      return file.path;
     } catch (_) {
-      // No bundled logo for this station — try the network one below.
+      return null;
     }
-    final faviconUrl = station.faviconUrl;
-    if (faviconUrl != null) {
+  }
+
+  /// Raw PNG bytes for [station]'s logo (the cached download), else a
+  /// generated initials image. Used by the home-screen widget, which needs
+  /// bytes to hand to a native `Bitmap`/`UIImage`.
+  Future<Uint8List?> logoBytes(RadioStation station) async {
+    final logo = await cachedLogoFile(station.faviconUrl);
+    if (logo != null) {
       try {
-        final uri = Uri.parse(faviconUrl);
-        final response = await http.get(uri).timeout(const Duration(seconds: 5));
-        if (response.statusCode == 200 && response.bodyBytes.isNotEmpty) {
-          return response.bodyBytes;
-        }
+        return await logo.readAsBytes();
       } catch (_) {
-        // Broken/unreachable favicon — same "not an error, just fall back"
-        // treatment as StationAvatar's own errorBuilder.
+        // Fall through to the initials.
       }
     }
     try {

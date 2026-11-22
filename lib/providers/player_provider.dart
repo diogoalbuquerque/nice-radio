@@ -230,7 +230,7 @@ class PlayerNotifier extends Notifier<PlayerState> {
   /// show for it (`stationsProvider`'s pipeline), without touching the
   /// selected state.
   Future<List<RadioStation>> _fetchStationsForCar(String stateName) async {
-    final stations = await ref.read(radioBrowserServiceProvider).fetchStationsByState(stateName);
+    final stations = await ref.read(stationListServiceProvider).fetchStationsByState(stateName);
     return sortStationsByFrequency(dedupeStationsByStream(stations));
   }
 

@@ -46,7 +46,8 @@ class RadioStation {
   /// response. Returns `null` when the entry is unusable (no id or no
   /// stream URL) instead of throwing, so one bad entry in a 50-station
   /// response does not take down the whole list — see
-  /// [RadioBrowserService] for where the `null`s get filtered out.
+  /// [StationListService] for where the `null`s get filtered out. The CDN
+  /// list keeps Radio Browser's field names, so this parses both.
   static RadioStation? fromJson(Map<String, dynamic> json) {
     final id = json['stationuuid'] as String?;
     // Validated the same way favicon URLs already are (http/https only) —

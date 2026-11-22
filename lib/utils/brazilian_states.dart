@@ -52,6 +52,15 @@ class BrazilianStates {
     BrazilianState('Tocantins', 'TO'),
   ];
 
+  /// The UF ("SP") of a canonical state name, or `null` if [name] is not one.
+  /// Names the CDN's per-state file (`stations/lists/<UF>.json`).
+  static String? abbreviationOf(String name) {
+    for (final state in all) {
+      if (state.name == name) return state.abbreviation;
+    }
+    return null;
+  }
+
   /// Turns free text (e.g. what `geocoding` returns for
   /// `Placemark.administrativeArea`) into one of [all]'s canonical names,
   /// or `null` if nothing matches closely enough.

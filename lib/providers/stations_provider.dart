@@ -5,7 +5,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../models/radio_station.dart';
-import '../services/radio_browser_service.dart';
+import '../services/station_list_service.dart';
 import '../utils/station_lists.dart';
 import 'favorites_provider.dart';
 import 'settings_provider.dart';
@@ -42,12 +42,15 @@ final viewModeProviderOrAll = Provider<StationViewMode>((ref) {
   return ref.watch(viewModeProvider).value ?? StationViewMode.all;
 });
 
-final radioBrowserServiceProvider = Provider<RadioBrowserService>((ref) {
-  return RadioBrowserService();
+final stationListServiceProvider = Provider<StationListService>((ref) {
+  return StationListService();
 });
 
 /// The raw station list for the selected state, sorted like a radio dial and
-/// de-duplicated by stream.
+/// de-duplicated by stream. When the CDN can't be reached it falls back to the
+/// list saved on the device for this state (`StorageService.getBrowsableStations`,
+/// rewritten on every fresh fetch), so hand edits keep applying offline; only a
+/// first run with no network shows the empty state.
 ///
 /// Watches `settingsProvider.select(selectedState)`, never the whole settings
 /// future: settings change every 5s while playing (data-usage counter), and
@@ -57,7 +60,10 @@ final stationsProvider = FutureProvider<List<RadioStation>>((ref) async {
   final stateName = ref.watch(settingsProvider.select((s) => s.value?.selectedState));
   if (stateName == null) return const [];
 
-  final stations = await ref.read(radioBrowserServiceProvider).fetchStationsByState(stateName);
+  final fetched = await ref.read(stationListServiceProvider).fetchStationsByState(stateName);
+  final stations = fetched.isNotEmpty
+      ? fetched
+      : await ref.read(storageServiceProvider).getBrowsableStations(stateName) ?? const <RadioStation>[];
   return sortStationsByFrequency(dedupeStationsByStream(stations));
 });
 

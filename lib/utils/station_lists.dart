@@ -6,7 +6,7 @@ import 'brazilian_states.dart';
 
 /// Orders [stations] like a real radio dial — ascending by
 /// [RadioStation.frequencySortKey] — instead of leaving them in Radio
-/// Browser's raw votes-ranked order ([RadioBrowserService.fetchStationsByState]
+/// Browser's raw votes-ranked order ([StationListService.fetchStationsByState]
 /// still requests `order: votes` from the API itself, since that is still
 /// what the server uses to rank/filter results; this is a client-side
 /// re-sort layered on top of whatever comes back). Stations with no

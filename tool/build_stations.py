@@ -13,7 +13,8 @@ Steps:
   4. find a logo for every station, into stations/logos/<id>.png (incremental;
      stations/custom_logos/<id>.png always wins);
   5. write stations/lists/<UF>.json (committed: the weekly diff) and, with
-     --site, the folder that gets deployed: v1/<UF>.json + v1/logos/<id>-<hash>.png.
+     --site, the folder that gets deployed: v1/<UF>.json + v1/logos/<id>-<hash>.png,
+     plus robots.txt (blocks search engines) and favicon.ico (the app icon).
 
 Safety: a state whose listing failed, or shrank below half of what is
 published, keeps its published stations (overrides still apply), so one bad
@@ -78,6 +79,9 @@ STATES = {
     "Rio Grande do Norte": "RN", "Rio Grande do Sul": "RS", "Rondônia": "RO", "Roraima": "RR",
     "Santa Catarina": "SC", "São Paulo": "SP", "Sergipe": "SE", "Tocantins": "TO",
 }
+APP_ICON = ROOT / "assets" / "icon" / "icon.png"
+# The data is for the app, not for search engines.
+ROBOTS = "User-agent: *\nDisallow: /\n"
 HEADERS = """\
 /v1/*
   Access-Control-Allow-Origin: *
@@ -322,7 +326,7 @@ def update_logos(stations, complete, retry):
     """Fills stations/logos/ for [stations]; returns the set of ids without a logo."""
     LOGOS.mkdir(parents=True, exist_ok=True)
     hosts = Counter(h for h in (_host(s.get("homepage")) for s in stations) if h)
-    known_missing = set() if retry or not MISSING.exists() else set(json.loads(MISSING.read_text()))
+    known_missing = set() if retry or not MISSING.exists() else set(json.loads(MISSING.read_text(encoding="utf-8")))
 
     def work(s):
         uid = s["stationuuid"]
@@ -366,7 +370,7 @@ def update_logos(stations, complete, retry):
     for f in LOGOS.glob("*.png") if complete else []:
         if f.stem not in listed:
             f.unlink()
-    MISSING.write_text(json.dumps(sorted(missing & listed), indent=0) + "\n")
+    MISSING.write_text(json.dumps(sorted(missing & listed), indent=0) + "\n", encoding="utf-8")
     print(f"logos: {dict(stats)}")
     return missing
 
@@ -385,6 +389,12 @@ def hashed_name(uid, path):
     return f"{uid}-{hashlib.sha256(path.read_bytes()).hexdigest()[:10]}.png"
 
 
+def write_favicon(dest):
+    """The app icon as a multi-size favicon.ico (browsers ask for it when someone opens a list)."""
+    from PIL import Image
+    Image.open(APP_ICON).convert("RGBA").save(dest, sizes=[(16, 16), (32, 32), (48, 48)])
+
+
 # ------------------------------------------------------------------- main
 
 def main():
@@ -395,7 +405,7 @@ def main():
     args = ap.parse_args()
     base_url = args.base_url.rstrip("/")
 
-    overrides = json.loads(OVERRIDES.read_text()) if OVERRIDES.exists() else {}
+    overrides = json.loads(OVERRIDES.read_text(encoding="utf-8")) if OVERRIDES.exists() else {}
     errors = validate_overrides(overrides)
     if errors:
         sys.exit("stations/overrides.json is invalid:\n  - " + "\n  - ".join(errors))
@@ -407,7 +417,7 @@ def main():
     complete = True
     for state, uf in STATES.items():
         path = LISTS / f"{uf}.json"
-        published = json.loads(path.read_text()) if path.exists() else []
+        published = json.loads(path.read_text(encoding="utf-8")) if path.exists() else []
         base, ok = choose_base(fresh[state], published)
         if not ok and fresh[state] is not None:
             print(f"::warning::{state}: Radio Browser returned {len(fresh[state])} stations, "
@@ -430,7 +440,9 @@ def main():
         shutil.rmtree(args.site, ignore_errors=True)
         site_logos = args.site / "v1" / "logos"
         site_logos.mkdir(parents=True)
-        (args.site / "_headers").write_text(HEADERS)
+        (args.site / "_headers").write_text(HEADERS, encoding="utf-8")
+        (args.site / "robots.txt").write_text(ROBOTS, encoding="utf-8")
+        write_favicon(args.site / "favicon.ico")
     for state, uf in STATES.items():
         published = []
         for s in lists[state]:
@@ -444,9 +456,9 @@ def main():
                     shutil.copyfile(logo, site_logos / name)
             published.append(entry)
         text = json.dumps(published, ensure_ascii=False, indent=1) + "\n"
-        (LISTS / f"{uf}.json").write_text(text)
+        (LISTS / f"{uf}.json").write_text(text, encoding="utf-8")
         if args.site:
-            (args.site / "v1" / f"{uf}.json").write_text(text)
+            (args.site / "v1" / f"{uf}.json").write_text(text, encoding="utf-8")
     print(f"{len(every)} stations in {len(STATES)} states")
 
 

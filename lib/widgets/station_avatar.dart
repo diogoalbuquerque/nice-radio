@@ -6,11 +6,21 @@
 // (once per screen, because the mockup format required one self-contained
 // file per screen). Real Flutter code has no such constraint, so here it
 // is written once and both screens just place it with a different `size`.
+import 'dart:io';
+
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../models/radio_station.dart';
-import '../services/station_icons.dart';
+import '../providers/platform_services_provider.dart';
+
+/// A station logo downloaded once to the device (see
+/// `StationArtworkService.cachedLogoFile`), keyed by its URL so every avatar of
+/// the same station shares one download. `null` = no logo (initials are shown).
+final stationLogoFileProvider = FutureProvider.family<File?, String>((ref, url) {
+  return ref.read(stationArtworkServiceProvider).cachedLogoFile(url);
+});
 
 class StationAvatar extends ConsumerWidget {
   final RadioStation station;
@@ -23,36 +33,21 @@ class StationAvatar extends ConsumerWidget {
     final radius = size * 0.22;
     final fallback = _InitialsBox(station: station, size: size, radius: radius);
 
-    // Bundled logo first: instant, offline, and found even when the
-    // crowdsourced `faviconUrl` is empty or dead.
-    final hasBundled = ref.watch(bundledIconIdsProvider).value?.contains(station.id) ?? false;
-    if (hasBundled) {
-      return ClipRRect(
-        borderRadius: BorderRadius.circular(radius),
-        child: Image.asset(bundledIconPath(station.id), width: size, height: size, fit: BoxFit.cover, errorBuilder: (_, _, _) => fallback),
-      );
-    }
-
     if (station.faviconUrl == null) return fallback;
 
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(radius),
-      child: Image.network(
-        station.faviconUrl!,
-        width: size,
-        height: size,
-        fit: BoxFit.cover,
-        // A broken/unreachable favicon URL is common enough in a
-        // crowdsourced database that this is treated as an expected case,
-        // not an error — we just fall back to the initials box instead of
-        // leaving Flutter's default broken-image icon on screen.
-        errorBuilder: (context, error, stackTrace) => fallback,
-        loadingBuilder: (context, child, progress) {
-          if (progress == null) return child;
-          return fallback;
-        },
-      ),
-    );
+    // Web has no file system; the browser's HTTP cache keeps the logo instead
+    // (the CDN marks logo files immutable).
+    final Widget image;
+    if (kIsWeb) {
+      image = Image.network(station.faviconUrl!, width: size, height: size, fit: BoxFit.cover,
+          errorBuilder: (_, _, _) => fallback);
+    } else {
+      // Initials while it downloads, and for good when it can't be fetched.
+      final file = ref.watch(stationLogoFileProvider(station.faviconUrl!)).value;
+      if (file == null) return fallback;
+      image = Image.file(file, width: size, height: size, fit: BoxFit.cover, errorBuilder: (_, _, _) => fallback);
+    }
+    return ClipRRect(borderRadius: BorderRadius.circular(radius), child: image);
   }
 }
 

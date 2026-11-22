@@ -267,8 +267,9 @@
         <article class="card">
           <span class="tag">Sempre</span>
           <h3>Lista de rádios</h3>
-          <p>O app consulta o serviço público Radio Browser enviando apenas o <strong>nome do estado</strong>
-          como filtro.</p>
+          <p>O app baixa a lista de rádios e os logos do servidor do próprio Nice Radio (hospedado na
+          Cloudflare), pedindo apenas a <strong>sigla do estado</strong> (por exemplo, SP). A lista é montada
+          toda semana a partir do catálogo público Radio Browser, sem nenhum dado seu.</p>
         </article>
         <article class="card">
           <span class="tag">Sempre</span>
@@ -324,9 +325,15 @@
     <div class="body">
       <h2>Serviços de terceiros</h2>
 
+      <h3>Cloudflare</h3>
+      <p>Hospeda a lista de rádios e os logos que o app baixa. Recebe a sigla do estado e, como em qualquer
+      conexão com a internet, pode ver o endereço IP do aparelho. Nós não registramos esses acessos. Saiba mais em
+      <a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a>.</p>
+
       <h3>Radio Browser</h3>
-      <p>Serviço público e gratuito de catálogo de rádios (<a href="https://www.radio-browser.info/">radio-browser.info</a>).
-      Recebe o nome do estado e, como em qualquer conexão com a internet, pode ver o endereço IP do aparelho.</p>
+      <p>Catálogo público e gratuito de rádios (<a href="https://www.radio-browser.info/">radio-browser.info</a>)
+      de onde a lista é montada. O app <strong>não se conecta</strong> a ele: quem consulta é o nosso servidor,
+      uma vez por semana.</p>
 
       <h3>Emissoras de rádio</h3>
       <p>Cada emissora opera seu próprio servidor, que pode ver o endereço IP de quem escuta, como acontece em
@@ -372,7 +379,8 @@
         <li>última estação ouvida;</li>
         <li>modo noturno e filtro Favoritas/Todas;</li>
         <li>estimativa de uso de dados;</li>
-        <li>a lista de rádios do seu estado, para que o Android Auto e os controles do aparelho já tenham as estações ao abrir.</li>
+        <li>a lista de rádios do seu estado, para que o Android Auto e os controles do aparelho já tenham as estações ao abrir e para o app funcionar quando o servidor da lista estiver fora do ar;</li>
+        <li>os logos das rádios já baixados, para não baixá-los de novo.</li>
       </ul>
       <p>Esses dados ficam <strong>somente no seu aparelho</strong> e são apagados quando você desinstala o
       aplicativo.</p>

@@ -22,6 +22,7 @@ on:
       - 'stations/custom_logos/**'
       - 'tool/build_stations.py'
       - '.github/workflows/stations.yml'
+      - 'assets/icon/icon.png'   # becomes the site's favicon.ico
 
 concurrency:
   group: stations
