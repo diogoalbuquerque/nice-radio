@@ -66,8 +66,9 @@ jobs:
             echo "Nothing changed this week."
             exit 0
           fi
-          git -c user.name="github-actions[bot]" \
-              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
-              commit -m "Update station lists"
+          # Set for the whole step: the rebase below re-creates the commit and needs it too.
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update station lists"
           git pull --rebase
           git push
