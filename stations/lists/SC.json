@@ -53,7 +53,7 @@
   "stationuuid": "a071f06e-e7a2-4379-b9c9-3ca331f1db48",
   "name": "Jovem Pan FM - Blumenau - SC",
   "url": "https://ice.fabricahost.com.br/jpblumenau",
-  "url_resolved": "https://f108.fabricahost.com.br/jpblumenau?f=1794881372N01M7KM8FYV139E6C530NAP6TVN&tid=01M7KM8FYVRDEDV0GM8590K9MX",
+  "url_resolved": "https://f108.fabricahost.com.br/jpblumenau?f=1795313447N01M80GACG1X6VMGYBJF9YX9T89&tid=01M80GACG14SX1404R8VE1BTA3",
   "favicon": "",
   "tags": "brazilian pop,contemporary hits radio,dance,electronic dance music,eurodance,jovem,pop,pop rock,top 40",
   "state": "Santa Catarina",
@@ -73,7 +73,7 @@
   "stationuuid": "2776340d-7615-4c03-ab16-59a058c26c94",
   "name": "Rádio Atlântida FM Florianópolis",
   "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/ATL_FLO.mp3",
-  "url_resolved": "https://24383.live.streamtheworld.com:443/ATL_FLO.mp3",
+  "url_resolved": "https://27393.live.streamtheworld.com:443/ATL_FLO.mp3",
   "favicon": "https://nice-radio-stations.pages.dev/v1/logos/2776340d-7615-4c03-ab16-59a058c26c94-0405a7f223.png",
   "tags": "pop rock",
   "state": "Santa Catarina",
@@ -130,16 +130,6 @@
   "bitrate": 64
  },
  {
-  "stationuuid": "9022c744-15fa-4e1f-a5a6-55a0b6850034",
-  "name": "Rádio 105 FM",
-  "url": "https://wz7.servidoresbrasil.com:8070/stream?1771865978025",
-  "url_resolved": "https://wz7.servidoresbrasil.com:8070/stream?1771865978025",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/9022c744-15fa-4e1f-a5a6-55a0b6850034-caa74c8deb.png",
-  "tags": "hits,popular,sertaneja",
-  "state": " Santa Catarina",
-  "bitrate": 48
- },
- {
   "stationuuid": "1445d0a2-372d-43cd-80b8-586557985b9b",
   "name": "GOLD CLASSIC",
   "url": "https://centova2.svdns.com.br:20009/stream",
@@ -148,6 +138,16 @@
   "tags": "60's & 70's,flashback",
   "state": "Santa Catarina, SC",
   "bitrate": 160
+ },
+ {
+  "stationuuid": "9022c744-15fa-4e1f-a5a6-55a0b6850034",
+  "name": "Rádio 105 FM",
+  "url": "https://wz7.servidoresbrasil.com:8070/stream?1771865978025",
+  "url_resolved": "https://wz7.servidoresbrasil.com:8070/stream?1771865978025",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/9022c744-15fa-4e1f-a5a6-55a0b6850034-caa74c8deb.png",
+  "tags": "hits,popular,sertaneja",
+  "state": " Santa Catarina",
+  "bitrate": 48
  },
  {
   "stationuuid": "b1d09314-45ee-4c18-901a-32c8ab1313cf",
@@ -287,7 +287,7 @@
   "favicon": "https://nice-radio-stations.pages.dev/v1/logos/372e4555-def0-4848-bc68-fe567650801b-778cb9b525.png",
   "tags": "",
   "state": "Santa Catarina, SC",
-  "bitrate": 133
+  "bitrate": 132
  },
  {
   "stationuuid": "4c74936f-f6c9-4a63-be3b-23172b176ac3",
@@ -296,16 +296,6 @@
   "url_resolved": "https://stm04.virtualcast.com.br:8004/massablumenau",
   "favicon": "https://nice-radio-stations.pages.dev/v1/logos/4c74936f-f6c9-4a63-be3b-23172b176ac3-58d875f66b.png",
   "tags": "",
-  "state": "Santa Catarina, SC",
-  "bitrate": 48
- },
- {
-  "stationuuid": "039f89be-6616-4b1d-aad9-ecf9e3c47980",
-  "name": "Rádio Jaraguá 101.3 FM",
-  "url": "https://wz7.servidoresbrasil.com:8066/stream?1771932661160",
-  "url_resolved": "https://wz7.servidoresbrasil.com:8066/stream?1771932661160",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/039f89be-6616-4b1d-aad9-ecf9e3c47980-12fe6c872e.png",
-  "tags": "hits,popular",
   "state": "Santa Catarina, SC",
   "bitrate": 48
  },
@@ -370,16 +360,6 @@
   "bitrate": 0
  },
  {
-  "stationuuid": "8628edce-aa5b-43a7-8ccb-85512bfb362a",
-  "name": "Rádio Cambirela - Virtual,mas real.",
-  "url": "https://stm1.srvif.com:7244/stream",
-  "url_resolved": "https://stm1.srvif.com:7244/stream",
-  "favicon": "",
-  "tags": "",
-  "state": "Santa Catarina,SC",
-  "bitrate": 128
- },
- {
   "stationuuid": "45e54471-3ac1-4c29-90c6-fdd76fd92e8f",
   "name": "Rádio 89.3 FM Imbituba",
   "url": "https://live.paineldj.com.br/proxy/radiofm89f?mp=/stream",
@@ -408,16 +388,6 @@
   "tags": "",
   "state": "Santa Catarina, SC",
   "bitrate": 256
- },
- {
-  "stationuuid": "1ff111cc-4330-414c-a4d1-31d85a0746eb",
-  "name": "Rádio Videira - FM 102.9",
-  "url": "https://5a2b083e9f360.streamlock.net/trasvideira/trasvideira.stream/chunklist_w1032255440.m3u8",
-  "url_resolved": "https://5a2b083e9f360.streamlock.net/trasvideira/trasvideira.stream/chunklist_w1032255440.m3u8",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/1ff111cc-4330-414c-a4d1-31d85a0746eb-79e9d6e42a.png",
-  "tags": "",
-  "state": "Santa Catarina, SC",
-  "bitrate": 0
  },
  {
   "stationuuid": "7eddae85-f286-4014-9b12-11c75e66b1f1",

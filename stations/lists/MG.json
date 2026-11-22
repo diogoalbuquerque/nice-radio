@@ -100,16 +100,6 @@
   "bitrate": 128
  },
  {
-  "stationuuid": "2eb41659-1b7c-43e5-9b98-36634086a73c",
-  "name": "Radio Jovem Pan 99.1 FM Belo Horizonte",
-  "url": "https://8062.brasilstream.com.br//stream?origem=jovem_pan_site",
-  "url_resolved": "https://8062.brasilstream.com.br//stream?origem=jovem_pan_site",
-  "favicon": "",
-  "tags": "90s,pop,rock",
-  "state": "Minas Gerais",
-  "bitrate": 64
- },
- {
   "stationuuid": "195f2990-e0d3-4b34-8aab-5b173ddb6c6e",
   "name": "BR - The Classic Rock",
   "url": "https://stream.zeno.fm/nbq1aq62gd0uv",
@@ -126,16 +116,6 @@
   "url_resolved": "http://wz3.dnip.com.br/imparsomhd/imparsomhd.stream/playlist.m3u8",
   "favicon": "",
   "tags": "#pop",
-  "state": "Minas Gerais",
-  "bitrate": 128
- },
- {
-  "stationuuid": "d2678e94-cc54-457a-bef4-2fc355ec4199",
-  "name": "Radio Liberdade 92.9 (Belo Horizonte - MG)",
-  "url": "https://8335.brasilstream.com.br/stream",
-  "url_resolved": "https://8335.brasilstream.com.br/stream",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d2678e94-cc54-457a-bef4-2fc355ec4199-afdd3588c9.png",
-  "tags": "sertanejo",
   "state": "Minas Gerais",
   "bitrate": 128
  },
@@ -483,7 +463,7 @@
   "stationuuid": "0db29eac-2354-4cd6-8fcc-1810993bce03",
   "name": "Musirama FM 92.1 MHz ZYC709 (Sete Lagoas - MG)",
   "url": "https://ice.fabricahost.com.br/musirama",
-  "url_resolved": "https://f100.fabricahost.com.br/musirama?f=1794894243N01M7M0H9K8N786P5KV7VYSZ75T&tid=01M7M0H9K8ZBDYJA7S1WXQEZD0",
+  "url_resolved": "https://f100.fabricahost.com.br/musirama?f=1795326318N01M80WK5V8721VFAMP65STH4XG&tid=01M80WK5V8SY839K1Y8ATQ5434",
   "favicon": "https://nice-radio-stations.pages.dev/v1/logos/0db29eac-2354-4cd6-8fcc-1810993bce03-96261f315f.png",
   "tags": "brazilian music,misc",
   "state": "Minas Gerais",
@@ -547,7 +527,7 @@
   "favicon": "https://nice-radio-stations.pages.dev/v1/logos/db9901ae-88a7-452a-a528-1f378dd817bf-330235c84b.png",
   "tags": "chr,contemporary hits radio,dance,electronic dance music,eurodance,jovem,pop,pop rock,top 40",
   "state": "Minas Gerais",
-  "bitrate": 112
+  "bitrate": 128
  },
  {
   "stationuuid": "9957a979-628f-4f1b-90c3-cde1d8db2abf",
@@ -666,16 +646,6 @@
   "url_resolved": "https://stream.zeno.fm/bd0hmtmb2d0uv",
   "favicon": "https://nice-radio-stations.pages.dev/v1/logos/87086b06-203f-4e81-8479-c5d6b66901f8-634ec564de.png",
   "tags": "contemporary hits radio,dance,electronic dance music,eurodance,jovem,op,pop rock,top 40",
-  "state": "Minas Gerais",
-  "bitrate": 128
- },
- {
-  "stationuuid": "beae34f5-a369-4dc9-99ae-a419313c601c",
-  "name": "93.3 FM (Barbacena)",
-  "url": "https://sws.onradio.biz/8126/stream?1746145643130",
-  "url_resolved": "https://sws.onradio.biz/8126/stream?1746145643130",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/beae34f5-a369-4dc9-99ae-a419313c601c-c475850d88.png",
-  "tags": "mpb,noticias",
   "state": "Minas Gerais",
   "bitrate": 128
  },
@@ -920,6 +890,16 @@
   "bitrate": 48
  },
  {
+  "stationuuid": "d5c86265-5c96-4d18-a206-0d6c8cdad0b3",
+  "name": "Viola Viva Instrumental",
+  "url": "https://centova.euroti.com.br:20191//stream",
+  "url_resolved": "https://centova.euroti.com.br:20191//stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d5c86265-5c96-4d18-a206-0d6c8cdad0b3-673aef4eca.png",
+  "tags": "caipira,folclore,modao",
+  "state": "Minas Gerais",
+  "bitrate": 128
+ },
+ {
   "stationuuid": "2dbfee14-d5a9-4a26-aee2-3c54a7c5b599",
   "name": "Rádio Estância FM São Lourenço MG",
   "url": "https://r13.ciclano.io/proxy/radioes1/stream?1784414437274",
@@ -958,16 +938,6 @@
   "tags": "jovem,top 40",
   "state": "Minas Gerais Brasil",
   "bitrate": 32
- },
- {
-  "stationuuid": "d5c86265-5c96-4d18-a206-0d6c8cdad0b3",
-  "name": "Viola Viva Instrumental",
-  "url": "https://centova.euroti.com.br:20191//stream",
-  "url_resolved": "https://centova.euroti.com.br:20191//stream",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d5c86265-5c96-4d18-a206-0d6c8cdad0b3-673aef4eca.png",
-  "tags": "caipira,folclore,modao",
-  "state": "Minas Gerais",
-  "bitrate": 128
  },
  {
   "stationuuid": "cb42eaf3-a129-4e56-86ec-5ccfa7cf195f",

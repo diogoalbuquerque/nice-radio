@@ -740,16 +740,6 @@
   "bitrate": 128
  },
  {
-  "stationuuid": "3d88b1f3-4963-4ea2-8ae0-4fe598cb6cb9",
-  "name": "Jaguarão FM 87,9",
-  "url": "https://stm19.xcast.com.br:11526/stream",
-  "url_resolved": "https://stm19.xcast.com.br:11526/stream",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/3d88b1f3-4963-4ea2-8ae0-4fe598cb6cb9-3a067eb1a2.png",
-  "tags": "eclectic programming,radio comunitaria",
-  "state": "Rio Grande do Sul",
-  "bitrate": 128
- },
- {
   "stationuuid": "4ee36915-3e13-45d2-9b7a-cb6558350c34",
   "name": "FM Cultura 107,7",
   "url": "https://streaming.procergs.com.br:8443/fmcultura/sfmcultura/chunklist_w644085663.m3u8",

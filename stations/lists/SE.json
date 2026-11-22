@@ -3,7 +3,7 @@
   "stationuuid": "b8cb31b3-5a4b-11e9-a622-52543be04c81",
   "name": "Nova Brasil FM 93.5 Aracaju",
   "url": "http://playerservices.streamtheworld.com/pls/NOVABRASIL_ARACAJUAAC.pls",
-  "url_resolved": "http://24493.live.streamtheworld.com/NOVABRASIL_ARACAJUAAC_SC",
+  "url_resolved": "http://24233.live.streamtheworld.com:3690/NOVABRASIL_ARACAJUAAC_SC",
   "favicon": "",
   "tags": "aracaju,brazilian pop,mpb",
   "state": "Sergipe",
@@ -58,16 +58,6 @@
   "tags": "católica",
   "state": "Sergipe",
   "bitrate": 48
- },
- {
-  "stationuuid": "9c7a386f-8575-4f60-baae-f8c6db926fce",
-  "name": "Rádio Jornal 91.3 FM",
-  "url": "https://str1.streamhostpg.com.br:8124/stream?1771879202034",
-  "url_resolved": "https://str1.streamhostpg.com.br:8124/stream?1771879202034",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/9c7a386f-8575-4f60-baae-f8c6db926fce-eaffddc781.png",
-  "tags": "flashback,futebol,jornalismo(all news)",
-  "state": "Sergipe",
-  "bitrate": 96
  },
  {
   "stationuuid": "d558fc34-e423-485f-90a5-b3f939cfd1b3",

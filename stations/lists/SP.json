@@ -10,16 +10,6 @@
   "bitrate": 96
  },
  {
-  "stationuuid": "531fced7-b22b-11e8-afe1-52543be04c81",
-  "name": "Antena 1 FM 94.7 São Paulo",
-  "url": "http://antena1.newradio.it/stream",
-  "url_resolved": "http://antena1.newradio.it/stream",
-  "favicon": "",
-  "tags": "adult contemporary,lite",
-  "state": "São Paulo",
-  "bitrate": 96
- },
- {
   "stationuuid": "ad039169-2969-4a7a-be83-86f079f4a55e",
   "name": "Rádio Bandeirantes - São Paulo",
   "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RadioBandeirantesAAC.m3u8",
@@ -127,7 +117,7 @@
   "favicon": "",
   "tags": "anos 80,anos 90,brazilian music,moda de viola,romantica,sertaneja,sertanejo,sertanejo raiz",
   "state": "São Paulo",
-  "bitrate": 128
+  "bitrate": 112
  },
  {
   "stationuuid": "7f1cf5bb-bbea-4d51-b98d-9b024d595043",
@@ -168,16 +158,6 @@
   "tags": "",
   "state": "São Paulo",
   "bitrate": 128
- },
- {
-  "stationuuid": "0617d31e-d210-4b30-9763-6cf87104ca2f",
-  "name": "Rádio Metropolitana 98.5 FM",
-  "url": "https://ice.fabricahost.com.br/metropolitana985sp",
-  "url_resolved": "https://ice.fabricahost.com.br/metropolitana985sp",
-  "favicon": "",
-  "tags": "",
-  "state": "São Paulo",
-  "bitrate": 64
  },
  {
   "stationuuid": "8e9b5ba4-dcc1-4dad-8ddf-e7cc04c33a00",
@@ -228,16 +208,6 @@
   "tags": "blues,bossa nova,jazz",
   "state": "São Paulo",
   "bitrate": 48
- },
- {
-  "stationuuid": "354d8c7e-a490-4b67-bc23-dd719ea54c83",
-  "name": "Rádio Bandeirantes 90.9 FM",
-  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RadioBandeirantesAAC.m3u8?dist=radios.com.br",
-  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/RadioBandeirantesAAC.m3u8?dist=radios.com.br",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/354d8c7e-a490-4b67-bc23-dd719ea54c83-91186812e2.png",
-  "tags": "news,soccer",
-  "state": "Sao Paulo",
-  "bitrate": 64
  },
  {
   "stationuuid": "b3a7491f-e14e-4c1e-83c2-f404e084207b",
@@ -347,17 +317,7 @@
   "favicon": "",
   "tags": "flashback",
   "state": "Sao Paulo (Brazil)",
-  "bitrate": 64
- },
- {
-  "stationuuid": "9d245111-a72c-404f-aeb3-226a3f597d27",
-  "name": "Rádio Metropolitana 98.5 FM Light",
-  "url": "https://ice.fabricahost.com.br/metropolitanasplight",
-  "url_resolved": "https://ice.fabricahost.com.br/metropolitanasplight",
-  "favicon": "",
-  "tags": "",
-  "state": "São Paulo",
-  "bitrate": 48
+  "bitrate": 128
  },
  {
   "stationuuid": "a731b712-8669-4fcb-a7d9-cc7bf2ce4799",
@@ -473,7 +433,7 @@
   "stationuuid": "8eb03f0d-ebf8-4f97-ba85-cdce78522733",
   "name": "Rádio Notícias Tatuí - 98,3 FM",
   "url": "https://ice.fabricahost.com.br/radionoticias",
-  "url_resolved": "https://f100.fabricahost.com.br/radionoticias?f=1794898471N01M7M4JAMHJNNMB51873TZ54M3&tid=01M7M4JAMHKT3KM4R6Y8TF79HD",
+  "url_resolved": "https://f100.fabricahost.com.br/radionoticias?f=1795330605N01M810P0R12ERGZXZ9RNA205MC&tid=01M810P0R1PZWJD6B1FGQD14S5",
   "favicon": "https://nice-radio-stations.pages.dev/v1/logos/8eb03f0d-ebf8-4f97-ba85-cdce78522733-e545291d1f.png",
   "tags": "",
   "state": "São Paulo",
@@ -543,7 +503,7 @@
   "stationuuid": "b9e48686-f197-11e9-a96c-52543be04c81",
   "name": "SM Brasil",
   "url": "http://stream.zeno.fm/xt4tf9zsxeruv",
-  "url_resolved": "http://stream-179.surfernetwork.com/xt4tf9zsxeruv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ4dDR0Zjl6c3hlcnV2IiwiaG9zdCI6InN0cmVhbS0xNzkuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6InRDOW55NnpfVHNlQTNmYkhwZUhwZGciLCJpYXQiOjE3OTQ5MTA1MTcsImV4cCI6MTc5NDkxMDU3N30.atf2GaXNyy8n0A3P9p5yh1aF_pUih3W74kQVjzfvevw",
+  "url_resolved": "http://stream-179.surfernetwork.com/xt4tf9zsxeruv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJ4dDR0Zjl6c3hlcnV2IiwiaG9zdCI6InN0cmVhbS0xNzkuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IkllZDJ3bXlyVElpdzVtQTZ6b3kyYVEiLCJpYXQiOjE3OTUzNDI2NjQsImV4cCI6MTc5NTM0MjcyNH0.S20CepXOF0krZdftotUCUhFBeXEg8pUQ5YlGJ7N45U8",
   "favicon": "https://nice-radio-stations.pages.dev/v1/logos/b9e48686-f197-11e9-a96c-52543be04c81-70219ca63a.png",
   "tags": "",
   "state": "São Paulo",
@@ -607,7 +567,7 @@
   "favicon": "",
   "tags": "eclética",
   "state": "Sao Paulo (Brazil)",
-  "bitrate": 64
+  "bitrate": 128
  },
  {
   "stationuuid": "b78ee185-ad1c-4d88-adeb-ce993b10cdda",

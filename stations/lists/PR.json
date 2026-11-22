@@ -53,7 +53,7 @@
   "stationuuid": "cdd11572-fa0e-4d39-82fe-517efbce772c",
   "name": "Grauna FM 95,5",
   "url": "https://ice.fabricahost.com.br/graunafm",
-  "url_resolved": "https://f108.fabricahost.com.br/graunafm?f=1794884469N01M7KQ70P6183WPNMJ8FS1JNGT&tid=01M7KQ70P6T9QH28V5EGEAWB4G",
+  "url_resolved": "https://f108.fabricahost.com.br/graunafm?f=1795316802N01M80KGS1YPZHTQEQQEK131W1F&tid=01M80KGS1YBHX7D712P47PAPGP",
   "favicon": "https://nice-radio-stations.pages.dev/v1/logos/cdd11572-fa0e-4d39-82fe-517efbce772c-4c5146a69e.png",
   "tags": "",
   "state": "Paraná(Brazil)",
@@ -227,7 +227,7 @@
   "favicon": "https://nice-radio-stations.pages.dev/v1/logos/78870d0c-b443-431d-9379-1710fd2a0563-239eca4670.png",
   "tags": "",
   "state": "Paraná(Brazil)",
-  "bitrate": 40
+  "bitrate": 36
  },
  {
   "stationuuid": "35066a3c-c987-4961-ab88-42587b41db13",
@@ -293,7 +293,7 @@
   "stationuuid": "66cb7295-1596-43b4-8983-90a3afce42f2",
   "name": "Jovem pan FM Curitiba 103,9",
   "url": "https://e-spo-102.fabricahost.com.br/jpcuritiba?f=1781705068N01KVAYBM544A2EGMJKGEDZMDQP&tid=01KVAYBM54RGVTWKGWCDASFWKH",
-  "url_resolved": "https://f100.fabricahost.com.br/jpcuritiba?f=1794894993N01M7M185S47ANE24FSXF39EHYC&tid=01M7M185S4J5CNJYPF4HAYEARJ",
+  "url_resolved": "https://f100.fabricahost.com.br/jpcuritiba?f=1795327139N01M80XC7DNCW6FGADQH4Z7QTSQ&tid=01M80XC7DN2B279YCXEMDA7F6S",
   "favicon": "",
   "tags": "jovem,pop rock",
   "state": "Parana",
@@ -333,7 +333,7 @@
   "stationuuid": "4d01daf5-d90b-4899-accb-3a89e04fdb89",
   "name": "Rádio Cidade 100.1 FM Foz",
   "url": "https://ice.fabricahost.com.br/cidadefmfoz",
-  "url_resolved": "https://f108.fabricahost.com.br/cidadefmfoz?f=1794893898N01M7M06REMQ3H6E072ATTH5A19&tid=01M7M06REMZV1A1D9RGX6CR6GJ",
+  "url_resolved": "https://f108.fabricahost.com.br/cidadefmfoz?f=1795326094N01M80WCB6DAHTKQAX7RK3JFMN1&tid=01M80WCB6DM27RZR6JVFKDRAHT",
   "favicon": "https://nice-radio-stations.pages.dev/v1/logos/4d01daf5-d90b-4899-accb-3a89e04fdb89-2eda3a4db0.png",
   "tags": "brasil,foz do iguacu,parana",
   "state": "Paraná",
@@ -370,16 +370,6 @@
   "bitrate": 64
  },
  {
-  "stationuuid": "30dbddcf-d06b-4ae0-8bc8-679d897920d6",
-  "name": "Rádio Evangelizar Família ",
-  "url": "https://8241.brasilstream.com.br/stream",
-  "url_resolved": "https://8241.brasilstream.com.br/stream",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/30dbddcf-d06b-4ae0-8bc8-679d897920d6-f595d76d6d.png",
-  "tags": "catholic,católica",
-  "state": "Paraná",
-  "bitrate": 64
- },
- {
   "stationuuid": "c7d885bb-025e-49b2-b20a-63d6f37e445e",
   "name": "Rádio Cisma Gaudéria",
   "url": "https://player-ssl.painelstream.net:8394/live?1791939878154",
@@ -407,7 +397,7 @@
   "favicon": "https://nice-radio-stations.pages.dev/v1/logos/067e73f1-7437-4683-84b6-f7690c17c6f6-a4a64e377a.png",
   "tags": "brasil,foz do iguacu,noticias,parana,pop",
   "state": "Paraná",
-  "bitrate": 32
+  "bitrate": 64
  },
  {
   "stationuuid": "eed0af81-c5ec-40cf-af2e-f966ce6adfb3",
@@ -453,7 +443,7 @@
   "stationuuid": "1735e2d6-61dc-44e9-9444-dbce6d7c4bf0",
   "name": "Viola FM 91.7 Foz",
   "url": "https://ice.fabricahost.com.br/radioviolafoz",
-  "url_resolved": "https://f108.fabricahost.com.br/radioviolafoz?f=1794879672N01M7KJMKQ9MW10ZRHHTG7JZ4TH&tid=01M7KJMKQ9ZP2M1J9JKABZRGXW",
+  "url_resolved": "https://f108.fabricahost.com.br/radioviolafoz?f=1795312773N01M80FNT043A3HY4Z4GDED50AK&tid=01M80FNT04A5NF1CMA7DGBQ103",
   "favicon": "https://nice-radio-stations.pages.dev/v1/logos/1735e2d6-61dc-44e9-9444-dbce6d7c4bf0-e09c3d8ce4.png",
   "tags": "brasil,foz do iguacu,parana",
   "state": "Paraná",

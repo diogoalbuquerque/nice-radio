@@ -100,16 +100,6 @@
   "bitrate": 128
  },
  {
-  "stationuuid": "6d2e2602-7569-4267-bb8e-644dafd6aaea",
-  "name": "Rádio Arapuan 98.9 FM",
-  "url": "https://www.radios.com.br/play/playlist/34271/listen-radio.m3u",
-  "url_resolved": "https://streaming.engelhosting.com.br:10036/stream",
-  "favicon": "",
-  "tags": "",
-  "state": "Paraiba",
-  "bitrate": 128
- },
- {
   "stationuuid": "f6f2ccd1-9c1a-47ca-9caf-1edd6c66eed1",
   "name": "Rádio Itatiunga 102.9 FM",
   "url": "https://str1.streamhostpg.com.br:8100/stream",
@@ -118,16 +108,6 @@
   "tags": "eclética,hits",
   "state": "Paraiba",
   "bitrate": 96
- },
- {
-  "stationuuid": "f1af83b3-c4c4-4736-8cdc-cd3153278358",
-  "name": "Rádio Cajá Esportes ",
-  "url": "https://sv16.hdradios.net:8972/stream",
-  "url_resolved": "https://sv16.hdradios.net:8972/stream",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/f1af83b3-c4c4-4736-8cdc-cd3153278358-9cf6017d56.png",
-  "tags": "",
-  "state": "Paraíba",
-  "bitrate": 64
  },
  {
   "stationuuid": "2a4413a2-23c5-4fcd-8185-1866596aecfe",
@@ -158,15 +138,5 @@
   "tags": "",
   "state": "Paraiba",
   "bitrate": 64
- },
- {
-  "stationuuid": "692acc84-76e4-431a-848b-8b99b1ec0ce4",
-  "name": "Serra Branca FM",
-  "url": "https://serrabrancafm.jmvstream.com/stream](https://serrabrancafm.jmvstream.com/stream)",
-  "url_resolved": "https://serrabrancafm.jmvstream.com/stream](https://serrabrancafm.jmvstream.com/stream)",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/692acc84-76e4-431a-848b-8b99b1ec0ce4-d82c5132b1.png",
-  "tags": "",
-  "state": "Paraiba",
-  "bitrate": 128
  }
 ]

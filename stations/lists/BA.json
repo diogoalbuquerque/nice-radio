@@ -100,20 +100,10 @@
   "bitrate": 128
  },
  {
-  "stationuuid": "cf255f4f-ebed-4bdc-be53-0547489abf03",
-  "name": "Rádio Itapoan FM 97.5",
-  "url": "https://cast.radiu.live:9300/stream",
-  "url_resolved": "https://cast.radiu.live:9300/stream",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/cf255f4f-ebed-4bdc-be53-0547489abf03-71a0a00951.png",
-  "tags": "axé,local music,local radio,pagode",
-  "state": "Bahia",
-  "bitrate": 128
- },
- {
   "stationuuid": "b57a7a67-0f63-4412-b79c-3274f64d4d47",
   "name": "Bahia FM Sul 102.1",
   "url": "https://ice.fabricahost.com.br/bahiafmsul",
-  "url_resolved": "https://f100.fabricahost.com.br/bahiafmsul?f=1794890959N01M7KXD2SXQN6Z8F98ZD26GFQX&tid=01M7KXD2SXJXE9S07P452GZ8VZ",
+  "url_resolved": "https://f100.fabricahost.com.br/bahiafmsul?f=1795323160N01M80SJT2YV29PEA7HSPJ6H86H&tid=01M80SJT2YDAMY9J8YT4X6K2EB",
   "favicon": "https://nice-radio-stations.pages.dev/v1/logos/b57a7a67-0f63-4412-b79c-3274f64d4d47-eb8f85e75c.png",
   "tags": "brazilian music,entretenimento,música popular brasileira",
   "state": "Bahia",
@@ -133,7 +123,7 @@
   "stationuuid": "9c8d1f36-5266-4027-bedb-11a626cfb7b8",
   "name": "Rádio boa fm",
   "url": "http://stream.zeno.fm/svapy9sa7f8uv",
-  "url_resolved": "http://stream-204.surfernetwork.com/svapy9sa7f8uv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJzdmFweTlzYTdmOHV2IiwiaG9zdCI6InN0cmVhbS0yMDQuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6InBYMjJyOU8xVGxlZC1WWkt3X1prZUEiLCJpYXQiOjE3OTQ5MDY0NTIsImV4cCI6MTc5NDkwNjUxMn0.qX8z1Z60SRJLhF3nhX-rQh_Qfmb0-WxPPG23V7iiI9A",
+  "url_resolved": "http://stream-177.surfernetwork.com/svapy9sa7f8uv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJzdmFweTlzYTdmOHV2IiwiaG9zdCI6InN0cmVhbS0xNzcuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6InVqVWNFOTJGUjZ1ck53WWVia1F1SEEiLCJpYXQiOjE3OTUzMzg2MTIsImV4cCI6MTc5NTMzODY3Mn0.iqG9M7z0yzgWKLpGgFoLesEMUxsAy2RrN6W_aHpBX6w",
   "favicon": "",
   "tags": "",
   "state": "Bahia",
@@ -170,22 +160,22 @@
   "bitrate": 64
  },
  {
-  "stationuuid": "86d98175-2210-42e0-8f65-b29454ed5967",
-  "name": "Irecê Líder FM 103.7 Irecê - BA",
-  "url": "http://192.99.14.210:8223/stream?1716384253550=",
-  "url_resolved": "http://192.99.14.210:8223/stream?1716384253550=",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/86d98175-2210-42e0-8f65-b29454ed5967-cfeab1c711.png",
-  "tags": "eclética",
-  "state": "Bahia",
-  "bitrate": 128
- },
- {
   "stationuuid": "5472237e-f2e2-41eb-b783-a3f63b225ffe",
   "name": "Educadora FM Bahia- 107.5 fm",
   "url": "https://streaming.educadorafm.ba.gov.br/stream-01",
   "url_resolved": "https://streaming.educadorafm.ba.gov.br/stream-01",
   "favicon": "",
   "tags": "",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "86d98175-2210-42e0-8f65-b29454ed5967",
+  "name": "Irecê Líder FM 103.7 Irecê - BA",
+  "url": "http://192.99.14.210:8223/stream?1716384253550=",
+  "url_resolved": "http://192.99.14.210:8223/stream?1716384253550=",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/86d98175-2210-42e0-8f65-b29454ed5967-cfeab1c711.png",
+  "tags": "eclética",
   "state": "Bahia",
   "bitrate": 128
  },
@@ -213,7 +203,7 @@
   "stationuuid": "a8e3f689-4c8a-4e6c-be47-f611871965b0",
   "name": "Nova Brasil FM Salvador",
   "url": "https://stream.zeno.fm/gkbgs81xvfztv",
-  "url_resolved": "https://stream-204.surfernetwork.com/gkbgs81xvfztv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJna2JnczgxeHZmenR2IiwiaG9zdCI6InN0cmVhbS0yMDQuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IkZaUWFsdkozUl9heDBvMGNJLVJhbVEiLCJpYXQiOjE3OTQ5MDYyODksImV4cCI6MTc5NDkwNjM0OX0.oHe-TXlYTl6m6coJ5KkGRRGAbgpQfv0rlJLaxSi7Rt0",
+  "url_resolved": "https://stream-177.surfernetwork.com/gkbgs81xvfztv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJna2JnczgxeHZmenR2IiwiaG9zdCI6InN0cmVhbS0xNzcuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6IktKemJRTXk4UjZDWHZaRW12djZRaXciLCJpYXQiOjE3OTUzMzg0OTksImV4cCI6MTc5NTMzODU1OX0.4ZdvlUopQMgDCqsJYwl8_NL36m9CZdxLfIXWtC9mP7Q",
   "favicon": "https://nice-radio-stations.pages.dev/v1/logos/a8e3f689-4c8a-4e6c-be47-f611871965b0-7b527601df.png",
   "tags": "musicas nacionais e internacionais",
   "state": "Bahia",
@@ -307,7 +297,7 @@
   "favicon": "https://nice-radio-stations.pages.dev/v1/logos/6531caf5-ab54-4045-9767-9d977b95830f-fd6592d90c.png",
   "tags": "eclectic prog",
   "state": "bahia",
-  "bitrate": 128
+  "bitrate": 112
  },
  {
   "stationuuid": "43e8d928-1b59-47b2-9ffb-d33c175ec1bc",

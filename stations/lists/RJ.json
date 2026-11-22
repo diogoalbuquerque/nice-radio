@@ -127,7 +127,7 @@
   "favicon": "https://nice-radio-stations.pages.dev/v1/logos/475aef60-45f3-48ce-8e6e-a9f0a0212cdc-d77ae830d1.png",
   "tags": "brazilian pop,dance",
   "state": "Rio de Janeiro",
-  "bitrate": 192
+  "bitrate": 128
  },
  {
   "stationuuid": "22ae5ff0-a313-11e8-abb8-52543be04c81",
@@ -146,16 +146,6 @@
   "url_resolved": "https://servidor34-5.brlogic.com:8190/live",
   "favicon": "https://nice-radio-stations.pages.dev/v1/logos/2de0dcdc-6922-4596-a354-fa80b8b060f6-c5479faa5b.png",
   "tags": "christian",
-  "state": "Rio de Janeiro",
-  "bitrate": 64
- },
- {
-  "stationuuid": "12c34710-3f54-4834-b9c4-60b7deebf888",
-  "name": "Rádio Melodia 97.5 FM",
-  "url": "https://26573.live.streamtheworld.com/MELODIAFMAAC.aac?1771864900231",
-  "url_resolved": "https://26573.live.streamtheworld.com/MELODIAFMAAC.aac?1771864900231",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/12c34710-3f54-4834-b9c4-60b7deebf888-533fcace01.png",
-  "tags": "gospel",
   "state": "Rio de Janeiro",
   "bitrate": 64
  },
@@ -223,7 +213,7 @@
   "stationuuid": "c8ae4940-7857-4273-8640-e12d743bd659",
   "name": "Radio UENF",
   "url": "https://stream-172.zeno.fm/pfsm8zen0lguv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJwZnNtOHplbjBsZ3V2IiwiaG9zdCI6InN0cmVhbS0xNzIuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6IlM1R0dLaktPVFh5cHdkSzRTd1NtSnciLCJpYXQiOjE3NDAyNDg3NDEsImV4cCI6MTc0MDI0ODgwMX0.zRlAJC0hMSi3Kk3NDNBt-XgwR29XnagIU6WYqFLfJi0&1740248741087",
-  "url_resolved": "https://stream-204.surfernetwork.com/pfsm8zen0lguv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJwZnNtOHplbjBsZ3V2IiwiaG9zdCI6InN0cmVhbS0yMDQuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6Im1xVnUtXzh6U0NXQmxSWVViUFl2RlEiLCJpYXQiOjE3OTQ4OTA3MDAsImV4cCI6MTc5NDg5MDc2MH0.wOLPQdXz40vmCgRywwNhGf1-koH05IEpDl_nBaQrAzo&1740248741087",
+  "url_resolved": "https://stream-177.surfernetwork.com/pfsm8zen0lguv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiJwZnNtOHplbjBsZ3V2IiwiaG9zdCI6InN0cmVhbS0xNzcuc3VyZmVybmV0d29yay5jb20iLCJ0bSI6ZmFsc2UsInJ0dGwiOjUsImp0aSI6ImR3eUJKazFsUjRlNmJuQzR5OXNEMkEiLCJpYXQiOjE3OTUzMjI3OTksImV4cCI6MTc5NTMyMjg1OX0.DGOrbXQgVL4pmQU7BajJIe76W2B11EBaUEggtYWR3Ps&1740248741087",
   "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c8ae4940-7857-4273-8640-e12d743bd659-89d0d869c0.png",
   "tags": "cultural",
   "state": "Rio de Janeiro",

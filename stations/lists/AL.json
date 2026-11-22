@@ -30,10 +30,10 @@
   "bitrate": 128
  },
  {
-  "stationuuid": "e7b6a268-2c4e-42c9-8556-f03a9349220e",
-  "name": "Gazeta FM 94,1 Maceió",
-  "url": "https://www.appradio.app:8061/stream",
-  "url_resolved": "https://www.appradio.app:8061/stream",
+  "stationuuid": "ef15c12d-fc7a-4559-852c-cdcc997f7b15",
+  "name": "Francês FM 106,1 Maceió",
+  "url": "https://26643.live.streamtheworld.com/FRANCESFM_MACAAC.aac?dist=RadiosNet",
+  "url_resolved": "https://26643.live.streamtheworld.com/FRANCESFM_MACAAC.aac?dist=RadiosNet",
   "favicon": "",
   "tags": "eclética,popular",
   "state": "Alagoas",
@@ -66,16 +66,6 @@
   "url_resolved": "http://stm28.srvaudio.com.br:11706/stream",
   "favicon": "https://nice-radio-stations.pages.dev/v1/logos/cb4b365b-bd73-4711-8baf-db3efc107487-b487b324da.png",
   "tags": "eclética",
-  "state": "Alagoas",
-  "bitrate": 128
- },
- {
-  "stationuuid": "ef15c12d-fc7a-4559-852c-cdcc997f7b15",
-  "name": "Francês FM 106,1 Maceió",
-  "url": "https://26643.live.streamtheworld.com/FRANCESFM_MACAAC.aac?dist=RadiosNet",
-  "url_resolved": "https://26643.live.streamtheworld.com/FRANCESFM_MACAAC.aac?dist=RadiosNet",
-  "favicon": "",
-  "tags": "eclética,popular",
   "state": "Alagoas",
   "bitrate": 128
  },
@@ -150,6 +140,16 @@
   "bitrate": 128
  },
  {
+  "stationuuid": "fde7409a-7f2d-452a-9c8f-a3fa8bde5d3d",
+  "name": "Francês FM 103,6 Penedo",
+  "url": "https://s16.maxcast.com.br:8711/live",
+  "url_resolved": "https://s16.maxcast.com.br:8711/live",
+  "favicon": "",
+  "tags": "eclética,popular",
+  "state": "Alagoas",
+  "bitrate": 96
+ },
+ {
   "stationuuid": "ba4f0645-cbfb-42b7-b511-7f01ad8e7483",
   "name": "Adore 89,3 FM Maceió",
   "url": "https://03.painelstreaming.com.br:27014/stream",
@@ -200,16 +200,6 @@
   "bitrate": 64
  },
  {
-  "stationuuid": "fde7409a-7f2d-452a-9c8f-a3fa8bde5d3d",
-  "name": "Francês FM 103,6 Penedo",
-  "url": "https://s16.maxcast.com.br:8711/live",
-  "url_resolved": "https://s16.maxcast.com.br:8711/live",
-  "favicon": "",
-  "tags": "eclética,popular",
-  "state": "Alagoas",
-  "bitrate": 96
- },
- {
   "stationuuid": "727b6563-bce9-49a8-9312-2690d339a8c8",
   "name": "Mar azul 104,9 FM Maceió",
   "url": "http://stm25.xcast.com.br:7666/stream",
@@ -257,7 +247,7 @@
   "favicon": "",
   "tags": "eclética,musical",
   "state": "Alagoas",
-  "bitrate": 96
+  "bitrate": 128
  },
  {
   "stationuuid": "49666676-d7b1-4a78-a2c2-b051f7b81d2c",
@@ -267,7 +257,7 @@
   "favicon": "",
   "tags": "",
   "state": "alagoas",
-  "bitrate": 64
+  "bitrate": 128
  },
  {
   "stationuuid": "0c7b22e4-b262-4f98-80e7-e4bdc097cc35",
