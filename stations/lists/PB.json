@@ -40,6 +40,16 @@
   "bitrate": 128
  },
  {
+  "stationuuid": "7874dd3f-76a4-4efb-ac08-bb8e66c1f939",
+  "name": "Rádio Zé Ramalho",
+  "url": "https://stream.zeno.fm/qnx6k0pfmxhvv",
+  "url_resolved": "https://stream.zeno.fm/qnx6k0pfmxhvv",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/7874dd3f-76a4-4efb-ac08-bb8e66c1f939-8f4c2b602f.png",
+  "tags": "forro,mpb",
+  "state": "Paraiba",
+  "bitrate": 128
+ },
+ {
   "stationuuid": "ac0b5f17-93a3-428b-b3c4-e02283cc504d",
   "name": "Tabajara FM 105,5 Mhz",
   "url": "https://stm2.xcast.com.br:7524/stream",
@@ -57,16 +67,6 @@
   "favicon": "https://nice-radio-stations.pages.dev/v1/logos/36bb19dc-67ca-45dc-b4eb-b7ef4771bd23-11ad3304ae.png",
   "tags": "",
   "state": "Paraíba",
-  "bitrate": 128
- },
- {
-  "stationuuid": "7874dd3f-76a4-4efb-ac08-bb8e66c1f939",
-  "name": "Rádio Zé Ramalho",
-  "url": "https://stream.zeno.fm/qnx6k0pfmxhvv",
-  "url_resolved": "https://stream.zeno.fm/qnx6k0pfmxhvv",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/7874dd3f-76a4-4efb-ac08-bb8e66c1f939-8f4c2b602f.png",
-  "tags": "forro,mpb",
-  "state": "Paraiba",
   "bitrate": 128
  },
  {

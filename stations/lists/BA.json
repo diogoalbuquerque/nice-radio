@@ -290,6 +290,16 @@
   "bitrate": 96
  },
  {
+  "stationuuid": "cfcd4939-2052-45fc-b2a2-54680decef18",
+  "name": "Jovem pan 100,9 FM feira de Santana",
+  "url": "https://8046.brasilstream.com.br/stream",
+  "url_resolved": "https://8046.brasilstream.com.br/stream",
+  "favicon": "",
+  "tags": "jovem,pop rock",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
   "stationuuid": "6531caf5-ab54-4045-9767-9d977b95830f",
   "name": "RADIO EJN",
   "url": "https://s10.maxcast.com.br:8304/live",
@@ -310,6 +320,16 @@
   "bitrate": 128
  },
  {
+  "stationuuid": "fd2ba3af-4571-4cc9-8f51-3aa4dbfd802d",
+  "name": "Radio Mariense FM - Coracao de Maria",
+  "url": "https://stream.zeno.fm/z58rghw7eeruv",
+  "url_resolved": "https://stream.zeno.fm/z58rghw7eeruv",
+  "favicon": "",
+  "tags": "bahia,coracao de maria,feira de santana,local,mariense,popular,regional",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
   "stationuuid": "d9bff3e6-ca14-498a-868d-d400766beb71",
   "name": "Bandnews FM Salvador",
   "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/BANDNEWSFM_SALAAC.aac",
@@ -318,16 +338,6 @@
   "tags": "",
   "state": "Bahia",
   "bitrate": 64
- },
- {
-  "stationuuid": "cfcd4939-2052-45fc-b2a2-54680decef18",
-  "name": "Jovem pan 100,9 FM feira de Santana",
-  "url": "https://8046.brasilstream.com.br/stream",
-  "url_resolved": "https://8046.brasilstream.com.br/stream",
-  "favicon": "",
-  "tags": "jovem,pop rock",
-  "state": "Bahia",
-  "bitrate": 128
  },
  {
   "stationuuid": "62f3f2d6-adcf-4eab-a700-7e02e0b3fc5d",
@@ -348,6 +358,56 @@
   "tags": "",
   "state": "Bahia",
   "bitrate": 128
+ },
+ {
+  "stationuuid": "bee61ffe-2151-468a-a6c7-d5be18fc071c",
+  "name": "Radio Sociedade News 102.1 FM - Feira de Santana",
+  "url": "https://virtues.live:8288/stream",
+  "url_resolved": "https://virtues.live:8288/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/bee61ffe-2151-468a-a6c7-d5be18fc071c-c40df7d351.png",
+  "tags": "bahia,esportes,feira de santana,jornalismo,news,noticias,popular",
+  "state": "Bahia",
+  "bitrate": 112
+ },
+ {
+  "stationuuid": "15e1c3b8-2084-43a5-9140-acf8ece17ad2",
+  "name": "Princesa FM 96.9 - Feira de Santana",
+  "url": "https://virtues.live:8178/stream",
+  "url_resolved": "https://virtues.live:8178/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/15e1c3b8-2084-43a5-9140-acf8ece17ad2-ecad7965a8.png",
+  "tags": "bahia,entretenimento,feira de santana,hits,musica,pop",
+  "state": "Bahia",
+  "bitrate": 96
+ },
+ {
+  "stationuuid": "25ded02a-ad43-4449-b923-01d17b692aac",
+  "name": "Nordeste FM 95.3 - Feira de Santana",
+  "url": "https://cast.radiu.live:9988/stream",
+  "url_resolved": "https://cast.radiu.live:9988/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/25ded02a-ad43-4449-b923-01d17b692aac-2b29104187.png",
+  "tags": "bahia,feira de santana,forro,musica,popular,sertanejo",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "dbaf2f48-7adc-40eb-9e0a-c4c50dc3f2c0",
+  "name": "Radio Coracao FM 104.9 - Coracao de Maria",
+  "url": "http://45.179.91.229:7218/stream",
+  "url_resolved": "http://45.179.91.229:7218/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/dbaf2f48-7adc-40eb-9e0a-c4c50dc3f2c0-88aa4aaa78.png",
+  "tags": "bahia,coracao de maria,ecletica,feira de santana,local,noticias,popular",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "a3ed8eca-7e23-4ed2-90e0-d8adb85ad3d0",
+  "name": "Radio Web Coracao Noticias - Coracao de Maria",
+  "url": "https://stream.zeno.fm/2gg85tzm7k8uv",
+  "url_resolved": "https://stream.zeno.fm/2gg85tzm7k8uv",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/a3ed8eca-7e23-4ed2-90e0-d8adb85ad3d0-34cd254986.png",
+  "tags": "bahia,coracao de maria,coracao noticias,feira de santana,local,noticias,web radio",
+  "state": "Bahia",
+  "bitrate": 32
  },
  {
   "stationuuid": "6a28e578-a55e-4760-adab-fc9d69c39edf",
@@ -386,6 +446,26 @@
   "url_resolved": "https://cast1.midiazdx.com.br:6678/stream",
   "favicon": "https://nice-radio-stations.pages.dev/v1/logos/48c11d12-5a09-4534-9ce6-363b24f49334-7c3125cf37.png",
   "tags": "radio cristal",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "4f940d33-6279-44ab-8a0f-6288da0cc98f",
+  "name": "Radio Geral - Feira de Santana",
+  "url": "https://hts05.brascast.com:10646/stream",
+  "url_resolved": "https://hts05.brascast.com:10646/stream",
+  "favicon": "",
+  "tags": "bahia,feira de santana,local,noticias,variedades",
+  "state": "Bahia",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "81742c14-55a7-45ea-a864-8d9b8b111bd7",
+  "name": "Radio Educadora 88.5 FM - Conceicao do Jacuipe",
+  "url": "http://45.179.90.65:9100/stream",
+  "url_resolved": "http://45.179.90.65:9100/stream",
+  "favicon": "",
+  "tags": "bahia,berimbau,conceicao do jacuipe,coracao de maria,ecletica,feira de santana,local,popular",
   "state": "Bahia",
   "bitrate": 128
  },

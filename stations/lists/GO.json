@@ -50,22 +50,22 @@
   "bitrate": 128
  },
  {
-  "stationuuid": "d2f8cb21-1530-42ea-b7be-880e0d2e1904",
-  "name": "Rádio Studio Souto - The Beatles (AAC+)",
-  "url": "https://centova5.transmissaodigital.com:20001/;",
-  "url_resolved": "https://centova5.transmissaodigital.com:20001/;",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d2f8cb21-1530-42ea-b7be-880e0d2e1904-4d3666b3a4.png",
-  "tags": "alternative rock,classic rock,rock,the beatles",
-  "state": "Goiás",
-  "bitrate": 128
- },
- {
   "stationuuid": "3553483b-8f69-4edb-8add-626d28d08f5d",
   "name": "Rádio Nova FM Anápolis",
   "url": "https://player.g2play.com.br/proxy/27362",
   "url_resolved": "https://player.g2play.com.br/proxy/27362",
   "favicon": "",
   "tags": "",
+  "state": "Goiás",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "d2f8cb21-1530-42ea-b7be-880e0d2e1904",
+  "name": "Rádio Studio Souto - The Beatles (AAC+)",
+  "url": "https://centova5.transmissaodigital.com:20001/;",
+  "url_resolved": "https://centova5.transmissaodigital.com:20001/;",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d2f8cb21-1530-42ea-b7be-880e0d2e1904-4d3666b3a4.png",
+  "tags": "alternative rock,classic rock,rock,the beatles",
   "state": "Goiás",
   "bitrate": 128
  },
@@ -207,6 +207,16 @@
   "favicon": "https://nice-radio-stations.pages.dev/v1/logos/4eca04fa-8ee1-48d7-bf76-4da8aadf4e21-d8da092dc3.png",
   "tags": "christian-gospel",
   "state": "goias",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "7b60a246-bc32-470d-9825-9a067c48cb89",
+  "name": "Rádio Executiva Goiânia",
+  "url": "http://live.ojc.com.br:8000/c2f4/myStream/playlist",
+  "url_resolved": "http://live.ojc.com.br:8000/c2f4/myStream/playlist",
+  "favicon": "",
+  "tags": "jazz,mpb,pop rock,r&b",
+  "state": "Goiás",
   "bitrate": 128
  },
  {

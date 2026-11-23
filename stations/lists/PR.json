@@ -220,16 +220,6 @@
   "bitrate": 64
  },
  {
-  "stationuuid": "78870d0c-b443-431d-9379-1710fd2a0563",
-  "name": "Radio Harmonia Mercosul FM 100.7 MHZ",
-  "url": "https://stm1.srvif.com:13938/stream",
-  "url_resolved": "https://stm1.srvif.com:13938/stream",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/78870d0c-b443-431d-9379-1710fd2a0563-239eca4670.png",
-  "tags": "",
-  "state": "Paraná(Brazil)",
-  "bitrate": 36
- },
- {
   "stationuuid": "35066a3c-c987-4961-ab88-42587b41db13",
   "name": "TMC Curitiba 100.3 FM",
   "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RT_CWB.mp3",
@@ -238,6 +228,16 @@
   "tags": "news,sports,talk",
   "state": "Paraná",
   "bitrate": 128
+ },
+ {
+  "stationuuid": "78870d0c-b443-431d-9379-1710fd2a0563",
+  "name": "Radio Harmonia Mercosul FM 100.7 MHZ",
+  "url": "https://stm1.srvif.com:13938/stream",
+  "url_resolved": "https://stm1.srvif.com:13938/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/78870d0c-b443-431d-9379-1710fd2a0563-239eca4670.png",
+  "tags": "",
+  "state": "Paraná(Brazil)",
+  "bitrate": 36
  },
  {
   "stationuuid": "9e3b025a-0f95-48c2-802f-9e93f6006d5e",

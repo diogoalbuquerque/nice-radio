@@ -140,16 +140,6 @@
   "bitrate": 96
  },
  {
-  "stationuuid": "46e300c2-4013-4442-baa0-eeaae28cff1f",
-  "name": "Light FM 103.9 MHz ZYC699 (Belo Horizonte - MG)",
-  "url": "https://8231.brasilstream.com.br/stream",
-  "url_resolved": "https://8231.brasilstream.com.br/stream",
-  "favicon": "",
-  "tags": "light classics",
-  "state": "Minas Gerais",
-  "bitrate": 64
- },
- {
   "stationuuid": "4a5e0a7c-8daf-4168-b125-d3aec2ee28a6",
   "name": "Jovem Pan Patos de Minas",
   "url": "https://shout25.crossradio.com.br:24030//1",
@@ -158,6 +148,16 @@
   "tags": "",
   "state": "Minas Gerais",
   "bitrate": 96
+ },
+ {
+  "stationuuid": "46e300c2-4013-4442-baa0-eeaae28cff1f",
+  "name": "Light FM 103.9 MHz ZYC699 (Belo Horizonte - MG)",
+  "url": "https://8231.brasilstream.com.br/stream",
+  "url_resolved": "https://8231.brasilstream.com.br/stream",
+  "favicon": "",
+  "tags": "light classics",
+  "state": "Minas Gerais",
+  "bitrate": 64
  },
  {
   "stationuuid": "c4e68be4-9014-4b1f-b29f-2ceeefb665b4",

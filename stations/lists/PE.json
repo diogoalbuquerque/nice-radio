@@ -180,6 +180,16 @@
   "bitrate": 128
  },
  {
+  "stationuuid": "541f6bfb-961a-4453-a22b-7cc27e596355",
+  "name": "Frei Caneca FM",
+  "url": "https://centova3.transmissaodigital.com/proxy/freicaneca/stream",
+  "url_resolved": "https://centova3.transmissaodigital.com/proxy/freicaneca/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/541f6bfb-961a-4453-a22b-7cc27e596355-46c09bfb5e.png",
+  "tags": "",
+  "state": "Pernambuco",
+  "bitrate": 64
+ },
+ {
   "stationuuid": "670827c3-b66b-4d60-a4ea-5d4b993e79a0",
   "name": "Rádio Local SIVB",
   "url": "https://s19.maxcast.com.br:8966/live",
@@ -198,16 +208,6 @@
   "tags": "forró,pernambuco,piseiro,pop,recife",
   "state": "Pernambuco",
   "bitrate": 128
- },
- {
-  "stationuuid": "541f6bfb-961a-4453-a22b-7cc27e596355",
-  "name": "Frei Caneca FM",
-  "url": "https://centova3.transmissaodigital.com/proxy/freicaneca/stream",
-  "url_resolved": "https://centova3.transmissaodigital.com/proxy/freicaneca/stream",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/541f6bfb-961a-4453-a22b-7cc27e596355-46c09bfb5e.png",
-  "tags": "",
-  "state": "Pernambuco",
-  "bitrate": 64
  },
  {
   "stationuuid": "0d675f09-0753-4a0b-9095-5b7374c7032c",

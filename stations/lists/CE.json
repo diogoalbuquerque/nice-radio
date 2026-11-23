@@ -170,16 +170,6 @@
   "bitrate": 128
  },
  {
-  "stationuuid": "c6e94ff2-ce2f-4ddf-be5f-25a2604c9395",
-  "name": "Radio Tropical Fm 98,7 Fortaleza",
-  "url": "http://centova2.svdns.com.br:8315/live",
-  "url_resolved": "http://centova2.svdns.com.br:8315/live",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c6e94ff2-ce2f-4ddf-be5f-25a2604c9395-30ef30c3e9.png",
-  "tags": "",
-  "state": "Fortaleza, Ceará",
-  "bitrate": 128
- },
- {
   "stationuuid": "d8c71837-e70f-476e-97b9-e213009d5b3a",
   "name": "Rádio Forró Brega",
   "url": "https://stream.zeno.fm/38zc8xggntzuv",
@@ -187,6 +177,16 @@
   "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d8c71837-e70f-476e-97b9-e213009d5b3a-e7bfd470c4.png",
   "tags": "folclore,regional",
   "state": "Ceará",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "c6e94ff2-ce2f-4ddf-be5f-25a2604c9395",
+  "name": "Radio Tropical Fm 98,7 Fortaleza",
+  "url": "http://centova2.svdns.com.br:8315/live",
+  "url_resolved": "http://centova2.svdns.com.br:8315/live",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c6e94ff2-ce2f-4ddf-be5f-25a2604c9395-30ef30c3e9.png",
+  "tags": "",
+  "state": "Fortaleza, Ceará",
   "bitrate": 128
  },
  {

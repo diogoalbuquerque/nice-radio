@@ -30,16 +30,6 @@
   "bitrate": 128
  },
  {
-  "stationuuid": "b337787e-dca7-4e3f-aa9a-84bd16f82889",
-  "name": "Rádio Clock 94,1 FM",
-  "url": "https://azura4.cmaudioevideo.com:8040/radio.aac",
-  "url_resolved": "https://azura4.cmaudioevideo.com:8040/radio.aac",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/b337787e-dca7-4e3f-aa9a-84bd16f82889-825c688b4b.png",
-  "tags": "adult,contemporany,news",
-  "state": "Espírito Santo",
-  "bitrate": 64
- },
- {
   "stationuuid": "4daed06d-617f-4035-993e-663252016232",
   "name": "Rádio Tradição Católica ",
   "url": "https://servidor17-1.brlogic.com:7126/live",
@@ -48,6 +38,16 @@
   "tags": "católica,cristã,tradicional",
   "state": "Espírito Santo",
   "bitrate": 96
+ },
+ {
+  "stationuuid": "b337787e-dca7-4e3f-aa9a-84bd16f82889",
+  "name": "Rádio Clock 94,1 FM",
+  "url": "https://azura4.cmaudioevideo.com:8040/radio.aac",
+  "url_resolved": "https://azura4.cmaudioevideo.com:8040/radio.aac",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/b337787e-dca7-4e3f-aa9a-84bd16f82889-825c688b4b.png",
+  "tags": "adult,contemporany,news",
+  "state": "Espírito Santo",
+  "bitrate": 64
  },
  {
   "stationuuid": "696d7b85-d8ca-45a3-8fa6-7ec5ff7e905c",

@@ -150,16 +150,6 @@
   "bitrate": 48
  },
  {
-  "stationuuid": "aa953a81-6daf-4b14-af2e-51adad60cbfb",
-  "name": "Progsky",
-  "url": "https://cc4.streammaximum.com:20017/stream",
-  "url_resolved": "https://cc4.streammaximum.com:20017/stream",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/aa953a81-6daf-4b14-af2e-51adad60cbfb-977a76510f.png",
-  "tags": "progressive rock",
-  "state": "Rio de Janeiro",
-  "bitrate": 128
- },
- {
   "stationuuid": "9c16f0b1-7764-4264-8d33-68f3566c68ef",
   "name": "Rádio BandNews RJ 90.3 FM",
   "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/BANDNEWSFM_RJAAC.aac?",
@@ -168,6 +158,16 @@
   "tags": "notícias",
   "state": "Rio de Janeiro",
   "bitrate": 64
+ },
+ {
+  "stationuuid": "aa953a81-6daf-4b14-af2e-51adad60cbfb",
+  "name": "Progsky",
+  "url": "https://cc4.streammaximum.com:20017/stream",
+  "url_resolved": "https://cc4.streammaximum.com:20017/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/aa953a81-6daf-4b14-af2e-51adad60cbfb-977a76510f.png",
+  "tags": "progressive rock",
+  "state": "Rio de Janeiro",
+  "bitrate": 128
  },
  {
   "stationuuid": "d35c9122-e7e6-4d2a-94d0-966fb14a28b5",
@@ -280,16 +280,6 @@
   "bitrate": 96
  },
  {
-  "stationuuid": "5e859c82-1767-4517-9c74-18ebb656740b",
-  "name": "Conselheiro 87.7 FM",
-  "url": "http://stm1.streamproarte.com.br:7204/stream?1685285676227",
-  "url_resolved": "http://stm1.streamproarte.com.br:7204/stream?1685285676227",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/5e859c82-1767-4517-9c74-18ebb656740b-ac49cee8a9.png",
-  "tags": "comunitária,eclética,regional",
-  "state": "Rio de Janeiro",
-  "bitrate": 64
- },
- {
   "stationuuid": "55c4c15a-9885-446c-94b0-3ac4e71123f6",
   "name": "Rádio Nova Paradiso 89.5 FM",
   "url": "https://27583.live.streamtheworld.com/NOVABRASIL_RIOAAC.aac?1771933348412",
@@ -298,6 +288,16 @@
   "tags": "adulta,flashback,mpb",
   "state": "Rio de Janeiro",
   "bitrate": 48
+ },
+ {
+  "stationuuid": "5e859c82-1767-4517-9c74-18ebb656740b",
+  "name": "Conselheiro 87.7 FM",
+  "url": "http://stm1.streamproarte.com.br:7204/stream?1685285676227",
+  "url_resolved": "http://stm1.streamproarte.com.br:7204/stream?1685285676227",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/5e859c82-1767-4517-9c74-18ebb656740b-ac49cee8a9.png",
+  "tags": "comunitária,eclética,regional",
+  "state": "Rio de Janeiro",
+  "bitrate": 64
  },
  {
   "stationuuid": "274bab6a-72af-42bf-b503-01a9fd64dcdb",

@@ -970,6 +970,16 @@
   "bitrate": 96
  },
  {
+  "stationuuid": "87509e0b-0f25-4764-8f7a-2ab94d4fab0e",
+  "name": "Nativa Uruguaiana",
+  "url": "https://azcast.com.br/listen/nativa/stream",
+  "url_resolved": "https://azcast.com.br/listen/nativa/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/87509e0b-0f25-4764-8f7a-2ab94d4fab0e-39c3f3acd8.png",
+  "tags": "campeira,gauchesca,gauderia,tradicionalista",
+  "state": "Rio Grande do Sul",
+  "bitrate": 128
+ },
+ {
   "stationuuid": "a79962fa-ba92-4f6c-a9b0-6f84dccaac4b",
   "name": "Web Rádio Índio Capilé",
   "url": "https://hts02.brascast.com:10428/live",
@@ -978,15 +988,5 @@
   "tags": "music",
   "state": "Rio Grande do Sul",
   "bitrate": 64
- },
- {
-  "stationuuid": "365c7548-2eff-426d-b76d-6ddb85cb9215",
-  "name": "RDW Rádio Web",
-  "url": "https://radiowebzonasulpoa.duckdns.org/listen/webradiozonasulpoa/radio.mp3",
-  "url_resolved": "https://radiowebzonasulpoa.duckdns.org/listen/webradiozonasulpoa/radio.mp3",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/365c7548-2eff-426d-b76d-6ddb85cb9215-75f88815b3.png",
-  "tags": "brazilian,mpb,pop,porto alegre,sertanejo,variedades,web radio",
-  "state": "Rio Grande do Sul",
-  "bitrate": 192
  }
 ]

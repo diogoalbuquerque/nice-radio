@@ -200,6 +200,16 @@
   "bitrate": 64
  },
  {
+  "stationuuid": "468ededb-bcb3-452b-bdaf-03f3ec3e620a",
+  "name": "Rádio Atlântida 97.3 FM - Criciúma",
+  "url": "https://26573.live.streamtheworld.com/ATL_CRI_FM.mp3",
+  "url_resolved": "https://26573.live.streamtheworld.com/ATL_CRI_FM.mp3",
+  "favicon": "",
+  "tags": "",
+  "state": "Santa Catarina, SC",
+  "bitrate": 96
+ },
+ {
   "stationuuid": "12ced942-05bd-4cab-bbe0-afbd16936388",
   "name": "Amigos de Cristo Web Rádio ",
   "url": "https://server06.srvsh.com.br:6856/stream",
@@ -218,16 +228,6 @@
   "tags": "",
   "state": "Santa Catarina",
   "bitrate": 0
- },
- {
-  "stationuuid": "468ededb-bcb3-452b-bdaf-03f3ec3e620a",
-  "name": "Rádio Atlântida 97.3 FM - Criciúma",
-  "url": "https://26573.live.streamtheworld.com/ATL_CRI_FM.mp3",
-  "url_resolved": "https://26573.live.streamtheworld.com/ATL_CRI_FM.mp3",
-  "favicon": "",
-  "tags": "",
-  "state": "Santa Catarina, SC",
-  "bitrate": 96
  },
  {
   "stationuuid": "f749626f-ebb4-4dd3-adcd-b59af58bbc61",
@@ -300,6 +300,16 @@
   "bitrate": 48
  },
  {
+  "stationuuid": "45e54471-3ac1-4c29-90c6-fdd76fd92e8f",
+  "name": "Rádio 89.3 FM Imbituba",
+  "url": "https://live.paineldj.com.br/proxy/radiofm89f?mp=/stream",
+  "url_resolved": "https://live.paineldj.com.br/proxy/radiofm89f?mp=/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/45e54471-3ac1-4c29-90c6-fdd76fd92e8f-4a8246b251.png",
+  "tags": "brega,esportes,forró,gauchesca,local news,mpb,noticias,sertanejo,sports",
+  "state": "Santa Catarina",
+  "bitrate": 64
+ },
+ {
   "stationuuid": "46a14c86-8377-4e96-bdaf-879e52166976",
   "name": "NBC FM - Rádio Comunitária de Nova Brasília - Imbituba/SC",
   "url": "https://radio02.zas.media/proxy/nbcfm/stream",
@@ -360,14 +370,14 @@
   "bitrate": 0
  },
  {
-  "stationuuid": "45e54471-3ac1-4c29-90c6-fdd76fd92e8f",
-  "name": "Rádio 89.3 FM Imbituba",
-  "url": "https://live.paineldj.com.br/proxy/radiofm89f?mp=/stream",
-  "url_resolved": "https://live.paineldj.com.br/proxy/radiofm89f?mp=/stream",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/45e54471-3ac1-4c29-90c6-fdd76fd92e8f-4a8246b251.png",
-  "tags": "brega,esportes,forró,gauchesca,local news,mpb,noticias,sertanejo,sports",
-  "state": "Santa Catarina",
-  "bitrate": 64
+  "stationuuid": "3d25d3cb-84a6-4477-bfd9-8a3e460a797c",
+  "name": "Nova Era FM 104.5",
+  "url": "https://sonicpanel.oficialserver.com/8022/stream?type=http&nocache=1",
+  "url_resolved": "https://sonicpanel.oficialserver.com/8022/stream?type=http&nocache=1",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/3d25d3cb-84a6-4477-bfd9-8a3e460a797c-7c23d714ac.png",
+  "tags": "pop,rock,sertanejo",
+  "state": "Santa Catarina, SC",
+  "bitrate": 80
  },
  {
   "stationuuid": "0ca4d1f7-c92c-4537-a7db-b3b578d18bec",

@@ -340,16 +340,6 @@
   "bitrate": 0
  },
  {
-  "stationuuid": "c177f52c-a3f0-4477-8837-e40990c68232",
-  "name": "Rádio Joli Beatles",
-  "url": "https://stream.zeno.fm/3hgez706e3quv?zs",
-  "url_resolved": "https://stream.zeno.fm/3hgez706e3quv?zs",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c177f52c-a3f0-4477-8837-e40990c68232-13c01c127e.png",
-  "tags": "classic rock",
-  "state": "São Paulo",
-  "bitrate": 128
- },
- {
   "stationuuid": "23477ac2-6774-4dd0-822e-a2ae0d9f24d1",
   "name": "Metropolitana MPB São Paulo",
   "url": "https://ice.fabricahost.com.br/metropolitanampb",
@@ -358,6 +348,16 @@
   "tags": "brasil,brazil,mpb",
   "state": "São Paulo (SP)",
   "bitrate": 48
+ },
+ {
+  "stationuuid": "c177f52c-a3f0-4477-8837-e40990c68232",
+  "name": "Rádio Joli Beatles",
+  "url": "https://stream.zeno.fm/3hgez706e3quv?zs",
+  "url_resolved": "https://stream.zeno.fm/3hgez706e3quv?zs",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c177f52c-a3f0-4477-8837-e40990c68232-13c01c127e.png",
+  "tags": "classic rock",
+  "state": "São Paulo",
+  "bitrate": 128
  },
  {
   "stationuuid": "606fb1a5-5824-4b34-bfb2-18c2e5ca8625",
@@ -560,16 +560,6 @@
   "bitrate": 32
  },
  {
-  "stationuuid": "7d03dbe5-43d3-4a8e-8cc7-b6d3c42456b9",
-  "name": "Radio Amigos do Futebol ",
-  "url": "https://ssl.voxhd.com.br:7086/;",
-  "url_resolved": "https://ssl.voxhd.com.br:7086/;",
-  "favicon": "",
-  "tags": "eclética",
-  "state": "Sao Paulo (Brazil)",
-  "bitrate": 128
- },
- {
   "stationuuid": "b78ee185-ad1c-4d88-adeb-ce993b10cdda",
   "name": "ALPHA FM 101.7",
   "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO_ALPHAFM_ADP.aac",
@@ -577,6 +567,16 @@
   "favicon": "https://nice-radio-stations.pages.dev/v1/logos/b78ee185-ad1c-4d88-adeb-ce993b10cdda-e2d35fd3aa.png",
   "tags": "",
   "state": "São Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "7d03dbe5-43d3-4a8e-8cc7-b6d3c42456b9",
+  "name": "Radio Amigos do Futebol ",
+  "url": "https://ssl.voxhd.com.br:7086/;",
+  "url_resolved": "https://ssl.voxhd.com.br:7086/;",
+  "favicon": "",
+  "tags": "eclética",
+  "state": "Sao Paulo (Brazil)",
   "bitrate": 128
  },
  {
@@ -610,16 +610,6 @@
   "bitrate": 128
  },
  {
-  "stationuuid": "91f47e52-5346-44d7-b6f8-6dd9e8cda89c",
-  "name": "Radio Amigos do Rock Nacional ",
-  "url": "https://stm10.voxhd.com.br:7846/",
-  "url_resolved": "https://stm10.voxhd.com.br:7846/",
-  "favicon": "",
-  "tags": "",
-  "state": "Sao Paulo (Brazil)",
-  "bitrate": 128
- },
- {
   "stationuuid": "f0d81ba6-285c-4b93-97c9-4398d20c7797",
   "name": "Kiss FM - 92.5 - São Paulo ",
   "url": "https://26593.live.streamtheworld.com/RADIO_KISSFM_ADP.aac",
@@ -627,6 +617,16 @@
   "favicon": "",
   "tags": "rock",
   "state": "São Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "91f47e52-5346-44d7-b6f8-6dd9e8cda89c",
+  "name": "Radio Amigos do Rock Nacional ",
+  "url": "https://stm10.voxhd.com.br:7846/",
+  "url_resolved": "https://stm10.voxhd.com.br:7846/",
+  "favicon": "",
+  "tags": "",
+  "state": "Sao Paulo (Brazil)",
   "bitrate": 128
  },
  {
@@ -740,6 +740,16 @@
   "bitrate": 128
  },
  {
+  "stationuuid": "c1fb5788-5031-4eeb-bbc9-e08a8e9878df",
+  "name": "CBN Vale",
+  "url": "https://8018.brasilstream.com.br/stream",
+  "url_resolved": "https://8018.brasilstream.com.br/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c1fb5788-5031-4eeb-bbc9-e08a8e9878df-c00473b46e.png",
+  "tags": "news,sports",
+  "state": "Sao Paulo",
+  "bitrate": 32
+ },
+ {
   "stationuuid": "4912dab1-896c-41af-bf00-99ccafbd8b80",
   "name": "Rádio TMC 100.1 FM",
   "url": "https://24373.live.streamtheworld.com/RT_SP.mp3?dist=RadiosComBr-TMC&1771879327541",
@@ -758,16 +768,6 @@
   "tags": "evangelical,missionary",
   "state": "Sao Paulo",
   "bitrate": 64
- },
- {
-  "stationuuid": "c1fb5788-5031-4eeb-bbc9-e08a8e9878df",
-  "name": "CBN Vale",
-  "url": "https://8018.brasilstream.com.br/stream",
-  "url_resolved": "https://8018.brasilstream.com.br/stream",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/c1fb5788-5031-4eeb-bbc9-e08a8e9878df-c00473b46e.png",
-  "tags": "news,sports",
-  "state": "Sao Paulo",
-  "bitrate": 32
  },
  {
   "stationuuid": "54866938-8bf3-456e-8a16-da5695124d72",
@@ -890,6 +890,16 @@
   "bitrate": 128
  },
  {
+  "stationuuid": "b30a4855-02c0-4fbf-95db-fde57d0fc06a",
+  "name": "Rádio Disney 91.3 FM",
+  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/DISNEY_BRA_SP.mp3",
+  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/DISNEY_BRA_SP.mp3",
+  "favicon": "",
+  "tags": "jovem,pop rock,sertanejo",
+  "state": "Sao Paulo (Brazil)",
+  "bitrate": 96
+ },
+ {
   "stationuuid": "d8361663-3d7e-425f-85af-b0370d41ce80",
   "name": "Aquele Rock",
   "url": "https://azura.servercast.com.br/listen/radio_leandro/radio.mp3?refresh=1744219941974",
@@ -897,6 +907,16 @@
   "favicon": "https://nice-radio-stations.pages.dev/v1/logos/d8361663-3d7e-425f-85af-b0370d41ce80-b8d5e5f1aa.png",
   "tags": "",
   "state": "São Paulo",
+  "bitrate": 128
+ },
+ {
+  "stationuuid": "0c026a08-982f-45a6-9013-920644969844",
+  "name": "CBN Grandes Lagos",
+  "url": "http://stm10.conectastm.com:8276/stream",
+  "url_resolved": "http://stm10.conectastm.com:8276/stream",
+  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/0c026a08-982f-45a6-9013-920644969844-af981fff57.png",
+  "tags": "news,sports",
+  "state": "Sao Paulo",
   "bitrate": 128
  },
  {
@@ -908,26 +928,6 @@
   "tags": "",
   "state": "Sao Paulo (Brazil)",
   "bitrate": 64
- },
- {
-  "stationuuid": "b30a4855-02c0-4fbf-95db-fde57d0fc06a",
-  "name": "Rádio Disney 91.3 FM",
-  "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/DISNEY_BRA_SP.mp3",
-  "url_resolved": "https://playerservices.streamtheworld.com/api/livestream-redirect/DISNEY_BRA_SP.mp3",
-  "favicon": "",
-  "tags": "jovem,pop rock,sertanejo",
-  "state": "Sao Paulo (Brazil)",
-  "bitrate": 96
- },
- {
-  "stationuuid": "0c026a08-982f-45a6-9013-920644969844",
-  "name": "CBN Grandes Lagos",
-  "url": "http://stm10.conectastm.com:8276/stream",
-  "url_resolved": "http://stm10.conectastm.com:8276/stream",
-  "favicon": "https://nice-radio-stations.pages.dev/v1/logos/0c026a08-982f-45a6-9013-920644969844-af981fff57.png",
-  "tags": "news,sports",
-  "state": "Sao Paulo",
-  "bitrate": 128
  },
  {
   "stationuuid": "9944043f-abd1-4d8c-bfea-ed180e1d7036",
